@@ -25,7 +25,8 @@ function Navbar() {
 
   window.addEventListener('resize', showButton);
 
-  return(<div className="navbar-container">
+  return(
+    <div className="navbar-container">
       <Helmet>
         <title>exported project</title>
       </Helmet>
