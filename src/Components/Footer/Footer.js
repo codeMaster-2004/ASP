@@ -14,7 +14,7 @@ function Footer() {
                 <div className='footer-right-container'>
                     <div className='footer-separator'></div>
                     <div className='footer-right'>
-                        <p> <i class='fa fa-phone-alt'/> Phone: (781)-219-7625</p>
+                        <a href='tel:7812197625' className='contacts'> <i class='fa fa-phone-alt'/> Phone: (781)-219-7625</a>
                         <p> <i class='fa fa-map-pin'/>
                             <Link 
                                 className='contacts'
