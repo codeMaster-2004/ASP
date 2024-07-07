@@ -1,161 +1,208 @@
-.navbar-container {
-  width: 100%;
+.navbar {
+  height: 80px;
   display: flex;
-  overflow: auto;
-  min-height: 100vh;
+  justify-content: center;
   align-items: center;
-  flex-direction: column;
-  overflow:hidden;
-}
-.navbar-navbar {
-  gap: 263px;
-  width: 100%;
-  height: auto;
-  display: flex;
-  padding: 16px 150px 16px 100px;
-  align-items: center;
-  flex-shrink: 0;
-  border-color: rgba(255, 255, 255, 1);
-  border-style: solid;
-  border-width: 0 0 1px;
-  justify-content: space-between;
-  background-color: rgba(3, 57, 108, 1);
-}
-.navbar-frame2 {
-  gap: 9px;
-  width: 64.80000305175781px;
-  display: flex;
-  align-items: center;
-  flex-shrink: 0;
-  margin-left: 100px;
+  font-size: 1.2rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  border-color: #5a5a5a;
+  position: sticky;
 }
 
-.navbar-rectangle2 {
+.navbar-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 60px;
+  max-width: 2000px;
+  width : 100%;
+}
+
+.navbar-logo {
+  width: 64.80000305175781px;
+  justify-self: start;
+  margin-left: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.fably {
   width: 65px;
   height: 63px;
-  background-color: #ffffffff;
+  background-image: url("../../../public/images/Navbar.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-left: 0.5rem;
 }
 
-.navbar-frame1 {
-  gap: 20px;
+.nav-menu {
   display: flex;
-  flex-grow: 1;
   align-items: center;
   justify-content: flex-end;
-  margin-right: 100px;
+  gap : 1px;
+  position: relative;
 }
 
-.navbar-text {
-  color: rgba(255, 255, 255, 1);
+.nav-item {
   height: auto;
-  font-size: 16px;
-  font-style: Medium;
-  text-align: center;
-  font-family: Inter;
-  font-weight: 500;
-  line-height: normal;
-  font-stretch: normal;
-  text-decoration: none;
-}
-.navbar-text02 {
-  color: rgba(255, 255, 255, 1);
-  height: auto;
-  font-size: 16px;
-  font-style: Medium;
-  text-align: center;
-  font-family: Inter;
-  font-weight: 500;
-  line-height: normal;
-  font-stretch: normal;
-  text-decoration: none;
-}
-
-.navbar-text:hover,
-.navbar-text02:hover,
-.navbar-text04:hover,
-.navbar-text06:hover,
-.navbar-text08:hover,
-.navbar-text10:hover {
-  border-bottom: 4px solid #fff;
-  transition: all 0.2s ease-out;
-  cursor: pointer;
-}
-
-.navbar-text04 {
-  color: rgba(255, 255, 255, 1);
-  height: auto;
-  font-size: 16px;
-  font-style: Medium;
-  text-align: center;
-  font-family: Inter;
-  font-weight: 500;
-  line-height: normal;
-  font-stretch: normal;
-  text-decoration: none;
-}
-.navbar-text06 {
-  color: rgba(255, 255, 255, 1);
-  height: auto;
-  font-size: 16px;
-  font-style: Medium;
-  text-align: center;
-  font-family: Inter;
-  font-weight: 500;
-  line-height: normal;
-  font-stretch: normal;
-  text-decoration: none;
-}
-.navbar-text08 {
-  color: rgba(255, 255, 255, 1);
-  height: auto;
-  font-size: 16px;
-  font-style: Medium;
-  text-align: center;
-  font-family: Inter;
-  font-weight: 500;
-  line-height: normal;
-  font-stretch: normal;
-  text-decoration: none;
-}
-.navbar-text10 {
-  color: rgba(255, 255, 255, 1);
-  height: auto;
-  font-size: 16px;
-  font-style: Medium;
-  text-align: center;
-  font-family: Inter;
-  font-weight: 500;
-  line-height: normal;
-  font-stretch: normal;
-  text-decoration: none;
-}
-.navbar-frame75 {
-  gap: 10px;
   display: flex;
-  padding: 8px;
-  overflow: hidden;
   align-items: center;
-  border-radius: 4px;
-  justify-content: center;
-  background-color: rgba(255, 255, 255, 1);
-}
-
-.navbar-frame75:hover {
-  background: #fff;
-  color: #242424;
-  transition: 250ms;
-  cursor: pointer;
-}
-
-.navbar-text12 {
-  color: rgba(3, 57, 108, 1);
-  height: auto;
-  font-size: 16px;
-  font-style: Medium;
-  text-align: center;
-  font-family: Inter;
+  font-size: 20px;
   font-weight: 500;
-  line-height: normal;
   font-stretch: normal;
+  font-style: Medium;
+  /* position: relative; */
+}
+
+.nav-links {
+  color: rgba(3, 57, 108, 1);
+  display: flex;
+  align-items: center;
   text-decoration: none;
+  padding: 0.5rem 1rem;
+  height: 100%;
+  white-space: nowrap;
+}
+
+.nav-links:hover {
+  border-bottom: 4px solid rgba(3, 57, 108, 1);
+  position: relative;
+  transition: all 0.2s ease-out;
+}
+
+.fa-bars {
+  color: rgba(3, 57, 108, 1);
+}
+
+.nav-links-mobile {
+  display: none;
+}
+
+.menu-icon {
+  display: none;
+}
+
+.fa-angle-down {
+  margin-right: 1.5rem;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.fa-angle-down.rotate {
+  transform: rotate(-180deg);
+}
+
+.dropdown-content {
+  height: 0; /* Initial height of dropdown */
+  transition: max-height 0.5s ease;
+  position: absolute;
+  background-color: #fff;
+  width: 100%;
+  z-index: 1;
+  flex-direction: column; /* Stack items vertically */
+  top: 100%; /* Position below the nav item */
+  left: 0;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  margin-left: 40px;
+}
+
+.dropdown-content a {
+  color: rgba(3, 57, 108, 1);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content.show {
+  max-height: 500px;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+@media screen and (max-width: 1160px) {
+  .NavbarItems {
+    position: relative;
+  }
+
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 90vh;
+    position: absolute;
+    top: 80px;
+    left: -100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+
+  .nav-menu.active {
+    background: #ffffff;
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+  }
+
+  .nav-links {
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+    display: table;
+  }
+
+  .nav-links:hover {
+    background-color: rgba(3, 57, 108, 1);
+    color: #242424;
+  }
+
+  .navbar-logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(25%, 50%);
+  }
+
+  .menu-icon {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+
+  .fa-times {
+    color: rgba(3, 57, 108, 1);
+    font-size: 2rem;
+  }
+
+  .nav-links-mobile {
+    display: block;
+    text-align: center;
+    margin: 2rem auto;
+    border-radius: 4px;
+    width: 80%;
+    text-decoration: none;
+    font-size: 1.5rem;
+    background-color: transparent;
+    color: rgba(3, 57, 108, 1);
+    padding: 14px 20px;
+    border: 1px solid rgba(3, 57, 108, 1);
+    transition: all 0.3s ease-out;
+  }
+
+  .nav-links-mobile:hover {
+    background: rgba(3, 57, 108, 1);
+    color: #242424;
+    transition: 250ms;
+  }
 }
