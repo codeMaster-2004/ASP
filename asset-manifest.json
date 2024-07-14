@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/ASP/static/css/main.bdbe7151.css",
-    "main.js": "/ASP/static/js/main.f5f43666.js",
-    "static/media/homescreen.png": "/ASP/static/media/homescreen.6f99409535170b18bc99.png",
+    "main.css": "/ASP/static/css/main.85f687f6.css",
+    "main.js": "/ASP/static/js/main.5a89dd9a.js",
+    "static/media/Homepage-image.png": "/ASP/static/media/Homepage-image.f98a3b2a06a6a907160e.png",
+    "static/media/Rectangle 18.png": "/ASP/static/media/Rectangle 18.440a500ade6f8e8e20d8.png",
     "static/media/Navbar.svg": "/ASP/static/media/Navbar.a0d5bfdbf45b7a30e774.svg",
     "index.html": "/ASP/index.html",
-    "main.bdbe7151.css.map": "/ASP/static/css/main.bdbe7151.css.map",
-    "main.f5f43666.js.map": "/ASP/static/js/main.f5f43666.js.map"
+    "main.85f687f6.css.map": "/ASP/static/css/main.85f687f6.css.map",
+    "main.5a89dd9a.js.map": "/ASP/static/js/main.5a89dd9a.js.map"
   },
   "entrypoints": [
-    "static/css/main.bdbe7151.css",
-    "static/js/main.f5f43666.js"
+    "static/css/main.85f687f6.css",
+    "static/js/main.5a89dd9a.js"
   ]
 }
