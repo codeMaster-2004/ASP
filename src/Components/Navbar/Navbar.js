@@ -6,7 +6,6 @@ import './Navbar.css';
 function Navbar() {
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
-  // const [openDropdown, setopenDropdown] = useState({});
   const [openDropdown, setOpenDropdown] = useState(null);
 
   const handleClick = () => setClick(!click);
@@ -15,11 +14,15 @@ function Navbar() {
     setOpenDropdown(null); // Close all openDropdown when mobile menu closes
   };
 
+  //work to shut another open dropdown menu when a new one is toggled
   const toggleDropdown = (index) => {
     console.log(`Toggling dropdown ${index}`)
     setOpenDropdown(prevIndex => (prevIndex === index ? null : index));
   };
   
+  let lastScrollTop = 0;
+  const navbar = document.querySelector('.navbar');
+
   const showButton = () => {
     if (window.innerWidth <= 960) {
       setButton(false);
@@ -34,7 +37,45 @@ function Navbar() {
 
   window.addEventListener('resize', showButton);
 
-  console.log("Dropdown state:", openDropdown);
+  ////////////////////////////////////////////////////// media navbar functions to adjust the height a looks according to what's done//////////////////////////////////////////////////////
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const dropdownToggles = document.querySelectorAll('.fa-angle-down');
+    const dropdownContents = document.querySelectorAll('.dropdown-content');
+    const navMenu = document.querySelector('.nav-menu');
+  
+    dropdownToggles.forEach((toggle, index) => {
+      toggle.addEventListener('click', () => {
+        const isOpen = toggle.classList.contains('rotate');
+  
+        // Close all dropdowns
+        dropdownToggles.forEach((t) => t.classList.remove('rotate'));
+        dropdownContents.forEach((content) => content.classList.remove('show'));
+  
+        if (!isOpen) {
+          // Open the clicked dropdown
+          toggle.classList.add('rotate');
+          dropdownContents[index].classList.add('show');
+  
+          // Adjust height of nav-menu
+          const dropdownHeight = dropdownContents[index].scrollHeight;
+          navMenu.style.height = `${dropdownHeight + navMenu.scrollHeight}px`;
+        } else {
+          // Reset height of nav-menu
+          navMenu.style.height = 'auto';
+        }
+      });
+    });
+  
+    // Close dropdowns when clicking outside
+    document.addEventListener('click', (event) => {
+      if (!event.target.closest('.nav-item')) {
+        dropdownToggles.forEach((t) => t.classList.remove('rotate'));
+        dropdownContents.forEach((content) => content.classList.remove('show'));
+        navMenu.style.height = 'auto'; // Reset height of nav-menu
+      }
+    });
+  });
 
   return(
     <>
@@ -43,9 +84,9 @@ function Navbar() {
           <Link to='/' className='navbar-logo'>
             <div className='fably' />
           </Link>
-          {/* <div className='menu-icon' onClick={handleClick}>
+          <div className='menu-icon' onClick={handleClick}>
             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
-          </div> */}
+          </div>
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <li className='nav-item'>
               <Link to='/' className='nav-links' onClick={closeMobileMenu}>

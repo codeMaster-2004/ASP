@@ -11,7 +11,7 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
-          <Route path="/" element={<Home/>} />
+          <Route path="/ASP" element={<Home/>} />
         </Routes>
         <Footer />
       </Router>
