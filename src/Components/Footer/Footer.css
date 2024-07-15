@@ -100,7 +100,7 @@
 }
 
 .Contact-info-email a:hover,
-.Contact-info-phone a:hover
+.Contact-info-phone a:hover,
 .Contact-info-address a:hover {
     text-decoration: underline;
 }
@@ -115,6 +115,10 @@
 .social-icon-link i {
     font-size: 30px;
     color: #fff;
+}
+
+.social-icon-link i:hover {
+    transform: scale(1.1);
 }
 
                     /*  ALL THE REST OF THE INFO'S DECOR FROM NOW    */
