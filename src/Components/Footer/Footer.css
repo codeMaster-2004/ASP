@@ -164,6 +164,15 @@
     line-height: 1.4;
 }
 
+.footer-links {
+    text-decoration:none;
+}
+
+.footer-links:hover {
+    text-decoration: underline;
+    color : #fff;
+}
+
 .bottom {
     display: flex;
     flex-direction: column;

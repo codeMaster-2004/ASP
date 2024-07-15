@@ -81,7 +81,7 @@ function Navbar() {
     <>
       <nav className='navbar'>
         <div className='navbar-container'>
-          <Link to='/' className='navbar-logo'>
+          <Link to='ASP' className='navbar-logo'>
             <div className='fably' />
           </Link>
           <div className='menu-icon' onClick={handleClick}>
@@ -89,13 +89,13 @@ function Navbar() {
           </div>
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <li className='nav-item'>
-              <Link to='/' className='nav-links' onClick={closeMobileMenu}>
+              <Link to='/ASP' className='nav-links' onClick={closeMobileMenu}>
                 Home
               </Link>
             </li>
             <li className='nav-item'>
               <Link
-                to='/services'
+                to='/about'
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
@@ -104,7 +104,7 @@ function Navbar() {
             </li>
             <li className={`nav-item ${openDropdown === 0 ? 'active' : ''}`}>
               <Link
-                to='/products'
+                to='/aerocapture'
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
@@ -117,7 +117,7 @@ function Navbar() {
               {openDropdown === 0 && (
                 console.log("inside the Aerosol dropdown"),
                 <div className={`dropdown-content ${openDropdown === 0 ? 'show' : ''}`}>
-                  <Link to='/btrnsef' onClick={closeMobileMenu}>Battery Thermal Runaway Numerical Simulation of Electrodynamic Field</Link>
+                  <Link to='/battery-thermal-runaway-numerical-simulation-of-electrodynamic-field' onClick={closeMobileMenu}>Battery Thermal Runaway Numerical Simulation of Electrodynamic Field</Link>
                   <Link to='/aerosol-concentration' onClick={closeMobileMenu}>Aerosol Concentration</Link>
                   <Link to='/dust-mitigation' onClick={closeMobileMenu}>Dust Mitigation</Link>
                   {console.log("done with it")}
@@ -126,7 +126,7 @@ function Navbar() {
             </li>
             <li className={`nav-item ${openDropdown === 1 ? 'active' : ''}`}>
               <Link
-                to='/products'
+                to='/battery-safety'
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
@@ -137,13 +137,13 @@ function Navbar() {
                 ></i>
                 {openDropdown === 1 && (
                 <div className={`dropdown-content ${openDropdown === 1 ? 'show' : ''}`}>
-                  <Link to='/btrnsef' onClick={closeMobileMenu}>Battery Thermal Runaway Detection & Prevention</Link>
+                  <Link to='/battery-thermal-runaway-detection-prevention' onClick={closeMobileMenu}>Battery Thermal Runaway Detection & Prevention</Link>
                 </div>
                 )}
             </li>
             <li className='nav-item'>
               <Link
-                to='/products'
+                to='/facilities'
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
@@ -165,9 +165,9 @@ function Navbar() {
               {openDropdown === 2 && (
                 <div className={`dropdown-content ${openDropdown === 2 ? 'show' : ''}`}>
                   <Link to='/aerosol-concentration' onClick={closeMobileMenu}>Aerosol Concentration</Link>
-                  <Link to='/mcoes' onClick={closeMobileMenu}>Morphology Characterization with Optical Extinction Spectroscopy</Link>
-                  <Link to='/pls' onClick={closeMobileMenu}>Polarized Light Scattering</Link>
-                  <Link to='/sbps' onClick={closeMobileMenu}>Sedimentation based Particle Sizing</Link>
+                  <Link to='/morphology-characterization-optical-extinction-spectroscopy' onClick={closeMobileMenu}>Morphology Characterization with Optical Extinction Spectroscopy</Link>
+                  <Link to='/polarized-light-scattering' onClick={closeMobileMenu}>Polarized Light Scattering</Link>
+                  <Link to='/sedimentation-based-particle-sizing' onClick={closeMobileMenu}>Sedimentation based Particle Sizing</Link>
                 </div>
               )}
             </li>

@@ -40,48 +40,72 @@ function Footer() {
                     </div>
                     <div className='diff-pages'>
                         <div className='battery'>
-                            <h1>
-                                Battery Safety
-                            </h1>
-                            <p>
-                                Battery Thermal Runaway Detection & Prevention
-                            </p>
+                            <Link to='/battery-safety' className='footer-links'>
+                                <h1>
+                                    Battery Safety
+                                </h1>
+                            </Link>
+                            <Link to='/battery-thermal-runaway-detection-prevention' className='footer-links'>
+                                <p>
+                                    Battery Thermal Runaway Detection & Prevention
+                                </p>
+                            </Link>
                         </div>
                         <div className='facilities'>
-                            <h1>
-                                Facilities
-                            </h1>
+                            <Link to='/facilities' className='footer-links'>
+                                <h1>
+                                    Facilities
+                                </h1>
+                            </Link>
                         </div>
                         <div className='Aerosol'>
-                            <h1>
-                                Aerosol Capture
-                            </h1>
-                            <p>
-                                Aerosol Concentration
-                            </p>
-                            <p>
-                                Battery Thermal Runaway Numerical Simulation of Electrodynamic Field
-                            </p>
-                            <p>
-                                Dust Mitigation
-                            </p>
+                            <Link to='/aerocapture' className='footer-links'>
+                                <h1>
+                                    Aerosol Capture
+                                </h1>
+                            </Link>
+                            <Link to='/aerosol-concentration' className='footer-links'>
+                                <p>
+                                    Aerosol Concentration
+                                </p>
+                            </Link>
+                            <Link to='/battery-thermal-runaway-numerical-simulation-of-electrodynamic-field' className='footer-links'>
+                                <p>
+                                    Battery Thermal Runaway Numerical Simulation of Electrodynamic Field
+                                </p>
+                            </Link>
+                            <Link to='/dust-mitigation' className='footer-links'>
+                                <p>
+                                    Dust Mitigation
+                                </p>
+                            </Link>
                         </div>
                         <div className='Instrumentation'>
-                            <h1>
-                                Instrumentation
-                            </h1>
-                            <p>
-                                Aerosol Concentration
-                            </p>
-                            <p>
-                                Morphology Characterization with Optical Extinction Spectroscopy 
-                            </p>
-                            <p>
-                                Polarized Light Scattering
-                            </p>
-                            <p>
-                                Sedimentation based Particle Sizing
-                            </p>
+                            <Link to='/instrumentation' className='footer-links'>
+                                <h1>
+                                    Instrumentation
+                                </h1>
+                            </Link>
+                            <Link to='/aerosol-concentration' className='footer-links'>
+                                <p>
+                                    Aerosol Concentration
+                                </p>
+                            </Link>
+                            <Link to='/morphology-characterization-optical-extinction-spectroscopy' className='footer-links'>
+                                <p>
+                                    Morphology Characterization with Optical Extinction Spectroscopy 
+                                </p>
+                            </Link>
+                            <Link to='/polarized-light-scattering' className='footer-links'>
+                                <p>
+                                    Polarized Light Scattering
+                                </p>
+                            </Link>
+                            <Link to='/sediment-based-particle-sizing' className='footer-links'>
+                                <p>
+                                    Sedimentation based Particle Sizing
+                                </p>
+                            </Link>
                         </div>
                     </div>
                 </div>
