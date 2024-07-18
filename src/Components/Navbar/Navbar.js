@@ -37,8 +37,9 @@ function Navbar() {
 
   window.addEventListener('resize', showButton);
 
-  ////////////////////////////////////////////////////// media navbar functions to adjust the height a looks according to what's done//////////////////////////////////////////////////////
+  ////////////////////////////////////////////////////// media navbar functions to adjust the height a looks according to what's done///////////////////////////////////////////////////////////
 
+  
   document.addEventListener('DOMContentLoaded', () => {
     const dropdownToggles = document.querySelectorAll('.fa-angle-down');
     const dropdownContents = document.querySelectorAll('.dropdown-content');
@@ -77,13 +78,16 @@ function Navbar() {
     });
   });
 
+
   return(
     <>
       <nav className='navbar'>
+        <div className='logo'>
+          <div className='logo-r'>
+            <img src={`${process.env.PUBLIC_URL}/images/ASP-logo.svg`}  alt='Nasa'/>
+          </div>
+        </div>
         <div className='navbar-container'>
-          <Link to='ASP' className='navbar-logo'>
-            <div className='fably' />
-          </Link>
           <div className='menu-icon' onClick={handleClick}>
             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
           </div>
@@ -101,7 +105,7 @@ function Navbar() {
               >
                 About
               </Link>
-            </li>
+              </li>
             <li className={`nav-item ${openDropdown === 0 ? 'active' : ''}`}>
               <Link
                 to='/aerocapture'
@@ -117,10 +121,11 @@ function Navbar() {
               {openDropdown === 0 && (
                 console.log("inside the Aerosol dropdown"),
                 <div className={`dropdown-content ${openDropdown === 0 ? 'show' : ''}`}>
-                  <Link to='/battery-thermal-runaway-numerical-simulation-of-electrodynamic-field' onClick={closeMobileMenu}>Battery Thermal Runaway Numerical Simulation of Electrodynamic Field</Link>
-                  <Link to='/aerosol-concentration' onClick={closeMobileMenu}>Aerosol Concentration</Link>
-                  <Link to='/dust-mitigation' onClick={closeMobileMenu}>Dust Mitigation</Link>
-                  {console.log("done with it")}
+                  <div className='separator' />
+                    <Link to='/battery-thermal-runaway-numerical-simulation-of-electrodynamic-field' onClick={closeMobileMenu}>Battery Thermal Runaway Numerical Simulation of Electrodynamic Field</Link>
+                    <Link to='/aerosol-concentration' onClick={closeMobileMenu}>Aerosol Concentration</Link>
+                    <Link to='/dust-mitigation' onClick={closeMobileMenu}>Dust Mitigation</Link>
+                    {console.log("done with it")}
                 </div>
               )}
             </li>
@@ -137,6 +142,7 @@ function Navbar() {
                 ></i>
                 {openDropdown === 1 && (
                 <div className={`dropdown-content ${openDropdown === 1 ? 'show' : ''}`}>
+                  <div className='separator' />
                   <Link to='/battery-thermal-runaway-detection-prevention' onClick={closeMobileMenu}>Battery Thermal Runaway Detection & Prevention</Link>
                 </div>
                 )}
@@ -164,6 +170,7 @@ function Navbar() {
               ></i>
               {openDropdown === 2 && (
                 <div className={`dropdown-content ${openDropdown === 2 ? 'show' : ''}`}>
+                  <div className='separator' />
                   <Link to='/aerosol-concentration' onClick={closeMobileMenu}>Aerosol Concentration</Link>
                   <Link to='/morphology-characterization-optical-extinction-spectroscopy' onClick={closeMobileMenu}>Morphology Characterization with Optical Extinction Spectroscopy</Link>
                   <Link to='/polarized-light-scattering' onClick={closeMobileMenu}>Polarized Light Scattering</Link>
@@ -172,8 +179,33 @@ function Navbar() {
               )}
             </li>
             <Button buttonStyle='btn--outline'>Contact Us</Button>
-          </ul>
+          </ul> 
         </div>
+        {/* {openDropdown === 0 && (
+          console.log("inside the Aerosol dropdown"),
+          <div className={`dropdown-content ${openDropdown === 0 ? 'show' : ''}`}>
+            <div className='separator' />
+              <Link to='/battery-thermal-runaway-numerical-simulation-of-electrodynamic-field' onClick={closeMobileMenu}>Battery Thermal Runaway Numerical Simulation of Electrodynamic Field</Link>
+              <Link to='/aerosol-concentration' onClick={closeMobileMenu}>Aerosol Concentration</Link>
+              <Link to='/dust-mitigation' onClick={closeMobileMenu}>Dust Mitigation</Link>
+              {console.log("done with it")}
+          </div>
+        )}
+        {openDropdown === 1 && (
+          <div className={`dropdown-content ${openDropdown === 1 ? 'show' : ''}`}>
+            <div className='separator' />
+            <Link to='/battery-thermal-runaway-detection-prevention' onClick={closeMobileMenu}>Battery Thermal Runaway Detection & Prevention</Link>
+          </div>
+        )}
+        {openDropdown === 2 && (
+          <div className={`dropdown-content ${openDropdown === 2 ? 'show' : ''}`}>
+            <div className='separator' />
+            <Link to='/aerosol-concentration' onClick={closeMobileMenu}>Aerosol Concentration</Link>
+            <Link to='/morphology-characterization-optical-extinction-spectroscopy' onClick={closeMobileMenu}>Morphology Characterization with Optical Extinction Spectroscopy</Link>
+            <Link to='/polarized-light-scattering' onClick={closeMobileMenu}>Polarized Light Scattering</Link>
+            <Link to='/sedimentation-based-particle-sizing' onClick={closeMobileMenu}>Sedimentation based Particle Sizing</Link>
+          </div>
+        )} */}
       </nav>
     </>
   );
