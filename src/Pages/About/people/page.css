@@ -1,0 +1,109 @@
+.people {
+    display: flex;
+    justify-content: center; /* adjust vertical display position */
+    width: 1470px;
+    height: 3500px;
+    background-color: #fff;
+}
+
+.people-container {
+    display: flex;
+    width: 1145px;
+    flex-direction: column;
+    align-items: center;
+    gap: 150px;
+    /* background-color: antiquewhite */
+}
+
+.vd {
+    width: 1140px;
+    height: 907px;
+    position: relative;
+    /* background-color:aqua; */
+}
+
+.vd-desc {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    width: 626px;
+    height: 700px;
+    margin-left: 35%;
+    margin-bottom: 6%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #161833;
+}
+
+.vd-desc-container {
+    display: flex;
+    width: 576px;
+    height: 649px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    /* background-color:aquamarine; */
+}
+
+.vd-title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    align-self: stretch;
+    /* background-color:bisque; */
+}
+
+.vd-title h1 {
+    color: #fff;
+    font-family: Roboto;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.founder-button {
+    display: flex;
+    width: 198px;
+    padding: var(--sds-size-space-200);
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: #fff;
+}
+
+.founder-button p {
+    color: #03396C;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.vd-desc-intro {
+    display: flex;
+    width: 576px;
+    flex-direction: column;
+    /* align-items: flex-start; */
+    /* gap: 10px; */
+    /* background-color: black; */
+}
+
+.vd-desc-intro p{
+    color: #fff;
+}
+
+.custom-list {
+    list-style-type: disc; /* Default bullet points */
+    margin: 0;
+    padding: 0 20px; /* Adjust padding for indent */
+}
+
+.custom-list li {
+    margin-bottom: 10px; /* Space between items */
+    text-decoration: underline;
+    color:#fff;
+}
