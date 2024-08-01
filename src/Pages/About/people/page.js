@@ -7,7 +7,7 @@ function People() {
         <div className='people'>
             <div className='people-container'>
                 <div className='vd'>
-                    <img src={`${process.env.PUBLIC_URL}/images/vd.png`} alt='Vijay Devarakonda' width='574px' height='549px'/>
+                    <img src={`${process.env.PUBLIC_URL}/images/vd-new.png`} alt='Vijay Devarakonda' width='574px' height='549px'/>
                     <div className='vd-desc'>
                         <div className='vd-desc-container'>
                             <div className='vd-desc-heading'>
