@@ -4,21 +4,25 @@
     width: 1470px;
     height: 5000px;
     background-color: #fff;
+    padding: 0;
+    margin: 0;
 }
 
 .people-container {
     display: flex;
-    width: 1145px;
+    max-width: 1045px;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     gap: 150px;
-    padding: 50px 0 50px 0;
+    position: relative;
 }
 
 .vd {
     width: 1140px;
     height: 907px;
     position: relative;
+    transform: translateX(4.5%);
 }
 
 .vd-desc {
@@ -120,6 +124,7 @@
     width: 1140px;
     height: 1000px;
     position: relative;
+    transform: translateX(4.5%);
 }
 
 .mich-desc {
@@ -212,6 +217,7 @@
     width: 1140px;
     height: 1650px;
     position: relative;
+    transform: translateX(4.5%);
 }
 
 .siva-desc {
@@ -304,6 +310,7 @@
     width: 1140px;
     height: 670px;
     position: relative;
+    transform: translateX(4.5%);
 }
 
 .mitchell-desc {

@@ -112,7 +112,6 @@ function People() {
                                     <img src={`${process.env.PUBLIC_URL}/images/mitchell-3.png`} alt='Mitchell Ankul' width="100px" height="100px"/>
                                     <img src={`${process.env.PUBLIC_URL}/images/mitchell-4.png`} alt='Mitchell Ankul' width="100px" height="100px"/>
                                     <img src={`${process.env.PUBLIC_URL}/images/mitchell-5.png`} alt='Mitchell Ankul' width="100px" height="50.495px"/>
-                                    
                                 </div>
                             </div>
                         </div>
