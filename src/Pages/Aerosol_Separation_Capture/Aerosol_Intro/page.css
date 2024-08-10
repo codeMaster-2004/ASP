@@ -1,0 +1,75 @@
+.Aerosol_img_container {
+    background-image: url("../../../../public/images/MarsRover.png");
+    display: flex;
+    width: 1470px;
+    height: 525px; 
+    background-size: 100% 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.Aerosol_intro_text {
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    flex-direction: column;
+    width: 1174px;
+    height: 193px;
+}
+
+.Aerosol_intro_text h1 {
+    color: #fff;
+    text-align: center;
+    text-shadow: 0px 4px 15px rgba(0, 0, 0, 0.50);
+    font-family: Inter;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.Aerosol_intro {
+    background-color: #fff;
+    width: 1470px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.Aerosol_separator {
+    background-color: #FF4E0D;
+    width: 1142px;
+    height: 2px;
+}
+
+.Aerosol_intro_container {
+    display: flex;
+    width: 1138.2px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--sds-size-icon-large);
+    margin-top: 2.5%;
+}
+
+.Aerosol_intro_container p {
+    align-self: stretch;
+    color: var(--Base-Black, #000);
+    font-family: Roboto;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 33px; /* 132% */
+}
+
+.Aerosol_intro_container a {
+    text-decoration: underline;
+    color: #000;
+    font-family: Roboto;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 33px; /* 132% */
+}

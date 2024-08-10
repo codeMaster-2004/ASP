@@ -3,8 +3,6 @@ import { Link } from 'react-router-dom';
 import './Cards.css';
 
 function CardItem(props) {
-    console.log('CardItem props:', props);
-    console.log('Image source:', props.src);
   return (
     <>
       <li className='cards__item'>
