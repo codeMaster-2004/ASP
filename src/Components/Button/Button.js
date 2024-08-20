@@ -2,7 +2,7 @@ import React from 'react';
 import './Button.css';
 import { Link } from 'react-router-dom';
 
-const STYLES = ['btn--primary', 'btn--outline', 'btn--test', "btn--aerosol"];
+const STYLES = ['btn--primary', 'btn--outline', 'btn--test', "btn--aerosol", "btn--battery"];
 
 const SIZES = ['btn--medium', 'btn--large'];
 
@@ -11,7 +11,9 @@ const TYPES = {
   contact: '/contact-us',
   dustMitigation: '/dust-mitigation',
   fields: '/battery-thermal-runaway-numerical-simulation-of-electrodynamic-field',
-  concentration: '/aerosol-concentration'
+  concentration: '/aerosol-concentration',
+  batterythermal: '/battery-thermal-management',
+  batterythermaldetection: '/battery-thermal-detection'
 };
 
 export const Button = ({
@@ -31,7 +33,7 @@ export const Button = ({
   const checkButtonType = TYPES[buttonType] ? TYPES[buttonType] : TYPES.contact;
 
   return (
-    <Link to='/contact-us' className='btn-mobile'>
+    <Link to={checkButtonType} className='btn-mobile'>
       <button
         className={`btn ${checkButtonStyle} ${checkButtonSize}`}
         onClick={onClick}

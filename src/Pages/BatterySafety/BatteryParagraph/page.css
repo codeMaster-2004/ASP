@@ -1,0 +1,134 @@
+.Batterybotcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 11.5% 12%;
+}
+
+.title-text-bat{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    margin: 5% 0;
+}
+
+.title-text-bat p{
+    font-family: "Adobe Caslon Pro";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px; /* 166.667% */
+    gap: 100px;
+    margin-bottom: 10%;
+}
+
+.battery-separator {
+    width: 1138px;
+    height: 5px;
+    flex-shrink: 0;
+    background: #FF4E0D;
+    margin-bottom: 5%;
+}
+
+.Batterybotcontainer img {
+    margin-bottom: 5%;
+}
+
+.batterybottomtext {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.batterybottomtext p {
+    color: #000;
+    font-family: "Adobe Caslon Pro";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px; /* 166.667% */
+}
+
+.batterybottomtext ul {
+    list-style-type: circle;
+}
+
+.batterybottomtext li {
+    color: var(--Base-Black, #000);
+    font-family: "Adobe Caslon Pro";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px; /* 166.667% */
+}
+
+.batterybottomtext a {
+    color: var(--Base-Black, #000);
+}
+
+.BatteryOthers {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.BatteryOthers h1 {
+    color: var(--Base-Black, #000);
+    font-family: "Myriad Pro";
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px; /* Adjusted to better fit the heading */
+    margin-bottom: 20px; /* Adds space below the heading */
+}
+
+.safetyimages {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Adjust the gap between the two cards */
+}
+
+.safety-image-background, .safetyimagesleft, .safetyimagesright {
+    position: relative; /* Ensure the text and buttons are positioned relative to the card */
+    width: 558px;
+    height: 260px;
+    background-size: cover; /* Ensure the background images cover the entire area */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Aligns text and button at the bottom */
+    padding: 20px; /* Adjust the padding as needed */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+}
+
+.safetyimagesleft {
+    background-image: url("../../../../public/images/Batteryfirst.png");
+}
+
+.safetyimagesright {
+    background-image: url("../../../../public/images/Batterysecond.png");
+}
+
+.battery-card-title {
+    margin-bottom: 10px; /* Space between title and button */
+}
+
+.battery-card-title h1 {
+    color: #fff;
+    font-family: "Myriad Pro";
+    font-size: 24px; /* Adjusted to better match the image */
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.5; /* Adjust for better spacing */
+    letter-spacing: -0.33px;
+    margin: 0;
+}
+
+.btn-mobile {
+    display: inline-block;
+    margin: 0 auto; /* Centers the button */
+}
