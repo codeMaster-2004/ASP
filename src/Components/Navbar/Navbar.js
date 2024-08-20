@@ -131,7 +131,7 @@ function Navbar() {
             </li>
             <li className={`nav-item ${openDropdown === 1 ? 'active' : ''}`}>
               <Link
-                to='/battery-safety'
+                to='/batterysafety'
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
