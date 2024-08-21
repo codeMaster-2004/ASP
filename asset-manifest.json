@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ASP/static/css/main.511388d8.css",
-    "main.js": "/ASP/static/js/main.f84e8c95.js",
+    "main.css": "/ASP/static/css/main.490e34c6.css",
+    "main.js": "/ASP/static/js/main.e070c549.js",
     "static/media/MarsRover.png": "/ASP/static/media/MarsRover.57378176326ac8259880.png",
     "static/media/earth.png": "/ASP/static/media/earth.453629a15eaf6230442f.png",
     "static/media/Homepage-image.png": "/ASP/static/media/Homepage-image.f98a3b2a06a6a907160e.png",
@@ -11,11 +11,11 @@
     "static/media/fieldsmall.png": "/ASP/static/media/fieldsmall.ce77942edfb5f18b42b2.png",
     "static/media/Rectangle 18.png": "/ASP/static/media/Rectangle 18.440a500ade6f8e8e20d8.png",
     "index.html": "/ASP/index.html",
-    "main.511388d8.css.map": "/ASP/static/css/main.511388d8.css.map",
-    "main.f84e8c95.js.map": "/ASP/static/js/main.f84e8c95.js.map"
+    "main.490e34c6.css.map": "/ASP/static/css/main.490e34c6.css.map",
+    "main.e070c549.js.map": "/ASP/static/js/main.e070c549.js.map"
   },
   "entrypoints": [
-    "static/css/main.511388d8.css",
-    "static/js/main.f84e8c95.js"
+    "static/css/main.490e34c6.css",
+    "static/js/main.e070c549.js"
   ]
 }
