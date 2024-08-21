@@ -46,9 +46,33 @@
     line-height: 40px; /* 133.333% */
 }
 
+.management-others {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 0 0 10%;
+}
+
+.management-others h1 {
+    color: var(--Base-Black, #000);
+    font-family: "Myriad Pro";
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px; /* Adjusted to better fit the heading */
+    margin: 10% 0;
+}
+
+.management-others-images {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; 
+}
+
 .management-others-images-left,
 .management-others-images-right {
-    width: 558px;
+    width: 518px;
     height: 260px;
     background-size: cover; /* Ensure the background images cover the entire area */
     display: flex;
@@ -60,3 +84,32 @@
 .management-others-images-left {
     background-image: url('../../../../../public/images/BatterySafety.png');
 }
+
+.management-others-images-right {
+    background-image: url('../../../../../public/images/thermaldetection.png');
+}
+
+.management-others-images-left-title {
+    margin-bottom: 27%;
+    width: 95%;
+}
+
+.management-others-images-right-title {
+    margin-bottom: 19%;
+    width: 93%;
+}
+
+.management-others-images-left-title h1,
+.management-others-images-right-title h1 {
+    color: #fff;
+    font-family: "Myriad Pro";
+    font-size: 30px; /* Adjusted to better match the image */
+    font-style: normal;
+    text-align: left;
+    font-weight: 600;
+    line-height: 1.5; /* Adjust for better spacing */
+    letter-spacing: -0.33px;
+    margin: 0;
+}
+
+

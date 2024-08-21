@@ -28,24 +28,33 @@ function CFD() {
       <p>
         Our technology can improve the battery performance in any application that relies on batteries for energy storage and reuse. Examples include the vertical takeoff and landing systems with electric propulsion (eVTOL), electric vehicles (EVs), electric trucks, electric buses, battery energy storage systems (BESS) for residential and electric grid energy systems, aircraft, drones, micromobility systems (including Ebikes and scooters), medical devices, and power tools. We can customize the thermal management system to client battery pack design. For additional information contact us at<a href="mailto:office@analyticalscientificproducts.com">office@analyticalscientificproducts.com</a>.
       </p>
-      <div className='BatteryOther'>
+      <div className='management-others'>
         <h1>Other Topics</h1>
         <div className='safetyimages'>
           <div className='management-others-images-left'>
-            <h1>Battery Safety</h1>
-            <Button buttonSize='btn--large'
-                    buttonStyle='btn--aerosol'
-                    buttonType='batterysafety'>
-                      Learn More
-            </Button>
+            <div className='management-others-images-left-title'>
+              <h1>Battery Safety</h1>
+            </div>
+            <div className='battery-button'>
+              <Button buttonSize='btn--large'
+                      buttonStyle='btn--aerosol'
+                      buttonType='batterysafety'>
+                        View
+              </Button>
+            </div>
           </div>
           <div className='management-others-images-right'>
-            <h1>Battery Safety</h1>
-            <Button buttonSize='btn--medium'
-                    buttonStyle='btn--battery'
-                    buttonType='batterythermaldetection'>
-                      Learn More
-            </Button>
+              <div className='management-others-images-right-title'>
+                  <h1>Battery Thermal Runaway Detection and Prevention</h1>
+              </div>
+              <div className='battery-button'>
+                  <Button 
+                      buttonStyle='btn--battery'
+                      buttonSize='btn--large'
+                      buttonType='batterythermaldetection'>
+                          View
+                  </Button>
+              </div>
           </div>
         </div>
       </div>

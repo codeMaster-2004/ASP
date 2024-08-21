@@ -104,11 +104,11 @@
     padding: 20px; /* Adjust the padding as needed */
 }
 
-.safetyimagesleft {
+.safetyimagesright {
     background-image: url("../../../../../public/images/thermaldetection.png");
 }
 
-.safetyimagesright {
+.safetyimagesleft {
     background-image: url("../../../../../public/images/thermalmanagement.png");
 }
 
