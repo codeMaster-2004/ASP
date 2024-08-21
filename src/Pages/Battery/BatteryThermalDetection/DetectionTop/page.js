@@ -1,12 +1,12 @@
 import React from 'react';
 import './page.css';
 
-function BatteryManagementTop() {
+function BatteryDetectionTop() {
   return (
     <>
         <div className='management-container'>
             <p>Battery Safety</p>
-            <h1>Battery Thermal Management</h1>
+            <h1>Battery Thermal Runaway Detection and Prevention</h1>
             <img src={`${process.env.PUBLIC_URL}/images/batterypack.png`} alt="batterysafety" width="100%" height="100%"/>
         </div>
         <div className='management-pre-text'>
@@ -22,4 +22,4 @@ function BatteryManagementTop() {
   )
 }
 
-export default BatteryManagementTop
+export default BatteryDetectionTop
