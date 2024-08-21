@@ -1,12 +1,13 @@
 import React from 'react';
 
-const Vertical = ({ width }) => {
+const Separator = () => {
   return (
     <div
       style={{
-        width: '2px',
-        height: `${height}px`,
-        backgroundColor: '#000',
+        backgroundColor: '#FF4E0D',
+        margin: '0 11.5%',
+        width: '1138px',
+        height: '5px',
         margin: '0 11.5%'
         // Add any other styles or content you want to include
       }}
@@ -14,4 +15,4 @@ const Vertical = ({ width }) => {
   );
 };
 
-export default Vertical;
+export default Separator;
