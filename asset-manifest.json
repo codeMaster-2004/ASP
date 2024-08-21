@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.css": "/ASP/static/css/main.ff93f22b.css",
-    "main.js": "/ASP/static/js/main.1dc635de.js",
+    "main.css": "/ASP/static/css/main.511388d8.css",
+    "main.js": "/ASP/static/js/main.f84e8c95.js",
     "static/media/MarsRover.png": "/ASP/static/media/MarsRover.57378176326ac8259880.png",
     "static/media/earth.png": "/ASP/static/media/earth.453629a15eaf6230442f.png",
     "static/media/Homepage-image.png": "/ASP/static/media/Homepage-image.f98a3b2a06a6a907160e.png",
-    "static/media/Batteryfirst.png": "/ASP/static/media/Batteryfirst.ecd4ccc7c53c3ef00f7b.png",
-    "static/media/Batterysecond.png": "/ASP/static/media/Batterysecond.c448458a1f1bcaae55b8.png",
+    "static/media/thermalmanagement.png": "/ASP/static/media/thermalmanagement.8f3b5c918ee67faba486.png",
+    "static/media/BatterySafety.png": "/ASP/static/media/BatterySafety.b47bf73eac6e0d061f95.png",
+    "static/media/thermaldetection.png": "/ASP/static/media/thermaldetection.9fa2366387ae334296e8.png",
     "static/media/fieldsmall.png": "/ASP/static/media/fieldsmall.ce77942edfb5f18b42b2.png",
     "static/media/Rectangle 18.png": "/ASP/static/media/Rectangle 18.440a500ade6f8e8e20d8.png",
     "index.html": "/ASP/index.html",
-    "main.ff93f22b.css.map": "/ASP/static/css/main.ff93f22b.css.map",
-    "main.1dc635de.js.map": "/ASP/static/js/main.1dc635de.js.map"
+    "main.511388d8.css.map": "/ASP/static/css/main.511388d8.css.map",
+    "main.f84e8c95.js.map": "/ASP/static/js/main.f84e8c95.js.map"
   },
   "entrypoints": [
-    "static/css/main.ff93f22b.css",
-    "static/js/main.1dc635de.js"
+    "static/css/main.511388d8.css",
+    "static/js/main.f84e8c95.js"
   ]
 }
