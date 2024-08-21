@@ -41,7 +41,7 @@
   font-family: "Myriad Pro";
   font-size: 20px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
   line-height: normal;
   color: #000;
   text-decoration: none;
@@ -54,12 +54,12 @@
 }
 
 .btn--large {
-  /* padding: 12px 26px; */
-  font-size: 15px;
+  padding: 15% 55%;
+  /* font-size: 15px;
   text-align: center;
   width: 90px;
-  height: 45px;
-  border-radius: 5%;
+  height: 45px; */
+  border-radius: 10%;
 }
 
 .btn--medium:hover {
