@@ -106,11 +106,11 @@
 }
 
 .safetyimagesleft {
-    background-image: url("../../../../public/images/Batteryfirst.png");
+    background-image: url("../../../../../public/images/Batteryfirst.png");
 }
 
 .safetyimagesright {
-    background-image: url("../../../../public/images/Batterysecond.png");
+    background-image: url("../../../../../public/images/Batterysecond.png");
 }
 
 .battery-card-title {

@@ -7,7 +7,8 @@ import Footer from './Components/Footer/footer';
 import About from './Pages/About/About';
 import ContactUs from './Pages/ContactUs/ContactUs';
 import Aerosol from './Pages/Aerosol_Separation_Capture/Aerosol';
-import BatterySafety from './Pages/BatterySafety/main';
+import BatterySafety from './Pages/Battery/BatterySafety/main';
+import BatteryThermalManagement from './Pages/Battery/BatteryThermal/main';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path='/contact-us' element={<ContactUs/>} />
           <Route path='/aerocapture' element={<Aerosol/>} />
           <Route path='/batterysafety' element={<BatterySafety/>} />
+          <Route path='/battery-thermal-management' element={<BatteryThermalManagement/>} />
         </Routes>
         <Footer />
       </Router>

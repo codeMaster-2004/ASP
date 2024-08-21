@@ -144,6 +144,7 @@ function Navbar() {
                 <div className={`dropdown-content ${openDropdown === 1 ? 'show' : ''}`}>
                   <div className='separator' />
                   <Link to='/battery-thermal-runaway-detection-prevention' onClick={closeMobileMenu}>Battery Thermal Runaway Detection & Prevention</Link>
+                  <Link to='/battery-thermal-management' onClick={closeMobileMenu}>Battery Thermal Management</Link>
                 </div>
                 )}
             </li>
