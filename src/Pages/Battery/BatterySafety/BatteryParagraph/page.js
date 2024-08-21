@@ -1,13 +1,14 @@
 import React from 'react';
 import { Button } from '../../../../Components/Button/Button';
 import './page.css';
+import Separator from '../../../../Components/Orange-separator/separator';
 
 function BatteryPara() {
   return (
     <div className='Batterybotcontainer'>
         <div className='title-text-bat'>
             <p>Lithium-ion batteries are increasingly being used in several applications like electric vehicles (EVs), aircraft, stationary battery energy storage systems (BESS), micro mobility devices, medical devices, power tools and electronics. When maintained within an optimal temperature window, these batteries provide exceptional energy storage capacity and performance. Abnormal deviations from this range cause the battery to deteriorate and may even cause it to fail irreversibly and catch fire.</p>
-            <div className='battery-separator' />
+            <Separator />
         </div>
         <img src={`${process.env.PUBLIC_URL}/images/batterysafetybottom.png`} alt="batterysafety" width="100%" height="100%"/>
         <div className='batterybottomtext'>

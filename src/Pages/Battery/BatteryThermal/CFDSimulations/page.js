@@ -1,5 +1,4 @@
 import React from 'react'
-import Horizontal from '../../../../Components/Horizontal-Line/horizontal';
 import Separator from '../../../../Components/Orange-separator/separator';
 import './page.css';
 import {Button} from '../../../../Components/Button/Button';
@@ -10,7 +9,6 @@ function CFD() {
       <h1>
         CFD Simulations for Thermal Management in a 16-Cell Battery Module
       </h1>
-      <Horizontal height={10} />
       <p>
         Dr. Ankur Jain from the University of Texas at Arlington performed CFD simulations with ANSYS to examine the effectiveness of our thermal management method. We considered a 16-cell battery module made from 18650 cells arranged in a 4 × 4 pattern as shown in the figure below. We assumed that the liquid coolant flows counter-current at 0.4 L/s through the channels above and below the cells. If the cells support a load that draws power from the battery at a 1-C discharge rate, this battery module generates 10 W of heat due to resistive heating. 
       </p>
@@ -30,9 +28,9 @@ function CFD() {
       <p>
         Our technology can improve the battery performance in any application that relies on batteries for energy storage and reuse. Examples include the vertical takeoff and landing systems with electric propulsion (eVTOL), electric vehicles (EVs), electric trucks, electric buses, battery energy storage systems (BESS) for residential and electric grid energy systems, aircraft, drones, micromobility systems (including Ebikes and scooters), medical devices, and power tools. We can customize the thermal management system to client battery pack design. For additional information contact us at<a href="mailto:office@analyticalscientificproducts.com">office@analyticalscientificproducts.com</a>.
       </p>
-      <div className='management-others'>
+      <div className='BatteryOther'>
         <h1>Other Topics</h1>
-        <div className='management-others-images'>
+        <div className='safetyimages'>
           <div className='management-others-images-left'>
             <h1>Battery Safety</h1>
             <Button buttonSize='btn--large'

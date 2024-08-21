@@ -90,12 +90,12 @@
 .safetyimages {
     display: flex;
     justify-content: space-between;
-    gap: 20px; /* Adjust the gap between the two cards */
+    gap: 20px; 
 }
 
 .safetyimagesleft, .safetyimagesright {
     /* position: relative; Ensure the text and buttons are positioned relative to the card */
-    width: 558px;
+    width: 508px;
     height: 260px;
     background-size: cover; /* Ensure the background images cover the entire area */
     display: flex;

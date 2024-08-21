@@ -34,6 +34,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;    
+    margin: 5% 0 2%;
 }
 
 .image-desc p {
@@ -45,4 +46,17 @@
     line-height: 40px; /* 133.333% */
 }
 
+.management-others-images-left,
+.management-others-images-right {
+    width: 558px;
+    height: 260px;
+    background-size: cover; /* Ensure the background images cover the entire area */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 20px; 
+}
 
+.management-others-images-left {
+    background-image: url('../../../../../public/images/BatterySafety.png');
+}

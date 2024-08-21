@@ -5,10 +5,9 @@ const Separator = () => {
     <div
       style={{
         backgroundColor: '#FF4E0D',
-        margin: '0 11.5%',
-        width: '1138px',
-        height: '5px',
-        margin: '0 11.5%'
+        // margin: '0 11.5%'
+        width: '1222px',
+        height: '5px'
         // Add any other styles or content you want to include
       }}
     />
