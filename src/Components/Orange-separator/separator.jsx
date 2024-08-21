@@ -6,7 +6,7 @@ const Separator = () => {
       style={{
         backgroundColor: '#FF4E0D',
         // margin: '0 11.5%'
-        width: '1222px',
+        width: '1130px',
         height: '5px'
         // Add any other styles or content you want to include
       }}
