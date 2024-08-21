@@ -6,7 +6,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Footer from './Components/Footer/footer';
 import About from './Pages/About/About';
 import ContactUs from './Pages/ContactUs/ContactUs';
-import Aerosol from './Pages/Aerosol_Separation_Capture/Aerosol';
+import Aerosol from './Pages/AerosolCapture/Aerosol_Separation_Capture/Aerosol';
 import BatterySafety from './Pages/Battery/BatterySafety/main';
 import BatteryThermalManagement from './Pages/Battery/BatteryThermal/main';
 import BatteryThermalDetection from './Pages/Battery/BatteryThermalDetection/main';

@@ -79,7 +79,7 @@
 .innovation_picture_left_dust {
     width: 558px;
     height: 260px;
-    background-image: url("../../../../public/images/fieldsmall.png");
+    background-image: url("../../../../../public/images/fieldsmall.png");
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -117,7 +117,7 @@
 .innovation_picture_left_simulation {
     width: 558px;
     height: 215px;
-    background-image: url("../../../../public/images/fieldsmall.png");
+    background-image: url("../../../../../public/images/fieldsmall.png");
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -148,7 +148,7 @@
 .inovation_picture_right {
     width: 558px;
     height: 260px;
-    background-image: url("../../../../public/images/fieldsmall.png");
+    background-image: url("../../../../../public/images/fieldsmall.png");
     display: flex;
     align-items: center;
     flex-direction: column;

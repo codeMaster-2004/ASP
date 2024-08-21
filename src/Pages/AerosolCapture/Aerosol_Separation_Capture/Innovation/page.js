@@ -1,6 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { Button } from '../../../Components/Button/Button';
+import { Button } from '../../../../Components/Button/Button';
 import './page.css';
 
 function Innovation() {
