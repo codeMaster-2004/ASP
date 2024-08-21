@@ -23,31 +23,34 @@ function BatteryPara() {
         <div className='BatteryOthers'>
             <h1>Other Topics:</h1>
             <div className='safetyimages'>
-                <div className='safety-image-background'>
-                    <div className='safetyimagesleft'>
-                        {/* <img src={`${process.env.PUBLIC_URL}/images/batteryfirst.png`} alt="batteryfirst" width="100%" height="100%"/> */}
-                        <div className='battery-card-title'>
-                            <h1>Battery Thermal Management</h1>
-                        </div>
+                <div className='safetyimagesleft'>
+                    {/* <img src={`${process.env.PUBLIC_URL}/images/batteryfirst.png`} alt="batteryfirst" width="100%" height="100%"/> */}
+                    <div className='battery-card-title-management'>
+                        <h1>Battery Thermal Management</h1>
+                    </div>
+                    <div className='battery-button'>
                         <Button 
                             buttonStyle='btn--battery'
-                            buttonSize='btn--medium'
+                            buttonSize='btn--large'
                             buttonType='batterythermal'>
-                            <a href='/battery-thermal-management'>Learn More</a>
+                                View
                         </Button>
                     </div>
+                    
                 </div>
                 <div className='safetyimagesright'>
                 {/* <img src={`${process.env.PUBLIC_URL}/images/batterysecond.png`} alt="batterysecond" width="100%" height="100%"/> */}
-                    <div className='battery-card-title'>
-                        <h1>Battery Thermal Runaway Detection and Protection</h1>
+                    <div className='battery-card-title-detection'>
+                        <h1>Battery Thermal Runaway Detection and Prevention</h1>
                     </div>
-                    <Button 
-                        buttonStyle='btn--battery'
-                        buttonSize='btn--large'
-                        buttonType='batterythermaldetection'>
-                        <a href='/battery-thermal-detection'>Learn More</a>
-                    </Button>
+                    <div className='battery-button'>
+                        <Button 
+                            buttonStyle='btn--battery'
+                            buttonSize='btn--large'
+                            buttonType='batterythermaldetection'>
+                                View
+                        </Button>
+                    </div>
                 </div>
             </div>
         </div>

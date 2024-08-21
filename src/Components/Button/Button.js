@@ -13,7 +13,8 @@ const TYPES = {
   fields: '/battery-thermal-runaway-numerical-simulation-of-electrodynamic-field',
   concentration: '/aerosol-concentration',
   batterythermal: '/battery-thermal-management',
-  batterythermaldetection: '/battery-thermal-detection'
+  batterythermaldetection: '/battery-thermal-detection',
+  batterysafety: '/battery-safety'
 };
 
 export const Button = ({
