@@ -23,13 +23,13 @@ function MorphTop() {
             <p>
                 We compared the size distributions obtained using our system with known sizes of NIST certified polystyrene latex spheres between 80 and 870 nm from Duke Scientific and Bangs Laboratories. We first prepared suspensions with different concentrations of 240 nm polystyrene latex particles and measured the optical extinction spectra. We inverted these data using our proprietary algorithms to determine the particle size distributions of these suspensions. The figure below shows that the size distributions obtained using our instrument agree very well with the vendor specified size for all the five different suspensions.
             </p>
-            <Separator />
-            <div className='morph-top-validation-image'>
-                <img src={`${process.env.PUBLIC_URL}/images/240nmbeads.png`} alt='1stgraph' width='100%' height='100%'/>
-                <p>
-                    Size distribution of polystyrene latex particles obtained using multi-wavelength optical extinction spectroscopy. We performed measurements on five separate samples prepared using NIST certified 240 nm polystyrene beads suspended in water. 
-                </p>
-            </div>
+        </div>
+        <Separator />
+        <div className='morph-top-validation-image'>
+            <img src={`${process.env.PUBLIC_URL}/images/240nmbeads.png`} alt='1stgraph' width='100%' height='100%'/>
+            <p>
+                Size distribution of polystyrene latex particles obtained using multi-wavelength optical extinction spectroscopy. We performed measurements on five separate samples prepared using NIST certified 240 nm polystyrene beads suspended in water. 
+            </p>
         </div>
         <div className='morph-explain'>
             <p>
@@ -73,11 +73,12 @@ function MorphTop() {
             <p>
                 Measured vs. theoretical optical absorbance at different wavelengths obtained after data inversion.
             </p>
-            <div className='measuredvstheoreticaltext'>
-                <p>
-                    We suspended each of these powders separately in water and sonicated the suspension to disperse the particles. The extinction spectra of these suspensions obtained using an off-the-shelf spectrometer are shown in the figure below.
-                </p>
-            </div>
+            
+        </div>
+        <div className='measuredvstheoreticaltext'>
+            <p>
+                We suspended each of these powders separately in water and sonicated the suspension to disperse the particles. The extinction spectra of these suspensions obtained using an off-the-shelf spectrometer are shown in the figure below.
+            </p>
         </div>
     </div>
   )
