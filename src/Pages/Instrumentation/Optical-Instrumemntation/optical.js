@@ -31,7 +31,7 @@ function Optical() {
                             <div className='optical-others-images-left-top-button'>
                                 <Button buttonSize='btn--large'
                                         buttonStyle='btn--battery'
-                                        buttonType='dustMitigation'>
+                                        buttonType='Polarized'>
                                             View
                                 </Button>
                             </div>
@@ -43,7 +43,7 @@ function Optical() {
                             <div className='optical-others-images-left-bottom-button'>
                                 <Button buttonSize='btn--large'
                                         buttonStyle='btn--battery'
-                                        buttonType='dustMitigation'>
+                                        buttonType='Morphology'>
                                             View
                                 </Button>
                             </div>
@@ -57,7 +57,7 @@ function Optical() {
                             <div className='optical-others-images-right-top-button'>
                                 <Button buttonSize='btn--large'
                                         buttonStyle='btn--battery'
-                                        buttonType='dustMitigation'>
+                                        buttonType='SPS'>
                                             View
                                 </Button>
                             </div>

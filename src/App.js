@@ -11,6 +11,7 @@ import BatterySafety from './Pages/Battery/BatterySafety/main';
 import BatteryThermalManagement from './Pages/Battery/BatteryThermal/main';
 import BatteryThermalDetection from './Pages/Battery/BatteryThermalDetection/main';
 import Optical from './Pages/Instrumentation/Optical-Instrumemntation/optical';
+import Morphology from './Pages/Instrumentation/Morphology/main';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
           <Route path='/battery-thermal-management' element={<BatteryThermalManagement/>} />
           <Route path='/battery-thermal-runaway-detection-prevention' element={<BatteryThermalDetection/>} />
           <Route path='/optical-instrumentation' element={<Optical/>} />
+          <Route path='/morphology-characterization-optical-extinction-spectroscopy' element={<Morphology/>} />
         </Routes>
         <Footer />
       </Router>

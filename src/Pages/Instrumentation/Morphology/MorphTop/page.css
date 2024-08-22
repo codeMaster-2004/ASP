@@ -1,0 +1,178 @@
+.morph-top {
+    display: flex;
+    flex-direction: column;
+    margin: 0 11.5%;
+}
+
+.morph-top p {
+    color: var(--Orange, #FF4E0D);
+    text-align: left;
+    /* text-shadow: 0px 4px 15px rgba(0, 0, 0, 0.50); */
+    font-family: "DM Mono";
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.morph-top h1 {
+    font-family: "Myriad Pro";
+    font-size: 65px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: left;
+}
+
+.morph-top-after-image-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.morph-top-after-image-text p {
+    color: var(--Base-Black, #000);
+    font-family: "Adobe Caslon Pro";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px; /* 166.667% */
+}
+
+.morph-top-validation {
+    display: flex;
+    flex-direction: column;
+}
+
+.morph-top-validation h1 {
+    color: var(--Base-Black, #000);
+    font-family: "Myriad Pro";
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 70px; /* 60% */
+}
+
+.morph-top-validation p {
+    color: var(--Base-Black, #000);
+    font-family: "Adobe Caslon Pro";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px; /* 166.667% */
+    margin-bottom: 7%;
+}
+
+.morph-top-validation-image {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+}
+
+.morph-top-validation-image p {
+    color: var(--Base-Black, #000);
+    font-family: "Myriad Pro";
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 600;
+    line-height: 40px; /* 133.333% */
+}
+
+.morph-explain {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5%;
+}
+
+.morph-explain p {
+    color: var(--Base-Black, #000);
+    font-family: "Adobe Caslon Pro";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px; /* 166.667% */
+}
+
+.morph-top-bigger-graph {
+    display: flex;
+    flex-direction: column;
+    margin-top: 8%;
+}
+
+.morph-top-bigger-graph p {
+    color: var(--Base-Black, #000);
+    font-family: "Myriad Pro";
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 600;
+    line-height: 40px; /* 133.333% */
+}
+
+.agglomerated {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5%;
+}
+
+.agglomerated h1{
+    color: var(--Base-Black, #000);
+    font-family: "Myriad Pro";
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px; /* 60% */
+}
+
+.agglomerated p {
+    color: var(--Base-Black, #000);
+    font-family: "Adobe Caslon Pro";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px; /* 166.667% */
+}
+
+.agglomerated-image {
+    display: flex;
+    flex-direction: column;
+    margin-top: 8%;
+}
+
+.agglomerated-image img {
+    width: 100%;
+    height: 100%;
+}
+
+.agglomerated-image p {
+    color: var(--Base-Black, #000);
+    font-family: "Adobe Caslon Pro";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px; /* 166.667% */
+    margin-top: 6%;
+    margin-bottom: 8%;
+}
+
+.measuredvstheoretical {
+    display: flex;
+    flex-direction: column;
+    margin-top: 8%;
+}
+
+.measuredvstheoretical p{
+    color: var(--Base-Black, #000);
+    font-family: "Myriad Pro";
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 600;
+    line-height: 40px; /* 133.333% */
+}
+
+.measuredvstheoreticaltext p {
+    color: var(--Base-Black, #000);
+    font-family: "Adobe Caslon Pro";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px; /* 166.667% */
+}
