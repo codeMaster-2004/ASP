@@ -1,6 +1,7 @@
 import React from 'react';
 import Separator from '../../../../Components/Orange-separator/separator';
 import './page.css';
+import { Button } from '../../../../Components/Button/Button';
 
 function MorphBottom() {
   return (
@@ -35,8 +36,83 @@ function MorphBottom() {
             </p>
         </div>
         <Separator />
+        <div className='CMP-effects-images'>
+            <img src={`${process.env.PUBLIC_URL}/images/CMP.png`} alt='effects' width='100%' height='100%' />
+            <p>
+                Effect of sonication on the fractal dimension of alumina CMP slurries.
+            </p>
+        </div>
         <div className='CMP-effects'>
-            <img src={`${process.env.PUBLIC_URL}/images/agloeffects.png`} alt='effects' width='100%' height='100%' />
+            <p>
+                In order to understand the implications of the above result, the size distribution of equivalent spheres in the CMP alumina suspension with no sonication and after 3 minutes of sonication are compared in the figure below. The virgin sample had some particles that were finer than 100 nm, but it also had noticeable amounts of particles in the size range of 500 to 1600 nm. 3 minutes of sonication broke up most of the larger particles which reduced the primary size range of particles to 90 – 250 nm. 
+            </p>
+            <p>
+                This clearly shows that sonication is effective in breaking up the agglomerated particles and in increasing the uniformity of particle sizes in the suspension. 
+            </p>
+        </div>
+        <Separator/>
+        <div className='nanoparticleseffects'>
+            <img src={`${process.env.PUBLIC_URL}/images/particlesize.png`} alt='primaryparticlesize' width='100%' height='100%' />
+            <p>
+                Effect of sonication on reducing the particle size range of alumina nanoparticles.
+            </p>
+        </div>
+        <div className='morph-others'>
+            <h1>Other Topics</h1>
+            <div className='morph-others-images'>
+                <div className='morph-others-images-left'>
+                    <div className='morph-others-images-left-top'>
+                        <div className='morph-others-images-left-top-text'>
+                            <h1>Aerosol Concentration</h1>
+                        </div>
+                        <div className='morph-others-images-left-top-button'>
+                            <Button buttonSize='btn--large'
+                                    buttonStyle='btn--battery'
+                                    buttonType='Polarized'>
+                                        View
+                            </Button>
+                        </div>
+                    </div>
+                    <div className='morph-others-images-left-bottom'>
+                        <div className='morph-others-images-left-bottom-text'>
+                            <h1>Polarized Light Scattering</h1>
+                        </div>
+                        <div className='morph-others-images-left-bottom-button'>
+                            <Button buttonSize='btn--large'
+                                    buttonStyle='btn--battery'
+                                    buttonType='Morphology'>
+                                        View
+                            </Button>
+                        </div>
+                    </div>
+                </div>
+                <div className='morph-others-images-right'>
+                    <div className='morph-others-images-right-top'>
+                        <div className='morph-others-images-right-top-text'>
+                            <h1>Optical Instrumentation</h1>
+                        </div>
+                        <div className='morph-others-images-right-top-button'>
+                            <Button buttonSize='btn--large'
+                                    buttonStyle='btn--battery'
+                                    buttonType='SPS'>
+                                        View
+                            </Button>
+                        </div>
+                    </div>
+                    <div className='morph-others-images-right-bottom'>
+                        <div className='morph-others-images-right-bottom-text'>
+                            <h1>Sedimentation based particle sizing</h1>
+                        </div>
+                        <div className='morph-others-images-right-bottom-button'>
+                            <Button buttonSize='btn--large'
+                                    buttonStyle='btn--battery'
+                                    buttonType='SPS'>
+                                        View
+                            </Button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
   )
