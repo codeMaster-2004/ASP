@@ -69,12 +69,13 @@
 }
 
 .morph-top-validation-image p {
-    color: var(--Base-Black, #000);
+    color: #000;
     font-family: "Myriad Pro";
     font-size: 30px;
     font-style: italic;
     font-weight: 600;
     line-height: 40px; /* 133.333% */
+    opacity: 10;
 }
 
 .morph-explain {
