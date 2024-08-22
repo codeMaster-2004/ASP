@@ -10,6 +10,7 @@ import Aerosol from './Pages/AerosolCapture/Aerosol_Separation_Capture/Aerosol';
 import BatterySafety from './Pages/Battery/BatterySafety/main';
 import BatteryThermalManagement from './Pages/Battery/BatteryThermal/main';
 import BatteryThermalDetection from './Pages/Battery/BatteryThermalDetection/main';
+import Optical from './Pages/Instrumentation/Optical-Instrumemntation/optical';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path='/batterysafety' element={<BatterySafety/>} />
           <Route path='/battery-thermal-management' element={<BatteryThermalManagement/>} />
           <Route path='/battery-thermal-runaway-detection-prevention' element={<BatteryThermalDetection/>} />
+          <Route path='/optical-instrumentation' element={<Optical/>} />
         </Routes>
         <Footer />
       </Router>

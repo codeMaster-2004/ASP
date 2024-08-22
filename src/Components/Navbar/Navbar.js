@@ -159,7 +159,7 @@ function Navbar() {
             </li>
             <li className={`nav-item ${openDropdown === 2 ? 'active' : ''}`}>
               <Link
-                to='/instrumentation'
+                to='/optical-instrumentation'
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
@@ -172,7 +172,7 @@ function Navbar() {
               {openDropdown === 2 && (
                 <div className={`dropdown-content ${openDropdown === 2 ? 'show' : ''}`}>
                   <div className='separator' />
-                  <Link to='/aerosol-concentration' onClick={closeMobileMenu}>Aerosol Concentration</Link>
+                  <Link to='/optical-instrumentation' onClick={closeMobileMenu}>Optical Instrumentation</Link>
                   <Link to='/morphology-characterization-optical-extinction-spectroscopy' onClick={closeMobileMenu}>Morphology Characterization with Optical Extinction Spectroscopy</Link>
                   <Link to='/polarized-light-scattering' onClick={closeMobileMenu}>Polarized Light Scattering</Link>
                   <Link to='/sedimentation-based-particle-sizing' onClick={closeMobileMenu}>Sedimentation based Particle Sizing</Link>

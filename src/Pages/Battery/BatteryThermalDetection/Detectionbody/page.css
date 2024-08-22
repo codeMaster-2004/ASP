@@ -1,8 +1,8 @@
 .DetectionBottom {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    /* align-items: center;
+    justify-content: center; */
     margin: 0 11.5%;
 }
 
@@ -111,11 +111,12 @@
 .DetectionOtherImagesRight {
     width: 518px;
     height: 260px;
+    /*grid for small screens*/
     background-size: cover; /* Ensure the background images cover the entire area */
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    padding: 20px; 
+    padding: 2%; 
     margin-top: 6%;
 }
 
