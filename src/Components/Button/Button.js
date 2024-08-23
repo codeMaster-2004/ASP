@@ -8,6 +8,7 @@ const SIZES = ['btn--medium', 'btn--large'];
 
 // Define the different button types and corresponding routes
 const TYPES = {
+  aerosol:'/aerocapture',
   contact: '/contact-us',
   dustMitigation: '/dust-mitigation',
   fields: '/battery-thermal-runaway-numerical-simulation-of-electrodynamic-field',
@@ -18,7 +19,8 @@ const TYPES = {
   Morphology: '/morphology-characterization-optical-extinction-spectroscopy',
   Polarized: '/polarized-light-scattering',
   SPS: '/sedimentation-based-particle-sizing',
-  Optical: '/optical-instrumentation'
+  Optical: '/optical-instrumentation',
+  electro: '/battery-thermal-runaway-numerical-simulation-of-electrodynamic-field'
 };
 
 export const Button = ({

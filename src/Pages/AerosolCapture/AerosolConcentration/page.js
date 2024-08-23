@@ -10,7 +10,7 @@ function AerosolConcentration() {
                 <p>Aerosol Capture</p>
                 <h1>Aerosol Concentration</h1>
                 <img src={`${process.env.PUBLIC_URL}/images/ConcentrationMain.png`} alt='main' width='100%' height="100%"/>
-                <div className='text-after-big'>
+                <div className='text-after-big-concen'>
                     <p>
                         This calibrated method measures the mass loading of particles through temporal single wavelength optical extinction measurements across an aerosol cloud. It uses a specially designed optical arrangement to illuminate a significant portion of the aerosol cloud. Sample measurements of dust concentration versus time obtained with this technique are shown in the figure below. The dust concentration in the cloud changed significantly with time in this test reaching a maximum of 8.5 mg/m3 at 42 s. The sensitivity of this measurement can be adjusted to cover several over a few orders of magnitude by controlling the detection volume of the aerosol cloud illuminated by the light beam.
                     </p>
@@ -38,7 +38,7 @@ function AerosolConcentration() {
                                 <div className='concentration-others-images-left-top-button'>
                                     <Button buttonSize='btn--large'
                                             buttonStyle='btn--battery'
-                                            buttonType='concentration'>
+                                            buttonType='aerosol'>
                                                 View
                                     </Button>
                                 </div>
@@ -50,7 +50,7 @@ function AerosolConcentration() {
                                 <div className='concentration-others-images-left-bottom-button'>
                                     <Button buttonSize='btn--large'
                                             buttonStyle='btn--battery'
-                                            buttonType='Morphology'>
+                                            buttonType='electro'>
                                                 View
                                     </Button>
                                 </div>
@@ -64,7 +64,7 @@ function AerosolConcentration() {
                                 <div className='concentration-others-images-right-top-button'>
                                     <Button buttonSize='btn--large'
                                             buttonStyle='btn--battery'
-                                            buttonType='Optical'>
+                                            buttonType='dustMitigation'>
                                                 View
                                     </Button>
                                 </div>

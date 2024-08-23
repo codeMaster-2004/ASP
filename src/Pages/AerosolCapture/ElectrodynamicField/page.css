@@ -1,14 +1,14 @@
-.concentration {
+.electrodynamic {
     background: linear-gradient(to bottom, #fceae4, white);
 }
 
-.concentration-container {
+.electrodynamic-container {
     display: flex;
     flex-direction: column;
     margin: 0 11.5%;
 }
 
-.concentration-container p {
+.electrodynamic-container p {
     color: var(--Orange, #FF4E0D);
     text-align: left;
     /* text-shadow: 0px 4px 15px rgba(0, 0, 0, 0.50); */
@@ -20,7 +20,7 @@
     margin-top: 4%;
 }
 
-.concentration-container h1 {
+.electrodynamic-container h1 {
     font-family: "Myriad Pro";
     font-size: 65px;
     font-style: normal;
@@ -29,13 +29,13 @@
     text-align: left;
 }
 
-.text-after-big-concen {
+.text-after-big-field {
     display: flex;
     flex-direction: column;
     margin: 7% 0;
 }
 
-.text-after-big-concen p {
+.text-after-big-field p {
     color: #000;
     font-family: "Adobe Caslon Pro";
     font-size: 30px;
@@ -44,32 +44,60 @@
     line-height: 50px; /* 166.667% */
 }
 
-.concentration-graph {
+.supply-system {
     display: flex;
     flex-direction: column;
-    margin-top: 10%;
+    margin: 2% 0 7%;
 }
 
-.concentration-graph p {
+.supply-system h1 {
     color: var(--Base-Black, #000);
     font-family: "Myriad Pro";
-    font-size: 30px;
-    font-style: italic;
-    font-weight: 600;
-    line-height: 40px; /* 133.333% */
-    
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px; /* 60% */
 }
 
-.concentration-text p{
+.supply-system p {
     color: var(--Base-Black, #000);
-    font-family: Roboto;
+    font-family: "Adobe Caslon Pro";
     font-size: 30px;
     font-style: normal;
     font-weight: 400;
     line-height: 50px; /* 166.667% */
 }
 
-.concentration-others {
+.field-mitigation-graph {
+    display: flex;
+    flex-direction: column;
+    margin: 10% 0 7%;
+}
+
+.field-mitigation-graph p {
+    color: var(--Base-Black, #000);
+    font-family: "Myriad Pro";
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 600;
+    line-height: 40px; /* 133.333% */
+}
+
+.field-after-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.field-after-text p {
+    color: var(--Base-Black, #000);
+    font-family: "Adobe Caslon Pro";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px; /* 166.667% */
+}
+
+.electro-others {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -78,7 +106,7 @@
     /* background-color: #FF4E0D; */
 }
 
-.concentration-others h1 {
+.electro-others h1 {
     color: var(--Base-Black, #000);
     font-family: "Myriad Pro";
     font-size: 50px;
@@ -88,19 +116,19 @@
     margin: 10% 0;
 }
 
-.concentration-others-images {
+.electro-others-images {
     display: flex;
     justify-content: space-between;
     gap: 20px;
 }
 
-.concentration-others-images-left {
+.electro-others-images-left {
     margin: 0 3% 0 0;
 }
 
-.concentration-others-images-left-top,
-.concentration-others-images-left-bottom,
-.concentration-others-images-right-top{
+.electro-others-images-left-top,
+.electro-others-images-left-bottom,
+.electro-others-images-right-top{
     width: 518px;
     height: 260px;
     background-size: cover; /* Ensure the background images cover the entire area */
@@ -110,9 +138,9 @@
     padding: 4%;
 }
 
-.concentration-others-images-left-top-text h1,
-.concentration-others-images-left-bottom-text h1,
-.concentration-others-images-right-top-text h1 {
+.electro-others-images-left-top-text h1,
+.electro-others-images-left-bottom-text h1,
+.electro-others-images-right-top-text h1 {
     color: #fff;
     font-family: "Myriad Pro";
     font-size: 30px; /* Adjusted to better match the image */
@@ -124,52 +152,52 @@
     margin: 0;
 }
 
-.concentration-others-images-left-top {
+.electro-others-images-left-top {
     background-image: url("../../../../public/images/SeparationTile.png");
     margin-bottom: 7%;
 }
 
-.concentration-others-images-left-top-text {
+.electro-others-images-left-top-text {
     margin-top: 1%;
     margin-bottom: 27%;
     width: 95%;
 }
 
-.concentration-others-images-left-top-button {
+.electro-others-images-left-top-button {
     width: 95%;
 }
 
-.concentration-others-images-left-bottom {
+.electro-others-images-left-bottom {
     margin-top: 7%;
-    background-image: url("../../../../public/images/ElectrodynamicTile.png");
+    background-image: url("../../../../public/images/DustTile.png");
 }
 
-.concentration-others-images-left-bottom-text {
+.electro-others-images-left-bottom-text {
     margin-top: 1%;
     margin-bottom: 19%;
     width: 95%;
 }
 
-.concentration-others-images-left-bottom-button {
+.electro-others-images-left-bottom-button {
     width: 95%;
 }
 
-.concentration-others-images-right {
+.electro-others-images-right {
     display: flex;
     flex-direction: column;
 }
 
-.concentration-others-images-right-top {
+.electro-others-images-right-top {
     background-image: url("../../../../public/images/DustTile.png");
     margin-bottom: 7%;
 }
 
-.concentration-others-images-right-top-text {
+.electro-others-images-right-top-text {
     margin-top: 1%;
     margin-bottom: 28%;
     width: 95%;
 }
 
-.concentration-others-images-right-top-button {
+.electro-others-images-right-top-button {
     width: 95%;
 }
