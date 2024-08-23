@@ -12,6 +12,7 @@ import BatteryThermalManagement from './Pages/Battery/BatteryThermal/main';
 import BatteryThermalDetection from './Pages/Battery/BatteryThermalDetection/main';
 import Optical from './Pages/Instrumentation/Optical-Instrumemntation/optical';
 import Morphology from './Pages/Instrumentation/Morphology/main';
+import Sedimentation from './Pages/Instrumentation/Sedimentation/page';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
           <Route path='/battery-thermal-runaway-detection-prevention' element={<BatteryThermalDetection/>} />
           <Route path='/optical-instrumentation' element={<Optical/>} />
           <Route path='/morphology-characterization-optical-extinction-spectroscopy' element={<Morphology/>} />
+          <Route path='/sedimentation-based-particle-sizing' element={<Sedimentation />} />
         </Routes>
         <Footer />
       </Router>

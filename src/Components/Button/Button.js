@@ -15,9 +15,10 @@ const TYPES = {
   batterythermal: '/battery-thermal-management',
   batterythermaldetection: '/battery-thermal-detection',
   batterysafety: '/battery-safety',
-  Morphology: '/morphology-characterization',
+  Morphology: '/morphology-characterization-optical-extinction-spectroscopy',
   Polarized: '/polarized-light',
-  SPS: '/sedimentation-based-particle-sizing'
+  SPS: '/sedimentation-based-particle-sizing',
+  Optical: '/optical-instrumentation'
 };
 
 export const Button = ({
