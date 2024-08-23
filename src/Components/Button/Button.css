@@ -12,8 +12,10 @@
 }
 
 .btn--primary {
-  background-color: rgba(3, 57, 108, 1);
-  color: #ffff;
+  border-radius: 6.4px;
+  color: white;
+  opacity: var(--sds-size-stroke-border);
+  background: var(--Dark-Blue, linear-gradient(0deg, var(--Dark-Blue, #161833) 0%, var(--Dark-Blue, #161833) 100%)lightgray 0% 0% / 100px 100px repeat);
 }
 
 .btn--outline {
@@ -60,6 +62,17 @@
   width: 90px;
   height: 45px; */
   border-radius: 10%;
+}
+
+.btn--extralarge {
+  display: flex;
+  width: 170px;
+  height: 58px;
+  padding: 9.6px;
+  justify-content: center;
+  align-items: center;
+  gap: 6.4px;
+  flex-shrink: 0;
 }
 
 .btn--medium:hover {

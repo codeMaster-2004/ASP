@@ -1,3 +1,14 @@
 .contactUs {
     background: linear-gradient(to bottom, #fceae4, white);
+    /* background-color:blue; */
+}
+
+.right-circles {
+    display: flex;
+    width: 380.9px;
+    height: 380.9px;
+    padding: 67.6px 68.9px;
+    align-items: center;
+    gap: 13px;
+    flex-shrink: 0;
 }

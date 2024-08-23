@@ -2,9 +2,9 @@ import React from 'react';
 import './Button.css';
 import { Link } from 'react-router-dom';
 
-const STYLES = ['btn--primary', 'btn--outline', 'btn--test', "btn--aerosol", "btn--battery"];
+const STYLES = ['btn--primary', 'btn--outline', 'btn--test', "btn--aerosol", "btn--battery", "btn--submit"];
 
-const SIZES = ['btn--medium', 'btn--large'];
+const SIZES = ['btn--medium', 'btn--large', 'btn--extralarge'];
 
 // Define the different button types and corresponding routes
 const TYPES = {
