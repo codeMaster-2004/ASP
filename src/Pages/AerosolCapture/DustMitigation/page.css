@@ -1,0 +1,213 @@
+.dust-mitigation {
+    background: linear-gradient(to bottom, #fceae4, white);
+}
+
+.dust-top-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 11.5%;
+}
+
+.dust-top-container p {
+    color: var(--Orange, #FF4E0D);
+    text-align: left;
+    /* text-shadow: 0px 4px 15px rgba(0, 0, 0, 0.50); */
+    font-family: "DM Mono";
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 4%;
+}
+
+.dust-top-container h1 {
+    font-family: "Myriad Pro";
+    font-size: 65px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: left;
+}
+
+.dust-top-text {
+    display: flex;
+    flex-direction: column;
+    margin: 7% 0;
+}
+
+.dust-top-text p {
+    color: #000;
+    font-family: "Adobe Caslon Pro";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px; /* 166.667% */
+}
+
+.text-after-collection {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+}
+
+.text-after-collection p {
+    color: #000;
+    font-family: "Adobe Caslon Pro";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px; /* 166.667% */
+}
+
+.media-free-filtration {
+    display: flex;
+    flex-direction: column;
+    margin: 7% 0;
+}
+
+.media-free-filtration h1 {
+    color: var(--Base-Black, #000);
+    font-family: "Myriad Pro";
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px; /* 60% */
+}
+
+.media-free-filtration p {
+    color: #000;
+    font-family: "Adobe Caslon Pro";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px; /* 166.667% */
+}
+
+.dust-others {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 8% 0 20%;
+    /* background-color: #FF4E0D; */
+}
+
+.dust-others h1 {
+    color: var(--Base-Black, #000);
+    font-family: "Myriad Pro";
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px; /* Adjusted to better fit the heading */
+    margin: 10% 0;
+}
+
+.dust-effectiveness-filter {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+}
+
+.dust-effectiveness-filter p {
+    color: var(--Base-Black, #000);
+    font-family: "Myriad Pro";
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 600;
+    line-height: 40px; /* 133.333% */
+}
+
+.dust-final-text p{
+    color: var(--Base-Black, #000);
+    font-family: "Adobe Caslon Pro";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px; /* 166.667% */
+}
+
+.dust-others-images {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.dust-others-images-left {
+    margin: 0 3% 0 0;
+}
+
+.dust-others-images-left-top,
+.dust-others-images-left-bottom,
+.dust-others-images-right-top{
+    width: 518px;
+    height: 260px;
+    background-size: cover; /* Ensure the background images cover the entire area */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 4%;
+}
+
+.dust-others-images-left-top-text h1,
+.dust-others-images-left-bottom-text h1,
+.dust-others-images-right-top-text h1 {
+    color: #fff;
+    font-family: "Myriad Pro";
+    font-size: 30px; /* Adjusted to better match the image */
+    font-style: normal;
+    text-align: left;
+    font-weight: 600;
+    line-height: 1.5; /* Adjust for better spacing */
+    letter-spacing: -0.33px;
+    margin: 0;
+}
+
+.dust-others-images-left-top {
+    background-image: url("../../../../public/images/SeparationTile.png");
+    margin-bottom: 7%;
+}
+
+.dust-others-images-left-top-text {
+    margin-top: 1%;
+    margin-bottom: 27%;
+    width: 95%;
+}
+
+.dust-others-images-left-top-button {
+    width: 95%;
+}
+
+.dust-others-images-left-bottom {
+    margin-top: 7%;
+    background-image: url("../../../../public/images/ElectrodynamicTile.png");
+}
+
+.dust-others-images-left-bottom-text {
+    margin-top: 1%;
+    margin-bottom: 19%;
+    width: 95%;
+}
+
+.dust-others-images-left-bottom-button {
+    width: 95%;
+}
+
+.dust-others-images-right {
+    display: flex;
+    flex-direction: column;
+}
+
+.dust-others-images-right-top {
+    background-image: url("../../../../public/images/DustTile.png");
+    margin-bottom: 7%;
+}
+
+.dust-others-images-right-top-text {
+    margin-top: 1%;
+    margin-bottom: 28%;
+    width: 95%;
+}
+
+.dust-others-images-right-top-button {
+    width: 95%;
+}
