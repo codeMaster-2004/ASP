@@ -6,11 +6,14 @@ import ContactBottom from './ContactForm/page';
 function ContactUs () {
   return (
     <div className="contactUs">
-      <ContactTop />
-      {/* <div className='right-circles'>
-        <img src={`${process.env.PUBLIC_URL}/images/TopCirclesContact.png`} alt='main' width='20%' height="20%"/>
-      </div> */}
-      <ContactBottom />
+      <div className='contactUS-container'>
+        <ContactTop />
+        <div className='right-circles'>
+          <img src={`${process.env.PUBLIC_URL}/images/TopCirclesContact.png`} alt='main' width='70%' height="70%"/>
+        </div>
+        <ContactBottom />
+      </div>
+      
     </div>
   )
 }
