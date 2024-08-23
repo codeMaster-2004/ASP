@@ -13,6 +13,7 @@ import BatteryThermalDetection from './Pages/Battery/BatteryThermalDetection/mai
 import Optical from './Pages/Instrumentation/Optical-Instrumemntation/optical';
 import Morphology from './Pages/Instrumentation/Morphology/main';
 import Sedimentation from './Pages/Instrumentation/Sedimentation/page';
+import Polarized from './Pages/Instrumentation/PolarizedScattering/page';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
           <Route path='/optical-instrumentation' element={<Optical/>} />
           <Route path='/morphology-characterization-optical-extinction-spectroscopy' element={<Morphology/>} />
           <Route path='/sedimentation-based-particle-sizing' element={<Sedimentation />} />
+          <Route path='/polarized-light-scattering' element={<Polarized />} />
         </Routes>
         <Footer />
       </Router>
