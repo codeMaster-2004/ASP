@@ -1,176 +1,144 @@
 .innovation {
-    width: 1470px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.innovation_container {
-    width: 1140px;
-    height: 1209px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
+    margin: 0 11.5%;
 }
 
-.container_heading {
+.innovation-characterization {
     display: flex;
-    width: 1140px;
-    height: 166px;
     flex-direction: column;
-    justify-content: center;
+    margin: 7% 0;
 }
 
-.container_heading h1 {
-    font-family: Roboto;
-    font-size: 64px;
+.innovation-characterization h1 {
+    color: var(--Base-Black, #000);
+    font-family: "Myriad Pro";
+    font-size: 50px;
     font-style: normal;
-    font-weight: 500;
-    line-height: 1.5; /* 46.875% */
+    font-weight: 700;
+    line-height: 60px; /* 60% */
     text-align: left;
-    color: #FF4E0D;
 }
 
-.innovation-separator {
-    width: 820px;
-    height: 3px;
-    background-color: #FF4E0D;
-    align-self: flex-start;
-    margin-top: 2%;
-}
-
-.innovation-paragraph {
-    width: 1139px;
-}
-
-.innovation-paragraph p {
-    color: #000;
-    font-family: Roboto;
-    font-size: 25px;
+.innovation-characterization p {
+    color: var(--Base-Black, #000);
+    font-family: "Adobe Caslon Pro";
+    font-size: 30px;
     font-style: normal;
     font-weight: 400;
-    line-height: 33px; /* 132% */
+    line-height: 50px; /* 166.667% */
 }
 
-.innovation-paragraph a {
-    color: black;
-    font-family: Roboto;
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 33px; /* 132% */
+.innovation-characterization a {
+    color: var(--Base-Black, #000);
 }
 
-.innovation_picture {
-    display: inline-flex;
-    align-items: flex-start;
-    gap: 24px;
+.innovation img {
+    margin-top: 10%;
 }
 
-.innovation_picture_left {
+.innovation-others {
     display: flex;
-    width: 558px;
     flex-direction: column;
     align-items: flex-start;
-    gap: 32px;
+    justify-content: center;
+    margin: 10% 0 20%;
+    /* background-color: #FF4E0D; */
 }
 
-.innovation_picture_left_dust {
-    width: 558px;
+.innovation-others h1 {
+    color: var(--Base-Black, #000);
+    font-family: "Myriad Pro";
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px; /* Adjusted to better fit the heading */
+    margin: 10% 0;
+}
+
+.innovation-others-images {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.innovation-others-images-left {
+    margin: 0 3% 0 0;
+}
+
+.innovation-others-images-left-top,
+.innovation-others-images-left-bottom,
+.innovation-others-images-right-top,
+.innovation-others-images-right-bottom {
+    width: 518px;
     height: 260px;
-    background-image: url("../../../../../public/images/fieldsmall.png");
+    background-size: cover; /* Ensure the background images cover the entire area */
     display: flex;
-    align-items: center;
     flex-direction: column;
+    align-items: flex-end;
+    padding: 4%;
 }
 
-.innovation_picture_left_dust_heading {
-    width: 518px;
-    height: 45px;
-}
-
-.innovation_picture_left_dust_heading h2 {
-    color: var(--Off-White, #E8E8E8);
-    font-family: Inter;
-    font-size: 30px;
+.innovation-others-images-left-top-text h1,
+.innovation-others-images-left-bottom-text h1,
+.innovation-others-images-right-top-text h1,
+.innovation-others-images-right-bottom-text h1 {
+    color: #fff;
+    font-family: "Myriad Pro";
+    font-size: 30px; /* Adjusted to better match the image */
     font-style: normal;
+    text-align: left;
     font-weight: 600;
-    line-height: 150%; /* 45px */
+    line-height: 1.5; /* Adjust for better spacing */
     letter-spacing: -0.33px;
+    margin: 0;
 }
 
-.innovation_picture_left_dust_button {
-    width: 518px;
-    height: 45px;
-    margin-top: 25%;
-    border-radius: 10%;
+.innovation-others-images-left-top {
+    background-image: url("../../../../../public/images/DustTile.png");
+    margin-bottom: 7%;
 }
 
-.innovation_picture_left_inn_button {
-    width: 518px;
-    height: 45px;
-    margin-top: 23%;
-    border-radius: 10%;
+.innovation-others-images-left-top-text {
+    margin-top: 1%;
+    margin-bottom: 27%;
+    width: 95%;
 }
 
-.innovation_picture_left_simulation {
-    width: 558px;
-    height: 215px;
-    background-image: url("../../../../../public/images/fieldsmall.png");
+.innovation-others-images-left-top-button {
+    width: 95%;
+}
+
+.innovation-others-images-left-bottom {
+    margin-top: 7%;
+    background-image: url("../../../../../public/images/ElectrodynamicTile.png");
+}
+
+.innovation-others-images-left-bottom-text {
+    margin-top: 1%;
+    margin-bottom: 19%;
+    width: 95%;
+}
+
+.innovation-others-images-left-bottom-button {
+    width: 95%;
+}
+
+.innovation-others-images-right {
     display: flex;
-    align-items: center;
     flex-direction: column;
 }
 
-.innovation_picture_left_simulation_heading {
-    width: 518px;
-    height: 90px;
+.innovation-others-images-right-top {
+    background-image: url("../../../../../public/images/aerosolconcentrationtile.png");
 }
 
-.innovation_picture_left_simulation_heading h2 {
-    color: #E8E8E8;
-    font-family: Inter;
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 150%; /* 45px */
-    letter-spacing: -0.33px;
+.innovation-others-images-right-top-text {
+    margin-top: 1%;
+    margin-bottom: 28%;
+    width: 95%;
 }
 
-.innovation_picture_left_simulation_button {
-    width: 518px;
-    height: 45px;
-    margin-top: 9.5%;
-    border-radius: 10%;
-}
-
-.inovation_picture_right {
-    width: 558px;
-    height: 260px;
-    background-image: url("../../../../../public/images/fieldsmall.png");
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-.innovation_picture_right_heading {
-    width: 518px;
-    height: 45px;
-}
-
-.innovation_picture_right_heading h2 {
-    color: #E8E8E8;
-    font-family: Inter;
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-}
-
-.innovation_picture_left_inn_button {
-    width: 518px;
-    height: 45px;
-    margin-top: 27%;
-    border-radius: 10%;
+.innovation-others-images-right-top-button {
+    width: 95%;
 }
