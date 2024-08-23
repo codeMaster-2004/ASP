@@ -30,7 +30,7 @@ function Innovation() {
                             <div className='innovation-others-images-left-top-button'>
                                 <Button buttonSize='btn--large'
                                         buttonStyle='btn--battery'
-                                        buttonType='concentration'>
+                                        buttonType='dustMitigation'>
                                             View
                                 </Button>
                             </div>
@@ -44,7 +44,7 @@ function Innovation() {
                             <div className='innovation-others-images-left-bottom-button'>
                                 <Button buttonSize='btn--large'
                                         buttonStyle='btn--battery'
-                                        buttonType='Morphology'>
+                                        buttonType='electro'>
                                             View
                                 </Button>
                             </div>
@@ -60,7 +60,7 @@ function Innovation() {
                             <div className='innovation-others-images-right-top-button'>
                                 <Button buttonSize='btn--large'
                                         buttonStyle='btn--battery'
-                                        buttonType='Polarized'>
+                                        buttonType='concentration'>
                                             View
                                 </Button>
                             </div>
