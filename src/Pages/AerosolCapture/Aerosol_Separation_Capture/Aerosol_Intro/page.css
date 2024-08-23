@@ -1,75 +1,52 @@
-.Aerosol_img_container {
-    background-image: url("../../../../../public/images/MarsRover.png");
+.Aerosol_container {
     display: flex;
-    width: 1470px;
-    height: 525px; 
-    background-size: 100% 100%;
-    justify-content: center;
-    align-items: center;
-}
-
-.Aerosol_intro_text {
-    display: flex;
-    /* justify-content: center;
-    align-items: center; */
     flex-direction: column;
-    width: 1174px;
-    height: 193px;
+    margin: 0 11.5%;
 }
 
-.Aerosol_intro_text h1 {
-    color: #fff;
-    text-align: center;
-    text-shadow: 0px 4px 15px rgba(0, 0, 0, 0.50);
-    font-family: Inter;
-    font-size: 80px;
+.Aerosol_container p {
+    color: var(--Orange, #FF4E0D);
+    text-align: left;
+    /* text-shadow: 0px 4px 15px rgba(0, 0, 0, 0.50); */
+    font-family: "DM Mono";
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 4%;
+}
+
+.Aerosol_container h1 {
+    font-family: "Myriad Pro";
+    font-size: 65px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    text-align: left;
 }
 
-.Aerosol_intro {
-    background-color: #fff;
-    width: 1470px;
+.text-after-capture-robot {
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    margin-top: 5%;
-    margin-bottom: 5%;
+    margin: 7% 0;
 }
 
-.Aerosol_separator {
-    background-color: #FF4E0D;
-    width: 1142px;
-    height: 2px;
-}
-
-.Aerosol_intro_container {
-    display: flex;
-    width: 1138.2px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: var(--sds-size-icon-large);
-    margin-top: 2.5%;
-}
-
-.Aerosol_intro_container p {
-    align-self: stretch;
-    color: var(--Base-Black, #000);
-    font-family: Roboto;
-    font-size: 25px;
+.text-after-capture-robot p {
+    color: black;
+    font-family: "Adobe Caslon Pro";
+    font-size: 30px;
     font-style: normal;
     font-weight: 400;
-    line-height: 33px; /* 132% */
+    line-height: 50px; /* 166.667% */
 }
 
-.Aerosol_intro_container a {
-    text-decoration: underline;
-    color: #000;
-    font-family: Roboto;
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 33px; /* 132% */
+.text-after-capture-robot a {
+    color: black;
+}
+
+.capture-collection-images {
+    display: inline-flex;
+    gap: 30px 24px;
+    flex-wrap: wrap;
+    margin-top: 10%;
 }
