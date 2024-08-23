@@ -16,7 +16,7 @@ const TYPES = {
   batterythermaldetection: '/battery-thermal-detection',
   batterysafety: '/battery-safety',
   Morphology: '/morphology-characterization-optical-extinction-spectroscopy',
-  Polarized: '/polarized-light',
+  Polarized: '/polarized-light-scattering',
   SPS: '/sedimentation-based-particle-sizing',
   Optical: '/optical-instrumentation'
 };

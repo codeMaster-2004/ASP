@@ -68,7 +68,7 @@ function MorphBottom() {
                         <div className='morph-others-images-left-top-button'>
                             <Button buttonSize='btn--large'
                                     buttonStyle='btn--battery'
-                                    buttonType='Polarized'>
+                                    buttonType='concentration'>
                                         View
                             </Button>
                         </div>
@@ -80,7 +80,7 @@ function MorphBottom() {
                         <div className='morph-others-images-left-bottom-button'>
                             <Button buttonSize='btn--large'
                                     buttonStyle='btn--battery'
-                                    buttonType='Morphology'>
+                                    buttonType='Polarized'>
                                         View
                             </Button>
                         </div>
@@ -94,7 +94,7 @@ function MorphBottom() {
                         <div className='morph-others-images-right-top-button'>
                             <Button buttonSize='btn--large'
                                     buttonStyle='btn--battery'
-                                    buttonType='SPS'>
+                                    buttonType='Optical'>
                                         View
                             </Button>
                         </div>
