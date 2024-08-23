@@ -87,7 +87,8 @@
 
 .optical-others-images-left-top,
 .optical-others-images-left-bottom,
-.optical-others-images-right-top{
+.optical-others-images-right-top,
+.optical-others-images-right-bottom {
     width: 518px;
     height: 260px;
     background-size: cover; /* Ensure the background images cover the entire area */
@@ -99,7 +100,8 @@
 
 .optical-others-images-left-top-text h1,
 .optical-others-images-left-bottom-text h1,
-.optical-others-images-right-top-text h1 {
+.optical-others-images-right-top-text h1,
+.optical-others-images-right-bottom-text h1 {
     color: #fff;
     font-family: "Myriad Pro";
     font-size: 30px; /* Adjusted to better match the image */
@@ -112,7 +114,7 @@
 }
 
 .optical-others-images-left-top {
-    background-image: url("../../../../public/images/LightScatteringTile.png");
+    background-image: url("../../../../public/images/aerosolconcentrationtile.png");
     margin-bottom: 7%;
 }
 
@@ -147,7 +149,7 @@
 }
 
 .optical-others-images-right-top {
-    background-image: url("../../../../public/images/SedimentationTile.png");
+    background-image: url("../../../../public/images/LightScatteringTile.png");
 }
 
 .optical-others-images-right-top-text {
@@ -157,5 +159,20 @@
 }
 
 .optical-others-images-right-top-button {
+    width: 95%;
+}
+
+.optical-others-images-right-bottom {
+    margin-top: 7%;
+    background-image: url("../../../../public/images/SedimentationTile.png");
+}
+
+.optical-others-images-right-bottom-text {
+    margin-top: 1%;
+    margin-bottom: 28%;
+    width: 95%;
+}
+
+.optical-others-images-right-bottom-button {
     width: 95%;
 }

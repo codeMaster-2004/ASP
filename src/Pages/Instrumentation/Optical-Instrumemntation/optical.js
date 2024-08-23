@@ -26,12 +26,12 @@ function Optical() {
                     <div className='optical-others-images-left'>
                         <div className='optical-others-images-left-top'>
                             <div className='optical-others-images-left-top-text'>
-                                <h1>Polarized Light Scattering</h1>
+                                <h1>Aerosol Concentration</h1>
                             </div>
                             <div className='optical-others-images-left-top-button'>
                                 <Button buttonSize='btn--large'
                                         buttonStyle='btn--battery'
-                                        buttonType='Polarized'>
+                                        buttonType='concentration'>
                                             View
                                 </Button>
                             </div>
@@ -52,9 +52,21 @@ function Optical() {
                     <div className='optical-others-images-right'>
                         <div className='optical-others-images-right-top'>
                             <div className='optical-others-images-right-top-text'>
-                                <h1>Sedimentation based Particle Sizing</h1>
+                                <h1>Polarized Light Scattering</h1>
                             </div>
                             <div className='optical-others-images-right-top-button'>
+                                <Button buttonSize='btn--large'
+                                        buttonStyle='btn--battery'
+                                        buttonType='Polarized'>
+                                            View
+                                </Button>
+                            </div>
+                        </div>
+                        <div className='optical-others-images-right-bottom'>
+                            <div className='optical-others-images-right-bottom-text'>
+                                <h1>Sedimentation based particle sizing</h1>
+                            </div>
+                            <div className='optical-others-images-right-bottom-button'>
                                 <Button buttonSize='btn--large'
                                         buttonStyle='btn--battery'
                                         buttonType='SPS'>
