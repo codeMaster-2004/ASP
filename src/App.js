@@ -18,6 +18,7 @@ import AerosolConcentration from './Pages/AerosolCapture/AerosolConcentration/pa
 import Electrodynamic from './Pages/AerosolCapture/ElectrodynamicField/page';
 import DustMitigation from './Pages/AerosolCapture/DustMitigation/page';
 import Products from './Pages/Products&Facilities/Products/page';
+import Facilities from './Pages/Products&Facilities/Facilities/page';
 
 function App() {
   return (
@@ -40,6 +41,7 @@ function App() {
           <Route path='/battery-thermal-runaway-numerical-simulation-of-electrodynamic-field' element={<Electrodynamic />} />
           <Route path='/dust-mitigation' element={<DustMitigation />} />
           <Route path='/products-services' element={<Products />} />
+          <Route path='/facilities' element={<Facilities />} />
         </Routes>
         <Footer />
       </Router>

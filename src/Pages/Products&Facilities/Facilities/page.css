@@ -1,0 +1,120 @@
+.facilities_ {
+    background: linear-gradient(to bottom, #fceae4, white);
+}
+
+.facilities-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 11.5% 30vh;
+}
+
+.facilities-container p {
+    color: var(--Orange, #FF4E0D);
+    text-align: left;
+    /* text-shadow: 0px 4px 15px rgba(0, 0, 0, 0.50); */
+    font-family: "DM Mono";
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 4%;
+}
+
+.facilities-container h1 {
+    font-family: "Myriad Pro";
+    font-size: 65px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: left;
+}
+
+.facilities-container-after-text {
+    display: flex;
+    flex-direction: column;
+    margin: 5% 0 3%; 
+}
+
+.facilities-container-after-text p,
+.particle-character p,
+.Aero-Testing p,
+p.text-after-equipment,
+.AC-DC p,
+.thermal-testing-facility p,
+p.facility-last-text,
+.particle-character li,
+.particle-character a {
+    color: black;
+    font-family: "Myriad Pro";
+    font-size: 1.9rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 7.5vh;
+}
+
+.particle-character {
+    display: flex;
+    flex-direction: column;
+    margin: 7% 0;
+}
+
+.facility-image-first-collection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5vh;
+    margin: 8% 0;
+}
+
+.Aero-Testing {
+    display: flex;
+    flex-direction: column;
+    margin: 7% 0;
+}
+
+.facilities-container img {
+    margin: 7% 0;
+}
+
+.AC-DC {
+    display: flex;
+    flex-direction: column;
+    margin: 7% 0; 
+}
+
+.images-collection {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+.thermal-testing-facility {
+    display: flex;
+    flex-direction: column;
+    margin: 7% 0;
+}
+
+.images-collection-two {
+    display: flex;
+    align-items: center;
+    gap: 2vh;
+    align-self: stretch;
+    margin: 3% 0 7%;
+}
+
+.particle-character h1,
+.Aero-Testing h1,
+.AC-DC h1,
+.thermal-testing-facility h1 {
+    color: var(--Base-Black, #000);
+    font-family: "Myriad Pro";
+    font-size: 3.2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 5vh; /* 60% */
+}
+
+.particle-character ul {
+    list-style-type: circle;
+}
