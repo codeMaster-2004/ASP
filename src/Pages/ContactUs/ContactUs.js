@@ -13,6 +13,9 @@ function ContactUs () {
             <img src={`${process.env.PUBLIC_URL}/images/TopCirclesContact.png`} alt='main' />
           </div>
           <ContactBottom />
+          <div className='left-circles'>
+            <img src={`${process.env.PUBLIC_URL}/images/bottomcircles.png`} alt='main' />
+          </div>
         </div>
       </div>
       
