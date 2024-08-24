@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ASP/static/css/main.e48c5317.css",
-    "main.js": "/ASP/static/js/main.43ee9de3.js",
+    "main.css": "/ASP/static/css/main.db89e5b3.css",
+    "main.js": "/ASP/static/js/main.ba512f99.js",
     "static/media/earth.png": "/ASP/static/media/earth.453629a15eaf6230442f.png",
     "static/media/Homepage-image.png": "/ASP/static/media/Homepage-image.f98a3b2a06a6a907160e.png",
     "static/media/MorphologyTile.png": "/ASP/static/media/MorphologyTile.9d960c5693ce7e60f4c6.png",
@@ -17,11 +17,11 @@
     "static/media/MicroscopeTile.png": "/ASP/static/media/MicroscopeTile.315134385af0876c2e91.png",
     "static/media/Rectangle 18.png": "/ASP/static/media/Rectangle 18.440a500ade6f8e8e20d8.png",
     "index.html": "/ASP/index.html",
-    "main.e48c5317.css.map": "/ASP/static/css/main.e48c5317.css.map",
-    "main.43ee9de3.js.map": "/ASP/static/js/main.43ee9de3.js.map"
+    "main.db89e5b3.css.map": "/ASP/static/css/main.db89e5b3.css.map",
+    "main.ba512f99.js.map": "/ASP/static/js/main.ba512f99.js.map"
   },
   "entrypoints": [
-    "static/css/main.e48c5317.css",
-    "static/js/main.43ee9de3.js"
+    "static/css/main.db89e5b3.css",
+    "static/js/main.ba512f99.js"
   ]
 }
