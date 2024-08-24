@@ -16,7 +16,7 @@ function Products() {
                     <div className='different-products-top'>
                         <div className='different-products-top-left'>
                             <div className='different-products-top-left-pic'>
-                                <img src={`${process.env.PUBLIC_URL}/images/elevatesafety.png`} alt='safety' width='14%' height='15%' />
+                                <img src={`${process.env.PUBLIC_URL}/images/elevatesafety.png`} alt='safety' width='50%' height='95%' />
                             </div>
                             <div className='different-products-top-left-text'>
                                 <h1>
@@ -29,7 +29,7 @@ function Products() {
                         </div>
                         <div className='different-products-top-right'>
                             <div className='different-products-top-right-pic'>
-                                <img src={`${process.env.PUBLIC_URL}/images/NanoAglo.png`} alt='safety' width='14%' height='15%' />
+                                <img src={`${process.env.PUBLIC_URL}/images/NanoAgglo.png`} alt='safety' width='25%' height='100%' />
                             </div>
                             <div className='different-products-top-right-text'>
                                 <h1>
@@ -44,7 +44,7 @@ function Products() {
                     <div className='different-products-bottom'>
                         <div className='different-products-bottom-left'>
                             <div className='different-products-bottom-left-pic'>
-                                <img src={`${process.env.PUBLIC_URL}/images/FireSensing.png`} alt='safety' width='14%' height='15%' />
+                                <img src={`${process.env.PUBLIC_URL}/images/FireSensing.png`} alt='safety' width='16%' height='100%' />
                             </div>
                             <div className='different-products-bottom-left-text'>
                                 <h1>
@@ -57,7 +57,7 @@ function Products() {
                         </div>
                         <div className='different-products-bottom-right'>
                             <div className='different-products-bottom-right-pic'>
-                                <img src={`${process.env.PUBLIC_URL}/images/ImprovedAir.png`} alt='safety' width='14%' height='15%' />
+                                <img src={`${process.env.PUBLIC_URL}/images/ImprovedAir.png`} alt='safety' width='22%' height='100%' />
                             </div>
                             <div className='different-products-bottom-right-text'>
                                 <h1>

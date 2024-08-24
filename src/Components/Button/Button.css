@@ -52,6 +52,18 @@
   text-decoration: none;
 }
 
+.btn--submit {
+  background-color: #161833;
+  color: #fff;
+  color: var(--Base-White, #FFF);
+  font-family: "Myriad Pro";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration: none;
+}
+
 .btn--medium {
   /* padding: 8px 25px; */
   width: 150px;
@@ -69,17 +81,18 @@
 
 .btn--extralarge {
   display: flex;
-  width: 170px;
-  height: 58px;
-  padding: 9.6px;
+  padding: 2vh 4.5vh;
   justify-content: center;
   align-items: center;
+  border-radius: 10px;
   gap: 6.4px;
   flex-shrink: 0;
+  text-decoration: none;
 }
 
 .btn--large:hover,
-.btn--medium:hover {
+.btn--medium:hover,
+.btn--extralarge:hover {
   transition: all 0.3s ease-out;
   background: #FF4E0D;
   color: #fff;
