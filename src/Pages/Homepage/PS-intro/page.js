@@ -1,17 +1,34 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './page.css';
-import { Button } from '../../../Components/Button/Button';
 
 export default function Main() {
+  useEffect(() => {
+    // Typing effect logic
+    const text = "Analytical Scientific Products";
+    const typingElement = document.getElementById("typing-text");
+    let index = 0;
+    
+    typingElement.textContent = '';
+
+    function type() {
+      if (index < text.length) {
+        typingElement.innerHTML += text.charAt(index);
+        index++;
+        setTimeout(type, 100); // Adjust the typing speed here
+      }
+    }
+
+    type();
+  }, []); // Empty dependency array means this runs once after initial render
+
   return (
-    <>
-      <div className="main-container">
-        <div className='homepage-picture'>
-            <div className='homepage-text'>
-                <h1>Pioneering Protection for Your Products</h1>
-            </div>
+    <div className="main-container">
+      <div className='homepage-picture'>
+        <div className='homepage-text'>
+          <h1 id='typing-text'></h1> {/* Typing text will be filled by JS */}
+          <h6>Pioneering Protection for Your Products.</h6>
         </div>
-      </div> 
-    </>
+      </div>
+    </div>
   );
 }

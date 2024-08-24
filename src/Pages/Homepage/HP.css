@@ -3,10 +3,9 @@
     width: 100%; /* Use 100% width for responsiveness */
     height: 436px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 136px;
     background-image: url('../../../public/images/Rectangle\ 17.png');
     margin: 0 auto;
 }
@@ -20,7 +19,13 @@
     width: 558px;
     /* background-color: #880707; */
 }
-  
+
+.clients-container {
+    display: flex;
+    flex-direction: row;
+    gap: 7vh;
+}
+
 .separator {
     width: 100%;
     height: 3px;

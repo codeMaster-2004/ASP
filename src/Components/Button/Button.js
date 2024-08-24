@@ -10,6 +10,7 @@ const SIZES = ['btn--medium', 'btn--large', 'btn--extralarge'];
 const TYPES = {
   aerosol:'/aerocapture',
   contact: '/contact-us',
+  client: '/clients',
   dustMitigation: '/dust-mitigation',
   fields: '/battery-thermal-runaway-numerical-simulation-of-electrodynamic-field',
   concentration: '/aerosol-concentration',

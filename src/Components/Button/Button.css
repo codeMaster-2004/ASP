@@ -38,6 +38,7 @@
   text-align: center;
   color:#161833;
   font-weight: 700;
+  text-decoration: none;
 }
 
 .btn--battery {
@@ -80,13 +81,8 @@
 }
 
 .btn--extralarge {
-  display: flex;
   padding: 2vh 4.5vh;
-  justify-content: center;
-  align-items: center;
   border-radius: 10px;
-  gap: 6.4px;
-  flex-shrink: 0;
   text-decoration: none;
 }
 

@@ -1,64 +1,40 @@
-/* General Styles */
-body, html {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-  overflow-x: hidden; /* Prevent horizontal scrolling */
-}
-
 .main-container {
-  overflow: hidden;
-  width: 100%; /* Use 100% width for responsiveness */
-  max-width: 2000px;
-  margin: 0 auto;
-  background: #ffffff;
-  position: relative;
-}
+  background-image: url("../../../../public/images/Home-Intro.png");
+  background-size: cover;
 
-.main-container * {
-  box-sizing: border-box;
+  /* Center the image */
+  background-position: center;
+  height:100vh;
 }
 
 .homepage-picture {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: nowrap;
-  height: 447px;
-  width: 100%;
-  background-image: url('../../../../public/images/Homepage-image.png');
-  background-size: cover;
-  background-position: center;
+  flex-direction: column;
+  margin: 0 15%;
 }
 
 .homepage-text {
-  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.homepage-text h1 {
+  color: white;
   text-align: center;
-  font-family: Inter, sans-serif;
-  font-size: 50px;
+  font-family: "Myriad Pro";
+  font-size: 90px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  width: 100%;
-  max-width: 1140px;
 }
 
-.Partners {
-  background-color: #000000;
-  width: 100%;
-  max-width: 1440px;
-  height: 466px;
-}
-
-/* Media Queries */
-@media screen and (max-width: 960px) {
-  .homepage-text {
-    font-size: 36px; /* Adjust font size for smaller screens */
-  }
-
-  .homepage-picture, .Partners {
-    width: 100%;
-    max-width: 100%;
-  }
+.homepage-text h6 {
+  color: white;
+  text-align: center;
+  font-family: "Myriad Pro";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
