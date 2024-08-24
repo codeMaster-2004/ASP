@@ -1,9 +1,9 @@
 {
   "files": {
-    "main.css": "/ASP/static/css/main.db89e5b3.css",
-    "main.js": "/ASP/static/js/main.ba512f99.js",
+    "main.css": "/ASP/static/css/main.ae0394f5.css",
+    "main.js": "/ASP/static/js/main.be1977eb.js",
     "static/media/earth.png": "/ASP/static/media/earth.453629a15eaf6230442f.png",
-    "static/media/Homepage-image.png": "/ASP/static/media/Homepage-image.f98a3b2a06a6a907160e.png",
+    "static/media/Home-Intro.png": "/ASP/static/media/Home-Intro.2204fb75f21ef9676d08.png",
     "static/media/MorphologyTile.png": "/ASP/static/media/MorphologyTile.9d960c5693ce7e60f4c6.png",
     "static/media/ElectrodynamicTile.png": "/ASP/static/media/ElectrodynamicTile.9b2eb7494e3527434c57.png",
     "static/media/thermalmanagement.png": "/ASP/static/media/thermalmanagement.8f3b5c918ee67faba486.png",
@@ -15,13 +15,12 @@
     "static/media/thermaldetection.png": "/ASP/static/media/thermaldetection.9fa2366387ae334296e8.png",
     "static/media/aerosolconcentrationtile.png": "/ASP/static/media/aerosolconcentrationtile.3da5e702a8ed780f3ed6.png",
     "static/media/MicroscopeTile.png": "/ASP/static/media/MicroscopeTile.315134385af0876c2e91.png",
-    "static/media/Rectangle 18.png": "/ASP/static/media/Rectangle 18.440a500ade6f8e8e20d8.png",
     "index.html": "/ASP/index.html",
-    "main.db89e5b3.css.map": "/ASP/static/css/main.db89e5b3.css.map",
-    "main.ba512f99.js.map": "/ASP/static/js/main.ba512f99.js.map"
+    "main.ae0394f5.css.map": "/ASP/static/css/main.ae0394f5.css.map",
+    "main.be1977eb.js.map": "/ASP/static/js/main.be1977eb.js.map"
   },
   "entrypoints": [
-    "static/css/main.db89e5b3.css",
-    "static/js/main.ba512f99.js"
+    "static/css/main.ae0394f5.css",
+    "static/js/main.be1977eb.js"
   ]
 }
