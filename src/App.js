@@ -19,6 +19,7 @@ import Electrodynamic from './Pages/AerosolCapture/ElectrodynamicField/page';
 import DustMitigation from './Pages/AerosolCapture/DustMitigation/page';
 import Products from './Pages/Products&Facilities/Products/page';
 import Facilities from './Pages/Products&Facilities/Facilities/page';
+import Clients from './Pages/Clients/page';
 
 function App() {
   return (
@@ -42,6 +43,7 @@ function App() {
           <Route path='/dust-mitigation' element={<DustMitigation />} />
           <Route path='/products-services' element={<Products />} />
           <Route path='/facilities' element={<Facilities />} />
+          <Route path='/clients' element={<Clients />} />
         </Routes>
         <Footer />
       </Router>

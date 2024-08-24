@@ -1,0 +1,64 @@
+.Clients {
+    background: linear-gradient(to bottom, #fceae4, white);
+}
+
+.Clients-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 11.5% 35vh;
+}
+
+.Clients-container p {
+    color:  #FF4E0D;
+    text-align: left;
+    /* text-shadow: 0px 4px 15px rgba(0, 0, 0, 0.50); */
+    font-family: "DM Mono";
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 4%;
+}
+
+.Clients-container h1 {
+    font-family: "Myriad Pro";
+    font-size: 65px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: left;
+}
+
+.client-logos {
+    display: flex;
+    flex-direction: column;
+    margin: 7% 0;
+    gap: 15vh;
+}
+
+.client-logos-top {
+    display: flex;
+    flex-direction: row;
+    gap: 5.3vh;
+}
+
+.client-logos-bottom {
+    display: flex;
+    flex-direction: row;
+    gap: 5.3vh;
+}
+
+.clients-text {
+    display: flex;
+    flex-direction: column;
+    margin: 7% 0;
+}
+
+.clients-text p {
+    color: var(--Base-Black, #000);
+    font-family: "Adobe Caslon Pro";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px; /* 166.667% */
+}
