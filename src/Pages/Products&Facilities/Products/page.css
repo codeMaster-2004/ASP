@@ -5,7 +5,7 @@
 .products-container {
     display: flex;
     flex-direction: column;
-    margin: 0 11.5%;
+    margin: 0 11.5% 30vh;
 }
 
 .products-container p {
@@ -43,6 +43,7 @@ p.products-text {
     display: flex;
     flex-direction: column;
     gap: 10vh;
+    margin: 5vh 0;
 }
 
 .different-products-top,
@@ -104,4 +105,14 @@ p.products-text {
 .different-products-top-left-text a,
 .different-products-bottom-right-text a {
     color: black;
+}
+
+p.lastproducttext {
+    color: black;
+    font-family: "Adobe Caslon Pro";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px; /* 166.667% */
+    margin-bottom: 17vh;
 }
