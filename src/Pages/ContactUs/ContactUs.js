@@ -8,10 +8,12 @@ function ContactUs () {
     <div className="contactUs">
       <div className='contactUS-container'>
         <ContactTop />
-        <div className='right-circles'>
-          <img src={`${process.env.PUBLIC_URL}/images/TopCirclesContact.png`} alt='main' width='70%' height="70%"/>
+        <div className="form-and-circles-container">
+          <div className='right-circles'>
+            <img src={`${process.env.PUBLIC_URL}/images/TopCirclesContact.png`} alt='main' />
+          </div>
+          <ContactBottom />
         </div>
-        <ContactBottom />
       </div>
       
     </div>

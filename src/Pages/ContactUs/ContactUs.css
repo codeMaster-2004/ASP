@@ -8,9 +8,27 @@
     margin-bottom: 20%;
 }
 
+.form-and-circles-container {
+    --circle-offset: -20vh;
+    position: relative;
+    width: 100%;
+}
+  
 .right-circles {
-    display: flex;
-    /* padding: 67.6px 68.9px; */
     position: absolute;
-    background-color: blue;
+    top: var(--circle-offset);
+    right: -2vh;
+    height: 400px;
+    width: 25%;
+    z-index: 1;
+}
+  
+.right-circles img {
+    width: 100%;
+    height: 100%;
+}
+  
+.contact-form {
+    position: relative;
+    z-index: 2;
 }
