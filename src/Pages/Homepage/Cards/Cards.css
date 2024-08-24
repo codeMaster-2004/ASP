@@ -1,7 +1,7 @@
 .cards {
   padding: 4rem;
   /* background: #fff; */
-  background-image: url('../../../../public/images/Rectangle\ 18.png');
+  background: linear-gradient(to bottom, #fceae4, white);
 }
 
 h1 {
@@ -12,9 +12,7 @@ h1 {
   display: flex;
   flex-flow: column;
   align-items: center;
-  max-width: 1120px;
-  width: 90%;
-  margin: 0 auto;
+  margin: 0 11.5%;
   /* background: #ff0000; */
 }
 

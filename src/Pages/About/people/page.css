@@ -1,50 +1,53 @@
-.people {
-    display: flex;
-    justify-content: center; /* adjust vertical display position */
-    width: 1470px;
-    height: 5000px;
-    background-color: #fff;
-    padding: 0;
-    margin: 0;
+.people { /* adjust vertical display position */
+    background-color: linear-gradient(to bottom, #fceae4, white);
 }
 
 .people-container {
     display: flex;
-    max-width: 1045px;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     gap: 150px;
+    margin: 10% 11.5%;
     position: relative;
+}
+
+.people-container p {
+    font-family: "Myriad Pro";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 70px; /* 175% */
+}
+
+.people-container h1 {
+    text-align: center;
+    font-family: "Myriad Pro";
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px; /* 42.857% */
+}
+
+.people-container span {
+    font-weight: 800;
 }
 
 .vd {
-    width: 1140px;
-    height: 907px;
-    position: relative;
-    transform: translateX(4.5%);
+    display: flex;
+    flex-direction: row;
 }
 
 .vd-desc {
-    position: absolute;
+    /* position: absolute; */
     bottom: 0;
     display: flex;
-    width: 626px;
-    height: 750px;
-    margin-left: 36%;
-    margin-bottom: 50px;
     /* margin-top: -60px; */
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
     background-color: #161833;
 }
 
 .vd-desc-container {
     display: flex;
-    width: 576px;
-    height: 649px;
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-start;
     gap: 10px;
     /* background-color:aquamarine; */
@@ -99,6 +102,11 @@
 
 .vd-desc-intro p{
     color: #fff;
+    font-family: "Adobe Caslon Pro";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; /* 133.333% */
 }
 
 .custom-list {
@@ -108,9 +116,12 @@
 }
 
 .custom-list li {
-    margin-bottom: 10px; /* Space between items */
-    text-decoration: underline;
-    color:#fff;
+    color: #f5f5f5;
+    font-family: "Adobe Caslon Pro";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
 }
 
 .vd-desc-logos {

@@ -6,17 +6,23 @@ function People() {
     return (
         <div className='people'>
             <div className='people-container'>
+                <p>
+                    Led by <span>four senior staff members</span>, our exceptionally talented team excels in innovation. With <span>vast domain expertise</span>, we develop simple yet <span>cutting-edge solutions</span> to complex challenges facing our industry. 
+                </p>
+                <h1>
+                    Meet Our Team
+                </h1>
                 <div className='vd'>
-                    <img src={`${process.env.PUBLIC_URL}/images/vd-new.png`} alt='Vijay Devarakonda' width='574px' height='549px'/>
+                    <img src={`${process.env.PUBLIC_URL}/images/vd-new.png`} alt='Vijay Devarakonda' width='550vh' height='100%'/>
                     <div className='vd-desc'>
                         <div className='vd-desc-container'>
                             <div className='vd-desc-heading'>
-                                <div className='vd-title'>
+                                {/* <div className='vd-title'>
                                     <h1>Dr. Vijay V. Devarakonda</h1>
                                     <div className='founder-button'>
                                         <p>Founder & President</p>
                                     </div>
-                                </div>
+                                </div> */}
                             </div>
                             <div className='vd-desc-intro'>
                                 <p>Dr. Devarakonda obtained his B. Tech. degree from the Indian Institute of Technology, Bombay and a Ph.D. from the University of Kentucky, both in Chemical Engineering. Over the last 25 years, he led several industry and government funded projects focused on safety and aerosol science. </p> 
