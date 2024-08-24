@@ -17,6 +17,7 @@ import Polarized from './Pages/Instrumentation/PolarizedScattering/page';
 import AerosolConcentration from './Pages/AerosolCapture/AerosolConcentration/page';
 import Electrodynamic from './Pages/AerosolCapture/ElectrodynamicField/page';
 import DustMitigation from './Pages/AerosolCapture/DustMitigation/page';
+import Products from './Pages/Products&Facilities/Products/page';
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
           <Route path='/aerosol-concentration' element={<AerosolConcentration />} />
           <Route path='/battery-thermal-runaway-numerical-simulation-of-electrodynamic-field' element={<Electrodynamic />} />
           <Route path='/dust-mitigation' element={<DustMitigation />} />
+          <Route path='/products-services' element={<Products />} />
         </Routes>
         <Footer />
       </Router>
