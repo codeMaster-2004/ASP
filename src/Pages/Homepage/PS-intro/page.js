@@ -9,16 +9,21 @@ export default function Main() {
     let index = 0;
     
     typingElement.textContent = '';
-
+  
     function type() {
       if (index < text.length) {
         typingElement.innerHTML += text.charAt(index);
         index++;
-        setTimeout(type, 100); // Adjust the typing speed here
+        timeoutId = setTimeout(type, 100); // Adjust the typing speed here
       }
     }
-
-    type();
+  
+    let timeoutId = setTimeout(type, 100);
+  
+    // Cleanup function
+    return () => {
+      clearTimeout(timeoutId);
+    };
   }, []); // Empty dependency array means this runs once after initial render
 
   return (

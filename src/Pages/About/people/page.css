@@ -31,290 +31,131 @@
     font-weight: 800;
 }
 
-.vd {
+.vd,
+.michael,
+.sivakumar {
     display: flex;
-    flex-direction: row;
-}
-
-.vd-desc {
-    /* position: absolute; */
-    bottom: 0;
-    display: flex;
-    /* margin-top: -60px; */
     flex-direction: column;
-    background-color: #161833;
 }
 
-.vd-desc-container {
+.vd-title,
+.mich-title,
+.siva-title {
+    display: flex;
+    flex-direction: column;
+}
+
+.vd-title h1,
+.mich-title h1,
+.siva-title h1 {
+    color: #000;
+    font-family: "Myriad Pro";
+    text-align: left;
+    font-size: 5.6vh;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60%; /* 60% */
+}
+
+.vd-title p,
+.mich-title p,
+.siva-title p {
+    color: var(--Orange, #FF4E0D);
+    font-family: "Myriad Pro";
+    font-size: 5vh;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.vd-desc,
+.mich-desc,
+.siva-desc {
     display: flex;
     flex-direction: row;
+}
+
+.vd-desc-images,
+.mich-desc-images,
+.siva-desc-images {
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+}
+
+.mich-desc-logos-parts {
+    gap: 4vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.vd-desc-container,
+.mich-desc-container,
+.siva-desc-container {
+    display: flex;
+    flex-direction: column;
     align-items: flex-start;
-    gap: 10px;
+    background-color: #161833;
     /* background-color:aquamarine; */
 }
 
-.vd-title {
+.vd-desc-intro,
+.mich-desc-intro,
+.siva-desc-intro,
+.siva-desc-intro-rest-text {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    align-self: stretch;
-    /* background-color:bisque; */
+    margin: 2vh;
 }
 
-.vd-title h1 {
-    color: #fff;
-    font-family: Roboto;
-    font-size: 50px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+.siva-desc-intro-rest {
+    width:100%;
+    margin-top: -3%;
+    background-color: #161833;
 }
 
-.founder-button {
-    display: flex;
-    width: 198px;
-    height: 50px;
-    /* padding: var(--sds-size-space-200); */
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    background-color: #fff;
-}
-
-.founder-button p {
-    color: #03396C;
-    font-family: Roboto;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-}
-
-.vd-desc-intro {
-    display: flex;
-    width: 576px;
-    flex-direction: column;
-    /* align-items: flex-start; */
-    /* gap: 10px; */
-    /* background-color: black; */
-}
-
-.vd-desc-intro p{
-    color: #fff;
+.vd-desc-intro p,
+.mich-desc-intro p,
+.siva-desc-intro p,
+.siva-desc-intro-rest p {
+    color: white;
     font-family: "Adobe Caslon Pro";
-    font-size: 30px;
+    font-size: 3.5vh;
     font-style: normal;
     font-weight: 400;
-    line-height: 40px; /* 133.333% */
+    line-height: 5vh; /* 133.333% */
 }
 
 .custom-list {
     list-style-type: disc; /* Default bullet points */
     margin: 0;
-    padding: 0 20px; /* Adjust padding for indent */
+    padding: 0 2vh; /* Adjust padding for indent */
 }
 
 .custom-list li {
     color: #f5f5f5;
     font-family: "Adobe Caslon Pro";
-    font-size: 30px;
+    font-size: 3.5vh;
     font-style: normal;
     font-weight: 400;
-    line-height: 40px;
+    line-height: 4.75vh;
+    text-decoration: underline 0.2vh;
 }
 
-.vd-desc-logos {
-    display: flex;
-    width: 239px;
-    align-items: center;
-    gap: 24px;
-}
-
-.michael {
-    width: 1140px;
-    height: 1000px;
-    position: relative;
-    transform: translateX(4.5%);
-}
-
-.mich-desc {
-    position: absolute;
-    bottom: 0;
-    display: flex;
-    width: 626px;
-    max-height: 908px;
-    height: 100%;
-    margin-left: 36%;
-    /* margin-bottom: 50px; */
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    background-color: #161833;
-}
-
-.mich-desc-container {
-    display: flex;
-    width: 576px;
-    height: 750px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-    padding: 20px 0 20px 0;
-}
-
-.mich-title {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    /* gap: 20px; */
-    align-self: stretch;
-}
-
-.mich-title h1 {
-    color: #E8E8E8;
-    font-family: Roboto;
-    font-size: 50px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-}
-
-.advisor-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    background-color: #fff;
-}
-
-.advisor-button p {
-    color: #033F63;
-    font-family: Roboto;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-}
-
-.mich-desc-intro {
-    display: flex;
-    width: 576px;
-    /* height: 598px; */
-    flex-direction: column;
-    /* align-items: flex-start;
-    gap: 33px; */
-    flex-shrink: 0;
-}
-
-.mich-desc-intro p {
-    color: #E8E8E8;
-    font-family: Roboto;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 28px; /* 140% */
-}
-
-.mich-desc-logos {
-    display: flex;
-    align-items: center;
-    width: 483px;
-    gap: 24px;
-}
-
-.sivakumar {
-    width: 1140px;
-    height: 1650px;
-    position: relative;
-    transform: translateX(4.5%);
-}
-
-.siva-desc {
-    position: absolute;
-    display: flex;
-    bottom: 0;
-    margin-left: 36%;
-    width: 626px;
-    height: 1535px;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    background: #161833;
-}
-
-.siva-desc-container {
-    display: flex;
-    width: 576px;
-    height: 1490px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-    padding: 20px 0 20px 0;
-}
-
-.siva-title {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    align-self: stretch;
-    /* background-color:bisque; */
-    padding: 0;
-    margin: 0;
-    width: 100%; /* Ensure it stretches across the container */
-    box-sizing: border-box; /* Include padding and border in width calculation */
-}
-
-.siva-title h1 {
-    text-align: left;
-    color: #E8E8E8;
-    font-family: Roboto;
-    font-size: 50px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-}
-
-.co-founder-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    background-color: #fff;
-}
-
-.co-founder-button p {
-    color: #03396C;
-    font-family: Roboto;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-}
-
-.siva-desc-intro {
-    display: flex;
-    width: 576px;
-    flex-direction: column;
-    align-items: flex-start;
-    /* background-color: aliceblue; */
-}
-
-.siva-desc-intro p {
-    color: var(--Off-White, #E8E8E8);
-    font-family: Roboto;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 28px; /* 140% */
-}
-
+.vd-desc-logos,
+.mich-desc-logos,
 .siva-desc-logos {
     display: flex;
-    /* width: 483px; */
-    gap: 24px;
-    align-items: center;
+    flex-direction: row;
+    gap: 4.5vh;
+    /* background-color: #03396C; */
+}
+
+.mich-desc-logos1 {
+    display: flex;
+    flex-direction: row;
+    gap: 4.5vh;
+    /* background-color: #7b9bba; */
 }
 
 .mitchell {
