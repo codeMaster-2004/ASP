@@ -10,7 +10,6 @@ function page() {
             “Our vision is to <span className='highlight'>translate</span> our deep <span className='highlight'>knowledge</span> and combined <span className='highlight'>experience</span> into commercially viable <span className='highlight'>products and technologies</span> that make the world a safer place.” 
           </h1>
         </div>
-        
       </div>
       <div className='exp'>
         <div className='exp-container'>
