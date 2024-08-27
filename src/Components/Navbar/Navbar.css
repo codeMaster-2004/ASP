@@ -1,7 +1,6 @@
 /* General Styles */
 .navbar {
   display: flex;
-  padding: var(--sds-size-space-800) 150px;
   align-items: center;
   align-content: center; 
   justify-content: center;
@@ -11,13 +10,14 @@
   max-width: 100%;
   overflow-x: hidden;
   flex-shrink: 1;
-  background: var(--Dark-Blue, linear-gradient(0deg, var(--Dark-Blue, #161833) 0%, var(--Dark-Blue, #161833) 100%), lightgray 0% 0% / 100px 100px repeat);
+  background: #F5F5F5;
+  padding: 2% -0.1%;
 }
 
 .logo {
   display: flex;
   align-items: center;
-  gap: 24px;
+  gap: 1vh;
 }
 
 .logo-r {
@@ -29,52 +29,65 @@
 
 .navbar-container {
   display: flex;
-  width: 1076px;
   justify-content: space-between;
   align-items: center;
   align-content: center;
-  gap: 16px var(--sds-size-space-400);
+  gap: 3vh 2%;
   flex-shrink: 0;
   flex-wrap: wrap;
-  padding: 0 24px;
+  padding: 0 2vh;
 }
 
 .nav-menu {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  gap: 1px;
+  gap: -2%;
 }
 
 .nav-item {
   height: auto;
   display: flex;
   align-items: center;
-  font-size: 20px;
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: Medium;
-  /* position:relative; */
+  font-family: "Myriad Pro";
+  font-size: 90%;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%;
+}
+
+.nav-item.active .nav-links {
+  position: relative;
+}
+
+.nav-item.active .nav-links::after {
+  content: ''; 
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -61%;
+  height: 2px; 
+  background-color: #FF6600; 
+  transition: all 0.3s ease; 
 }
 
 .nav-links {
-  color: #fff;
+  color: #161833;
   display: flex;
   align-items: center;
   text-decoration: none;
   padding: 0.5rem 1rem;
   height: 100%;
   white-space: nowrap;
-  
 }
 
 .nav-links:hover {
-  border-bottom: 2px solid #fff;
+  border-bottom: 2px solid #FF4E0D;
   transition: all 0.2s ease-out;
 }
 
 .fa-bars {
-  color: #fff;
+  color: #161833;
 }
 
 .nav-links-mobile {
@@ -86,10 +99,10 @@
 }
 
 .fa-angle-down {
-  margin-right: 1.5rem;
+  margin-right: 1rem;
   cursor: pointer;
   transition: transform 0.3s ease;
-  color: #fff;
+  color: #161833;
 }
 
 .fa-angle-down.rotate {
@@ -100,7 +113,7 @@
 .dropdown-content {
   display: block;
   position: absolute;
-  background-color: #161833;
+  background-color: #f5f5f5;
   min-width: 100vw; 
   left: 0; 
   right: 0; 
@@ -109,27 +122,28 @@
 }
 
 .dropdown-content a {
-  color: #fff;
-  padding: 12px 16px;
+  color: #161833;
+  padding: 2vh 37.5vh;
   text-decoration: none;
   display: block;
   text-align: left;
   align-items: center;
-  margin-left: 270px;
+  /* margin-left: 35.5vh; */
 }
 
 .dropdown-content.show {
-  max-height: 500px;
+  max-height: 100vh;
 }
 
 .dropdown-content a:hover {
   background-color: #252852;
+  color: #fff;
 }
 
 .separator {
   width: 100%;
-  height: 1px;
-  background-color: #fff;
+  height: 1%;
+  color: rgba(217, 217, 217, 0.50);
 }
 
 .dropdown-menu {
@@ -179,7 +193,7 @@
 
   .nav-links:hover {
     background-color: rgba(3, 57, 108, 1);
-    color: #ffffff;
+    color: #161833;
     transition: background-color 0.3s ease;
   }
 

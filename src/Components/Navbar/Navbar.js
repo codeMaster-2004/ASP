@@ -82,21 +82,17 @@ function Navbar() {
   return(
     <>
       <nav className='navbar'>
-        <div className='logo'>
-          <div className='logo-r'>
-            <img src={`${process.env.PUBLIC_URL}/images/ASP-logo.svg`}  alt='Nasa'/>
-          </div>
-        </div>
+        <img src={`${process.env.PUBLIC_URL}/images/Layer_1.png`}  alt='Nasa' width='8%' height='8%'/>
         <div className='navbar-container'>
           <div className='menu-icon' onClick={handleClick}>
             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
           </div>
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-            <li className='nav-item'>
+            {/* <li className='nav-item'>
               <Link to='/ASP' className='nav-links' onClick={closeMobileMenu}>
                 Home
               </Link>
-            </li>
+            </li> */}
             <li className='nav-item'>
               <Link
                 to='/about'
@@ -105,7 +101,35 @@ function Navbar() {
               >
                 About
               </Link>
-              </li>
+            </li>
+            <li className='nav-item'>
+              <Link
+                to='/clients'
+                className='nav-links'
+                onClick={closeMobileMenu}
+              >
+                Clients
+              </Link>
+            </li>
+            <li className={`nav-item ${openDropdown === 3 ? 'active' : ''}`}>
+              <Link
+                to='/products-services'
+                className='nav-links'
+                onClick={closeMobileMenu}
+              >
+                Products
+              </Link>
+              <i
+                className={`fa fa-angle-down dropdown-arrow ${openDropdown === 3 ? 'rotate' : ''}`}
+                onClick={() => toggleDropdown(3)}
+              ></i>
+              {openDropdown === 3 && (
+                <div className={`dropdown-content ${openDropdown === 3 ? 'show' : ''}`}>
+                  <div className='separator' />
+                  <Link to='/facilities' onClick={closeMobileMenu}>Facilities</Link>
+                </div>
+              )}
+            </li>
             <li className={`nav-item ${openDropdown === 0 ? 'active' : ''}`}>
               <Link
                 to='/aerocapture'
@@ -121,7 +145,7 @@ function Navbar() {
               {openDropdown === 0 && (
                 console.log("inside the Aerosol dropdown"),
                 <div className={`dropdown-content ${openDropdown === 0 ? 'show' : ''}`}>
-                  <div className='separator' />
+                    <div className='separator' />
                     <Link to='/battery-thermal-runaway-numerical-simulation-of-electrodynamic-field' onClick={closeMobileMenu}>Battery Thermal Runaway Numerical Simulation of Electrodynamic Field</Link>
                     <Link to='/aerosol-concentration' onClick={closeMobileMenu}>Aerosol Concentration</Link>
                     <Link to='/dust-mitigation' onClick={closeMobileMenu}>Dust Mitigation</Link>
@@ -182,31 +206,6 @@ function Navbar() {
             <Button buttonStyle='btn--outline'>Contact Us</Button>
           </ul> 
         </div>
-        {/* {openDropdown === 0 && (
-          console.log("inside the Aerosol dropdown"),
-          <div className={`dropdown-content ${openDropdown === 0 ? 'show' : ''}`}>
-            <div className='separator' />
-              <Link to='/battery-thermal-runaway-numerical-simulation-of-electrodynamic-field' onClick={closeMobileMenu}>Battery Thermal Runaway Numerical Simulation of Electrodynamic Field</Link>
-              <Link to='/aerosol-concentration' onClick={closeMobileMenu}>Aerosol Concentration</Link>
-              <Link to='/dust-mitigation' onClick={closeMobileMenu}>Dust Mitigation</Link>
-              {console.log("done with it")}
-          </div>
-        )}
-        {openDropdown === 1 && (
-          <div className={`dropdown-content ${openDropdown === 1 ? 'show' : ''}`}>
-            <div className='separator' />
-            <Link to='/battery-thermal-runaway-detection-prevention' onClick={closeMobileMenu}>Battery Thermal Runaway Detection & Prevention</Link>
-          </div>
-        )}
-        {openDropdown === 2 && (
-          <div className={`dropdown-content ${openDropdown === 2 ? 'show' : ''}`}>
-            <div className='separator' />
-            <Link to='/aerosol-concentration' onClick={closeMobileMenu}>Aerosol Concentration</Link>
-            <Link to='/morphology-characterization-optical-extinction-spectroscopy' onClick={closeMobileMenu}>Morphology Characterization with Optical Extinction Spectroscopy</Link>
-            <Link to='/polarized-light-scattering' onClick={closeMobileMenu}>Polarized Light Scattering</Link>
-            <Link to='/sedimentation-based-particle-sizing' onClick={closeMobileMenu}>Sedimentation based Particle Sizing</Link>
-          </div>
-        )} */}
       </nav>
     </>
   );
