@@ -1,15 +1,16 @@
 /* General Styles */
 .navbar {
   display: flex;
-  width: 1470px;
   padding: var(--sds-size-space-800) 150px;
   align-items: center;
   align-content: center; 
   justify-content: center;
   gap: 0px var(--sds-size-space-600);
   flex-wrap: wrap;
-  position: relative;
   font-size: 1.2rem;
+  max-width: 100%;
+  overflow-x: hidden;
+  flex-shrink: 1;
   background: var(--Dark-Blue, linear-gradient(0deg, var(--Dark-Blue, #161833) 0%, var(--Dark-Blue, #161833) 100%), lightgray 0% 0% / 100px 100px repeat);
 }
 

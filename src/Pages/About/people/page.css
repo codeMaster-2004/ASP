@@ -1,5 +1,7 @@
 .people { /* adjust vertical display position */
-    background-color: linear-gradient(to bottom, #fceae4, white);
+    background-color: linear-gradient(to bottom, #f69c80, white);
+    overflow-x: hidden;
+    flex-shrink: 1;
 }
 
 .people-container {
@@ -7,7 +9,6 @@
     flex-direction: column;
     gap: 150px;
     margin: 10% 11.5%;
-    position: relative;
 }
 
 .people-container p {

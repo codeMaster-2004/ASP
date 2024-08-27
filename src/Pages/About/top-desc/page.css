@@ -1,108 +1,48 @@
 .top {
-    max-width: 1470px;
-    width: 100%;
-    height: 163px;
+    display: flex;
+    flex-direction: column;
     /* flex-shrink: 0; */
-    background-color: rgba(22, 24, 51, 0.90);
-    margin: 0;
-    padding: 0;
-    align-content: center;
+    background-image: url('../../../../public/images/earth-about.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 140vh; 
+    /* max-width: 185vh; */
+    /* max-width: 100%; */
+    flex-shrink: 1;
+    overflow-x: hidden;
+    align-items: center;
+    justify-content: center;
+    padding: 1vh; 
+
+}
+
+.top-left {
+    margin: 0 10%;
 }
 
 .top h1 {
-    color: #fff;
-    text-shadow: 0px 4px 15px rgba(0, 0, 0, 0.50);
-    font-family: Inter;
-    font-size: 80px;
+    color: #FFFFFF70;
+    text-align: center;
+    font-family: "Myriad Pro";
+    font-size: 10vh;
     font-style: normal;
     font-weight: 700;
-    line-height: normal;
-    margin: 0; 
+    line-height: 15vh; /* 62.5% */
 }
 
-.earth {
-    background-image: url('../../../../public/images/earth.png');
-    background-size: 100% 100%;
-    max-width: 1470px;
-    width: 100%;
-    height: 394px;
-    display: flex; /* Enables flex layout */
-    justify-content: center; /* Centers content horizontally */
-    align-items: center; /* Centers content vertically */
-}
-
-.earth-text {
-    display: flex;
-    width: 1140.792px;
-    flex-direction: column;
-    gap: 65px;
-}
-
-.sep1 {
-    width: 1169.792px;
-    height: 1px;
-    background-color: #fff;
-}
-
-.text {
-    align-self: stretch;
-}
-
-.text p {
-    color: #E8E8E8;
-    text-align: center;
-    font-family: Roboto;
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 40px; /* 133.333% */
-}
-
-.sep2 {
-    width: 1169.792px;
-    height: 1px;
-    background-color: #fff;
-}
-
-.black-background {
-    background-color: #000;
-    display: flex;
-    width: 1440px;
-    height: 104px;
-    padding: 60px 21px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    flex-shrink: 0;
-}
-
-.black-text {
-    width : 1140px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.black-text p {
-    color: #fff;
-    text-align: center;
-    font-family: Roboto;
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 40px; /* 136% */
+.highlight {
+    color: #FF4E0D;
 }
 
 .exp {
     display: flex;
-    width: 1440px;
-    height: 311px;
     padding: 44px 231px;
     flex-direction: column;
     align-items: flex-start;
     /* gap: 10px; */
     flex-shrink: 0;
-    background-color: #161833;
+    background-color: #161833E5;
     justify-content: center;
 }
 
