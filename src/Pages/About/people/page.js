@@ -104,26 +104,29 @@ function People() {
                     </div>
                 </div>
                 <div className='mitchell'>
-                    <img src={`${process.env.PUBLIC_URL}/images/mitchell.png`} alt="mitchell" width="574px" height="549px"/>
+                    <div className="mitchell-title">
+                        <h1>Mr. Mitchell Lairmore</h1>
+                        <p>Director of Business Development</p>
+                    </div>
                     <div className='mitchell-desc'>
-                        <div className='mitchell-desc-container'>
-                            <div className="mitchell-title">
-                                <h1>Mr. Mitchell Lairmore</h1>
-                                <div className='bussiness-button'>
-                                    <p>Director of Business Development</p>
+                        <div className='mitchell-desc-images'>
+                            <img src={`${process.env.PUBLIC_URL}/images/mitchell.png`} alt="mitchell" width="520vh" height="70%"/>
+                            <div className="mitchell-logos-parts">
+                                <div className='mitchell-logos'>
+                                    <img src={`${process.env.PUBLIC_URL}/images/mitchell-1.png`} alt='Mitchell Ankul' width="120vh" height="120vh"/>
+                                    <img src={`${process.env.PUBLIC_URL}/images/mitchell-2.png`} alt='Mitchell Ankul' width="120vh" height="120vh"/>
+                                    <img src={`${process.env.PUBLIC_URL}/images/mitchell-3.png`} alt='Mitchell Ankul' width="120vh" height="120vh"/>
+                                </div>
+                                <div className='mitchell-logos-rest'>
+                                    <img src={`${process.env.PUBLIC_URL}/images/mitchell-4.png`} alt='Mitchell Ankul' width="120vh" height="120vh"/>
+                                    <img src={`${process.env.PUBLIC_URL}/images/mitchell-5.png`} alt='Mitchell Ankul' width="120vh" height="80vh"/>
                                 </div>
                             </div>
+                        </div>
+                        <div className='mitchell-desc-container'>
                             <div className='mitchell-desc-intro'>
                                 <p>Mr. Lairmore received a bachelor’s degree in industrial engineering from the University of Iowa and an MBA from the University of Rochester. In the past, he was employed at Eastman Kodak for 21 years, Dawnbreaker Inc. for 9 years, and the University of South Florida SBDC for 6 years.</p>
                                 <p>At ASP, Mr. Lairmore leads business planning, customer discovery, and market research for our core technologies.</p>
-
-                                <div className="mitchell-logos">
-                                    <img src={`${process.env.PUBLIC_URL}/images/mitchell-1.png`} alt='Mitchell Ankul' width="100px" height="100px"/>
-                                    <img src={`${process.env.PUBLIC_URL}/images/mitchell-2.png`} alt='Mitchell Ankul' width="100px" height="100px"/>
-                                    <img src={`${process.env.PUBLIC_URL}/images/mitchell-3.png`} alt='Mitchell Ankul' width="100px" height="100px"/>
-                                    <img src={`${process.env.PUBLIC_URL}/images/mitchell-4.png`} alt='Mitchell Ankul' width="100px" height="100px"/>
-                                    <img src={`${process.env.PUBLIC_URL}/images/mitchell-5.png`} alt='Mitchell Ankul' width="100px" height="50.495px"/>
-                                </div>
                             </div>
                         </div>
                     </div>
