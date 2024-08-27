@@ -7,9 +7,8 @@ function Footer() {
         <div className='footer'>
             <div className='footer-container'>
                 <div className='footer-main'>
-                    <img src={`${process.env.PUBLIC_URL}/images/footer_Layer_1.png`}  alt='Nasa' width='70%' height='70%'/>
                     <div className='Contact'>
-                        
+                        <img src={`${process.env.PUBLIC_URL}/images/footer_Layer_1.png`}  alt='Nasa' width='70%' height='70%'/>
                         <div className='Contact-info'>
                             <div className='Contact-info-item-title'>
                                 <h3>

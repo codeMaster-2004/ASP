@@ -13,10 +13,10 @@
 
 .footer-container {
     display: flex;
-    width: 1376px;
+    margin: 1% 4% 0;
     flex-direction: column;
     align-items: center;
-    gap: 80px;
+    gap: 7vh;
     flex-shrink: 0;
     /* background-color: aquamarine; */
 }
@@ -26,7 +26,6 @@
     justify-content: space-between;
     align-items: flex-start;
     align-self: stretch;
-    /* background-color: aqua; */
 }
 
 .Contact {
@@ -53,9 +52,12 @@
 }
 
 .Contact-info-item-title h3 {
-    font-family: Inter, sans-serif;
-    font-size: 24px;
+    color: var(--Off-White, var(--sds-color-text-brand-on-brand));
+    font-family: "Myriad Pro";
+    font-size: 3.5vh;
+    font-style: normal;
     font-weight: 700;
+    line-height: normal;
 }
 
 .Contact-info-phone,
@@ -70,8 +72,12 @@
 .Contact-info-email a,
 .Contact-info-phone a,
 .Contact-info-address a {
-    color: #fff;
-    text-decoration: none;
+    color: #F5F5F5;
+    font-family: "Myriad Pro";
+    font-size: 2vh;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 .Contact-info-email a:hover,
@@ -106,25 +112,17 @@
     gap: 20px;
 }
 
-.battery {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 12px;
-    width: 196px;
-}
-
 .Instrumentation,
-.Aerosol {
+.Aerosol,
+.battery,
+.Products {
     display: flex;
-    /* width: 196px; */
     flex-direction: column;
     align-items: flex-start;
-    /* gap: 12px; */
 }
 
 .diff-pages > div {
-    min-width: 200px;
+    min-width: 15vh;
 }
 
 .diff-pages h1, .diff-pages p {
