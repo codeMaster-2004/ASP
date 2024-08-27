@@ -7,12 +7,9 @@ function Footer() {
         <div className='footer'>
             <div className='footer-container'>
                 <div className='footer-main'>
+                    <img src={`${process.env.PUBLIC_URL}/images/footer_Layer_1.png`}  alt='Nasa' width='70%' height='70%'/>
                     <div className='Contact'>
-                        <div className='logo'>
-                            <div className='more-logo'>
-                                <img src={`${process.env.PUBLIC_URL}/images/Icon.svg`}  alt='Nasa' width='33.333px' height='45px'/>
-                            </div>
-                        </div>
+                        
                         <div className='Contact-info'>
                             <div className='Contact-info-item-title'>
                                 <h3>
@@ -50,12 +47,10 @@ function Footer() {
                                     Battery Thermal Runaway Detection & Prevention
                                 </p>
                             </Link>
-                        </div>
-                        <div className='facilities'>
-                            <Link to='/facilities' className='footer-links'>
-                                <h1>
-                                    Facilities
-                                </h1>
+                            <Link to='/battery-thermal-management' className='footer-links'>
+                                <p>
+                                    Battery Thermal Management
+                                </p>
                             </Link>
                         </div>
                         <div className='Aerosol'>
@@ -77,6 +72,18 @@ function Footer() {
                             <Link to='/dust-mitigation' className='footer-links'>
                                 <p>
                                     Dust Mitigation
+                                </p>
+                            </Link>
+                        </div>
+                        <div className='Products'>
+                            <Link to='/products-services' className='footer-links'>
+                                <h1>
+                                    Products
+                                </h1>
+                            </Link>
+                            <Link to='/facilities' className='footer-links'>
+                                <p>
+                                    Facilities
                                 </p>
                             </Link>
                         </div>
