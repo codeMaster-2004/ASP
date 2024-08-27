@@ -16,23 +16,25 @@ function Navbar() {
 
   //work to shut another open dropdown menu when a new one is toggled
   const toggleDropdown = (index) => {
-    console.log(`Toggling dropdown ${index}`)
     setOpenDropdown(prevIndex => (prevIndex === index ? null : index));
   };
   
-  let lastScrollTop = 0;
-  const navbar = document.querySelector('.navbar');
+  // let lastScrollTop = 0;
+  // const navbar = document.querySelector('.navbar');
 
   const showButton = () => {
     if (window.innerWidth <= 960) {
       setButton(false);
     } else {
       setButton(true);
+      setClick(false);
     }
   };
 
   useEffect(() => {
     showButton();
+    window.addEventListener('resize', showButton);
+    return () => window.removeEventListener('resize', showButton);
   }, []);
 
   window.addEventListener('resize', showButton);
