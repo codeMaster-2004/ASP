@@ -32,7 +32,6 @@ h1 {
   flex: 1;
   margin: 0 1rem;
   border-radius: 10px;
-  background: var(--Dark-Blue, #161833);
 }
 
 .cards__item__link {
@@ -104,29 +103,27 @@ h1 {
   align-items: flex-start;
   gap: 10px;
   flex-shrink: 0;
+  background-color: #161833;
   /* margin-bottom: 20px; */
 }
 
 .cards_desc {
   display: block;
   flex-direction: column;
-  gap: 15.182px;
-  align-self: stretch;
 }
 
 .cards__item__heading{
   display: flex;
   flex-direction: column;
   align-self: stretch;
-  margin-bottom: 30px;
+  margin-bottom: 0;
 }
 
 .cards__item__htext {
-  color: #ffffff;
-  font-size: 30px;
-  line-height: 24px;
-  margin: 0 0 5px;
-  padding: 0;
+  color: #f5f5f5;
+  font-family: "Myriad Pro";
+  font-size: 3.5vh;
+  font-weight: 700;
 }
 
 .cards__item__info {

@@ -29,6 +29,10 @@
     text-align: left;
 }
 
+.products-container img {
+    padding-top: 6vh;
+}
+
 p.products-text {
     color: var(--Base-Black, #000);
     font-family: "Adobe Caslon Pro";
@@ -95,7 +99,7 @@ p.products-text {
 .different-products-bottom-left-text p,
 .different-products-bottom-right-text p {
     color: black;
-    font-family: "Myriad Pro";
+    font-family: "Adobe Caslon Pro";
     font-size: 1.9rem;
     font-style: normal;
     font-weight: 400;

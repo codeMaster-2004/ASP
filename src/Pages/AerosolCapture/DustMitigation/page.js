@@ -60,6 +60,7 @@ function DustMitigation() {
                 </div>
                 <div className='dust-others'>
                     <h1>Other Topics</h1>
+                    {/* fic this */}
                     <div className='dust-others-images'>
                         <div className='dust-others-images-left'>
                             <div className='dust-others-images-left-top'>

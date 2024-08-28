@@ -16,11 +16,11 @@ function Products() {
                     <div className='different-products-top'>
                         <div className='different-products-top-left'>
                             <div className='different-products-top-left-pic'>
-                                <img src={`${process.env.PUBLIC_URL}/images/elevatesafety.png`} alt='safety' width='50%' height='95%' />
+                                <img src={`${process.env.PUBLIC_URL}/images/elevatesafety.png`} alt='safety' width='50%' height='70%' />
                             </div>
                             <div className='different-products-top-left-text'>
                                 <h1>
-                                    Elevate Safety and Performance with ASP's Battery Thermal Management and Thermal Runaway Prevention Technology
+                                    Elevate Safety and Performance with ASP's Battery Thermal Technology
                                 </h1>
                                 <p>
                                     ASP’s <a href='/battery-safety'>battery thermal management and thermal runaway prevention</a> technology can improve the performance and safety of any battery powered device. Examples include electric vehicles, vertical takeoff and landing systems with electric propulsion, battery powered micromobility devices, stationary battery energy storage systems (BESS), uninterruptible power supplied (UPS), medical devices, power tools and electronics.
@@ -29,7 +29,7 @@ function Products() {
                         </div>
                         <div className='different-products-top-right'>
                             <div className='different-products-top-right-pic'>
-                                <img src={`${process.env.PUBLIC_URL}/images/NanoAgglo.png`} alt='safety' width='25%' height='100%' />
+                                <img src={`${process.env.PUBLIC_URL}/images/NanoAgglo.png`} alt='safety' width='25%' height='70%' />
                             </div>
                             <div className='different-products-top-right-text'>
                                 <h1>
@@ -44,7 +44,7 @@ function Products() {
                     <div className='different-products-bottom'>
                         <div className='different-products-bottom-left'>
                             <div className='different-products-bottom-left-pic'>
-                                <img src={`${process.env.PUBLIC_URL}/images/FireSensing.png`} alt='safety' width='16%' height='100%' />
+                                <img src={`${process.env.PUBLIC_URL}/images/FireSensing.png`} alt='safety' width='25%' height='67%' />
                             </div>
                             <div className='different-products-bottom-left-text'>
                                 <h1>
@@ -57,7 +57,7 @@ function Products() {
                         </div>
                         <div className='different-products-bottom-right'>
                             <div className='different-products-bottom-right-pic'>
-                                <img src={`${process.env.PUBLIC_URL}/images/ImprovedAir.png`} alt='safety' width='22%' height='100%' />
+                                <img src={`${process.env.PUBLIC_URL}/images/ImprovedAir.png`} alt='safety' width='30%' height='72%' />
                             </div>
                             <div className='different-products-bottom-right-text'>
                                 <h1>

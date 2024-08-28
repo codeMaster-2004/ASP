@@ -18,12 +18,12 @@ function Home() {
               <div className='separator'/>
             </div>
             <div className='clients-list'>
-              <h1>We provide contract R&D services to our government clients at the DOD and NASA. In the private sector, we provide licenses to our technologies that improve the product performance and process safety and help the industry in integrating/implementing these solutions.</h1>
+              <p>We provide contract R&D services to our government clients at the DOD and NASA. In the private sector, we provide licenses to our technologies that improve the product performance and process safety and help the industry in integrating/implementing these solutions.</p>
             </div>
           </div>
           <div className='logos'>
-            <img src={`${process.env.PUBLIC_URL}/images/Nasa.png`}  alt='Nasa'/>
-            <img src={`${process.env.PUBLIC_URL}/images/DoD.png`} alt='DOD' width='206.624px' height='206.624px'/>
+            <img src={`${process.env.PUBLIC_URL}/images/Nasa.png`}  alt='Nasa' width='70%' height='70%'/>
+            <img src={`${process.env.PUBLIC_URL}/images/DoD.png`} alt='DOD' width='60%' height='60%'/>
           </div>
         </div>
           <Button buttonSize='btn--extralarge'

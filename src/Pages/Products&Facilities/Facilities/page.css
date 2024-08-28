@@ -45,7 +45,7 @@ p.facility-last-text,
 .particle-character li,
 .particle-character a {
     color: black;
-    font-family: "Myriad Pro";
+    font-family: "Adobe Caslon Pro";
     font-size: 1.9rem;
     font-style: normal;
     font-weight: 400;
@@ -100,7 +100,7 @@ p.facility-last-text,
     align-items: center;
     gap: 2vh;
     align-self: stretch;
-    margin: 3% 0 7%;
+    margin: 3% 0 0;
 }
 
 .particle-character h1,
@@ -115,6 +115,6 @@ p.facility-last-text,
     line-height: 5vh; /* 60% */
 }
 
-.particle-character ul {
+/* .particle-character ul {
     list-style-type: circle;
-}
+} */

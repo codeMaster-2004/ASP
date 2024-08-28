@@ -30,6 +30,7 @@ function ContactBottom() {
                 <div className='contact-form-container-closeup'>
                     <h1>Contact Us.</h1>
                     <form className='contact-form-input' onSubmit={handleSubmit}>
+                        {/* remove the black borders from it */}
                         <input
                             type="text"
                             name="name"
@@ -38,6 +39,7 @@ function ContactBottom() {
                             onChange={handleChange}
                             required
                         />
+                        {/* change the font for message box Myriad Pro */}
                         <input
                             type="email"
                             name="email"

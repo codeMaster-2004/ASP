@@ -18,17 +18,18 @@
 }
 
 .top-left {
+    padding-bottom: 20vh;
     margin: 0 10%;
 }
 
 .top h1 {
-    color: #FFFFFF70;
+    color: #faf7f7c0;
     text-align: center;
     font-family: "Myriad Pro";
     font-size: 10vh;
     font-style: normal;
     font-weight: 700;
-    line-height: 15vh; /* 62.5% */
+    line-height: 12.5vh; /* 62.5% */
 }
 
 .highlight {
@@ -48,7 +49,9 @@
 
 .exp-container {
     display: flex;
+    flex-direction: row;
     align-items: center;
+    justify-content: center;
     gap: 20vh;
 }
 
@@ -85,9 +88,10 @@
     flex-direction: column;
     justify-content: center;
     gap: 3vh;
+    /* background-color: #FF4E0D; */
 }
 
-.exp-text h2 {
+.exp-text h1 {
     color: #F5F5F5;
     text-align: center;
     font-family: "Myriad Pro";

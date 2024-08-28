@@ -1,11 +1,11 @@
 .contactUs {
-    background: linear-gradient(to bottom, #fceae4, white);
+    background: linear-gradient(to bottom, #f7edea, #fceae4);
     /* background-color:blue; */
     /* margin-bottom: 20%; */
 }
 
 .contactUS-container {
-    margin-bottom: 20%;
+    padding-bottom: 20%;
 }
 
 .form-and-circles-container {

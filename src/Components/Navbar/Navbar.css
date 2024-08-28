@@ -12,6 +12,7 @@
   flex-shrink: 1;
   background: #F5F5F5;
   padding: 2% -0.1%;
+  position: fixed;
 }
 
 .logo {
@@ -50,7 +51,7 @@
   display: flex;
   align-items: center;
   font-family: "Myriad Pro";
-  font-size: 90%;
+  font-size: 100%;
   font-style: normal;
   font-weight: 600;
   line-height: 100%;

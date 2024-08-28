@@ -4,13 +4,13 @@
 
   /* Center the image */
   background-position: center;
-  height:100vh;
+  height:80vh;
 }
 
 .homepage-picture {
   display: flex;
   flex-direction: column;
-  margin: 0 15%;
+  margin: 0 20%;
 }
 
 .homepage-text {
@@ -30,10 +30,11 @@
 }
 
 .homepage-text h6 {
+  margin-top: 0;
   color: white;
   text-align: center;
   font-family: "Myriad Pro";
-  font-size: 40px;
+  font-size: 6vh;
   font-style: normal;
   font-weight: 400;
   line-height: normal;

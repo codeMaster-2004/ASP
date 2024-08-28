@@ -7,7 +7,7 @@ function page() {
       <div className='top'>
         <div className='top-left'>
           <h1>
-            “Our vision is to <span className='highlight'>translate</span> our deep <span className='highlight'>knowledge</span> and combined <span className='highlight'>experience</span> into commercially viable <span className='highlight'>products and technologies</span> that make the world a safer place.” 
+            Our vision is to <span className='highlight'>translate</span> our deep <span className='highlight'>knowledge</span> and combined <span className='highlight'>experience</span> into commercially viable <span className='highlight'>products and technologies</span> that make the world a safer place. 
           </h1>
         </div>
       </div>
@@ -18,7 +18,8 @@ function page() {
             <p>2022</p>
           </div>
           <div className='exp-text'>
-            <h2>25-40+</h2>
+            {/* make the texts aligned with each other */}
+            <h1>20-40+</h1>
             <p>years of experience</p>
           </div>
         </div>
