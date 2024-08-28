@@ -26,7 +26,6 @@ function CardItem(props) {
               </div>
             </div>
             <div className='button'>
-              {/* border radius */}
               <h5 className='text'> Learn More </h5>
             </div>
           </div>

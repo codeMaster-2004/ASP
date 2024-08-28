@@ -1,28 +1,34 @@
 import React from 'react';
 import './Cards.css';
-import CardItem from './Carditem';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 function Cards() {
   return (
     <div className='cards'>
       <div className='cards__container'>
-        <div className='cards__wrapper'>
-          <ul className='cards__items'>
-            <CardItem
-              src='/images/image-27.png'
-              text='Our laboratory is equipped with unique in-house constructed and third-party hardware and instrumentation to characterize the hazards and validate the effectiveness of safety technologies.'
-              label='Our Facilities'
-              path='/facilities'
-            />
-            <CardItem
-              src='/images/HomeCards.png'
-              text='We provide engineering and computational analysis, specialized testing and custom instrumentation to help improve the performance and safety of your products and processes.'
-              label='Our Products and Services'
-              path='/products-services'
-            />
-          </ul>
-        </div>
+          <div className='cards__container_left'>
+            <img src={`${process.env.PUBLIC_URL}/images/image-27.png`} alt='products main' width='100%' height="450vh"/>
+            <div className='cards__container_left_info'>
+              <div className='cards__container_left_info_heading'>
+                <h1>Our Facilities</h1>
+                <div className='cards_separator1'/>
+              </div>
+              <p>
+                Our laboratory is equipped with unique in-house constructed and third-party hardware and instrumentation to characterize the hazards and validate the effectiveness of safety technologies.
+              </p>
+            </div>
+          </div>
+          <div className='cards__container_right'>
+            <img src={`${process.env.PUBLIC_URL}/images/HomeCards.png`} alt='products main' width='100%' height="450vh"/>
+            <div className='cards__container_right_info'>
+              <div className='cards__container_right_info_heading'>
+                <h1>Our Products and Services</h1>
+                <div className='cards_separator'/>
+              </div>
+              <p>
+                We provide engineering and computational analysis, specialized testing and custom instrumentation to help improve the performance and safety of your products and processes. 
+              </p>
+            </div>
+          </div>
       </div>
     </div>
   );
