@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Button } from '../Button/Button';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
@@ -7,6 +7,8 @@ function Navbar() {
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
   const [openDropdown, setOpenDropdown] = useState(null);
+  const [isSticky, setIsSticky] = useState(false);
+  const navbarRef = useRef(null);
 
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => {
@@ -30,6 +32,25 @@ function Navbar() {
       setClick(false);
     }
   };
+
+  useEffect(() => {
+    showButton();
+
+    const handleScroll = () => {
+      if (navbarRef.current) {
+        const sticky = navbarRef.current.offsetTop;
+        setIsSticky(window.pageYOffset > sticky);
+      }
+    };
+
+    window.addEventListener('resize', showButton);
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('resize', showButton);
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   useEffect(() => {
     showButton();
@@ -80,11 +101,15 @@ function Navbar() {
     });
   });
 
-
   return(
     <>
-      <nav className='navbar'>
-        <img src={`${process.env.PUBLIC_URL}/images/Layer_1.png`}  alt='Nasa' width='8%' height='8%'/>
+      <nav className={`navbar ${isSticky ? 'sticky' : ''}`} 
+            id='navbar' 
+            ref={navbarRef}
+      >
+        <Link to='/ASP'>
+          <img src={`${process.env.PUBLIC_URL}/images/Layer_1.png`}  alt='Nasa' width='100%' height='100%'/>
+        </Link>
         <div className='navbar-container'>
           <div className='menu-icon' onClick={handleClick}>
             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
@@ -192,7 +217,7 @@ function Navbar() {
               ></i>
               {openDropdown === 2 && (
                 <div className={`dropdown-content ${openDropdown === 2 ? 'show' : ''}`}>
-                  <div className='separator' />
+                  {/* <div className='separator' /> */}
                   <Link to='/optical-instrumentation' onClick={closeMobileMenu}>Optical Instrumentation</Link>
                   <Link to='/morphology-characterization-optical-extinction-spectroscopy' onClick={closeMobileMenu}>Morphology Characterization with Optical Extinction Spectroscopy</Link>
                   <Link to='/polarized-light-scattering' onClick={closeMobileMenu}>Polarized Light Scattering</Link>
@@ -204,6 +229,7 @@ function Navbar() {
           </ul> 
         </div>
       </nav>
+      <div className='separator' />
     </>
   );
 }
