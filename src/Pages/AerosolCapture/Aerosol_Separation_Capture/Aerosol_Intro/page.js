@@ -1,14 +1,18 @@
 import React from 'react';
 import './page.css';
+import { Link } from 'react-router-dom';
+import 'styled-components';
 import Separator from '../../../../Components/Orange-separator/separator';
 
 function AerosolIntro() {
   return (
     <>
         <div className='Aerosol_container'>
-            <p>
-                Aerosol Capture
-            </p>
+            <Link to='/aerocapture' style={{textDecoration: "none"}}>
+                <p className='orange-text'>
+                    Aerosol Capture
+                </p>
+            </Link>
             <h1>
                 Aerosol Separation and Capture
             </h1>

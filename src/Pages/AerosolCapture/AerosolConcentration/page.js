@@ -1,13 +1,19 @@
 import React from 'react';
 import './page.css';
+import { Link } from 'react-router-dom';
+import "styled-components"
 import Separator from '../../../Components/Orange-separator/separator';
 import { Button } from '../../../Components/Button/Button';
 
 function AerosolConcentration() {
+    const linkStyle = { textDecoration: "none"};
+
     return (
         <div className='concentration'>
             <div className='concentration-container'>
-                <p>Aerosol Capture</p>
+                <Link to='/aerocapture' style= {linkStyle}>
+                    <p className='orange-text'>Aerosol Capture</p>
+                </Link>
                 <h1>Aerosol Concentration</h1>
                 <img src={`${process.env.PUBLIC_URL}/images/ConcentrationMain.png`} alt='main' width='100%' height="100%"/>
                 <div className='text-after-big-concen'>

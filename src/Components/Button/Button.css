@@ -41,12 +41,14 @@
 }
 
 .btn--battery {
+  justify-content: center;
+  align-items: center;
   background-color: #fff;
   border-radius: 10%;
   font-family: "Myriad Pro";
-  font-size: 20px;
+  font-size: 2.7vh;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 700;
   line-height: normal;
   color: #000;
   text-decoration: none;
@@ -83,7 +85,8 @@
 }
 
 .btn--large {
-  padding: 15% 55%;
+  width: 14vh;
+  height: 5.5vh;
   border-radius: 10px;
 }
 

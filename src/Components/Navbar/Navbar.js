@@ -199,7 +199,7 @@ function Navbar() {
             <li className={`nav-item ${openDropdown === 2 ? 'active' : ''}`}>
               <Link
                 to='/optical-instrumentation'
-                className='nav-links'
+                className={`nav-links ${openDropdown === 2 ? 'active' : ''}`}
                 onClick={closeMobileMenu}
               >
                 Instrumentation
