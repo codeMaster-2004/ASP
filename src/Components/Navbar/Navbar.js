@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Button } from '../Button/Button';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 
@@ -103,14 +102,11 @@ function Navbar() {
 
   return(
     <>
-      <nav className={`navbar ${isSticky ? 'sticky' : ''}`} 
-            id='navbar' 
-            ref={navbarRef}
-      >
-        <Link to='/ASP'>
-          <img src={`${process.env.PUBLIC_URL}/images/Layer_1.png`}  alt='Nasa' width='100%' height='100%'/>
-        </Link>
+      <nav className='navbar'>
         <div className='navbar-container'>
+          <Link to='/ASP' className='navbar-logo'>
+            <img src={`${process.env.PUBLIC_URL}/images/Layer_1.png`}  alt='Nasa' width='35%' height='100%'/>
+          </Link>
           <div className='menu-icon' onClick={handleClick}>
             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
           </div>
@@ -147,7 +143,6 @@ function Navbar() {
               ></i>
               {openDropdown === 3 && (
                 <div className={`dropdown-content ${openDropdown === 3 ? 'show' : ''}`}>
-                  <div className='separator' />
                   <Link to='/facilities' onClick={closeMobileMenu}>Facilities</Link>
                 </div>
               )}
@@ -167,7 +162,6 @@ function Navbar() {
               {openDropdown === 0 && (
                 console.log("inside the Aerosol dropdown"),
                 <div className={`dropdown-content ${openDropdown === 0 ? 'show' : ''}`}>
-                    <div className='separator' />
                     <Link to='/battery-thermal-runaway-numerical-simulation-of-electrodynamic-field' onClick={closeMobileMenu}>Battery Thermal Runaway Numerical Simulation of Electrodynamic Field</Link>
                     <Link to='/aerosol-concentration' onClick={closeMobileMenu}>Aerosol Concentration</Link>
                     <Link to='/dust-mitigation' onClick={closeMobileMenu}>Dust Mitigation</Link>
@@ -188,7 +182,6 @@ function Navbar() {
                 ></i>
                 {openDropdown === 1 && (
                 <div className={`dropdown-content ${openDropdown === 1 ? 'show' : ''}`}>
-                  <div className='separator' />
                   <Link to='/battery-thermal-runaway-detection-prevention' onClick={closeMobileMenu}>Battery Thermal Runaway Detection & Prevention</Link>
                   <Link to='/battery-thermal-management' onClick={closeMobileMenu}>Battery Thermal Management</Link>
                 </div>
@@ -217,7 +210,6 @@ function Navbar() {
               ></i>
               {openDropdown === 2 && (
                 <div className={`dropdown-content ${openDropdown === 2 ? 'show' : ''}`}>
-                  {/* <div className='separator' /> */}
                   <Link to='/optical-instrumentation' onClick={closeMobileMenu}>Optical Instrumentation</Link>
                   <Link to='/morphology-characterization-optical-extinction-spectroscopy' onClick={closeMobileMenu}>Morphology Characterization with Optical Extinction Spectroscopy</Link>
                   <Link to='/polarized-light-scattering' onClick={closeMobileMenu}>Polarized Light Scattering</Link>
@@ -225,11 +217,10 @@ function Navbar() {
                 </div>
               )}
             </li>
-            <Button buttonStyle='btn--outline'>Contact Us</Button>
+            <button className='nav-button'>Contact Us</button>
           </ul> 
         </div>
       </nav>
-      <div className='separator' />
     </>
   );
 }

@@ -2,7 +2,7 @@ import React from 'react';
 import './Button.css';
 import { Link } from 'react-router-dom';
 
-const STYLES = ['btn--primary', 'btn--outline', 'btn--test', "btn--aerosol", "btn--battery", "btn--submit"];
+const STYLES = ['btn--primary', 'btn--outline', 'btn--test', "btn--aerosol", "btn--battery", "btn--submit", "btn--learn"];
 
 const SIZES = ['btn--medium', 'btn--large', 'btn--extralarge'];
 
@@ -21,7 +21,8 @@ const TYPES = {
   Polarized: '/polarized-light-scattering',
   SPS: '/sedimentation-based-particle-sizing',
   Optical: '/optical-instrumentation',
-  electro: '/battery-thermal-runaway-numerical-simulation-of-electrodynamic-field'
+  electro: '/battery-thermal-runaway-numerical-simulation-of-electrodynamic-field',
+  facility: "/facilities"
 };
 
 export const Button = ({

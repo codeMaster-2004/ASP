@@ -64,19 +64,27 @@
   text-decoration: none;
 }
 
+.btn--learn {
+  background-color: #f5f5f5;
+  color: #161833;
+  text-decoration: none;
+  font-family: "Myriad Pro";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
 .btn--medium {
-  /* padding: 8px 25px; */
-  width: 150px;
-  font-size: 18px;
+  padding: 0.1rem 0rem;
+  /* width: 160px; */
+  border-radius: 9px;
+  font-size: 1.2rem;
 }
 
 .btn--large {
   padding: 15% 55%;
-  /* font-size: 15px;
-  text-align: center;
-  width: 90px;
-  height: 45px; */
-  border-radius: 10%;
+  border-radius: 10px;
 }
 
 .btn--extralarge {
