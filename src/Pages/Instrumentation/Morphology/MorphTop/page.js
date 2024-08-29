@@ -1,11 +1,15 @@
 import React from 'react';
 import './page.css';
+import { Link } from 'react-router-dom';
+import "styled-components";
 import Separator from '../../../../Components/Orange-separator/separator';
 
 function MorphTop() {
   return (
     <div className='morph-top'>
-        <p>Instrumentation</p>
+        <Link to='/optical-instrumentation' style={{textDecoration:"none"}}>
+            <p className='orange-text'>Instrumentation</p>
+        </Link>
         <h1>Morphology Characterization with Optical Spectroscopy</h1>
         <img src={`${process.env.PUBLIC_URL}/images/NanoParticles.png`} alt='morphology' width='100%' height="100%"/>
         <div className='morph-top-after-image-text'>

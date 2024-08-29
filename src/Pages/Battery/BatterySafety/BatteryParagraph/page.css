@@ -81,7 +81,7 @@
 .BatteryOthers h1 {
     color: var(--Base-Black, #000);
     font-family: "Myriad Pro";
-    font-size: 50px;
+    font-size: 6vh;
     font-style: normal;
     font-weight: 700;
     line-height: 9vh; /* Adjusted to better fit the heading */

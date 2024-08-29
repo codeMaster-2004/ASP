@@ -27,6 +27,7 @@
     font-weight: 700;
     line-height: normal;
     text-align: left;
+    padding-bottom: 5%;
 }
 
 .text-after-main {
@@ -70,6 +71,7 @@
     font-style: italic;
     font-weight: 600;
     line-height: 40px; /* 133.333% */
+    margin-top: 5vh;
 }
 
 .polarized-others {
@@ -84,11 +86,11 @@
 .polarized-others h1 {
     color: var(--Base-Black, #000);
     font-family: "Myriad Pro";
-    font-size: 50px;
+    font-size: 6vh;
     font-style: normal;
     font-weight: 700;
     line-height: 9vh; /* Adjusted to better fit the heading */
-    margin: 10% 0;
+    margin: 0 0 4%;
 }
 
 .polarized-others-images {
@@ -136,7 +138,7 @@
 
 .polarized-others-images-left-top-text {
     margin-top: 1%;
-    margin-bottom: 27%;
+    margin-bottom: 22%;
     width: 95%;
 }
 
@@ -151,7 +153,7 @@
 
 .polarized-others-images-left-bottom-text {
     margin-top: 1%;
-    margin-bottom: 19%;
+    margin-bottom: 14%;
     width: 95%;
 }
 
@@ -171,7 +173,7 @@
 
 .polarized-others-images-right-top-text {
     margin-top: 1%;
-    margin-bottom: 28%;
+    margin-bottom: 23%;
     width: 95%;
 }
 
@@ -185,7 +187,7 @@
 
 .polarized-others-images-right-bottom-text {
     margin-top: 1%;
-    margin-bottom: 28%;
+    margin-bottom: 23%;
     width: 95%;
 }
 

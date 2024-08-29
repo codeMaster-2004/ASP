@@ -1,12 +1,16 @@
 import React from 'react';
 import './optical.css';
+import { Link } from 'react-router-dom';
+import 'styled-components';
 import { Button } from '../../../Components/Button/Button';
 
 function Optical() {
     return (
         <div className="optical">
             <div className='Optical-Instrumentation'>
-                <p>Instrumentation</p>
+                <Link to='/optical-instrumentation' style={{textDecoration:"none"}}>
+                    <p className='orange-text'>Instrumentation</p>
+                </Link>
                 <h1>Optical Instrumentation</h1>
                 <img src={`${process.env.PUBLIC_URL}/images/Microscope.png`} alt='microscope' width='100%' height="100%"/>
                 <div className='optical-paragraph'>

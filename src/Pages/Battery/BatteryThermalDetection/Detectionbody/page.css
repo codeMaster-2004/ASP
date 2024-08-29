@@ -39,7 +39,7 @@
 .DetectionBottomContainer16Cell h1 {
     color: var(--Base-Black, #000);
     font-family: "Myriad Pro";
-    font-size: 50px;
+    font-size: 6vh;
     font-style: normal;
     text-align: left;
     font-weight: 700;
@@ -95,7 +95,7 @@
 .DetectionOthers h1 {
     color: var(--Base-Black, #000);
     font-family: "Myriad Pro";
-    font-size: 50px;
+    font-size: 6vh;
     font-style: normal;
     font-weight: 700;
     line-height: 30px; /* 60% */

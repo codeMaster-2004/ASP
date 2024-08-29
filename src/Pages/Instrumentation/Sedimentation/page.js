@@ -1,5 +1,7 @@
 import React from 'react';
 import './page.css';
+import { Link } from 'react-router-dom';
+import "styled-components";
 import Separator from '../../../Components/Orange-separator/separator';
 import { Button } from '../../../Components/Button/Button';
 
@@ -7,7 +9,10 @@ function Sedimentation() {
     return (
         <div className="sedimentation">
             <div className='sedimentation-container'>
-                <p>Instrumentation</p>
+                <Link to='/optical-instrumentation' style={{textDecoration:"none"}}>
+                    <p className='orange-text'>Instrumentation</p>
+                </Link>
+                
                 <h1>Sedimentation based Particle Sizing</h1>
                 <img src={`${process.env.PUBLIC_URL}/images/sedimentation.png`} alt='main' width='100%' height="100%"/>
                 <div className='sedimentation-text'>
