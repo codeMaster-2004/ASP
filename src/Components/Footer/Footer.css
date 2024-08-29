@@ -65,8 +65,20 @@
 .Contact-info-address {
     display: flex;
     align-items: center;
-    gap: 20px;
     align-self: stretch;
+}
+
+
+.Contact-info-phone i {
+    margin-right: 1.2vh;
+}
+
+.Contact-info-email i {
+    margin-right: 1.8vh;
+}
+
+.Contact-info-address i {
+    margin-right: 2vh;
 }
 
 .Contact-info-email a,
@@ -95,7 +107,7 @@
 }
 
 .social-icon-link i {
-    font-size: 30px;
+    font-size: 4.5vh;
     color: #fff;
 }
 

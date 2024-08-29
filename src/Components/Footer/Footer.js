@@ -16,7 +16,11 @@ function Footer() {
                                 </h3>
                             </div>
                             <div className='Contact-info-email'>
-                                <a href="mailto:office@analyticalscientificproducts.com" className='contacts'><i className='fa fa-envelope' /> office@analyticalscientificproducts.com</a>
+                                <a href="mailto:office@analyticalscientificproducts.com" 
+                                    className='contacts'>
+                                        <i className='fa fa-envelope' /> 
+                                        office@analyticalscientificproducts.com
+                                </a>
                             </div>
                             <div className='Contact-info-phone'>
                                 <a href='tel:7812197625' className='contacts'> <i className='fa fa-phone-alt'/> (781)-219-7625</a>
