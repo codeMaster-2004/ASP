@@ -4,34 +4,36 @@ import '../../App.css';
 import Main from './PS-intro/page';
 import Cards from './Cards/Cards';
 import './HP.css';
-import { Button } from '../../Components/Button/Button';
 
 function Home() {
   return (
     <>
       <Main />
-      <div className='main2'>
+      <div className='client_home_intro'>
+        <div className='main2'>
         <div className='clients-container'>
           <div className='clients'>
             <div className='heading'> 
               <h1>Our Clients</h1>
-              <div className='separator'/>
+              <div className='home_client_separator'/>
             </div>
             <div className='clients-list'>
               <p>We provide contract R&D services to our government clients at the DOD and NASA. In the private sector, we provide licenses to our technologies that improve the product performance and process safety and help the industry in integrating/implementing these solutions.</p>
             </div>
           </div>
           <div className='logos'>
-            <img src={`${process.env.PUBLIC_URL}/images/Nasa.png`}  alt='Nasa' width='70%' height='70%'/>
-            <img src={`${process.env.PUBLIC_URL}/images/DoD.png`} alt='DOD' width='60%' height='60%'/>
+            <img src={`${process.env.PUBLIC_URL}/images/Nasa.png`}  alt='Nasa' width='100%' height='100%'/>
+            <img src={`${process.env.PUBLIC_URL}/images/DoD.png`} alt='DOD' width='90%' height='90%'/>
           </div>
         </div>
-          <Button buttonSize='btn--extralarge'
-                  buttonStyle='btn--aerosol'
-                  buttonType='client'>
-                    Learn More
-                  </Button>
+          <a 
+              href='/clients' 
+              className='goto-client-button'
+              >
+              Learn More
+          </a>
         </div>
+      </div>
       <Cards />
     </>
   );

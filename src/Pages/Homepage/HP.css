@@ -1,42 +1,48 @@
-.main2 {
-    max-width: 2000px;
-    width: 100%; /* Use 100% width for responsiveness */
-    height: 436px;
+.client_home_intro {
+    background-color: #161833;
+    padding-bottom: 2%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url('../../../public/images/Rectangle\ 17.png');
-    margin: 0 auto;
 }
 
-.clients{
+.main2 {
     display: flex;
-    width: 100%;
     flex-direction: column;
-    align-items: flex-start;
-    gap: 30px;
-    width: 558px;
-    /* background-color: #880707; */
+    justify-content: center;
+    align-items: center;
+    margin: 0 11.5% 0 11.5%;
 }
 
 .clients-container {
     display: flex;
     flex-direction: row;
-    gap: 7vh;
+    justify-content: center;
+    align-items: center;
+    gap: 0vh;
 }
 
-.separator {
-    width: 100%;
-    height: 3px;
+.clients{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* background-color: #880707; */
+}
+
+.home_client_separator {
+    width: 69.8%;
+    height: 0.5vh;
     background-color: #ffffff;
-    margin: 0px;
 }
   
 .heading{
+    display: flex;
+    flex-direction: column;
     width: 100%;
     /* background-color: aquamarine; */
-    padding: 10px 0;
+    padding: 3vh 0;
+    margin: 0;
 }
   
 .heading h1 {
@@ -47,21 +53,23 @@
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    margin-bottom: 1.5vh;
+    /* background-color: aquamarine; */
 }
   
 .clients-list{
     /* background-color: aqua; */
-    /* margin: 0 auto 20px; */
-    width: 100%;
+    width: 70%;
 }
   
 .clients-list p {
+    margin-top: 1vh;
     color: #f5f5f5;
     font-family: "Adobe Caslon Pro";
     font-size: 3vh;
     font-style: normal;
     font-weight: 400;
-    line-height: 33px; /* 132% */
+    line-height: 135%; /* 132% */
 }
   
 .logos{
@@ -70,11 +78,28 @@
     align-items: center;
     gap: 32.4px;
     /* background-color: black; */
-    /* width: 100%; */
+    width: 100%;
+    padding-top: 7%;
+    padding-right: 5.4%;
     /* background-image: url('../../../public/images/DoD.png'); */
 }
 
 .logos img {
     width: 100%;
     height: auto;
+}
+
+.goto-client-button {
+    background-color: #fff;
+    text-align: center;
+    color:#161833;
+    font-weight: 850;
+    text-decoration: none;
+    padding: 1.5% 3%;
+    border-radius: 7px;
+}
+
+.goto-client-button:hover {
+    background-color: #FF4E0D;
+    color:#f5f5f5;
 }
