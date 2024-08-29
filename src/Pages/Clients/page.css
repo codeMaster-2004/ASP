@@ -8,7 +8,8 @@
     margin: 0 11.5% 35vh;
 }
 
-.Clients-container p {
+.Clients-container a {
+    text-decoration: none;
     color:  #FF4E0D;
     text-align: left;
     /* text-shadow: 0px 4px 15px rgba(0, 0, 0, 0.50); */
@@ -18,6 +19,10 @@
     font-weight: 400;
     line-height: normal;
     margin-top: 4%;
+}
+
+.Clients-container a:hover {
+    text-decoration: underline;
 }
 
 .Clients-container h1 {

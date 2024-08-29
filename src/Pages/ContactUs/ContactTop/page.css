@@ -4,8 +4,9 @@
     margin: 0 11.5%;
 }
 
-.contactUs-container p {
-    color: var(--Orange, #FF4E0D);
+.contactUs-container a {
+    text-decoration: none;
+    color: #FF4E0D;
     text-align: left;
     font-family: "DM Mono";
     font-size: 25px;
@@ -13,6 +14,10 @@
     font-weight: 400;
     line-height: normal;
     margin-top: 4%;
+}
+
+.contactUs-container a:hover {
+    text-decoration: underline;
 }
 
 .contactUs-container h1 {

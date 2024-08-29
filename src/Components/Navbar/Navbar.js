@@ -217,7 +217,7 @@ function Navbar() {
                 </div>
               )}
             </li>
-            <button className='nav-button'>Contact Us</button>
+            <a href='/contact-us' className='nav-button'>Contact Us</a>
           </ul> 
         </div>
       </nav>

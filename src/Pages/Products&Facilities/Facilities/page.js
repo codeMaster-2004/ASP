@@ -7,9 +7,9 @@ function Facilities() {
     return (
         <div className='facilities_'>
             <div className='facilities-container'>
-                <p>
+                <a href='/ASP'>
                     Home
-                </p>
+                </a>
                 <h1>
                     Facilities and Equipment
                 </h1>
