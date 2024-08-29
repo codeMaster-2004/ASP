@@ -1,6 +1,5 @@
 import React from 'react';
 import './Cards.css';
-import { Button } from '../../../Components/Button/Button';
 
 function Cards() {
   return (
@@ -18,11 +17,9 @@ function Cards() {
                   Our laboratory is equipped with unique in-house constructed and third-party hardware and instrumentation to characterize the hazards and validate the effectiveness of safety technologies.
                 </p>
               </div>
-              <Button buttonStyle="btn--learn"
-                      buttonSize="btn--medium"
-                      buttonType="facility">
+              <a href='/facilities' className='cards_button'>
                 Learn more
-              </Button>
+              </a>
             </div>
           </div>
           <div className='cards__container_right'>
@@ -37,6 +34,9 @@ function Cards() {
                   We provide engineering and computational analysis, specialized testing and custom instrumentation to help improve the performance and safety of your products and processes. 
                 </p>
               </div>
+              <a href='/products-services' className='cards_button'>
+                Learn more
+              </a>
             </div>
           </div>
       </div>
