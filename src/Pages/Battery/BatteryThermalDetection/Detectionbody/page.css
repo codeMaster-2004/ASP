@@ -109,8 +109,8 @@
 
 .DetectionOtherImagesLeft,
 .DetectionOtherImagesRight {
-    width: 518px;
-    height: 260px;
+    width: 68.5vh;
+    height: 33vh;
     /*grid for small screens*/
     background-size: cover; /* Ensure the background images cover the entire area */
     display: flex;
