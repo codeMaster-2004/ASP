@@ -187,15 +187,6 @@ function Navbar() {
                 </div>
                 )}
             </li>
-            <li className='nav-item'>
-              <Link
-                to='/facilities'
-                className='nav-links'
-                onClick={closeMobileMenu}
-              >
-                Facilities
-              </Link>
-            </li>
             <li className={`nav-item ${openDropdown === 2 ? 'active' : ''}`}>
               <Link
                 to='/optical-instrumentation'

@@ -1,11 +1,16 @@
 import React from 'react';
 import './page.css';
+import { Link } from 'react-router-dom';
+import "styled-components"
 
 function BatteryManagementTop() {
   return (
     <>
         <div className='management-container'>
-            <p>Battery Safety</p>
+            <Link to='/batterysafety' style={{textDecoration:"none"}}>
+              <p className='orange-text'>Battery Safety</p>
+            </Link>
+            
             <h1>Battery Thermal Management</h1>
             <img src={`${process.env.PUBLIC_URL}/images/batterypack.png`} alt="batterysafety" width="100%" height="100%"/>
         </div>

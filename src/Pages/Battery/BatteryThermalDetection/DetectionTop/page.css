@@ -2,7 +2,6 @@
     display: flex;
     flex-direction: column;
     margin: 0 11.5%;
-    gap: 70px;
 }
 
 .detection-container {
@@ -19,20 +18,17 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-}
-
-.detection-container img {
-    width: 1140px;
-    height: 1079px;
+    margin: 5% 0 3%;
 }
 
 .detection-container h1 {
     font-family: "Myriad Pro";
-    font-size: 9.5vh;;
+    font-size: 9.5vh;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
     text-align: left;
+    margin-bottom: 5%;
 }
 
 .detection-pre-text {
@@ -40,7 +36,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 50px;
+    gap: 4vh;
 }
 
 .detection-pre-text p {
@@ -54,9 +50,8 @@
 .detection-top-image-desc {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     gap: 10px;
+    margin-top: 7%;
 }
 
 .detection-top-image-desc p {
@@ -65,5 +60,5 @@
     font-size: 3.7vh;
     font-style: italic;
     font-weight: 600;
-    line-height: 6.2vh;
+    text-align: left;
 }
