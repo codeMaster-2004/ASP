@@ -40,10 +40,10 @@
 .text-after-big-concen p {
     color: #000;
     font-family: "Adobe Caslon Pro";
-    font-size: 30px;
+    font-size: 3.7vh;
     font-style: normal;
     font-weight: 400;
-    line-height: 50px; /* 166.667% */
+    line-height: 6.2vh; /* 166.667% */
 }
 
 .concentration-graph {
@@ -55,20 +55,20 @@
 .concentration-graph p {
     color: var(--Base-Black, #000);
     font-family: "Myriad Pro";
-    font-size: 30px;
+    font-size: 3.7vh;
     font-style: italic;
     font-weight: 600;
     line-height: 40px; /* 133.333% */
-    
+    margin-top: 2%;
 }
 
 .concentration-text p{
     color: var(--Base-Black, #000);
     font-family: Roboto;
-    font-size: 30px;
+    font-size: 3.7vh;
     font-style: normal;
     font-weight: 400;
-    line-height: 50px; /* 166.667% */
+    line-height: 6.2vh; /* 166.667% */
 }
 
 .concentration-others {
@@ -86,7 +86,7 @@
     font-size: 50px;
     font-style: normal;
     font-weight: 700;
-    line-height: 60px; /* Adjusted to better fit the heading */
+    line-height: 9vh; /* Adjusted to better fit the heading */
     margin: 0 0 4%;
 }
 
@@ -117,7 +117,7 @@
 .concentration-others-images-right-top-text h1 {
     color: #fff;
     font-family: "Myriad Pro";
-    font-size: 30px; /* Adjusted to better match the image */
+    font-size: 3.7vh; /* Adjusted to better match the image */
     font-style: normal;
     text-align: left;
     font-weight: 600;

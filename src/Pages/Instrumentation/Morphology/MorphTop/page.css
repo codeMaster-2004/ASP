@@ -9,16 +9,16 @@
     text-align: left;
     /* text-shadow: 0px 4px 15px rgba(0, 0, 0, 0.50); */
     font-family: "DM Mono";
-    font-size: 25px;
+    font-size: 3.6vh;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin-top: 4%;
+    margin: 5% 0 3%;
 }
 
 .morph-top h1 {
     font-family: "Myriad Pro";
-    font-size: 65px;
+    font-size: 9.5vh;;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -33,10 +33,10 @@
 .morph-top-after-image-text p {
     color: var(--Base-Black, #000);
     font-family: "Adobe Caslon Pro";
-    font-size: 30px;
+    font-size: 3.7vh;
     font-style: normal;
     font-weight: 400;
-    line-height: 50px; /* 166.667% */
+    line-height: 6.2vh; /* 166.667% */
 }
 
 .morph-top-validation {
@@ -57,10 +57,10 @@
 .morph-top-validation p {
     color: var(--Base-Black, #000);
     font-family: "Adobe Caslon Pro";
-    font-size: 30px;
+    font-size: 3.7vh;
     font-style: normal;
     font-weight: 400;
-    line-height: 50px; /* 166.667% */
+    line-height: 6.2vh; /* 166.667% */
 }
 
 .morph-top-validation-image,
@@ -76,7 +76,7 @@
 .measuredvstheoretical p {
     color: var(--Base-Black, #000);
     font-family: "Myriad Pro";
-    font-size: 30px;
+    font-size: 3.7vh;
     font-style: italic;
     font-weight: 600;
     line-height: 40px; /* 133.333% */
@@ -85,7 +85,7 @@
 .morph-top-validation-image p {
     color: #000;
     font-family: "Myriad Pro";
-    font-size: 30px;
+    font-size: 3.7vh;
     font-style: italic;
     font-weight: 600;
     line-height: 40px; /* 133.333% */
@@ -114,10 +114,10 @@
 .measuredvstheoreticaltext p {
     color: var(--Base-Black, #000);
     font-family: "Adobe Caslon Pro";
-    font-size: 30px;
+    font-size: 3.7vh;
     font-style: normal;
     font-weight: 400;
-    line-height: 50px; /* 166.667% */
+    line-height: 6.2vh; /* 166.667% */
 }
 
 .agglomerated h1{
@@ -126,7 +126,7 @@
     font-size: 50px;
     font-style: normal;
     font-weight: 700;
-    line-height: 60px; /* 60% */
+    line-height: 9vh; /* 60% */
 }
 
 .agglomerated-image {
@@ -138,10 +138,10 @@
 .agglomerated-image p {
     color: var(--Base-Black, #000);
     font-family: "Adobe Caslon Pro";
-    font-size: 30px;
+    font-size: 3.7vh;
     font-style: normal;
     font-weight: 400;
-    line-height: 50px; /* 166.667% */
+    line-height: 6.2vh; /* 166.667% */
     margin-top: 6%;
     margin-bottom: 8%;
 }
@@ -149,8 +149,8 @@
 .measuredvstheoreticaltext p {
     color: var(--Base-Black, #000);
     font-family: "Adobe Caslon Pro";
-    font-size: 30px;
+    font-size: 3.7vh;
     font-style: normal;
     font-weight: 400;
-    line-height: 50px; /* 166.667% */
+    line-height: 6.2vh; /* 166.667% */
 }

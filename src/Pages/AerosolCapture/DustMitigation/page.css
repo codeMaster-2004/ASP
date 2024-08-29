@@ -13,20 +13,21 @@
     text-align: left;
     /* text-shadow: 0px 4px 15px rgba(0, 0, 0, 0.50); */
     font-family: "DM Mono";
-    font-size: 25px;
+    font-size: 3.6vh;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin-top: 4%;
+    margin: 5% 0 3%;
 }
 
 .dust-top-container h1 {
     font-family: "Myriad Pro";
-    font-size: 65px;
+    font-size: 9.5vh;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
     text-align: left;
+    padding-bottom: 5%;
 }
 
 .dust-top-text {
@@ -38,10 +39,10 @@
 .dust-top-text p {
     color: #000;
     font-family: "Adobe Caslon Pro";
-    font-size: 30px;
+    font-size: 3.7vh;
     font-style: normal;
     font-weight: 400;
-    line-height: 50px; /* 166.667% */
+    line-height: 6.2vh; /* 166.667% */
 }
 
 .text-after-collection {
@@ -53,10 +54,10 @@
 .text-after-collection p {
     color: #000;
     font-family: "Adobe Caslon Pro";
-    font-size: 30px;
+    font-size: 3.7vh;
     font-style: normal;
     font-weight: 400;
-    line-height: 50px; /* 166.667% */
+    line-height: 6.2vh; /* 166.667% */
     margin-top: 10%;
 }
 
@@ -72,16 +73,18 @@
     font-size: 50px;
     font-style: normal;
     font-weight: 700;
-    line-height: 60px; /* 60% */
+    line-height: 9vh; /* 60% */
+    margin-bottom: -7vh;
 }
 
 .media-free-filtration p {
     color: #000;
     font-family: "Adobe Caslon Pro";
-    font-size: 30px;
+    font-size: 3.7vh;
     font-style: normal;
     font-weight: 400;
-    line-height: 50px; /* 166.667% */
+    line-height: 6.2vh; /* 166.667% */
+    
 }
 
 .dust-others {
@@ -99,7 +102,7 @@
     font-size: 50px;
     font-style: normal;
     font-weight: 700;
-    line-height: 60px; /* Adjusted to better fit the heading */
+    line-height: 9vh; /* Adjusted to better fit the heading */
     margin: 10% 0;
 }
 
@@ -112,7 +115,7 @@
 .dust-effectiveness-filter p {
     color: var(--Base-Black, #000);
     font-family: "Myriad Pro";
-    font-size: 30px;
+    font-size: 3.7vh;
     font-style: italic;
     font-weight: 600;
     line-height: 40px; /* 133.333% */
@@ -121,10 +124,10 @@
 .dust-final-text p{
     color: var(--Base-Black, #000);
     font-family: "Adobe Caslon Pro";
-    font-size: 30px;
+    font-size: 3.7vh;
     font-style: normal;
     font-weight: 400;
-    line-height: 50px; /* 166.667% */
+    line-height: 6.2vh; /* 166.667% */
 }
 
 .dust-others-images {
@@ -155,7 +158,7 @@
 .dust-others-images-right-top-text h1 {
     color: #fff;
     font-family: "Myriad Pro";
-    font-size: 30px; /* Adjusted to better match the image */
+    font-size: 3.7vh; /* Adjusted to better match the image */
     font-style: normal;
     text-align: left;
     font-weight: 600;
@@ -171,7 +174,7 @@
 
 .dust-others-images-left-top-text {
     margin-top: 1%;
-    margin-bottom: 27%;
+    margin-bottom: 22%;
     width: 95%;
 }
 
@@ -186,7 +189,7 @@
 
 .dust-others-images-left-bottom-text {
     margin-top: 1%;
-    margin-bottom: 19%;
+    margin-bottom: 14%;
     width: 95%;
 }
 
@@ -200,13 +203,13 @@
 }
 
 .dust-others-images-right-top {
-    background-image: url("../../../../public/images/DustTile.png");
+    background-image: url("../../../../public/images/aerosolconcentrationtile.png");
     margin-bottom: 7%;
 }
 
 .dust-others-images-right-top-text {
     margin-top: 1%;
-    margin-bottom: 28%;
+    margin-bottom: 23%;
     width: 95%;
 }
 

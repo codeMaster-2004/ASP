@@ -9,7 +9,7 @@
     text-align: left;
     /* text-shadow: 0px 4px 15px rgba(0, 0, 0, 0.50); */
     font-family: "DM Mono";
-    font-size: 25px;
+    font-size: 3.6vh;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -18,7 +18,7 @@
 .BatteryHeading h1 {
     /* text-shadow: 0px 4px 15px rgba(0, 0, 0, 0.50); */
     font-family: "Myriad Pro";
-    font-size: 65px;
+    font-size: 9.5vh;;
     font-style: normal;
     font-weight: 700;
     line-height: normal;

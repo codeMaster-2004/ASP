@@ -9,7 +9,7 @@
     text-align: left;
     /* text-shadow: 0px 4px 15px rgba(0, 0, 0, 0.50); */
     font-family: "DM Mono";
-    font-size: 25px;
+    font-size: 3.6vh;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -18,7 +18,7 @@
 .management-container h1 {
     /* text-shadow: 0px 4px 15px rgba(0, 0, 0, 0.50); */
     font-family: "Myriad Pro";
-    font-size: 65px;
+    font-size: 9.5vh;;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -40,10 +40,10 @@
 
 .management-pre-text p {
     font-family: "Adobe Caslon Pro";
-    font-size: 30px;
+    font-size: 3.7vh;
     font-style: normal;
     font-weight: 400;
-    line-height: 50px; /* 166.667% */
+    line-height: 6.2vh; /* 166.667% */
 }
 
 .management-separator {

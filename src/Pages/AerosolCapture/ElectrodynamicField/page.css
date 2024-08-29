@@ -13,20 +13,21 @@
     text-align: left;
     /* text-shadow: 0px 4px 15px rgba(0, 0, 0, 0.50); */
     font-family: "DM Mono";
-    font-size: 25px;
+    font-size: 3vh;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin-top: 4%;
+    margin: 5% 0 3%;
 }
 
 .electrodynamic-container h1 {
     font-family: "Myriad Pro";
-    font-size: 65px;
+    font-size: 9vh;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
     text-align: left;
+    padding-bottom: 5%;
 }
 
 .text-after-big-field {
@@ -38,16 +39,16 @@
 .text-after-big-field p {
     color: #000;
     font-family: "Adobe Caslon Pro";
-    font-size: 30px;
+    font-size: 3.7vh;
     font-style: normal;
     font-weight: 400;
-    line-height: 50px; /* 166.667% */
+    line-height: 6.2vh; /* 166.667% */
 }
 
 .supply-system {
     display: flex;
     flex-direction: column;
-    margin: 2% 0 7%;
+    margin: 0% 0 7%;
 }
 
 .supply-system h1 {
@@ -56,31 +57,33 @@
     font-size: 50px;
     font-style: normal;
     font-weight: 700;
-    line-height: 60px; /* 60% */
+    line-height: 9vh; /* 60% */
+    margin-bottom: -5%;
 }
 
 .supply-system p {
     color: var(--Base-Black, #000);
     font-family: "Adobe Caslon Pro";
-    font-size: 30px;
+    font-size: 3.7vh;
     font-style: normal;
     font-weight: 400;
-    line-height: 50px; /* 166.667% */
+    line-height: 6.2vh; /* 166.667% */
 }
 
 .field-mitigation-graph {
     display: flex;
     flex-direction: column;
-    margin: 10% 0 7%;
+    margin: 10% 0 3%;
 }
 
 .field-mitigation-graph p {
     color: var(--Base-Black, #000);
     font-family: "Myriad Pro";
-    font-size: 30px;
+    font-size: 3.7vh;
     font-style: italic;
     font-weight: 600;
-    line-height: 40px; /* 133.333% */
+    line-height: 5vh; /* 133.333% */
+    margin-top: 2%;
 }
 
 .field-after-text {
@@ -91,10 +94,10 @@
 .field-after-text p {
     color: var(--Base-Black, #000);
     font-family: "Adobe Caslon Pro";
-    font-size: 30px;
+    font-size: 3.7vh;
     font-style: normal;
     font-weight: 400;
-    line-height: 50px; /* 166.667% */
+    line-height: 6.2vh; /* 166.667% */
 }
 
 .electro-others {
@@ -102,7 +105,7 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    margin: 8% 0 20%;
+    margin: 10% 0 20%;
     /* background-color: #FF4E0D; */
 }
 
@@ -112,8 +115,8 @@
     font-size: 50px;
     font-style: normal;
     font-weight: 700;
-    line-height: 60px; /* Adjusted to better fit the heading */
-    margin: 10% 0;
+    line-height: 9vh; /* Adjusted to better fit the heading */
+    margin: 0 0 4%;
 }
 
 .electro-others-images {
@@ -143,7 +146,7 @@
 .electro-others-images-right-top-text h1 {
     color: #fff;
     font-family: "Myriad Pro";
-    font-size: 30px; /* Adjusted to better match the image */
+    font-size: 3.7vh; /* Adjusted to better match the image */
     font-style: normal;
     text-align: left;
     font-weight: 600;
@@ -159,7 +162,7 @@
 
 .electro-others-images-left-top-text {
     margin-top: 1%;
-    margin-bottom: 27%;
+    margin-bottom: 23%;
     width: 95%;
 }
 
@@ -174,7 +177,7 @@
 
 .electro-others-images-left-bottom-text {
     margin-top: 1%;
-    margin-bottom: 27%;
+    margin-bottom: 23%;
     width: 95%;
 }
 
@@ -194,7 +197,7 @@
 
 .electro-others-images-right-top-text {
     margin-top: 1%;
-    margin-bottom: 27.5%;
+    margin-bottom: 23.5%;
     width: 95%;
 }
 

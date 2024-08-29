@@ -13,16 +13,16 @@
     text-align: left;
     /* text-shadow: 0px 4px 15px rgba(0, 0, 0, 0.50); */
     font-family: "DM Mono";
-    font-size: 25px;
+    font-size: 3.6vh;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin-top: 4%;
+    margin: 5% 0 3%;
 }
 
 .Optical-Instrumentation h1 {
     font-family: "Myriad Pro";
-    font-size: 65px;
+    font-size: 9.5vh;;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -37,10 +37,10 @@
 
 .optical-paragraph p {
     font-family: "Adobe Caslon Pro";
-    font-size: 30px;
+    font-size: 3.7vh;
     font-style: normal;
     font-weight: 400;
-    line-height: 50px; /* 166.667% */
+    line-height: 6.2vh; /* 166.667% */
     color:black
 }
 
@@ -51,10 +51,10 @@
 .optical-paragraph li {
     color: var(--Base-Black, #000);
     font-family: "Adobe Caslon Pro";
-    font-size: 30px;
+    font-size: 3.7vh;
     font-style: normal;
     font-weight: 400;
-    line-height: 50px; /* 166.667% */
+    line-height: 6.2vh; /* 166.667% */
 }
 
 .optical-others {
@@ -72,7 +72,7 @@
     font-size: 50px;
     font-style: normal;
     font-weight: 700;
-    line-height: 60px; /* Adjusted to better fit the heading */
+    line-height: 9vh; /* Adjusted to better fit the heading */
     margin: 10% 0;
 }
 
@@ -105,7 +105,7 @@
 .optical-others-images-right-bottom-text h1 {
     color: #fff;
     font-family: "Myriad Pro";
-    font-size: 30px; /* Adjusted to better match the image */
+    font-size: 3.7vh; /* Adjusted to better match the image */
     font-style: normal;
     text-align: left;
     font-weight: 600;
