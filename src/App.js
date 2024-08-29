@@ -23,7 +23,7 @@ import Clients from './Pages/Clients/page';
 
 function App() {
   return (
-    <>
+    <div className='App'>
       <Router>
         <Navbar />
         <Routes>
@@ -47,7 +47,7 @@ function App() {
         </Routes>
         <Footer />
       </Router>
-    </>
+    </div>
   );
 }
 
