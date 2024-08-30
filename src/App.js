@@ -21,6 +21,7 @@ import Products from './Pages/Products&Facilities/Products/page';
 import Facilities from './Pages/Products&Facilities/Facilities/page';
 import Clients from './Pages/Clients/page';
 
+
 import { ScrollToTop } from './Backend/Scroll';
 
 // AppContent component that contains all the routing logic

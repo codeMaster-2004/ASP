@@ -1,7 +1,7 @@
 import React from 'react';
 import './footer.css'
 import { Link } from 'react-router-dom';
-import { ScrollToTopLink } from '../../Backend/Scroll.js';
+// import { Link } from '../../Backend/Scroll.js';
 
 
 function Footer() {
@@ -43,82 +43,82 @@ function Footer() {
                     </div>
                     <div className='diff-pages'>
                         <div className='battery'>
-                            <ScrollToTopLink to='/batterysafety' className='footer-links'>
+                            <Link to='/batterysafety' className='footer-links'>
                                 <h1>
                                     Battery Safety
                                 </h1>
-                            </ScrollToTopLink>
-                            <ScrollToTopLink to='/battery-thermal-runaway-detection-prevention' className='footer-links'>
+                            </Link>
+                            <Link to='/battery-thermal-runaway-detection-prevention' className='footer-links'>
                                 <p>
                                     Battery Thermal Runaway Detection & Prevention
                                 </p>
-                            </ScrollToTopLink>
-                            <ScrollToTopLink to='/battery-thermal-management' className='footer-links'>
+                            </Link>
+                            <Link to='/battery-thermal-management' className='footer-links'>
                                 <p>
                                     Battery Thermal Management
                                 </p>
-                            </ScrollToTopLink>
+                            </Link>
                         </div>
                         <div className='Aerosol'>
-                            <ScrollToTopLink to='/aerocapture' className='footer-links'>
+                            <Link to='/aerocapture' className='footer-links'>
                                 <h1>
                                     Aerosol Capture
                                 </h1>
-                            </ScrollToTopLink>
-                            <ScrollToTopLink to='/aerosol-concentration' className='footer-links'>
+                            </Link>
+                            <Link to='/aerosol-concentration' className='footer-links'>
                                 <p>
                                     Aerosol Concentration
                                 </p>
-                            </ScrollToTopLink>
-                            <ScrollToTopLink to='/battery-thermal-runaway-numerical-simulation-of-electrodynamic-field' className='footer-links'>
+                            </Link>
+                            <Link to='/battery-thermal-runaway-numerical-simulation-of-electrodynamic-field' className='footer-links'>
                                 <p>
                                     Battery Thermal Runaway Numerical Simulation of Electrodynamic Field
                                 </p>
-                            </ScrollToTopLink>
-                            <ScrollToTopLink to='/dust-mitigation' className='footer-links'>
+                            </Link>
+                            <Link to='/dust-mitigation' className='footer-links'>
                                 <p>
                                     Dust Mitigation
                                 </p>
-                            </ScrollToTopLink>
+                            </Link>
                         </div>
                         <div className='Products'>
-                            <ScrollToTopLink to='/products-services' className='footer-links'>
+                            <Link to='/products-services' className='footer-links'>
                                 <h1>
                                     Products
                                 </h1>
-                            </ScrollToTopLink>
-                            <ScrollToTopLink to='/facilities' className='footer-links'>
+                            </Link>
+                            <Link to='/facilities' className='footer-links'>
                                 <p>
                                     Facilities
                                 </p>
-                            </ScrollToTopLink>
+                            </Link>
                         </div>
                         <div className='Instrumentation'>
-                            <ScrollToTopLink to='/optical-instrumentation' className='footer-links'>
+                            <Link to='/optical-instrumentation' className='footer-links'>
                                 <h1>
                                     Instrumentation
                                 </h1>
-                            </ScrollToTopLink>
-                            <ScrollToTopLink to='/aerosol-concentration' className='footer-links'>
+                            </Link>
+                            <Link to='/aerosol-concentration' className='footer-links'>
                                 <p>
                                     Aerosol Concentration
                                 </p>
-                            </ScrollToTopLink>
-                            <ScrollToTopLink to='/morphology-characterization-optical-extinction-spectroscopy' className='footer-links'>
+                            </Link>
+                            <Link to='/morphology-characterization-optical-extinction-spectroscopy' className='footer-links'>
                                 <p>
                                     Morphology Characterization with Optical Extinction Spectroscopy 
                                 </p>
-                            </ScrollToTopLink>
-                            <ScrollToTopLink to='/polarized-light-scattering' className='footer-links'>
+                            </Link>
+                            <Link to='/polarized-light-scattering' className='footer-links'>
                                 <p>
                                     Polarized Light Scattering
                                 </p>
-                            </ScrollToTopLink>
-                            <ScrollToTopLink to='/sedimentation-based-particle-sizing' className='footer-links'>
+                            </Link>
+                            <Link to='/sedimentation-based-particle-sizing' className='footer-links'>
                                 <p>
                                     Sedimentation based Particle Sizing
                                 </p>
-                            </ScrollToTopLink>
+                            </Link>
                         </div>
                     </div>
                 </div>
