@@ -73,11 +73,13 @@ function Products() {
                 <p className='lastproducttext'>
                     In each area, we offer technology licenses (our product) as well as the customization of our solution to client specific products and processes (our service).
                 </p>
-                <Button buttonStyle='btn--submit'
-                        buttonSize='btn--extralarge'
-                        buttonType='contact'>
-                    Contact Us
-                </Button>
+                <div className='product-button'>
+                    <Button buttonStyle='btn--submit'
+                            buttonSize='btn--extralarge'
+                            buttonType='contact'>
+                        Contact Us
+                    </Button>
+                </div>
             </div>
         </div>
     )

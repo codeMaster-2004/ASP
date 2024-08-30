@@ -125,3 +125,9 @@ p.lastproducttext {
     line-height: 6.2vh; /* 166.667% */
     margin-bottom: 17vh;
 }
+
+.product-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
