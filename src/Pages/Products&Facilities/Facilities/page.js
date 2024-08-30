@@ -46,8 +46,8 @@ function Facilities() {
                 </div>
                 <Separator />
                 <div className='facility-image-first-collection'>
-                    <img src={`${process.env.PUBLIC_URL}/images/Machine.png`} alt='products main' width='49%' height="45%" />
-                    <img src={`${process.env.PUBLIC_URL}/images/dabbalobokka.png`} alt='products main' width='49%' height="100%" />
+                    <img src={`${process.env.PUBLIC_URL}/images/Machine.png`} alt='products main' width='48.3%' height="45%" />
+                    <img src={`${process.env.PUBLIC_URL}/images/dabbalobokka.png`} alt='products main' width='48.3%' height="100%" />
                 </div>
                 <div className='Aero-Testing'>
                     <h1>
@@ -84,8 +84,8 @@ function Facilities() {
                 </div>
                 <Separator />
                 <div className='images-collection-two'>
-                    <img src={`${process.env.PUBLIC_URL}/images/tisAfridge.png`} alt='' width='49%' height='100%'/>
-                    <img src={`${process.env.PUBLIC_URL}/images/notafridge.png`} alt='' width='49%' height='100%'/>
+                    <img src={`${process.env.PUBLIC_URL}/images/tisAfridge.png`} alt='' width='49.34%' height='100%'/>
+                    <img src={`${process.env.PUBLIC_URL}/images/notafridge.png`} alt='' width='49.34%' height='100%'/>
                 </div>
                 <p className='facility-last-text'>
                     We have a functional wet chemistry lab equipped with sonicators, vortexer, autoclave, precision pipettes, high precision balance, hot plate, magnetic stirrer, temperature controller, pumps, flowmeters, compressed gas tanks, and power supplies. We also have several optical equipment including optical breadboards, optic rails, lasers, photometers, polarizers, analyzers, lenses, mirrors and beam splitters that can be used to build custom optical instrumentation.

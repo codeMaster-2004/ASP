@@ -87,8 +87,8 @@
 .optical-others-images-left-bottom,
 .optical-others-images-right-top,
 .optical-others-images-right-bottom {
-    width: 518px;
-    height: 260px;
+    width: 65.05vh;
+    height: 35vh;
     background-size: cover; /* Ensure the background images cover the entire area */
     display: flex;
     flex-direction: column;
@@ -152,7 +152,7 @@
 
 .optical-others-images-right-top-text {
     margin-top: 1%;
-    margin-bottom: 28%;
+    margin-bottom: 27%;
     width: 95%;
 }
 
@@ -167,7 +167,7 @@
 
 .optical-others-images-right-bottom-text {
     margin-top: 1%;
-    margin-bottom: 28%;
+    margin-bottom: 27%;
     width: 95%;
 }
 
