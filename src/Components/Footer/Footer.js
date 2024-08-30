@@ -40,7 +40,7 @@ function Footer() {
                     </div>
                     <div className='diff-pages'>
                         <div className='battery'>
-                            <Link to='/battery-safety' className='footer-links'>
+                            <Link to='/batterysafety' className='footer-links'>
                                 <h1>
                                     Battery Safety
                                 </h1>
@@ -91,7 +91,7 @@ function Footer() {
                             </Link>
                         </div>
                         <div className='Instrumentation'>
-                            <Link to='/instrumentation' className='footer-links'>
+                            <Link to='/optical-instrumentation' className='footer-links'>
                                 <h1>
                                     Instrumentation
                                 </h1>
@@ -111,7 +111,7 @@ function Footer() {
                                     Polarized Light Scattering
                                 </p>
                             </Link>
-                            <Link to='/sediment-based-particle-sizing' className='footer-links'>
+                            <Link to='/sedimentation-based-particle-sizing' className='footer-links'>
                                 <p>
                                     Sedimentation based Particle Sizing
                                 </p>

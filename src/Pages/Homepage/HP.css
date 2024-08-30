@@ -90,12 +90,17 @@
 }
 
 .goto-client-button {
+    font-family: "Myriad Pro";
+    font-size: 2.8vh;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
     background-color: #fff;
     text-align: center;
     color:#161833;
     font-weight: 850;
     text-decoration: none;
-    padding: 1.5% 3%;
+    padding: 1% 2%;
     border-radius: 7px;
 }
 

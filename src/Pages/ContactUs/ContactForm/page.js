@@ -18,10 +18,28 @@ function ContactBottom() {
         }));
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        console.log('Form submitted:', formData);
-        // Add your form submission logic here
+        try {
+            const response = await fetch('/api/send-email', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(formData),
+            });
+
+            if (response.ok) {
+                alert('Email sent successfully!');
+                // Clear the form
+                setFormData({ name: '', email: '', phone: '', message: '' });
+            } else {
+                alert('Failed to send email. Please try again.');
+            }
+        } catch (error) {
+            console.error('Error:', error);
+            alert('An error occurred. Please try again later.');
+        }
     };
 
     return (
@@ -39,7 +57,6 @@ function ContactBottom() {
                             onChange={handleChange}
                             required
                         />
-                        {/* change the font for message box Myriad Pro */}
                         <input
                             type="email"
                             name="email"

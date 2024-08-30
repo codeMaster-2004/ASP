@@ -30,7 +30,7 @@ function Home() {
               href='/clients' 
               className='goto-client-button'
               >
-              Learn More
+              Learn more
           </a>
         </div>
       </div>

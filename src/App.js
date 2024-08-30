@@ -1,8 +1,8 @@
 import Home from './Pages/Homepage/Homepage'
 import './App.css';
 import Navbar from './Components/Navbar/Navbar'
-import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 import Footer from './Components/Footer/footer';
 import About from './Pages/About/About';
 import ContactUs from './Pages/ContactUs/ContactUs';
@@ -21,10 +21,22 @@ import Products from './Pages/Products&Facilities/Products/page';
 import Facilities from './Pages/Products&Facilities/Facilities/page';
 import Clients from './Pages/Clients/page';
 
+// ScrollToTop component
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+}
+
 function App() {
   return (
     <div className='App'>
       <Router>
+        <ScrollToTop />
         <Navbar />
         <Routes>
           <Route path="/ASP" element={<Home/>} />
