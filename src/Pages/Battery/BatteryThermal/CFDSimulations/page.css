@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 5% 11.5%;
+    margin: 5% 11.5% 0;
 }
 
 .CFD {
@@ -57,7 +57,7 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    margin: 6% 0 20%;
+    margin: 6% 0 20.7%;
 }
 
 .management-others h1 {
@@ -78,8 +78,8 @@
 
 .management-others-images-left,
 .management-others-images-right {
-    width: 518px;
-    height: 260px;
+    width: 65.05vh;
+    height: 35vh;
     background-size: cover; /* Ensure the background images cover the entire area */
     display: flex;
     flex-direction: column;
