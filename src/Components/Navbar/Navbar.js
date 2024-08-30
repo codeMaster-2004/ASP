@@ -162,7 +162,7 @@ function Navbar() {
               {openDropdown === 0 && (
                 console.log("inside the Aerosol dropdown"),
                 <div className={`dropdown-content ${openDropdown === 0 ? 'show' : ''}`}>
-                    <Link to='/battery-thermal-runaway-numerical-simulation-of-electrodynamic-field' onClick={closeMobileMenu}>Battery Thermal Runaway Numerical Simulation of Electrodynamic Field</Link>
+                    <Link to='/battery-thermal-runaway-numerical-simulation-of-electrodynamic-field' onClick={closeMobileMenu}>Numerical Simulation of Electrodynamic Field</Link>
                     <Link to='/aerosol-concentration' onClick={closeMobileMenu}>Aerosol Concentration</Link>
                     <Link to='/dust-mitigation' onClick={closeMobileMenu}>Dust Mitigation</Link>
                     {console.log("done with it")}

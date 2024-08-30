@@ -36,16 +36,16 @@ function Facilities() {
                             <a href='/battery-thermal-management'>Thermal management of the battery pack</a> ensuring that each cell remains within the optimal temperature window during routine operation.
                         </li>
                         <li>
-                            <a href='/battery-thermal-detection'>Passive and on-demand thermal runaway detection and activation of thermal runaway prevention</a> system that addresses the problem at the root cause.
+                            <a href='/battery-thermal-runaway-detection-prevention'>Passive and on-demand thermal runaway detection and activation of thermal runaway prevention</a> system that addresses the problem at the root cause.
                         </li>
                         <li>
-                            <a href='/battery-thermal-detection'>Prevention of thermal runaway and fire propagation</a>from the failed cell to the neighboring cells as well as prevention of fire propagation in the battery pack.
+                            <a href='/battery-thermal-runaway-detection-prevention'>Prevention of thermal runaway and fire propagation</a> from the failed cell to the neighboring cells as well as prevention of fire propagation in the battery pack.
                         </li>
                     </ul>
                 </div>
                 <Separator />
                 <div className='facility-image-first-collection'>
-                    <img src={`${process.env.PUBLIC_URL}/images/machine.png`} alt='products main' width='48.05%' height="45%" />
+                    <img src={`${process.env.PUBLIC_URL}/images/Machine.png`} alt='products main' width='48.05%' height="45%" />
                     <img src={`${process.env.PUBLIC_URL}/images/dabbalobokka.png`} alt='products main' width='48.05%' height="100%" />
                 </div>
                 <div className='Aero-Testing'>
