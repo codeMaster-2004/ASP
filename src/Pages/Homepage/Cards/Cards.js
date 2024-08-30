@@ -1,5 +1,6 @@
 import React from 'react';
-import './Cards.css';
+import './Cards.css'; 
+import { Link } from 'react-router-dom';
 
 function Cards() {
   return (
@@ -17,9 +18,9 @@ function Cards() {
                   Our laboratory is equipped with unique in-house constructed and third-party hardware and instrumentation to characterize the hazards and validate the effectiveness of safety technologies.
                 </p>
               </div>
-              <a href='/facilities' className='cards_button'>
+              <Link to='/facilities' className='cards_button'>
                 Learn more
-              </a>
+              </Link>
             </div>
           </div>
           <div className='cards__container_right'>
@@ -34,9 +35,9 @@ function Cards() {
                   We provide engineering and computational analysis, specialized testing and custom instrumentation to help improve the performance and safety of your products and processes. 
                 </p>
               </div>
-              <a href='/products-services' className='cards_button'>
+              <Link to='/products-services' className='cards_button'>
                 Learn more
-              </a>
+              </Link>
             </div>
           </div>
       </div>

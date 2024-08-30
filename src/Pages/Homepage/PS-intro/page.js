@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
-import './page.css';
+import './page.css'; 
+import { Link } from 'react-router-dom';
 
 export default function Main() {
   useEffect(() => {

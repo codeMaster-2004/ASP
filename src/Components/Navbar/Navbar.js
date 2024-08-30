@@ -208,7 +208,7 @@ function Navbar() {
                 </div>
               )}
             </li>
-            <a href='/contact-us' className='nav-button'>Contact Us</a>
+            <Link to='/contact-us' className='nav-button'>Contact Us</Link>
           </ul> 
         </div>
       </nav>

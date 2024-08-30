@@ -1,6 +1,7 @@
 import React from 'react'
 import Separator from '../../../../Components/Orange-separator/separator';
-import './page.css';
+import './page.css'; 
+import { Link } from 'react-router-dom';
 import {Button} from '../../../../Components/Button/Button';
 
 function CFD() {
@@ -25,10 +26,10 @@ function CFD() {
         </p>
       </div>
       <p>
-        The liquid heat exchanger can similarly heat the cells in the battery during cold weather operation. Maintaining the battery pack within an optimal temperature window ensures excellent performance, minimal energy loss, and minimal degradation (which in turn leads to long cycle life). The thermal management system can be implemented alone or on combination with the <a href='/battery-thermal-runaway-detection-prevention'>thermal runaway detection and prevention technology</a>. 
+        The liquid heat exchanger can similarly heat the cells in the battery during cold weather operation. Maintaining the battery pack within an optimal temperature window ensures excellent performance, minimal energy loss, and minimal degradation (which in turn leads to long cycle life). The thermal management system can be implemented alone or on combination with the <Link to='/battery-thermal-runaway-detection-prevention'>thermal runaway detection and prevention technology</Link>. 
       </p>
       <p>
-        Our technology can improve the battery performance in any application that relies on batteries for energy storage and reuse. Examples include the vertical takeoff and landing systems with electric propulsion (eVTOL), electric vehicles (EVs), electric trucks, electric buses, battery energy storage systems (BESS) for residential and electric grid energy systems, aircraft, drones, micromobility systems (including Ebikes and scooters), medical devices, and power tools. We can customize the thermal management system to client battery pack design. For additional information contact us at <a href="mailto:office@analyticalscientificproducts.com">office@analyticalscientificproducts.com</a>.
+        Our technology can improve the battery performance in any application that relies on batteries for energy storage and reuse. Examples include the vertical takeoff and landing systems with electric propulsion (eVTOL), electric vehicles (EVs), electric trucks, electric buses, battery energy storage systems (BESS) for residential and electric grid energy systems, aircraft, drones, micromobility systems (including Ebikes and scooters), medical devices, and power tools. We can customize the thermal management system to client battery pack design. For additional information contact us at <Link to="mailto:office@analyticalscientificproducts.com">office@analyticalscientificproducts.com</Link>.
       </p>
       <div className='management-others'>
         <h1>Other Topics</h1>

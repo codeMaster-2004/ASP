@@ -3,7 +3,8 @@ import '../../App.css';
 // import { Button } from '../../Components/Button/Button';
 import Main from './PS-intro/page';
 import Cards from './Cards/Cards';
-import './HP.css';
+import './HP.css'; 
+import { Link } from 'react-router-dom';
 
 function Home() {
   return (
@@ -26,12 +27,12 @@ function Home() {
             <img src={`${process.env.PUBLIC_URL}/images/DoD.png`} alt='DOD' width='90%' height='90%'/>
           </div>
         </div>
-          <a 
-              href='/clients' 
+          <Link 
+              to='/clients' 
               className='goto-client-button'
               >
               Learn more
-          </a>
+          </Link>
         </div>
       </div>
       <Cards />
