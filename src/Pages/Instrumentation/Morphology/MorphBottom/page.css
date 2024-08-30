@@ -62,7 +62,7 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    margin: 10% 0 20%;
+    margin: 10% 0 21%;
     /* background-color: #FF4E0D; */
 }
 
@@ -90,8 +90,8 @@
 .morph-others-images-left-bottom,
 .morph-others-images-right-top,
 .morph-others-images-right-bottom {
-    width: 518px;
-    height: 260px;
+    width: 65.05vh;
+    height: 35vh;
     background-size: cover; /* Ensure the background images cover the entire area */
     display: flex;
     flex-direction: column;
