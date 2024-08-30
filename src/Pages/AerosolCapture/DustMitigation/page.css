@@ -92,7 +92,7 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    margin: 2% 0 20%;
+    margin: 2% 0 19.25%;
     /* background-color: #FF4E0D; */
 }
 
@@ -144,8 +144,8 @@
 .dust-others-images-left-top,
 .dust-others-images-left-bottom,
 .dust-others-images-right-top{
-    width: 518px;
-    height: 260px;
+    width: 65.05vh;
+    height: 35vh;
     background-size: cover; /* Ensure the background images cover the entire area */
     display: flex;
     flex-direction: column;

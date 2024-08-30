@@ -45,8 +45,8 @@ function Facilities() {
                 </div>
                 <Separator />
                 <div className='facility-image-first-collection'>
-                    <img src={`${process.env.PUBLIC_URL}/images/Machine.png`} alt='products main' width='48.05%' height="45%" />
-                    <img src={`${process.env.PUBLIC_URL}/images/dabbalobokka.png`} alt='products main' width='48.05%' height="100%" />
+                    <img src={`${process.env.PUBLIC_URL}/images/Machine.png`} alt='products main' width='49%' height="45%" />
+                    <img src={`${process.env.PUBLIC_URL}/images/dabbalobokka.png`} alt='products main' width='49%' height="100%" />
                 </div>
                 <div className='Aero-Testing'>
                     <h1>
