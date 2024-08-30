@@ -1,8 +1,8 @@
 import Home from './Pages/Homepage/Homepage'
 import './App.css';
 import Navbar from './Components/Navbar/Navbar'
-import React, { useEffect } from 'react';
-import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Footer from './Components/Footer/footer';
 import About from './Pages/About/About';
 import ContactUs from './Pages/ContactUs/ContactUs';
@@ -21,43 +21,44 @@ import Products from './Pages/Products&Facilities/Products/page';
 import Facilities from './Pages/Products&Facilities/Facilities/page';
 import Clients from './Pages/Clients/page';
 
-// ScrollToTop component
-function ScrollToTop() {
-  const { pathname } = useLocation();
+import { ScrollToTop } from './Backend/Scroll';
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [pathname]);
-
-  return null;
+// AppContent component that contains all the routing logic
+function AppContent() {
+  return (
+    <>
+      <ScrollToTop />
+      <Navbar />
+      <Routes>
+        <Route path="/ASP" element={<Home/>} />
+        <Route path='/about' element={<About/>} />
+        <Route path='/contact-us' element={<ContactUs/>} />
+        <Route path='/aerocapture' element={<Aerosol/>} />
+        <Route path='/batterysafety' element={<BatterySafety/>} />
+        <Route path='/battery-thermal-management' element={<BatteryThermalManagement/>} />
+        <Route path='/battery-thermal-runaway-detection-prevention' element={<BatteryThermalDetection/>} />
+        <Route path='/optical-instrumentation' element={<Optical/>} />
+        <Route path='/morphology-characterization-optical-extinction-spectroscopy' element={<Morphology/>} />
+        <Route path='/sedimentation-based-particle-sizing' element={<Sedimentation />} />
+        <Route path='/polarized-light-scattering' element={<Polarized />} />
+        <Route path='/aerosol-concentration' element={<AerosolConcentration />} />
+        <Route path='/battery-thermal-runaway-numerical-simulation-of-electrodynamic-field' element={<Electrodynamic />} />
+        <Route path='/dust-mitigation' element={<DustMitigation />} />
+        <Route path='/products-services' element={<Products />} />
+        <Route path='/facilities' element={<Facilities />} />
+        <Route path='/clients' element={<Clients />} />
+      </Routes>
+      <Footer />
+    </>
+  );
 }
 
+// Main App component
 function App() {
   return (
     <div className='App'>
       <Router>
-        <ScrollToTop />
-        <Navbar />
-        <Routes>
-          <Route path="/ASP" element={<Home/>} />
-          <Route path='/about' element={<About/>} />
-          <Route path='/contact-us' element={<ContactUs/>} />
-          <Route path='/aerocapture' element={<Aerosol/>} />
-          <Route path='/batterysafety' element={<BatterySafety/>} />
-          <Route path='/battery-thermal-management' element={<BatteryThermalManagement/>} />
-          <Route path='/battery-thermal-runaway-detection-prevention' element={<BatteryThermalDetection/>} />
-          <Route path='/optical-instrumentation' element={<Optical/>} />
-          <Route path='/morphology-characterization-optical-extinction-spectroscopy' element={<Morphology/>} />
-          <Route path='/sedimentation-based-particle-sizing' element={<Sedimentation />} />
-          <Route path='/polarized-light-scattering' element={<Polarized />} />
-          <Route path='/aerosol-concentration' element={<AerosolConcentration />} />
-          <Route path='/battery-thermal-runaway-numerical-simulation-of-electrodynamic-field' element={<Electrodynamic />} />
-          <Route path='/dust-mitigation' element={<DustMitigation />} />
-          <Route path='/products-services' element={<Products />} />
-          <Route path='/facilities' element={<Facilities />} />
-          <Route path='/clients' element={<Clients />} />
-        </Routes>
-        <Footer />
+        <AppContent />
       </Router>
     </div>
   );

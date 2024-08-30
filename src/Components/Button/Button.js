@@ -1,6 +1,6 @@
 import React from 'react';
 import './Button.css';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const STYLES = ['btn--primary', 'btn--outline', 'btn--test', "btn--aerosol", "btn--battery", "btn--submit", "btn--learn"];
 
@@ -32,6 +32,8 @@ export const Button = ({
   buttonSize,
   buttonType
 }) => {
+  const navigate = useNavigate();
+  
   const checkButtonStyle = STYLES.includes(buttonStyle)
     ? buttonStyle
     : STYLES[0];
@@ -40,11 +42,17 @@ export const Button = ({
 
   const checkButtonType = TYPES[buttonType] ? TYPES[buttonType] : TYPES.contact;
 
+  const handleClick = (e) => {
+    e.preventDefault();
+    window.scrollTo(0, 0);
+    navigate(checkButtonType);
+    if (onClick) onClick(e);
+  };
+
   return (
-    <Link to={checkButtonType} className='btn-mobile'>
+    <Link to={checkButtonType} className='btn-mobile' onClick={handleClick}>
       <button
         className={`btn ${checkButtonStyle} ${checkButtonSize}`}
-        onClick={onClick}
         type={type}
       >
         {children}
