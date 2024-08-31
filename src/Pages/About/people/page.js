@@ -18,7 +18,7 @@ function People() {
                     </div>
                     <div className='vd-desc'>
                         <div className='vd-desc-images'>
-                            <img src={`${process.env.PUBLIC_URL}/images/vd-new.png`} alt='Vijay Devarakonda' width='520vh' height='60%'/>
+                            <img src={`${process.env.PUBLIC_URL}/images/vd-new.png`} alt='Vijay Devarakonda' width='520vh' height='51%'/>
                             <div className='vd-desc-logos'>
                                 <img src={`${process.env.PUBLIC_URL}/images/vd-1.png`} alt='Vijay Devarakonda'/>
                                 <img src={`${process.env.PUBLIC_URL}/images/vd-2.png`} alt='Vijay Devarakonda'/>

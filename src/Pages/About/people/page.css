@@ -145,17 +145,17 @@
 .custom-list {
     list-style-type: disc; /* Default bullet points */
     margin: 0;
-    padding: 0 8vh; /* Adjust padding for indent */
+    padding: 0 6vh; /* Adjust padding for indent */
 }
 
 .custom-list li {
     color: #f5f5f5;
     font-family: "Adobe Caslon Pro";
-    font-size: 3vh;
+    font-size: 3.7vh;
     font-style: normal;
     font-weight: 400;
-    line-height: 4.75vh;
-    text-decoration: underline 0.2vh;
+    line-height: 5vh;
+    margin-bottom: 1vh;
 }
 
 .vd-desc-logos,
