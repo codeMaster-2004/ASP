@@ -86,9 +86,9 @@
 .exp-text {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content:center;
+    margin-bottom: 4vh;
     gap: 3vh;
-    /* background-color: #FF4E0D; */
 }
 
 .exp-text h1 {
