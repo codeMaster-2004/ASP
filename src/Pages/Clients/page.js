@@ -37,11 +37,14 @@ function Clients() {
                     </p>
                     
                 </div>
-                <Button buttonStyle='btn--submit'
-                        buttonSize='btn--extralarge'
-                        buttonType='contact'>
-                    Contact Us
-                </Button>
+                <div className='client-button'>
+                    <Button buttonStyle='btn--submit'
+                            buttonSize='btn--extralarge'
+                            buttonType='contact'>
+                        Contact Us
+                    </Button>
+                </div>
+                
             </div>
         </div>
     )

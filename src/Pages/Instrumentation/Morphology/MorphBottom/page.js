@@ -12,10 +12,10 @@ function MorphBottom() {
                 Effects of Sonication on Breaking Agglomerated Nanoparticles
             </h1>
             <p>
-                We suspended each of these powders separately in water and sonicated the suspension to disperse the particles. The extinction spectra of these suspensions obtained using an off-the-shelf spectrometer are shown in the figure below.
+                Addition of surfactants and high intensity sonication are commonly used to break up agglomerated particles in various applications like chemical mechanical planarization (CMP). In order to examine this further, we measured the morphology of CMP slurry samples subjected to sonication. Sample results for silica CMP slurries are presented in the figure below. Here we present the equivalent spherical particle size distribution for simplicity. 
             </p>
             <p>
-                Addition of surfactants and high intensity sonication are commonly used to break up agglomerated particles in various applications like chemical mechanical planarization (CMP). In order to examine this further, we measured the morphology of CMP slurry samples subjected to sonication. Sample results for silica CMP slurries are presented in the figure below. 
+                The virgin sample (without sonication) exhibited a particle size range of 80 to 300 nm with a mode of about 180 nm. 8 minutes of sonication reduced the particle size range to 50 to 280 nm with a bimodal distribution with modes of about 60 nm and 160 nm, while 15 minutes of sonication changed the distribution to trimodal with modes of 75 nm, 120 nm, and 225 nm. A closer examination of the three distributions suggests that an increase in sonication duration increases the proportion of smaller particles in the sample. This clearly shows that the nanoparticles do undergo agglomeration in silica CMP slurries and that sonication is an effective strategy to break up the agglomerates.
             </p>
         </div>
         <Separator />

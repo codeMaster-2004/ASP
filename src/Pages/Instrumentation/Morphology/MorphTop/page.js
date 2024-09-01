@@ -81,7 +81,10 @@ function MorphTop() {
         </div>
         <div className='measuredvstheoreticaltext'>
             <p>
-                We suspended each of these powders separately in water and sonicated the suspension to disperse the particles. The extinction spectra of these suspensions obtained using an off-the-shelf spectrometer are shown in the figure below.
+                The data were analyzed using our inversion software and agglomerate structures were obtained in terms of fractal dimension and number of primary spheres per agglomerate. The figure below depicts the size distributions of these agglomerates in terms of number of primary spheres forming the agglomerate. Except Silica, it is observed that all these particles formed large and compact agglomerates in water. Using the results from our inversion, we calculated the absorbance spectra for the three suspensions, and they agreed very well with the measured spectra as shown in the figure above. These analyses yielded fractal dimensions of 2.8, 2.8 and 2.5 for SiO2, WO3 and TiO2. 
+            </p>
+            <p>
+                The higher fractal dimensions suggest that the particles formed compact agglomerates (close to spherical shape) in water. It is difficult to compare our results directly with the SEM images as the latter provide two-dimensional projections of the particle structure. Our instrument, on the other hand, considers the three dimensional structure of the particles. Additional research is needed to correlate our measurements with high resolution microscopy results.
             </p>
         </div>
     </div>

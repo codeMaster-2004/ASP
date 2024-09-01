@@ -1,8 +1,7 @@
 import React from 'react';
 import './footer.css'
 import { Link } from 'react-router-dom';
-// import { Link } from '../../Backend/Scroll.js';
-
+import ScrollToTopLink from '../../Backend/Scroll';
 
 function Footer() {
 
@@ -43,11 +42,11 @@ function Footer() {
                     </div>
                     <div className='diff-pages'>
                         <div className='battery'>
-                            <Link to='/batterysafety' className='footer-links'>
+                            <ScrollToTopLink to='/batterysafety' className='footer-links'>
                                 <h1>
                                     Battery Safety
                                 </h1>
-                            </Link>
+                            </ScrollToTopLink>
                             <Link to='/battery-thermal-runaway-detection-prevention' className='footer-links'>
                                 <p>
                                     Battery Thermal Runaway Detection & Prevention

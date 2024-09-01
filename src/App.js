@@ -20,15 +20,17 @@ import DustMitigation from './Pages/AerosolCapture/DustMitigation/page';
 import Products from './Pages/Products&Facilities/Products/page';
 import Facilities from './Pages/Products&Facilities/Facilities/page';
 import Clients from './Pages/Clients/page';
+import ScrollToTop from './Components/ScrollToTop/STP.js';
 
 
-import { ScrollToTop } from './Backend/Scroll';
+// import { ScrollToTop } from './Backend/Scroll';
+// import {ScrollToTop} from './Components/ScrollToTop/STP.js';
 
 // AppContent component that contains all the routing logic
 function AppContent() {
   return (
     <>
-      <ScrollToTop />
+    <ScrollToTop />
       <Navbar />
       <Routes>
         <Route path="/ASP" element={<Home/>} />
@@ -56,6 +58,7 @@ function AppContent() {
 
 // Main App component
 function App() {
+  // useScrollBehavior();
   return (
     <div className='App'>
       <Router>

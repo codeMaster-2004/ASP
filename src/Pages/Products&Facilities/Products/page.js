@@ -23,8 +23,8 @@ function Products() {
                                 <h1>
                                     Elevate Safety and Performance with ASP's Battery Thermal Technology
                                 </h1>
-                                <p>
-                                    ASP’s <Link to='/battery-safety'>battery thermal management and thermal runaway prevention</Link> technology can improve the performance and safety of any battery powered device. Examples include electric vehicles, vertical takeoff and landing systems with electric propulsion, battery powered micromobility devices, stationary battery energy storage systems (BESS), uninterruptible power supplied (UPS), medical devices, power tools and electronics.
+                                <p className='products-link'>
+                                    ASP’s <Link to='/batterysafety'>battery thermal management and thermal runaway prevention</Link> technology can improve the performance and safety of any battery powered device. Examples include electric vehicles, vertical takeoff and landing systems with electric propulsion, battery powered micromobility devices, stationary battery energy storage systems (BESS), uninterruptible power supplied (UPS), medical devices, power tools and electronics.
                                 </p>
                             </div>
                         </div>
@@ -64,8 +64,8 @@ function Products() {
                                 <h1>
                                     Innovative Dust Mitigation Technology for Improved Air Quality
                                 </h1>
-                                <p>
-                                    Our <Link to='/dust-mitigation'>dust mitigation technology</Link> improves the air quality in confined spaces such as spacecraft and aircraft cabins while using a fraction of the power needed to operate current systems such as HEPA filters.
+                                <p className='products-link'>
+                                    Our <Link to='/dust-mitigation'>dust mitigation technology</Link>  improves the air quality in confined spaces such as spacecraft and aircraft cabins while using a fraction of the power needed to operate current systems such as HEPA filters.
                                 </p>
                             </div>
                         </div>

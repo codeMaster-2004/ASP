@@ -44,7 +44,7 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    margin: 10% 0 21%;
+    margin: 15% 0 21%;
     /* background-color: #FF4E0D; */
 }
 
@@ -54,7 +54,7 @@
     font-size: 6vh;
     font-style: normal;
     font-weight: 700;
-    margin: 0 0 4%;
+    margin: 0 0 8%;
 }
 
 .innovation-others-images {

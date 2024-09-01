@@ -21,6 +21,19 @@
     margin: 5% 0 3%;
 }
 
+.products-link,
+.products-link a,
+.products-link .Link {
+    font-family: inherit;  /* This will inherit the font from the parent element */
+    color: inherit;  /* This will inherit the color from the parent element */
+    text-decoration: none;  /* Remove underline from links */
+}
+
+.products-link a:hover,
+.products-link .Link:hover {
+    text-decoration: underline;  /* Add underline on hover for better UX */
+}
+
 .products-container a:hover {
     text-decoration: underline;
 }
