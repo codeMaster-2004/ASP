@@ -18,7 +18,7 @@ export default async function handler(req, res) {
     // Email content
     let mailOptions = {
       from: process.env.EMAIL_FROM,
-      to: 'kundan.mergu@gmail.com',
+      to: 'office@analyticalscientificproducts.com',
       subject: 'New Contact Form Submission',
       text: `
             Name: ${name}

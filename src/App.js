@@ -1,8 +1,8 @@
 import Home from './Pages/Homepage/Homepage'
 import './App.css';
 import Navbar from './Components/Navbar/Navbar'
-import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 import Footer from './Components/Footer/footer';
 import About from './Pages/About/About';
 import ContactUs from './Pages/ContactUs/ContactUs';
@@ -20,17 +20,36 @@ import DustMitigation from './Pages/AerosolCapture/DustMitigation/page';
 import Products from './Pages/Products&Facilities/Products/page';
 import Facilities from './Pages/Products&Facilities/Facilities/page';
 import Clients from './Pages/Clients/page';
-import ScrollToTop from './Components/ScrollToTop/STP.js';
+// import useScrollToTop from './Components/ScrollToTop/STP.js';
 
 
 // import { ScrollToTop } from './Backend/Scroll';
 // import {ScrollToTop} from './Components/ScrollToTop/STP.js';
+function useScrollRestoration() {
+  const { pathname } = useLocation();
 
+  useEffect(() => {
+    // Scroll to top on route change
+    window.scrollTo(0, 0);
+  }, [pathname]);
+}
+
+// function ScrollToTop() {
+//   const { pathname } = useLocation();
+
+//   React.useEffect(() => {
+//     window.scrollTo(0, 0);
+//   }, [pathname]);
+
+//   return null;
+// }
 // AppContent component that contains all the routing logic
 function AppContent() {
+  useScrollRestoration();
+
   return (
     <>
-    <ScrollToTop />
+    {/* <ScrollToTop/> */}
       <Navbar />
       <Routes>
         <Route path="/ASP" element={<Home/>} />
@@ -58,7 +77,7 @@ function AppContent() {
 
 // Main App component
 function App() {
-  // useScrollBehavior();
+  // useScrollToTop();
   return (
     <div className='App'>
       <Router>

@@ -2,6 +2,26 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 
+const scrollToTop = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+};
+
+const ScrollToTopLink = ({ to, children, ...props }) => {
+  const handleClick = () => {
+    // Small delay to ensure the new page has loaded before scrolling
+    setTimeout(scrollToTop, 100);
+  };
+
+  return (
+    <Link to={to} onClick={handleClick} {...props}>
+      {children}
+    </Link>
+  );
+};
+
 function Navbar() {
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);

@@ -19,7 +19,6 @@ function page() {
             <p>2022</p>
           </div>
           <div className='exp-text'>
-            {/* make the texts aligned with each other */}
             <h1>20-40+</h1>
             <p>years of experience</p>
           </div>

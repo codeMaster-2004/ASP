@@ -6,8 +6,8 @@ const ScrollToTopLink = ({ to, children, ...props }) => {
 
   const handleClick = (e) => {
     e.preventDefault();
-    window.scrollTo(0, 0);
     navigate(to);
+    window.scrollTo(0, 0);
   };
 
   return (
