@@ -1,6 +1,6 @@
 import React from 'react';
 import './page.css'; 
-import { Link } from 'react-router-dom';
+import CustomLink from '../../../Components/CustomLink/CustomeAtt';
 import { Button } from '../../../Components/Button/Button';
 
 function Products() {
@@ -24,7 +24,7 @@ function Products() {
                                     Elevate Safety and Performance with ASP's Battery Thermal Technology
                                 </h1>
                                 <p className='products-link'>
-                                    ASP’s <Link to='/batterysafety'>battery thermal management and thermal runaway prevention</Link> technology can improve the performance and safety of any battery powered device. Examples include electric vehicles, vertical takeoff and landing systems with electric propulsion, battery powered micromobility devices, stationary battery energy storage systems (BESS), uninterruptible power supplied (UPS), medical devices, power tools and electronics.
+                                    ASP’s <CustomLink to='/batterysafety'>battery thermal management and thermal runaway prevention</CustomLink> technology can improve the performance and safety of any battery powered device. Examples include electric vehicles, vertical takeoff and landing systems with electric propulsion, battery powered micromobility devices, stationary battery energy storage systems (BESS), uninterruptible power supplied (UPS), medical devices, power tools and electronics.
                                 </p>
                             </div>
                         </div>
@@ -65,7 +65,7 @@ function Products() {
                                     Innovative Dust Mitigation Technology for Improved Air Quality
                                 </h1>
                                 <p className='products-link'>
-                                    Our <Link to='/dust-mitigation'>dust mitigation technology</Link>  improves the air quality in confined spaces such as spacecraft and aircraft cabins while using a fraction of the power needed to operate current systems such as HEPA filters.
+                                    Our <CustomLink to='/dust-mitigation'>dust mitigation technology</CustomLink>  improves the air quality in confined spaces such as spacecraft and aircraft cabins while using a fraction of the power needed to operate current systems such as HEPA filters.
                                 </p>
                             </div>
                         </div>

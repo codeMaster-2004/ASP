@@ -1,6 +1,6 @@
 import React from 'react';
 import './page.css';
-import { Link } from 'react-router-dom';
+import CustomLink from '../../../Components/CustomLink/CustomeAtt';
 import "styled-components";
 import { Button } from '../../../Components/Button/Button';
 import Separator from '../../../Components/Orange-separator/separator';
@@ -9,9 +9,9 @@ function Polarized() {
     return (
         <div className='Polarized'>
             <div className='polarized-container'>
-                <Link to='/optical-instrumentation' style={{textDecoration:"none"}}>
+                <CustomLink to='/optical-instrumentation' style={{textDecoration:"none"}}>
                     <p className='orange-text'>Instrumentation</p>
-                </Link>
+                </CustomLink>
                 <h1>Polarized Light Scattering</h1>
                 <img src={`${process.env.PUBLIC_URL}/images/LightScattering.png`} alt='main' width='100%' height="100%"/>
                 <div className='text-after-main'>

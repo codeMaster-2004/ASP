@@ -1,6 +1,5 @@
 import React from 'react';
 import './page.css'; 
-import { Link } from 'react-router-dom';
 import Separator from '../../../../Components/Orange-separator/separator';
 import{ Button } from '../../../../Components/Button/Button';
 

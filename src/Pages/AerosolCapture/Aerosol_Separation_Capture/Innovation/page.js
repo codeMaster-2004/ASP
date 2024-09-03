@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button } from '../../../../Components/Button/Button';
 import './page.css'; 
-import { Link } from 'react-router-dom';
+import CustomLink from '../../../../Components/CustomLink/CustomeAtt';
 import Separator from '../../../../Components/Orange-separator/separator';
 
 function Innovation() {
@@ -12,10 +12,10 @@ function Innovation() {
                     Innovative Aerosol Capture and Characterization Techniques
                 </h1>
                 <p>
-                    Since it does not use any media, this technology collects the aerosol particles in a pure form which minimizes cross contamination. The capture efficiency is a strong function of the <Link to='/battery-thermal-runaway-numerical-simulation-of-electrodynamic-field'>electrodynamic field strength near the conducting wires</Link> of our aerosol capture system that we have characterized computationally.
+                    Since it does not use any media, this technology collects the aerosol particles in a pure form which minimizes cross contamination. The capture efficiency is a strong function of the <CustomLink to='/battery-thermal-runaway-numerical-simulation-of-electrodynamic-field'>electrodynamic field strength near the conducting wires</CustomLink> of our aerosol capture system that we have characterized computationally.
                 </p>
                 <p>
-                    Understanding the key characteristics of the aerosol clouds such as particle mass loading, particle size distribution and particle composition is critical to learn about the origin of the aerosol particle as well as to device methods to combat their effect. We have developed a number of techniques to characterize the aerosol particles and clouds including a <Link to='/aerosol-concentration'>calibrated light extinction technique</Link> to measure the temporal concentration of dust particles in aerosol clouds.
+                    Understanding the key characteristics of the aerosol clouds such as particle mass loading, particle size distribution and particle composition is critical to learn about the origin of the aerosol particle as well as to device methods to combat their effect. We have developed a number of techniques to characterize the aerosol particles and clouds including a <CustomLink to='/aerosol-concentration'>calibrated light extinction technique</CustomLink> to measure the temporal concentration of dust particles in aerosol clouds.
                 </p>
             </div>
             <Separator />

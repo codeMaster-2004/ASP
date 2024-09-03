@@ -4,7 +4,7 @@ import '../../App.css';
 import Main from './PS-intro/page';
 import Cards from './Cards/Cards';
 import './HP.css'; 
-import { Link } from 'react-router-dom';
+import CustomLink from '../../Components/CustomLink/CustomeAtt';
 
 function Home() {
   return (
@@ -27,12 +27,12 @@ function Home() {
             <img src={`${process.env.PUBLIC_URL}/images/DoD.png`} alt='DOD' width='90%' height='90%'/>
           </div>
         </div>
-          <Link 
+          <CustomLink 
               to='/clients' 
               className='goto-client-button'
               >
               Learn more
-          </Link>
+          </CustomLink>
         </div>
       </div>
       <Cards />

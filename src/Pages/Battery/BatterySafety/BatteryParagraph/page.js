@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button } from '../../../../Components/Button/Button';
 import './page.css'; 
-import { Link } from 'react-router-dom';
+import CustomLink from '../../../../Components/CustomLink/CustomeAtt';
 import Separator from '../../../../Components/Orange-separator/separator';
 
 function BatteryPara() {
@@ -17,9 +17,9 @@ function BatteryPara() {
                 Large battery packs for power intensive applications are constructed by connecting a large number of smaller individual cells. Thermal runaway in one cell can generate and discharge enough energy to propagate the failure throughout the battery pack exposing the entire system to fire. ASP developed a patent-pending cell-agnostic technology that provides several key functions including:
             </p>
             <ul>
-                <li><Link to='/battery-thermal-management'>Thermal management of the battery pack</Link> ensuring that each cell remains within the optimal temperature window during routine operation.</li>
-                <li><Link to='/battery-thermal-runaway-detection-prevention'>Passive and on-demand thermal runaway detection and activation of thermal runaway prevention</Link> system that addresses the problem at the root cause.</li>
-                <li><Link to='/battery-thermal-runaway-detection-prevention'>Prevention of thermal runaway and fire propagation</Link> from the failed cell to the neighboring cells as well as prevention of fire propagation in the battery pack.</li>
+                <li><CustomLink to='/battery-thermal-management'>Thermal management of the battery pack</CustomLink> ensuring that each cell remains within the optimal temperature window during routine operation.</li>
+                <li><CustomLink to='/battery-thermal-runaway-detection-prevention'>Passive and on-demand thermal runaway detection and activation of thermal runaway prevention</CustomLink> system that addresses the problem at the root cause.</li>
+                <li><CustomLink to='/battery-thermal-runaway-detection-prevention'>Prevention of thermal runaway and fire propagation</CustomLink> from the failed cell to the neighboring cells as well as prevention of fire propagation in the battery pack.</li>
             </ul>
         </div>
         <div className='BatteryOthers'>

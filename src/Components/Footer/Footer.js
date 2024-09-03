@@ -1,6 +1,6 @@
 import React from 'react';
 import './footer.css'
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import CustomLink from '../CustomLink/CustomeAtt';
 
 function Footer() {
@@ -30,14 +30,14 @@ function Footer() {
                             <div className='Contact-info-address'>
                                 <a href="https://www.google.com/maps/place/4616+Willow+Ln,+Dallas,+TX+75244/@32.9139821,-96.8315335,17z/data=!3m1!4b1!4m6!3m5!1s0x864c20b61226def3:0xab0f20223673f63c!8m2!3d32.9139821!4d-96.8289532!16s%2Fg%2F11c21818hc?entry=ttu" className='contacts'><i className='fa fa-map-pin'/> 4616 Willow Lane, Dallas,TX 75244-7601</a>
                             </div>
-                            <Link
+                            <CustomLink
                                 className='social-icon-link linkedIn'
                                 to='https://www.linkedin.com/company/analytical-scientific-products/'
                                 target='_blank'
                                 aria-label='Facebook'
                                 >
                                     <i className='fab fa-linkedin' />
-                            </Link>
+                            </CustomLink>
                         </div>
                     </div>
                     <div className='diff-pages'>

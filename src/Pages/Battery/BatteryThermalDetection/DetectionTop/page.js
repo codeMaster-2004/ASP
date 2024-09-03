@@ -1,6 +1,6 @@
 import React from 'react';
 import './page.css';
-import { Link } from 'react-router-dom';
+import CustomLink from '../../../../Components/CustomLink/CustomeAtt';
 import "styled-components";
 import Separator from '../../../../Components/Orange-separator/separator';
 
@@ -8,9 +8,9 @@ function BatteryDetectionTop() {
   return (
     <div className="detection-prevention">
         <div className='detection-container'>
-            <Link to='/batterysafety' style={{textDecoration:'none'}}>
+            <CustomLink to='/batterysafety' style={{textDecoration:'none'}}>
                 <p className='orange-text'>Battery Safety</p>
-            </Link>
+            </CustomLink>
             
             <h1>Battery Thermal Runaway Detection and Prevention</h1>
             <img src={`${process.env.PUBLIC_URL}/images/BigBatteries.png`} alt="batteryputting" width="100%" height="100%"/>

@@ -1,6 +1,6 @@
 import React from 'react';
 import './page.css'; 
-import { Link } from 'react-router-dom';
+import CustomLink from '../../../Components/CustomLink/CustomeAtt';
 import Separator from '../../../Components/Orange-separator/separator';
 
 
@@ -34,13 +34,13 @@ function Facilities() {
                     </p>
                     <ul>
                         <li>
-                            <Link to='/battery-thermal-management'>Thermal management of the battery pack</Link> ensuring that each cell remains within the optimal temperature window during routine operation.
+                            <CustomLink to='/battery-thermal-management'>Thermal management of the battery pack</CustomLink> ensuring that each cell remains within the optimal temperature window during routine operation.
                         </li>
                         <li>
-                            <Link to='/battery-thermal-runaway-detection-prevention'>Passive and on-demand thermal runaway detection and activation of thermal runaway prevention</Link> system that addresses the problem at the root cause.
+                            <CustomLink to='/battery-thermal-runaway-detection-prevention'>Passive and on-demand thermal runaway detection and activation of thermal runaway prevention</CustomLink> system that addresses the problem at the root cause.
                         </li>
                         <li>
-                            <Link to='/battery-thermal-runaway-detection-prevention'>Prevention of thermal runaway and fire propagation</Link> from the failed cell to the neighboring cells as well as prevention of fire propagation in the battery pack.
+                            <CustomLink to='/battery-thermal-runaway-detection-prevention'>Prevention of thermal runaway and fire propagation</CustomLink> from the failed cell to the neighboring cells as well as prevention of fire propagation in the battery pack.
                         </li>
                     </ul>
                 </div>

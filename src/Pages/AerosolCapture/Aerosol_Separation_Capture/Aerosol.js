@@ -1,6 +1,5 @@
 import React from 'react';
 import './Aerosol.css'; 
-import { Link } from 'react-router-dom';
 import AerosolIntro from './Aerosol_Intro/page';
 import Innovation from './Innovation/page';
 

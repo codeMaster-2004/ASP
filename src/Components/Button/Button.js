@@ -1,6 +1,7 @@
 import React from 'react';
 import './Button.css';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+import CustomLink from '../CustomLink/CustomeAtt';
 
 const STYLES = ['btn--primary', 'btn--outline', 'btn--test', "btn--aerosol", "btn--battery", "btn--submit", "btn--learn"];
 
@@ -50,13 +51,13 @@ export const Button = ({
   };
 
   return (
-    <Link to={checkButtonType} className='btn-mobile' onClick={handleClick}>
+    <CustomLink to={checkButtonType} className='btn-mobile' onClick={handleClick}>
       <button
         className={`btn ${checkButtonStyle} ${checkButtonSize}`}
         type={type}
       >
         {children}
       </button>
-    </Link>
+    </CustomLink>
   );
 };

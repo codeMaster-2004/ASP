@@ -1,7 +1,7 @@
 import React from 'react';
 import Separator from '../../../Components/Orange-separator/separator';
 import './page.css';
-import { Link } from 'react-router-dom';
+import CustomLink from '../../../Components/CustomLink/CustomeAtt';
 import "styled-components";
 import { Button } from '../../../Components/Button/Button';
 
@@ -10,11 +10,11 @@ function Electrodynamic() {
     return (
         <div className='electrodynamic'>
             <div className='electrodynamic-container'>
-                <Link to='/aerocapture' style={{textDecoration:"none"}}>
+                <CustomLink to='/aerocapture' style={{textDecoration:"none"}}>
                     <p className='orange-text'>
                         Aerosol Capture
                     </p>
-                </Link>
+                </CustomLink>
                 <h1>
                     Numerical Simulation of Electrodynamic Field
                 </h1>

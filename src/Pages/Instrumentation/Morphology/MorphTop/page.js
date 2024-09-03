@@ -1,15 +1,15 @@
 import React from 'react';
 import './page.css';
-import { Link } from 'react-router-dom';
+import CustomLink from '../../../../Components/CustomLink/CustomeAtt';
 import "styled-components";
 import Separator from '../../../../Components/Orange-separator/separator';
 
 function MorphTop() {
   return (
     <div className='morph-top'>
-        <Link to='/optical-instrumentation' style={{textDecoration:"none"}}>
+        <CustomLink to='/optical-instrumentation' style={{textDecoration:"none"}}>
             <p className='orange-text'>Instrumentation</p>
-        </Link>
+        </CustomLink>
         <h1>Morphology Characterization with Optical Spectroscopy</h1>
         <img src={`${process.env.PUBLIC_URL}/images/NanoParticles.png`} alt='morphology' width='100%' height="100%"/>
         <div className='morph-top-after-image-text'>

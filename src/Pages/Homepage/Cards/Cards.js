@@ -1,6 +1,6 @@
 import React from 'react';
 import './Cards.css'; 
-import { Link } from 'react-router-dom';
+import CustomLink from '../../../Components/CustomLink/CustomeAtt';
 
 function Cards() {
   return (
@@ -18,9 +18,9 @@ function Cards() {
                   Our laboratory is equipped with unique in-house constructed and third-party hardware and instrumentation to characterize the hazards and validate the effectiveness of safety technologies.
                 </p>
               </div>
-              <Link to='/facilities' className='cards_button'>
+              <CustomLink to='/facilities' className='cards_button'>
                 Learn more
-              </Link>
+              </CustomLink>
             </div>
           </div>
           <div className='cards__container_right'>
@@ -35,9 +35,9 @@ function Cards() {
                   We provide engineering and computational analysis, specialized testing and custom instrumentation to help improve the performance and safety of your products and processes. 
                 </p>
               </div>
-              <Link to='/products-services' className='cards_button'>
+              <CustomLink to='/products-services' className='cards_button'>
                 Learn more
-              </Link>
+              </CustomLink>
             </div>
           </div>
       </div>

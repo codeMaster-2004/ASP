@@ -1,6 +1,5 @@
 import React from 'react';
 import './page.css'; 
-import { Link } from 'react-router-dom';
 
 function ContactTop() {
   return (
