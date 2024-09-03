@@ -1,26 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Link } from 'react-router-dom';
 import './Navbar.css';
+import CustomLink from '../CustomLink/CustomeAtt';
 
-const scrollToTop = () => {
-  window.scrollTo({
-    top: 0,
-    behavior: 'smooth'
-  });
-};
-
-const ScrollToTopLink = ({ to, children, ...props }) => {
-  const handleClick = () => {
-    // Small delay to ensure the new page has loaded before scrolling
-    setTimeout(scrollToTop, 100);
-  };
-
-  return (
-    <Link to={to} onClick={handleClick} {...props}>
-      {children}
-    </Link>
-  );
-};
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -124,57 +105,57 @@ function Navbar() {
     <>
       <nav className='navbar'>
         <div className='navbar-container'>
-          <Link to='/ASP' className='navbar-logo'>
+          <CustomLink to='/ASP' className='navbar-logo'>
             <img src={`${process.env.PUBLIC_URL}/images/Layer_1.png`}  alt='Nasa' width='35%' height='100%'/>
-          </Link>
+          </CustomLink>
           <div className='menu-icon' onClick={handleClick}>
             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
           </div>
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <li className='nav-item'>
-              <Link
+              <CustomLink
                 to='/about'
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
                 About
-              </Link>
+              </CustomLink>
             </li>
             <li className='nav-item'>
-              <Link
+              <CustomLink
                 to='/clients'
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
                 Clients
-              </Link>
+              </CustomLink>
             </li>
             <li className={`nav-item ${openDropdown === 3 ? 'active' : ''}`}>
-              <Link
+              <CustomLink
                 to='/products-services'
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
                 Products
-              </Link>
+              </CustomLink>
               <i
                 className={`fa fa-angle-down dropdown-arrow ${openDropdown === 3 ? 'rotate' : ''}`}
                 onClick={() => toggleDropdown(3)}
               ></i>
               {openDropdown === 3 && (
                 <div className={`dropdown-content ${openDropdown === 3 ? 'show' : ''}`}>
-                  <Link to='/facilities' onClick={closeMobileMenu}>Facilities</Link>
+                  <CustomLink to='/facilities' onClick={closeMobileMenu}>Facilities</CustomLink>
                 </div>
               )}
             </li>
             <li className={`nav-item ${openDropdown === 0 ? 'active' : ''}`}>
-              <Link
+              <CustomLink
                 to='/aerocapture'
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
                 Aerosol Capture
-              </Link>
+              </CustomLink>
               <i
                 className={`fa fa-angle-down dropdown-arrow ${openDropdown === 0 ? 'rotate' : ''}`}
                 onClick={() => toggleDropdown(0)}
@@ -182,53 +163,53 @@ function Navbar() {
               {openDropdown === 0 && (
                 console.log("inside the Aerosol dropdown"),
                 <div className={`dropdown-content ${openDropdown === 0 ? 'show' : ''}`}>
-                    <Link to='/battery-thermal-runaway-numerical-simulation-of-electrodynamic-field' onClick={closeMobileMenu}>Numerical Simulation of Electrodynamic Field</Link>
-                    <Link to='/aerosol-concentration' onClick={closeMobileMenu}>Aerosol Concentration</Link>
-                    <Link to='/dust-mitigation' onClick={closeMobileMenu}>Dust Mitigation</Link>
+                    <CustomLink to='/battery-thermal-runaway-numerical-simulation-of-electrodynamic-field' onClick={closeMobileMenu}>Numerical Simulation of Electrodynamic Field</CustomLink>
+                    <CustomLink to='/aerosol-concentration' onClick={closeMobileMenu}>Aerosol Concentration</CustomLink>
+                    <CustomLink to='/dust-mitigation' onClick={closeMobileMenu}>Dust Mitigation</CustomLink>
                     {console.log("done with it")}
                 </div>
               )}
             </li>
             <li className={`nav-item ${openDropdown === 1 ? 'active' : ''}`}>
-              <Link
+              <CustomLink
                 to='/batterysafety'
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
                 Battery Safety
-              </Link>
+              </CustomLink>
               <i className={`fa fa-angle-down dropdown-arrow ${openDropdown === 1 ? 'rotate' : ''}`}
                 onClick={() => toggleDropdown(1)}
                 ></i>
                 {openDropdown === 1 && (
                 <div className={`dropdown-content ${openDropdown === 1 ? 'show' : ''}`}>
-                  <Link to='/battery-thermal-runaway-detection-prevention' onClick={closeMobileMenu}>Battery Thermal Runaway Detection & Prevention</Link>
-                  <Link to='/battery-thermal-management' onClick={closeMobileMenu}>Battery Thermal Management</Link>
+                  <CustomLink to='/battery-thermal-runaway-detection-prevention' onClick={closeMobileMenu}>Battery Thermal Runaway Detection & Prevention</CustomLink>
+                  <CustomLink to='/battery-thermal-management' onClick={closeMobileMenu}>Battery Thermal Management</CustomLink>
                 </div>
                 )}
             </li>
             <li className={`nav-item ${openDropdown === 2 ? 'active' : ''}`}>
-              <Link
+              <CustomLink
                 to='/optical-instrumentation'
                 className={`nav-links ${openDropdown === 2 ? 'active' : ''}`}
                 onClick={closeMobileMenu}
               >
                 Instrumentation
-              </Link>
+              </CustomLink>
               <i
                 className={`fa fa-angle-down dropdown-arrow ${openDropdown === 2 ? 'rotate' : ''}`}
                 onClick={() => toggleDropdown(2)}
               ></i>
               {openDropdown === 2 && (
                 <div className={`dropdown-content ${openDropdown === 2 ? 'show' : ''}`}>
-                  <Link to='/optical-instrumentation' onClick={closeMobileMenu}>Optical Instrumentation</Link>
-                  <Link to='/morphology-characterization-optical-extinction-spectroscopy' onClick={closeMobileMenu}>Morphology Characterization with Optical Extinction Spectroscopy</Link>
-                  <Link to='/polarized-light-scattering' onClick={closeMobileMenu}>Polarized Light Scattering</Link>
-                  <Link to='/sedimentation-based-particle-sizing' onClick={closeMobileMenu}>Sedimentation based Particle Sizing</Link>
+                  <CustomLink to='/optical-instrumentation' onClick={closeMobileMenu}>Optical Instrumentation</CustomLink>
+                  <CustomLink to='/morphology-characterization-optical-extinction-spectroscopy' onClick={closeMobileMenu}>Morphology Characterization with Optical Extinction Spectroscopy</CustomLink>
+                  <CustomLink to='/polarized-light-scattering' onClick={closeMobileMenu}>Polarized Light Scattering</CustomLink>
+                  <CustomLink to='/sedimentation-based-particle-sizing' onClick={closeMobileMenu}>Sedimentation based Particle Sizing</CustomLink>
                 </div>
               )}
             </li>
-            <Link to='/contact-us' className='nav-button'>Contact Us</Link>
+            <CustomLink to='/contact-us' className='nav-button'>Contact Us</CustomLink>
           </ul> 
         </div>
       </nav>

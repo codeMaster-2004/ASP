@@ -1,7 +1,7 @@
 import React from 'react';
 import './footer.css'
 import { Link } from 'react-router-dom';
-import ScrollToTopLink from '../../Backend/Scroll';
+import CustomLink from '../CustomLink/CustomeAtt';
 
 function Footer() {
 
@@ -42,82 +42,82 @@ function Footer() {
                     </div>
                     <div className='diff-pages'>
                         <div className='battery'>
-                            <ScrollToTopLink to='/batterysafety' className='footer-links'>
+                            <CustomLink to='/batterysafety' className='footer-links'>
                                 <h1>
                                     Battery Safety
                                 </h1>
-                            </ScrollToTopLink>
-                            <Link to='/battery-thermal-runaway-detection-prevention' className='footer-links'>
+                            </CustomLink>
+                            <CustomLink to='/battery-thermal-runaway-detection-prevention' className='footer-links'>
                                 <p>
                                     Battery Thermal Runaway Detection & Prevention
                                 </p>
-                            </Link>
-                            <Link to='/battery-thermal-management' className='footer-links'>
+                            </CustomLink>
+                            <CustomLink to='/battery-thermal-management' className='footer-links'>
                                 <p>
                                     Battery Thermal Management
                                 </p>
-                            </Link>
+                            </CustomLink>
                         </div>
                         <div className='Aerosol'>
-                            <Link to='/aerocapture' className='footer-links'>
+                            <CustomLink to='/aerocapture' className='footer-links'>
                                 <h1>
                                     Aerosol Capture
                                 </h1>
-                            </Link>
-                            <Link to='/aerosol-concentration' className='footer-links'>
+                            </CustomLink>
+                            <CustomLink to='/aerosol-concentration' className='footer-links'>
                                 <p>
                                     Aerosol Concentration
                                 </p>
-                            </Link>
-                            <Link to='/battery-thermal-runaway-numerical-simulation-of-electrodynamic-field' className='footer-links'>
+                            </CustomLink>
+                            <CustomLink to='/battery-thermal-runaway-numerical-simulation-of-electrodynamic-field' className='footer-links'>
                                 <p>
                                     Battery Thermal Runaway Numerical Simulation of Electrodynamic Field
                                 </p>
-                            </Link>
-                            <Link to='/dust-mitigation' className='footer-links'>
+                            </CustomLink>
+                            <CustomLink to='/dust-mitigation' className='footer-links'>
                                 <p>
                                     Dust Mitigation
                                 </p>
-                            </Link>
+                            </CustomLink>
                         </div>
                         <div className='Products'>
-                            <Link to='/products-services' className='footer-links'>
+                            <CustomLink to='/products-services' className='footer-links'>
                                 <h1>
                                     Products
                                 </h1>
-                            </Link>
-                            <Link to='/facilities' className='footer-links'>
+                            </CustomLink>
+                            <CustomLink to='/facilities' className='footer-links'>
                                 <p>
                                     Facilities
                                 </p>
-                            </Link>
+                            </CustomLink>
                         </div>
                         <div className='Instrumentation'>
-                            <Link to='/optical-instrumentation' className='footer-links'>
+                            <CustomLink to='/optical-instrumentation' className='footer-links'>
                                 <h1>
                                     Instrumentation
                                 </h1>
-                            </Link>
-                            <Link to='/aerosol-concentration' className='footer-links'>
+                            </CustomLink>
+                            <CustomLink to='/aerosol-concentration' className='footer-links'>
                                 <p>
                                     Aerosol Concentration
                                 </p>
-                            </Link>
-                            <Link to='/morphology-characterization-optical-extinction-spectroscopy' className='footer-links'>
+                            </CustomLink>
+                            <CustomLink to='/morphology-characterization-optical-extinction-spectroscopy' className='footer-links'>
                                 <p>
                                     Morphology Characterization with Optical Extinction Spectroscopy 
                                 </p>
-                            </Link>
-                            <Link to='/polarized-light-scattering' className='footer-links'>
+                            </CustomLink>
+                            <CustomLink to='/polarized-light-scattering' className='footer-links'>
                                 <p>
                                     Polarized Light Scattering
                                 </p>
-                            </Link>
-                            <Link to='/sedimentation-based-particle-sizing' className='footer-links'>
+                            </CustomLink>
+                            <CustomLink to='/sedimentation-based-particle-sizing' className='footer-links'>
                                 <p>
                                     Sedimentation based Particle Sizing
                                 </p>
-                            </Link>
+                            </CustomLink>
                         </div>
                     </div>
                 </div>
