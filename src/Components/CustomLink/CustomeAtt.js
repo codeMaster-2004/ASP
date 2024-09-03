@@ -7,6 +7,7 @@ const CustomLink = ({ to, children, ...props }) => {
   const handleClick = (e) => {
     e.preventDefault();
     navigate(to);
+    window.scrollTo(0, 0);
   };
 
   return (

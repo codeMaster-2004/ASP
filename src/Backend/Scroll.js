@@ -1,20 +1,16 @@
-import React from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
-const ScrollToTopLink = ({ to, children, ...props }) => {
-  const navigate = useNavigate();
+function useScrollToTop(delay = 100) {
+  const { pathname } = useLocation();
 
-  const handleClick = (e) => {
-    e.preventDefault();
-    navigate(to);
-    window.scrollTo(0, 0);
-  };
+  useEffect(() => {
+    const timeoutId = setTimeout(() => {
+      window.scrollTo(0, 0);
+    }, delay);
 
-  return (
-    <Link to={to} onClick={handleClick} {...props}>
-      {children}
-    </Link>
-  );
-};
+    return () => clearTimeout(timeoutId);
+  }, [pathname, delay]);
+}
 
-export default ScrollToTopLink;
+export default useScrollToTop;

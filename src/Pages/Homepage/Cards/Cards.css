@@ -11,6 +11,16 @@
   gap: 2vh;
 }
 
+/* .cards__container_left img{
+  width: 100%;
+  height: 10%;
+}
+
+.cards__container_right img {
+  width: 100%;
+  height: 100%;
+} */
+
 .cards__container_left,
 .cards__container_right {
   display: flex;

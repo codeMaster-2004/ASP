@@ -1,13 +1,14 @@
 import React from 'react';
 import './Cards.css'; 
 import CustomLink from '../../../Components/CustomLink/CustomeAtt';
-
+// width='576.8vw' height="400em"
+// width='540vw' height="400em"
 function Cards() {
   return (
     <div className='cards'>
       <div className='cards__container'>
           <div className='cards__container_left'>
-            <img src={`${process.env.PUBLIC_URL}/images/image-27.png`} alt='products main' width='100%' height="400vh"/>
+            <img src={`${process.env.PUBLIC_URL}/images/image-27.png`} alt='products main' width='576.8vw' height="400em"/>
             <div className='cards__container_left_info'>
               <div className='cards__container_left_info_conatainer'>
                 <div className='cards__container_left_info_heading'>
@@ -24,7 +25,7 @@ function Cards() {
             </div>
           </div>
           <div className='cards__container_right'>
-            <img src={`${process.env.PUBLIC_URL}/images/HomeCards.png`} alt='products main' width='100%' height="400vh"/>
+            <img src={`${process.env.PUBLIC_URL}/images/HomeCards.png`} alt='products main' width='540vw' height="400em"/>
             <div className='cards__container_right_info'>
               <div className='cards__container_right_info_conatainer'>
                 <div className='cards__container_right_info_heading'>

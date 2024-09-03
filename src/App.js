@@ -20,9 +20,11 @@ import DustMitigation from './Pages/AerosolCapture/DustMitigation/page';
 import Products from './Pages/Products&Facilities/Products/page';
 import Facilities from './Pages/Products&Facilities/Facilities/page';
 import Clients from './Pages/Clients/page';
+import useScrollToTop from './Backend/Scroll';
 
 // AppContent component that contains all the routing logic
 function AppContent() {
+  useScrollToTop();
   return (
     <>
       <Navbar />
