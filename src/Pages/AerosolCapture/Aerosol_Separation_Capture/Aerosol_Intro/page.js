@@ -27,9 +27,13 @@ function AerosolIntro() {
             </div>
             <Separator />
             <div className='capture-collection-images'>
-                <img src={`${process.env.PUBLIC_URL}/images/marsCloseUpRocks.png`} alt='rocks' width='48.94%' height="50%"/>
-                <img src={`${process.env.PUBLIC_URL}/images/marsCloseUp2.png`} alt='mars2' width='48.94%' height="50%"/>
-                <img src={`${process.env.PUBLIC_URL}/images/FUGG.png`} alt='FUGGING FUGG' width='100%' height="100%"/>
+                <div className='capture-collection-images-2'>
+                    <img src={`${process.env.PUBLIC_URL}/images/marsCloseUpRocks.png`} alt='rocks' width='48.94%' height="50%"/>
+                    <img src={`${process.env.PUBLIC_URL}/images/marsCloseUp2.png`} alt='mars2' width='48.94%' height="50%"/>
+                </div>
+                <div className='capture-collection-images-1'>
+                    <img src={`${process.env.PUBLIC_URL}/images/FUGG.png`} alt='FUGGING FUGG' width='100%' height="100%"/>
+                </div>
             </div>
         </div>
     </>

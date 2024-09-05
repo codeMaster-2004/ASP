@@ -48,8 +48,15 @@
 }
 
 .capture-collection-images {
-    display: inline-flex;
-    gap: 30px 24px;
-    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    gap: 3vw;
+    /* flex-wrap: wrap; */
     margin-top: 7%;
+}
+
+.capture-collection-images-2 {
+    display: flex;
+    flex-direction: row;
+    gap:1.65vw;
 }

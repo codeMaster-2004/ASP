@@ -3,7 +3,7 @@ import './App.css';
 import Navbar from './Components/Navbar/Navbar'
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Footer from './Components/Footer/footer';
+import Footer from './Components/Footer/Footer';
 import About from './Pages/About/About';
 import ContactUs from './Pages/ContactUs/ContactUs';
 import Aerosol from './Pages/AerosolCapture/Aerosol_Separation_Capture/Aerosol';
