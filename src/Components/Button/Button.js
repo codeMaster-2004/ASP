@@ -43,15 +43,8 @@ export const Button = ({
 
   const checkButtonType = TYPES[buttonType] ? TYPES[buttonType] : TYPES.contact;
 
-  const handleClick = (e) => {
-    e.preventDefault();
-    window.scrollTo(0, 0);
-    navigate(checkButtonType);
-    if (onClick) onClick(e);
-  };
-
   return (
-    <CustomLink to={checkButtonType} className='btn-mobile' onClick={handleClick}>
+    <CustomLink to={checkButtonType} className='btn-mobile'>
       <button
         className={`btn ${checkButtonStyle} ${checkButtonSize}`}
         type={type}

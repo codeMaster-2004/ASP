@@ -1,17 +1,11 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
 
 const CustomLink = ({ to, children, ...props }) => {
-  const navigate = useNavigate();
-
-  const handleClick = (e) => {
-    e.preventDefault();
-    navigate(to);
-    window.scrollTo(0, 0);
-  };
+  // const navigate = useNavigate();
 
   return (
-    <a href={to} onClick={handleClick} {...props}>
+    <a href={to} {...props}>
       {children}
     </a>
   );
