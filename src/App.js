@@ -2,7 +2,7 @@ import Home from './Pages/Homepage/Homepage'
 import './App.css';
 import Navbar from './Components/Navbar/Navbar'
 import React from 'react';
-import { BrowserRouter as Router, HashRouter, Route, Routes } from 'react-router-dom';
+import { HashRouter, Route, Routes } from 'react-router-dom';
 // import { AdvancedRouter, CustomLink, CustomNavLink } from './AdvancedRouter';
 import Footer from './Components/Footer/Footer';
 import About from './Pages/About/About';
@@ -24,7 +24,7 @@ import Clients from './Pages/Clients/page';
 import useScrollToTop from './Backend/Scroll';
 // import CustomLink from './Components/CustomLink/CustomeAtt';
 
-const RouterComponent = process.env.REACT_APP_USE_HASH_ROUTER === 'true' ? HashRouter : Router;
+// const RouterComponent = process.env.REACT_APP_USE_HASH_ROUTER === 'true' ? HashRouter : Router;
 
 // const routes = [
 //   { path: "/ASP", element: <Home /> },
@@ -89,11 +89,11 @@ function AppContent() {
 function App() {
   // useScrollToTop();
   return (
-    <RouterComponent>
+    <HashRouter>
       <div className='App'>
         <AppContent />
       </div>
-    </RouterComponent>
+    </HashRouter>
   );
 }
 
