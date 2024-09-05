@@ -18,7 +18,7 @@ function People() {
                     </div>
                     <div className='vd-desc'>
                         <div className='vd-desc-images'>
-                            <img src={`${process.env.PUBLIC_URL}/images/vd-new.png`} alt='Vijay Devarakonda' width='520vh' height='51%'/>
+                            <img src={`${process.env.PUBLIC_URL}/images/vd-new.png`} alt='Vijay Devarakonda' width='520vh' height='550vw'/>
                             <div className='vd-desc-logos'>
                                 <img src={`${process.env.PUBLIC_URL}/images/vd-1.png`} alt='Vijay Devarakonda'/>
                                 <img src={`${process.env.PUBLIC_URL}/images/vd-2.png`} alt='Vijay Devarakonda'/>
@@ -48,7 +48,7 @@ function People() {
                     </div>
                     <div className='mich-desc'>
                         <div className='mich-desc-images'>
-                            <img src={`${process.env.PUBLIC_URL}/images/Thella-ankul.png`} alt='michael' width='520vh' height='53%'/>
+                            <img src={`${process.env.PUBLIC_URL}/images/Thella-ankul.png`} alt='michael' width='520vw' height='600vw'/>
                             <div className='mich-desc-logos-parts'>
                                 <div className='mich-desc-logos'>
                                     <img src={`${process.env.PUBLIC_URL}/images/MSU.png`} alt='Michael Ankul' width="120vh" height="120vh"/>
@@ -77,7 +77,7 @@ function People() {
                     </div>
                     <div className='siva-desc'>
                         <div className='siva-desc-images'>
-                            <img src={`${process.env.PUBLIC_URL}/images/siva-ankul.png`} alt='sivakumar' width='500vh' height='50%' />
+                            <img src={`${process.env.PUBLIC_URL}/images/Siva-Ankul.png`} alt='sivakumar' width='500vw' height='350vw' />
                             <div className='siva-desc-logos'>
                                 <img src={`${process.env.PUBLIC_URL}/images/siva-1.png`} alt='Siva Ankul' width="150vh" height="120vh"/>
                                 <img src={`${process.env.PUBLIC_URL}/images/siva-2.png`} alt='Siva Ankul' width="115vh" height="115vh"/>
