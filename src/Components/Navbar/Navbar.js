@@ -105,7 +105,7 @@ function Navbar() {
     <>
       <nav className='navbar'>
         <div className='navbar-container'>
-          <CustomLink to='/ASP' className='navbar-logo'>
+          <CustomLink to='ASP' className='navbar-logo'>
             <img src={`${process.env.PUBLIC_URL}/images/Layer_1.png`}  alt='Nasa' width='35%' height='100%'/>
           </CustomLink>
           <div className='menu-icon' onClick={handleClick}>

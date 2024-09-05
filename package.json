@@ -2,7 +2,7 @@
   "name": "analytical_scientific_products",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://codemaster-2004.github.io/ASP/",
+  "homepage": "https://codemaster-2004.github.io/ASP/#/ASP",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
