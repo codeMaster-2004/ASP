@@ -2,7 +2,7 @@ import Home from './Pages/Homepage/Homepage'
 import './App.css';
 import Navbar from './Components/Navbar/Navbar'
 import React from 'react';
-import { HashRouter, Route, Routes } from 'react-router-dom';
+import { HashRouter, Route, Routes, Navigate } from 'react-router-dom';
 // import { AdvancedRouter, CustomLink, CustomNavLink } from './AdvancedRouter';
 import Footer from './Components/Footer/Footer';
 import About from './Pages/About/About';
