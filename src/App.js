@@ -2,7 +2,8 @@ import Home from './Pages/Homepage/Homepage'
 import './App.css';
 import Navbar from './Components/Navbar/Navbar'
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, HashRouter, Route, Routes } from 'react-router-dom';
+// import { AdvancedRouter, CustomLink, CustomNavLink } from './AdvancedRouter';
 import Footer from './Components/Footer/Footer';
 import About from './Pages/About/About';
 import ContactUs from './Pages/ContactUs/ContactUs';
@@ -21,6 +22,38 @@ import Products from './Pages/Products&Facilities/Products/page';
 import Facilities from './Pages/Products&Facilities/Facilities/page';
 import Clients from './Pages/Clients/page';
 import useScrollToTop from './Backend/Scroll';
+// import CustomLink from './Components/CustomLink/CustomeAtt';
+
+const RouterComponent = process.env.REACT_APP_USE_HASH_ROUTER === 'true' ? HashRouter : Router;
+
+// const routes = [
+//   { path: "/ASP", element: <Home /> },
+//   { path: "/about", element: <About /> },
+//   { path: "/contact-us", element: <ContactUs /> },
+//   { path:'/aerocapture', element:<Aerosol/>},
+//   { path:'/batterysafety', element: <BatterySafety/>},
+//   { path:'/battery-thermal-management', element: <BatteryThermalManagement/>},
+//   { path:'/battery-thermal-runaway-detection-prevention', element: <BatteryThermalDetection/>},
+//   { path:'/optical-instrumentation', element: <Optical/>},
+//   { path:'/morphology-characterization-optical-extinction-spectroscopy', element: <Morphology/>},
+//   { path:'/sedimentation-based-particle-sizing', element: <Sedimentation />},
+//   { path:'/polarized-light-scattering', element: <Polarized />},
+//   { path:'/aerosol-concentration', element: <AerosolConcentration />},
+//   { path:'/battery-thermal-runaway-numerical-simulation-of-electrodynamic-field', element: <Electrodynamic />},
+//   { path:'/dust-mitigation', element: <DustMitigation />},
+//   { path:'/products-services', element: <Products />},
+//   { path:'/facilities', element: <Facilities />},
+//   { path:'/clients', element: <Clients />}
+// ];
+
+// const Navbar = ({ CustomLink, CustomNavLink }) => (
+//   <nav>
+//     <CustomNavLink to="/ASP">Home</CustomNavLink>
+//     <CustomNavLink to="/about">About</CustomNavLink>
+//     <CustomLink to="https://example.com">External Link</CustomLink>
+    
+//   </nav>
+// );
 
 // AppContent component that contains all the routing logic
 function AppContent() {
@@ -56,11 +89,11 @@ function AppContent() {
 function App() {
   // useScrollToTop();
   return (
-    <div className='App'>
-      <Router>
+    <RouterComponent>
+      <div className='App'>
         <AppContent />
-      </Router>
-    </div>
+      </div>
+    </RouterComponent>
   );
 }
 
