@@ -1,15 +1,20 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
 
 const CustomLink = ({ to, children, ...props }) => {
-  const isExternal = to.startsWith('http') || to.startsWith('mailto:') || to.startsWith('tel:');
-  
-  if (isExternal) {
-    return <a href={to} {...props}>{children}</a>;
-  }
-  
-  // For internal links, keep the leading slash
-  return <Link to={to.startsWith('/') ? to : `/${to}`} {...props}>{children}</Link>;
+  // const navigate = useNavigate();
+
+  // const handleClick = (e) => {
+  //   e.preventDefault();
+  //   navigate(to);
+  //   window.scrollTo(0, 0);
+  // };
+
+  return (
+    <a href={to} {...props}>
+      {children}
+    </a>
+  );
 };
 
 export default CustomLink;

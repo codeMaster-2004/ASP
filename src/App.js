@@ -2,7 +2,7 @@ import Home from './Pages/Homepage/Homepage'
 import './App.css';
 import Navbar from './Components/Navbar/Navbar'
 import React from 'react';
-import { HashRouter, Route, Routes, Navigate } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 // import { AdvancedRouter, CustomLink, CustomNavLink } from './AdvancedRouter';
 import Footer from './Components/Footer/Footer';
 import About from './Pages/About/About';
@@ -55,14 +55,22 @@ import useScrollToTop from './Backend/Scroll';
 //   </nav>
 // );
 
+function ScrollToTop() {
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  return null;
+}
+
 // AppContent component that contains all the routing logic
 function AppContent() {
-  useScrollToTop();
+  // useScrollToTop();
   return (
     <>
       <Navbar />
       <Routes>
-        <Route path="/" element={<Navigate replace to="/ASP" />} />
+        {/* <Route path="/" element={<Navigate replace to="/ASP" />} /> */}
         <Route path="/ASP" element={<Home />} />
         <Route path='/about' element={<About/>} />
         <Route path='/contact-us' element={<ContactUs/>} />
@@ -90,11 +98,12 @@ function AppContent() {
 function App() {
   // useScrollToTop();
   return (
-    <HashRouter>
+    <Router>
+      <ScrollToTop />
       <div className='App'>
         <AppContent />
       </div>
-    </HashRouter>
+    </Router>
   );
 }
 
