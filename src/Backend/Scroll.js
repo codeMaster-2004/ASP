@@ -7,7 +7,7 @@ function ScrollToTop() {
 
   useEffect(() => {
     if (prevPathRef.current !== pathname) {
-      console.log('ScrollToTop triggered for path:', pathname);
+      // console.log('ScrollToTop triggered for path:', pathname);
       
       // Method 1: Immediate scroll
       window.scrollTo(0, 0);
@@ -23,7 +23,7 @@ function ScrollToTop() {
         window.scrollTo(0, 0);
         document.documentElement.scrollTop = 0;
         document.body.scrollTop = 0;
-        console.log('Forced scroll executed');
+        // console.log('Forced scroll executed');
       }, 100);
       
       // Method 4: Use requestAnimationFrame for smoother scrolling

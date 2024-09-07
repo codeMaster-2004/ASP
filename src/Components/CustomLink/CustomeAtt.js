@@ -9,7 +9,7 @@ const CustomLink = ({ to, children, ...props }) => {
       props.onClick(e);
     }
     if (!isExternal) {
-      console.log('CustomLink clicked, scrolling to top');
+      // console.log('CustomLink clicked, scrolling to top');
       setTimeout(() => {
         window.scrollTo(0, 0);
         document.documentElement.scrollTop = 0;
@@ -23,7 +23,7 @@ const CustomLink = ({ to, children, ...props }) => {
   }
 
   const path = to.startsWith('/') ? to : `/${to}`;
-  console.log('CustomLink navigating to:', path);
+  // console.log('CustomLink navigating to:', path);
 
   return (
     <Link 
