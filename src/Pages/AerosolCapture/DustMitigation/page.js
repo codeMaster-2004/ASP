@@ -1,5 +1,7 @@
 import React from 'react';
+import "styled-components"
 import './page.css'; 
+import CustomLink from '../../../Components/CustomLink/CustomeAtt';
 import { Button } from '../../../Components/Button/Button';
 import Separator from '../../../Components/Orange-separator/separator';
 
@@ -7,9 +9,9 @@ function DustMitigation() {
     return (
         <div className='dust-mitigation'>
             <div className='dust-top-container'>
-                <p>
-                    Aerosol Capture
-                </p>
+                <CustomLink to='/aerocapture' style= {{textDecoration: "none"}}>
+                    <p className='orange-text'>Aerosol Capture</p>
+                </CustomLink>
                 <h1>
                     Dust Mitigation
                 </h1>

@@ -1,16 +1,48 @@
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 import { useLocation } from 'react-router-dom';
 
-function useScrollToTop(delay = 100) {
+function ScrollToTop() {
   const { pathname } = useLocation();
+  const prevPathRef = useRef(pathname);
 
   useEffect(() => {
-    const timeoutId = setTimeout(() => {
+    if (prevPathRef.current !== pathname) {
+      console.log('ScrollToTop triggered for path:', pathname);
+      
+      // Method 1: Immediate scroll
       window.scrollTo(0, 0);
-    }, delay);
+      
+      // Method 2: Smooth scroll
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+      
+      // Method 3: Force scroll after a slight delay
+      const timeoutId = setTimeout(() => {
+        window.scrollTo(0, 0);
+        document.documentElement.scrollTop = 0;
+        document.body.scrollTop = 0;
+        console.log('Forced scroll executed');
+      }, 100);
+      
+      // Method 4: Use requestAnimationFrame for smoother scrolling
+      const scrollToTop = () => {
+        const c = document.documentElement.scrollTop || document.body.scrollTop;
+        if (c > 0) {
+          window.requestAnimationFrame(scrollToTop);
+          window.scrollTo(0, c - c / 8);
+        }
+      };
+      scrollToTop();
 
-    return () => clearTimeout(timeoutId);
-  }, [pathname, delay]);
+      prevPathRef.current = pathname;
+
+      return () => clearTimeout(timeoutId);
+    }
+  }, [pathname]);
+
+  return null;
 }
 
-export default useScrollToTop;
+export default ScrollToTop;

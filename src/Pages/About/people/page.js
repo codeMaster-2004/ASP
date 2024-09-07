@@ -29,7 +29,7 @@ function People() {
                                 <p>Dr. Devarakonda obtained his B. Tech. degree from the Indian Institute of Technology, Bombay and a Ph.D. from the University of Kentucky, both in Chemical Engineering. Over the last 25 years, he led several industry and government funded projects focused on safety and aerosol science. </p> 
                                 <p>Operating at the cusp of chemical, mechanical, aerospace, civil and bio engineering, Vijay developed technologies related to the safety of batteries, munitions, fuel systems, and drinking water systems. He has published ~85 journal articles, government reports and conference papers. </p> 
                                 <p>Here are some examples of Vijay’s current research: </p>
-                                <ul class="custom-list">
+                                <ul className="custom-list">
                                     <li>Dust Mitigation and Aerosol Capture</li>
                                     <li>Battery Thermal Runway Detection and Prevention</li>
                                     <li>Hydrogen Safety</li>
