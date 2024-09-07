@@ -1,5 +1,5 @@
 // ContactForm.js
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import './page.css'; 
 
 function ContactBottom() {
@@ -9,6 +9,8 @@ function ContactBottom() {
         phone: '',
         message: ''
     });
+    const [status, setStatus] = useState('');
+    const formRef = useRef(null);
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -20,6 +22,7 @@ function ContactBottom() {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
+        setStatus('Sending...');
         try {
             const response = await fetch('/api/send-email', {
                 method: 'POST',
@@ -30,15 +33,19 @@ function ContactBottom() {
             });
 
             if (response.ok) {
-                alert('Email sent successfully!');
+                setStatus('Email sent successfully!');
                 // Clear the form
                 setFormData({ name: '', email: '', phone: '', message: '' });
+                // Also reset the form using the DOM API for immediate visual feedback
+                if (formRef.current) {
+                    formRef.current.reset();
+                }
             } else {
-                alert('Failed to send email. Please try again.');
+                setStatus('Failed to send email. Please try again.');
             }
         } catch (error) {
             console.error('Error:', error);
-            alert('An error occurred. Please try again later.');
+            setStatus('An error occurred. Please try again later.');
         }
     };
 
@@ -47,8 +54,7 @@ function ContactBottom() {
             <div className='contact-form-container'>
                 <div className='contact-form-container-closeup'>
                     <h1>Contact Us.</h1>
-                    <form className='contact-form-input' onSubmit={handleSubmit}>
-                        {/* remove the black borders from it */}
+                    <form ref={formRef} className='contact-form-input' onSubmit={handleSubmit}>
                         <input
                             type="text"
                             name="name"
@@ -83,6 +89,7 @@ function ContactBottom() {
                         ></textarea>
                         <button type="submit">Submit</button>
                     </form>
+                    {status && <p className="status-message">{status}</p>}
                 </div>
             </div>
         </div>
