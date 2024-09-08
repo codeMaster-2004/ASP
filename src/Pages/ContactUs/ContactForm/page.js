@@ -1,4 +1,3 @@
-// ContactForm.js
 import React, { useState, useRef } from 'react';
 import './page.css'; 
 
@@ -32,16 +31,16 @@ function ContactBottom() {
                 body: JSON.stringify(formData),
             });
 
+            const data = await response.json();
+
             if (response.ok) {
-                setStatus('Email sent successfully!');
-                // Clear the form
+                setStatus(data.message || 'Email sent successfully!');
                 setFormData({ name: '', email: '', phone: '', message: '' });
-                // Also reset the form using the DOM API for immediate visual feedback
                 if (formRef.current) {
                     formRef.current.reset();
                 }
             } else {
-                setStatus('Failed to send email. Please try again.');
+                setStatus(data.message || 'Failed to send email. Please try again.');
             }
         } catch (error) {
             console.error('Error:', error);
@@ -87,9 +86,11 @@ function ContactBottom() {
                             onChange={handleChange}
                             required
                         ></textarea>
-                        <button type="submit">Submit</button>
+                        <button type="submit" disabled={status === 'Sending...'}>
+                            {status === 'Sending...' ? 'Sending...' : 'Submit'}
+                        </button>
                     </form>
-                    {status && <p className="status-message">{status}</p>}
+                    {status && <p className={`status-message ${status.includes('successfully') ? 'success' : 'error'}`}>{status}</p>}
                 </div>
             </div>
         </div>
