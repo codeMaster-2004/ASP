@@ -15,7 +15,7 @@
     margin: 0 11.5% 0 11.5%;
 }
 
-.clients-container {
+.clients_container {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -57,12 +57,12 @@
     /* background-color: aquamarine; */
 }
   
-.clients-list{
+.clients_list{
     /* background-color: aqua; */
     width: 70%;
 }
   
-.clients-list p {
+.clients_list p {
     margin-top: 1vh;
     color: #f5f5f5;
     font-family: "Adobe Caslon Pro";
@@ -89,7 +89,7 @@
     height: auto;
 }
 
-.goto-client-button {
+.goto_client_button {
     font-family: "Myriad Pro";
     font-size: 2.8vh;
     font-style: normal;
@@ -104,7 +104,7 @@
     border-radius: 7px;
 }
 
-.goto-client-button:hover {
+.goto_client_button:hover {
     background-color: #FF4E0D;
     color:#f5f5f5;
 }

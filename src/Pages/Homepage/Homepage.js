@@ -3,33 +3,33 @@ import React from 'react';
 // import { Button } from '../../Components/Button/Button';
 import Main from './PS-intro/page';
 import Cards from './Cards/Cards';
-import './HP.module.css'; 
+import styles from './HP.module.css'; 
 import CustomLink from '../../Components/CustomLink/CustomeAtt';
 
 function Home() {
   return (
     <>
       <Main />
-      <div className='client_home_intro'>
-        <div className='main2'>
-        <div className='clients-container'>
-          <div className='clients'>
-            <div className='heading'> 
+      <div className={styles.client_home_intro}>
+        <div className={styles.main2}>
+        <div className={styles.clients_container}>
+          <div className={styles.clients}>
+            <div className={styles.heading}> 
               <h1>Our Clients</h1>
-              <div className='home_client_separator'/>
+              <div className={styles.home_client_separator}/>
             </div>
-            <div className='clients-list'>
+            <div className={styles.clients_list}>
               <p>We provide contract R&D services to our government clients at the DOD and NASA. In the private sector, we provide licenses to our technologies that improve the product performance and process safety and help the industry in integrating/implementing these solutions.</p>
             </div>
           </div>
-          <div className='logos'>
-            <img src={`${process.env.PUBLIC_URL}/images/Nasa.png`}  alt='Nasa' width='100%' height='100%'/>
-            <img src={`${process.env.PUBLIC_URL}/images/DoD.png`} alt='DOD' width='90%' height='90%'/>
+          <div className={styles.logos}>
+            <img src={`/images/Nasa.png`}  alt='Nasa' width='100%' height='100%'/>
+            <img src={`/images/DoD.png`} alt='DOD' width='90%' height='90%'/>
           </div>
         </div>
           <CustomLink 
               to='/clients' 
-              className='goto-client-button'
+              className={styles.goto_client_button}
               >
               Learn more
           </CustomLink>

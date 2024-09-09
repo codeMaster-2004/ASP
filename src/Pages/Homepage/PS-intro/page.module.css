@@ -1,4 +1,4 @@
-.main-container {
+.main_container {
   background-image: url("../../../../public/images/Home-Intro.png");
   background-size: cover;
 
@@ -7,19 +7,19 @@
   height:80vh;
 }
 
-.homepage-picture {
+.homepage_picture {
   display: flex;
   flex-direction: column;
   margin: 0 20%;
 }
 
-.homepage-text {
+.homepage_text {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.homepage-text h1 {
+.homepage_text h1 {
   color: white;
   text-align: center;
   font-family: "Myriad Pro";
@@ -29,7 +29,7 @@
   line-height: normal;
 }
 
-.homepage-text h6 {
+.homepage_text h6 {
   margin-top: 0;
   color: white;
   text-align: center;

@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import './page.module.css'; 
+import styles from './page.module.css'; 
 
 export default function Main() {
   useEffect(() => {
@@ -27,9 +27,9 @@ export default function Main() {
   }, []); // Empty dependency array means this runs once after initial render
 
   return (
-    <div className="main-container">
-      <div className='homepage-picture'>
-        <div className='homepage-text'>
+    <div className={styles.main_container}>
+      <div className={styles.homepage_picture}>
+        <div className={styles.homepage_text}>
           <h1>Analytical Scientific Products</h1> {/* Typing text will be filled by JS */}
           <h6 id='typing-text'>Pioneering Protection for Your Products.</h6>
         </div>
