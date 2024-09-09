@@ -1,0 +1,179 @@
+.morph-bottom-conatiner {
+    display: flex;
+    flex-direction: column;
+    margin: 0 11.5%;
+}
+
+/*For containers right above and below an image*/
+.morph-bottom-agglomerated-effects,
+.morph-bottom-agglomerated-text,
+.CMP-effects {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 6%;
+    margin-top: 3%;
+}
+
+.morph-bottom-agglomerated-effects h1 {
+    color: var(--Base-Black, #000);
+    font-family: "Myriad Pro";
+    font-size: 6vh;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 9vh; /* 60% */
+    text-align: left;
+}
+
+/*For text right above and below an image*/
+.morph-bottom-agglomerated-effects p,
+.morph-bottom-agglomerated-text p,
+.CMP-effects p {
+    color: var(--Base-Black, #000);
+    font-family: "Adobe Caslon Pro";
+    font-size: 3.7vh;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 6.2vh; /* 166.667% */
+}
+
+/*For the image containers*/
+.morph-bottom-agglomerated-effects-image,
+.CMP-effects-images,
+.nanoparticleseffects {
+    display: flex;
+    flex-direction: column;
+    margin-top: 7%;
+}
+
+/*For the text below images*/
+.morph-bottom-agglomerated-effects-image p,
+.CMP-effects-images p,
+.nanoparticleseffects p {
+    color: var(--Base-Black, #000);
+    font-family: "Myriad Pro";
+    font-size: 3.7vh;
+    font-style: italic;
+    font-weight: 600;
+    line-height: 40px; /* 133.333% */
+}
+
+.morph-others {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10% 0 21%;
+    /* background-color: #FF4E0D; */
+}
+
+.morph-others h1 {
+    color: var(--Base-Black, #000);
+    font-family: "Myriad Pro";
+    font-size: 6vh;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 9vh; /* Adjusted to better fit the heading */
+    margin: 0 0 5%;
+}
+
+.morph-others-images {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.morph-others-images-left {
+    margin: 0 3% 0 0;
+}
+
+.morph-others-images-left-top,
+.morph-others-images-left-bottom,
+.morph-others-images-right-top,
+.morph-others-images-right-bottom {
+    width: 65.05vh;
+    height: 35vh;
+    background-size: cover; /* Ensure the background images cover the entire area */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 4%;
+}
+
+.morph-others-images-left-top-text h1,
+.morph-others-images-left-bottom-text h1,
+.morph-others-images-right-top-text h1,
+.morph-others-images-right-bottom-text h1 {
+    color: #fff;
+    font-family: "Myriad Pro";
+    font-size: 3.7vh; /* Adjusted to better match the image */
+    font-style: normal;
+    text-align: left;
+    font-weight: 600;
+    line-height: 1.5; /* Adjust for better spacing */
+    letter-spacing: -0.33px;
+    margin: 0;
+}
+
+.morph-others-images-left-top {
+    background-image: url("../../../../../public/images/aerosolconcentrationtile.png");
+    margin-bottom: 7%;
+}
+
+.morph-others-images-left-top-text {
+    margin-top: 1%;
+    margin-bottom: 32%;
+    width: 95%;
+}
+
+.morph-others-images-left-top-button {
+    width: 95%;
+}
+
+.morph-others-images-left-bottom {
+    margin-top: 7%;
+    background-image: url("../../../../../public/images/LightScatteringTile.png");
+}
+
+.morph-others-images-left-bottom-text {
+    margin-top: 1%;
+    margin-bottom: 32%;
+    width: 95%;
+}
+
+.morph-others-images-left-bottom-button {
+    width: 95%;
+}
+
+.morph-others-images-right {
+    display: flex;
+    flex-direction: column;
+}
+
+.morph-others-images-right-top {
+    background-image: url("../../../../../public/images/MicroscopeTile.png");
+    margin-bottom: 7%;
+}
+
+.morph-others-images-right-top-text {
+    margin-top: 1%;
+    margin-bottom: 32%;
+    width: 95%;
+}
+
+.morph-others-images-right-top-button {
+    width: 95%;
+}
+
+.morph-others-images-right-bottom {
+    background-image: url("../../../../../public/images/SedimentationTile.png");
+}
+
+.morph-others-images-right-bottom-text {
+    margin-top: 1%;
+    margin-bottom: 32%;
+    width: 95%;
+}
+
+.morph-others-images-right-bottom-button {
+    width: 95%;
+}

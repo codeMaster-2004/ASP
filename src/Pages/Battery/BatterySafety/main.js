@@ -1,5 +1,5 @@
 import React from 'react'
-import './main.css';
+import './main.module.css';
 import BatteryHeading from './BatteryHeading/page';
 import BatteryPara from './BatteryParagraph/page';
 

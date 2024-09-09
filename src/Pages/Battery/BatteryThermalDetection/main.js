@@ -1,6 +1,6 @@
 import React from 'react';
 import BatteryDetectionTop from './DetectionTop/page';
-import './main.css';
+import './main.module.css';
 import BatteryDetectionBottom from './Detectionbody/page';
 
 function BatteryThermalDetection() {

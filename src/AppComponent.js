@@ -1,5 +1,4 @@
 import Home from './Pages/Homepage/Homepage'
-import './App.css';
 import Navbar from './Components/Navbar/Navbar'
 import React from 'react';
 import { Route, Routes, Navigate } from 'react-router-dom';
@@ -24,7 +23,7 @@ import ScrollToTop from './Backend/Scroll';
 
 
 
-function AppContent({ children }) {
+function AppContent() {
     // useScrollToTop();
     return (
       <>
@@ -50,7 +49,6 @@ function AppContent({ children }) {
           <Route path="facilities" element={<Facilities />} />
           <Route path="clients" element={<Clients />} />
         </Routes>
-        { children }
         <Footer />
       </>
     );

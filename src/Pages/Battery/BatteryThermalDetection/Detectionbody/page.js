@@ -1,5 +1,5 @@
 import React from 'react';
-import './page.css'; 
+import './page.module.css'; 
 import Separator from '../../../../Components/Orange-separator/separator';
 import{ Button } from '../../../../Components/Button/Button';
 

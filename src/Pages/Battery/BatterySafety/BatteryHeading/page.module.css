@@ -1,0 +1,33 @@
+.BatteryHeading {
+    display: flex;
+    flex-direction: column;
+    margin: 0 11.5%;
+}
+
+.BatteryHeading p {
+    color: var(--Orange, #FF4E0D);
+    text-align: left;
+    /* text-shadow: 0px 4px 15px rgba(0, 0, 0, 0.50); */
+    font-family: "DM Mono";
+    font-size: 3.6vh;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 5% 0 3%;
+}
+
+.BatteryHeading h1 {
+    /* text-shadow: 0px 4px 15px rgba(0, 0, 0, 0.50); */
+    font-family: "Myriad Pro";
+    font-size: 9.5vh;;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: left;
+    padding-bottom: 5%;
+}
+
+.BatteryHeading img {
+    width: 1140px;
+    height: 1079px;
+}

@@ -1,5 +1,5 @@
 import React from 'react';
-import './Cards.css'; 
+import './Cards.module.css'; 
 import CustomLink from '../../../Components/CustomLink/CustomeAtt';
 // width='576.8vw' height="400em"
 // width='540vw' height="400em"

@@ -1,0 +1,239 @@
+/* General styling for the footer */
+.footer {
+    display: flex;
+    width: 100%;
+    padding: 4vh 0 1vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, #161833 0%, rgba(22, 24, 51, 0.90) 100%);
+    color: #ffffff;
+}
+
+.footer-container {
+    display: flex;
+    margin: 0 6vh;
+    flex-direction: column;
+    align-items: center;
+    gap: 6vh;
+    flex-shrink: 0;
+    /* background-color: aquamarine; */
+}
+
+.footer-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 18vh;
+}
+
+.Contact {
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+    align-items: flex-start;
+}
+
+.Contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3vh;
+    width: 40vh;
+    /* background-color:aliceblue; */
+}
+
+.Contact-info-item-title{
+    display: flex;
+    align-items: center;
+    align-self: stretch;
+}
+
+.Contact-info-item-title h3 {
+    color: var(--Off-White, var(--sds-color-text-brand-on-brand));
+    font-family: "Myriad Pro";
+    font-size: 3.5vh;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.Contact-info-phone,
+.Contact-info-email,
+.Contact-info-address {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.Contact-info-phone i {
+    margin-right: 0.6vh;
+}
+
+.Contact-info-email i {
+    margin-right: 1.3vh;
+}
+
+.Contact-info-address i {
+    margin-right: 1.3vh;
+}
+
+.Contact-info-email a,
+.Contact-info-phone a,
+.Contact-info-address a {
+    color: #F5F5F5;
+    font-family: "Myriad Pro";
+    font-size: 2.2vh;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.Contact-info-email a:hover,
+.Contact-info-phone a:hover,
+.Contact-info-address a:hover {
+    text-decoration: underline;
+}
+
+.social-icon-link {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    /* background-color: #fff; */
+}
+
+.social-icon-link i {
+    font-size: 4.5vh;
+    color: #fff;
+}
+
+.social-icon-link i:hover {
+    transform: scale(1.1);
+    text-decoration-line: none;
+}
+
+                    /*  ALL THE REST OF THE INFO'S DECOR FROM NOW    */
+
+.diff-pages {
+    display: flex;
+    /* flex: 2; */
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 10vh;
+}
+
+.Instrumentation,
+.Aerosol,
+.battery,
+.Products {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* .Aerosol {
+    margin-left: -0vh;
+}
+
+.Products {
+    margin-left: 0vh;
+}
+
+.Instrumentation {
+    margin-left: -1vh;
+} */
+
+/* .diff-pages > div {
+    min-width: 16vh;
+} */
+
+.diff-pages h1, .diff-pages p {
+    color: #f5f5f5;
+    font-family: "Myriad Pro";
+}
+
+.diff-pages h1 {
+    font-size: 2.8vh;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+}
+
+.diff-pages p {
+    font-size: 2.3vh;
+    font-style: normal;
+    line-height: 140%;
+    margin-bottom: 0vh;
+}
+
+.footer-links {
+    text-decoration:none;
+}
+
+.footer-links:hover {
+    text-decoration: underline;
+    color : #fff;
+}
+
+.Products {
+    margin-left: -8vh;
+}
+
+.Aerosol {
+    padding-left: -15%;
+}
+
+.battery {
+    margin-left: -4%;
+}
+
+
+.Instrumentation {
+    margin-left: 2.5vh;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 2.5vh;
+}
+
+.separator {
+    width: 100%;
+    height: 0.2vh;
+    background-color: #fff;
+}
+
+.social-icon-link {
+    width: 100%;
+    height: auto;
+}
+
+.bottom p {
+    color: var(--Off-White, #ffffff);
+    text-align: center;
+    font-family: Roboto, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .footer-main {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .diff-pages {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .diff-pages > div {
+        min-width: auto;
+        text-align: center;
+    }
+}

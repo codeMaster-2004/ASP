@@ -1,19 +1,27 @@
 // import Home from './Pages/Homepage/Homepage'
-import './App.css';
+// import './App.css';
 // import Navbar from './Components/Navbar/Navbar'
 import React from 'react';
-import { HashRouter } from 'react-router-dom';
-import AppContent from './AppContent';
+const HashRouter = dynamic(
+  () => import('react-router-dom').then((mod) => mod.HashRouter),
+  { ssr: false }
+);
+import AppContent from './AppComponent';
+import dynamic from 'next/dynamic';
 
 // Main App component
-function App() {
+function App({children}) {
   // useScrollToTop();
   return (
-    <HashRouter >
-      <div className='App'>
-        <AppContent />
-      </div>
-    </HashRouter>
+    <React.Fragment>
+      <HashRouter >
+        <div className='App'>
+          <AppContent />
+          {children}
+        </div>
+      </HashRouter>
+    </React.Fragment>
+    
   );
 }
 

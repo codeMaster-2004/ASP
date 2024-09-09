@@ -1,5 +1,5 @@
 import React from 'react';
-import './ContactUs.css'; 
+import './ContactUs.module.css'; 
 import ContactTop from './ContactTop/page';
 import ContactBottom from './ContactForm/page';
 

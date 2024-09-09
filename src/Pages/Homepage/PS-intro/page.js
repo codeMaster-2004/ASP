@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import './page.css'; 
+import './page.module.css'; 
 
 export default function Main() {
   useEffect(() => {

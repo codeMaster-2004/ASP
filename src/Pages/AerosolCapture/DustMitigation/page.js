@@ -1,6 +1,6 @@
 import React from 'react';
 import "styled-components"
-import './page.css'; 
+import './page.module.css'; 
 import CustomLink from '../../../Components/CustomLink/CustomeAtt';
 import { Button } from '../../../Components/Button/Button';
 import Separator from '../../../Components/Orange-separator/separator';

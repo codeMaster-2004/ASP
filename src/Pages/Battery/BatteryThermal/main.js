@@ -1,5 +1,5 @@
 import React from 'react';
-import './main.css'; 
+import './main.module.css'; 
 import BatteryManagementTop from './Top/page';
 import CFD from './CFDSimulations/page';
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import './Button.css';
+import styles from './Button.module.css';
 // import { useNavigate } from 'react-router-dom';
 import CustomLink from '../CustomLink/CustomeAtt';
 

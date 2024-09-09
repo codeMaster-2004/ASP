@@ -1,6 +1,6 @@
 import React from 'react';
 import MorphTop from './MorphTop/page';
-import './main.css';
+import './main.module.css';
 import MorphBottom from './MorphBottom/page';
 
 function Morphology() {

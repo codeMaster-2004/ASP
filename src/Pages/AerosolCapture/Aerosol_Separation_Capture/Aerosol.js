@@ -1,5 +1,5 @@
 import React from 'react';
-import './Aerosol.css'; 
+import './Aerosol.module.css'; 
 import AerosolIntro from './Aerosol_Intro/page';
 import Innovation from './Innovation/page';
 

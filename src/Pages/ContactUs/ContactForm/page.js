@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import './page.css'; 
+import './page.module.css'; 
 
 function ContactBottom() {
     const [formData, setFormData] = useState({
@@ -24,35 +24,25 @@ function ContactBottom() {
         setStatus('Sending...');
         try {
             console.log('Submitting form data:', formData);
-            const response = await fetch('/api/send-email', {
+            const response = await fetch('/api/send-email-export', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
                 },
                 body: JSON.stringify(formData),
             });
-
-            let data;
-            const contentType = response.headers.get("content-type");
-            if (contentType && contentType.indexOf("application/json") !== -1) {
-                data = await response.json();
-            } else {
-                // If the response is not JSON, read it as text
-                const text = await response.text();
-                console.error('Received non-JSON response:', text);
-                throw new Error('Received non-JSON response from server');
+    
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
             }
+    
+            const data = await response.json();
             console.log('Server response:', data);
-
-            if (response.ok) {
-                setStatus(data.message || 'Email sent successfully!');
-                setFormData({ name: '', email: '', phone: '', message: '' });
-                if (formRef.current) {
-                    formRef.current.reset();
-                }
-            } else {
-                console.error('Server error:', data);
-                setStatus(data.message || 'Failed to send email. Please try again.');
+    
+            setStatus(data.message || 'Email sent successfully!');
+            setFormData({ name: '', email: '', phone: '', message: '' });
+            if (formRef.current) {
+                formRef.current.reset();
             }
         } catch (error) {
             console.error('Fetch error:', error);
@@ -67,6 +57,7 @@ function ContactBottom() {
                     <h1>Contact Us.</h1>
                     <form ref={formRef} className='contact-form-input' onSubmit={handleSubmit}>
                         <input
+                            id="contact-input"
                             type="text"
                             name="name"
                             placeholder="Name"
@@ -75,6 +66,7 @@ function ContactBottom() {
                             required
                         />
                         <input
+                            id="contact-input"
                             type="email"
                             name="email"
                             placeholder="Email"
@@ -83,6 +75,7 @@ function ContactBottom() {
                             required
                         />
                         <input
+                            id="contact-input"
                             type="tel"
                             name="phone"
                             placeholder="Phone"
@@ -91,6 +84,7 @@ function ContactBottom() {
                             required
                         />
                         <textarea
+                            id="message-body"
                             name="message"
                             placeholder="Message"
                             rows="4"
@@ -98,7 +92,7 @@ function ContactBottom() {
                             onChange={handleChange}
                             required
                         ></textarea>
-                        <button type="submit" disabled={status === 'Sending...'}>
+                        <button id="submit-button-contact" type="submit" disabled={status === 'Sending...'}>
                             {status === 'Sending...' ? 'Sending...' : 'Submit'}
                         </button>
                     </form>

@@ -1,0 +1,179 @@
+.people { /* adjust vertical display position */
+    background-color: linear-gradient(to bottom, #f69c80, white);
+    overflow-x: hidden;
+    flex-shrink: 1;
+}
+
+.people-container {
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+    margin: 10% 11.5% 20%;
+}
+
+.people-container p {
+    font-family: "Myriad Pro";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 70px; /* 175% */
+}
+
+.people-container h1 {
+    text-align: center;
+    font-family: "Myriad Pro";
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px; /* 42.857% */
+}
+
+.people-container span {
+    font-weight: 800;
+}
+
+.vd,
+.michael,
+.sivakumar,
+.mitchell {
+    display: flex;
+    flex-direction: column;
+}
+
+.vd-title,
+.mich-title,
+.siva-title,
+.mitchell-title {
+    display: flex;
+    flex-direction: column;
+}
+
+.vd-title h1,
+.mich-title h1,
+.siva-title h1,
+.mitchell-title h1 {
+    color: #000;
+    font-family: "Myriad Pro";
+    text-align: left;
+    font-size: 5.6vh;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60%; /* 60% */
+}
+
+.vd-title p,
+.mich-title p,
+.siva-title p,
+.mitchell-title p {
+    color: var(--Orange, #FF4E0D);
+    font-family: "Myriad Pro";
+    font-size: 5vh;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.vd-desc,
+.mich-desc,
+.siva-desc,
+.mitchell-desc {
+    display: flex;
+    flex-direction: row;
+}
+
+.vd-desc-images,
+.mich-desc-images,
+.siva-desc-images,
+.mitchell-desc-images {
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+}
+
+.mich-desc-logos-parts,
+.mitchell-logos-parts {
+    gap: 4vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.vd-desc-container,
+.mich-desc-container,
+.siva-desc-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #161833;
+}
+
+.mitchell-desc-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #161833;
+    height: 65vh;
+}
+
+.vd-desc-intro,
+.mich-desc-intro,
+.siva-desc-intro,
+.siva-desc-intro-rest-text,
+.mitchell-desc-intro {
+    display: flex;
+    flex-direction: column;
+    margin: 0vh 3vh 2vh;
+    flex-wrap: wrap;
+}
+
+.siva-desc-intro-rest {
+    width:100%;
+    margin-top: -3%;
+    background-color: #161833;
+}
+
+.vd-desc-intro p,
+.mich-desc-intro p,
+.siva-desc-intro p,
+.siva-desc-intro-rest p,
+.mitchell-desc-intro p {
+    color: white;
+    font-family: "Adobe Caslon Pro";
+    font-size: 3.7vh;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 5vh; /* 133.333% */
+}
+
+.custom-list {
+    list-style-type: disc; /* Default bullet points */
+    margin: 0;
+    padding: 0 6vh; /* Adjust padding for indent */
+}
+
+.custom-list li {
+    color: #f5f5f5;
+    font-family: "Adobe Caslon Pro";
+    font-size: 3.7vh;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 5vh;
+    margin-bottom: 1vh;
+}
+
+.vd-desc-logos,
+.mich-desc-logos,
+.siva-desc-logos,
+.mitchell-logos {
+    display: flex;
+    flex-direction: row;
+    gap: 4.5vh;
+    align-items: center;
+    /* background-color: #03396C; */
+}
+
+.mich-desc-logos1,
+.mitchell-logos-rest {
+    display: flex;
+    flex-direction: row;
+    gap: 4.5vh;
+    align-items: center;
+    /* background-color: #7b9bba; */
+}

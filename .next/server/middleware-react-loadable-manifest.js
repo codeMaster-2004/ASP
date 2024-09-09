@@ -1,1 +1,1 @@
-self.__REACT_LOADABLE_MANIFEST="{}"
+self.__REACT_LOADABLE_MANIFEST="{\"App.js -> react-router-dom\":{\"id\":\"App.js -> react-router-dom\",\"files\":[]}}"

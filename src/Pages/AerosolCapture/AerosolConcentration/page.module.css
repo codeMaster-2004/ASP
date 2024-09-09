@@ -1,0 +1,176 @@
+.concentration {
+    background: linear-gradient(to bottom, #fceae4, white);
+}
+
+.concentration-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 11.5%;
+}
+
+.concentration-container p {
+    text-decoration: none;
+    color: var(--Orange, #FF4E0D);
+    text-align: left;
+    /* text-shadow: 0px 4px 15px rgba(0, 0, 0, 0.50); */
+    font-family: "DM Mono";
+    font-size: 3.6vh;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 5% 0 3%;
+}
+
+.concentration-container h1 {
+    font-family: "Myriad Pro";
+    font-size: 9vh;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: left;
+    padding-bottom: 5%;
+}
+
+.text-after-big-concen {
+    display: flex;
+    flex-direction: column;
+    margin: 7% 0;
+}
+
+.text-after-big-concen p {
+    color: #000;
+    font-family: "Adobe Caslon Pro";
+    font-size: 3.7vh;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 166.67%; /* 166.667% */
+}
+
+.concentration-graph {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+}
+
+.concentration-graph p {
+    color: var(--Base-Black, #000);
+    font-family: "Myriad Pro";
+    font-size: 3.7vh;
+    font-style: italic;
+    font-weight: 600;
+    line-height: 133.333%; /* 133.333% */
+}
+
+.concentration-text p{
+    color: var(--Base-Black, #000);
+    font-family: Roboto;
+    font-size: 3.7vh;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 166.67%; /* 166.667% */
+}
+
+.concentration-others {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10% 0 21%;
+    /* background-color: #FF4E0D; */
+}
+
+.concentration-others h1 {
+    color: var(--Base-Black, #000);
+    font-family: "Myriad Pro";
+    font-size: 6vh;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px; /* Adjusted to better fit the heading */
+    margin: 0 0 4%;
+}
+
+.concentration-others-images {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.concentration-others-images-left {
+    margin: 0 3% 0 0;
+}
+
+.concentration-others-images-left-top,
+.concentration-others-images-left-bottom,
+.concentration-others-images-right-top{
+    width: 65.05vh;
+    height: 35vh;
+    background-size: cover; /* Ensure the background images cover the entire area */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 4%;
+}
+
+.concentration-others-images-left-top-text h1,
+.concentration-others-images-left-bottom-text h1,
+.concentration-others-images-right-top-text h1 {
+    color: #fff;
+    font-family: "Myriad Pro";
+    font-size: 30px; /* Adjusted to better match the image */
+    font-style: normal;
+    text-align: left;
+    font-weight: 600;
+    line-height: 1.5; /* Adjust for better spacing */
+    letter-spacing: -0.33px;
+    margin: 0;
+}
+
+.concentration-others-images-left-top {
+    background-image: url("../../../../public/images/SeparationTile.png");
+    margin-bottom: 7%;
+}
+
+.concentration-others-images-left-top-text {
+    margin-top: 1%;
+    margin-bottom: 27%;
+    width: 95%;
+}
+
+.concentration-others-images-left-top-button {
+    width: 95%;
+}
+
+.concentration-others-images-left-bottom {
+    margin-top: 7%;
+    background-image: url("../../../../public/images/ElectrodynamicTile.png");
+}
+
+.concentration-others-images-left-bottom-text {
+    margin-top: 1%;
+    margin-bottom: 19%;
+    width: 95%;
+}
+
+.concentration-others-images-left-bottom-button {
+    width: 95%;
+}
+
+.concentration-others-images-right {
+    display: flex;
+    flex-direction: column;
+}
+
+.concentration-others-images-right-top {
+    background-image: url("../../../../public/images/DustTile.png");
+    margin-bottom: 7%;
+}
+
+.concentration-others-images-right-top-text {
+    margin-top: 1%;
+    margin-bottom: 27%;
+    width: 95%;
+}
+
+.concentration-others-images-right-top-button {
+    width: 95%;
+}

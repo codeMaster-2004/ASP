@@ -1,5 +1,5 @@
 import React from 'react';
-import './page.css';
+import './page.module.css';
 import CustomLink from '../../../../Components/CustomLink/CustomeAtt';
 import 'styled-components';
 import Separator from '../../../../Components/Orange-separator/separator';
