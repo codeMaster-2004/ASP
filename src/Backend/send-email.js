@@ -4,24 +4,15 @@ export default async function handler(req, res) {
   if (req.method === 'POST') {
     const { name, email, phone, message } = req.body;
 
-    console.log('Received form data:', { name, email, phone, message });
+    let transporter = nodemailer.createTransport({
+      service: 'gmail',
+      auth: {
+        user: 'contactus.ascientificproducts@gmail.com',
+        pass: process.env.GMAIL_APP_PASSWORD
+      }
+    });
 
-    let transporter;
-    try {
-      transporter = nodemailer.createTransport({
-        service: 'gmail',
-        auth: {
-          user: 'contactus.ascientificproducts@gmail.com',
-          pass: process.env.GMAIL_APP_PASSWORD
-        }
-      });
-      console.log('Transporter created successfully');
-    } catch (error) {
-      console.error('Error creating transporter:', error);
-      return res.status(500).json({ message: 'Error setting up email service', error: error.toString() });
-    }
-
-    const mailOptions = {
+    let mailOptions = {
       from: '"Contact Form" <contactus.ascientificproducts@gmail.com>',
       to: 'office@analyticalscientificproducts.com',
       replyTo: email,
@@ -31,9 +22,7 @@ export default async function handler(req, res) {
     };
 
     try {
-      console.log('Attempting to send email');
       await transporter.sendMail(mailOptions);
-      console.log('Email sent successfully');
       res.status(200).json({ message: 'Email sent successfully' });
     } catch (error) {
       console.error('Error sending email:', error);

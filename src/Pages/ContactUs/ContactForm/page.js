@@ -23,6 +23,7 @@ function ContactBottom() {
         e.preventDefault();
         setStatus('Sending...');
         try {
+            console.log('Submitting form data:', formData);
             const response = await fetch('/api/send-email', {
                 method: 'POST',
                 headers: {
@@ -30,9 +31,10 @@ function ContactBottom() {
                 },
                 body: JSON.stringify(formData),
             });
-
+    
             const data = await response.json();
-
+            console.log('Server response:', data);
+    
             if (response.ok) {
                 setStatus(data.message || 'Email sent successfully!');
                 setFormData({ name: '', email: '', phone: '', message: '' });
@@ -40,10 +42,11 @@ function ContactBottom() {
                     formRef.current.reset();
                 }
             } else {
+                console.error('Server error:', data);
                 setStatus(data.message || 'Failed to send email. Please try again.');
             }
         } catch (error) {
-            console.error('Error:', error);
+            console.error('Fetch error:', error);
             setStatus('An error occurred. Please try again later.');
         }
     };
