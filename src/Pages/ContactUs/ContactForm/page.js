@@ -31,10 +31,19 @@ function ContactBottom() {
                 },
                 body: JSON.stringify(formData),
             });
-    
-            const data = await response.json();
+
+            let data;
+            const contentType = response.headers.get("content-type");
+            if (contentType && contentType.indexOf("application/json") !== -1) {
+                data = await response.json();
+            } else {
+                // If the response is not JSON, read it as text
+                const text = await response.text();
+                console.error('Received non-JSON response:', text);
+                throw new Error('Received non-JSON response from server');
+            }
             console.log('Server response:', data);
-    
+
             if (response.ok) {
                 setStatus(data.message || 'Email sent successfully!');
                 setFormData({ name: '', email: '', phone: '', message: '' });
