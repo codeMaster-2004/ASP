@@ -1,7 +1,12 @@
+import '../App.css';     // Adjust path if needed
 import '../global.css';
-import '../App.css';  // Import App.css here
-import App from '../App'  // Make sure this path is correct
 import { useEffect, useState } from 'react';
+import dynamic from 'next/dynamic';
+
+const DynamicHashRouter = dynamic(
+  () => import('react-router-dom').then((mod) => mod.HashRouter),
+  { ssr: false }
+);
 
 function MyApp({ Component, pageProps }) {
   const [isMounted, setIsMounted] = useState(false);
@@ -15,10 +20,12 @@ function MyApp({ Component, pageProps }) {
   }
 
   return (
-    <App>
-      <Component {...pageProps} />
-    </App>
-  )
+    <DynamicHashRouter>
+      <div className='App'>
+        <Component {...pageProps} />
+      </div>
+    </DynamicHashRouter>
+  );
 }
 
-export default MyApp
+export default MyApp;

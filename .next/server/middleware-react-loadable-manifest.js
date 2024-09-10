@@ -1,1 +1,1 @@
-self.__REACT_LOADABLE_MANIFEST="{\"App.js -> react-router-dom\":{\"id\":\"App.js -> react-router-dom\",\"files\":[]}}"
+self.__REACT_LOADABLE_MANIFEST="{\"pages/_app.js -> react-router-dom\":{\"id\":\"pages/_app.js -> react-router-dom\",\"files\":[\"static/chunks/node_modules_react-router-dom_dist_index_js.js\"]}}"

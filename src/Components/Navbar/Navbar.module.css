@@ -8,7 +8,7 @@
   z-index: 999;
 }
 
-.navbar-container {
+.navbarContainer {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -18,7 +18,7 @@
   gap: 0;
 }
 
-.navbar-logo {
+.navbarLogo {
   color: #fff;
   justify-self: start;
   cursor: pointer;
@@ -27,12 +27,12 @@
   align-items: center;
 }
 
-.navbar-logo img {
+.navbarLogo img {
   width: 80%;
   margin-right: 0.5vh;
 }
 
-.nav-menu {
+.navMenu {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -41,7 +41,7 @@
   position: static;
 }
 
-.nav-item {
+.navItem {
   height: auto;
   display: flex;
   align-items: center;
@@ -53,15 +53,22 @@
   position: static;
 }
 
-/* .nav-item.active .nav-links {
+.navLinks {
+  color: #161833;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0.5vh 2vh;
+  height: 100%;
+  white-space: nowrap;
   position: relative;
 }
 
-.nav-item.active .nav-links:hover {
+.navLinks:hover {
   border-bottom: none;
-} */
+}
 
-.nav-links::after {
+.navLinks::after {
   content: '';
   position: absolute;
   bottom: -3px;
@@ -73,11 +80,11 @@
   transition: transform 0.2s ease-out;
 }
 
-.nav-links:hover::after {
+.navLinks:hover::after {
   transform: scaleX(1);
 }
 
-.nav-item.active .nav-links::after {
+.navItem.active .navLinks::after {
   content: ''; 
   position: absolute;
   top: 196%;
@@ -91,65 +98,22 @@
   transition: all 0.3s ease; 
 }
 
-.nav-links {
-  color: #161833;
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  padding: 0.5vh 2vh;
-  height: 100%;
-  white-space: nowrap;
-  position: relative;
-}
-
-.nav-links:hover {
-  border-bottom: none;
-}
-
-/* Style for active dropdown items */
-.nav-item.active .nav-links:hover::after {
-  background-color: #FF6600;
-  top: 196%;
-  bottom: -10%;
-  height: 2.5px;
-}
-
-.nav-links:hover::after {
-  content: '';
-  position: absolute;
-  bottom: -3px;
-  left: 0;
-  width: 100%;
-  height: 3px;
-  background-color: #FF4E0D;
-  transition: all 0.2s ease-out;
-}
-
-.fa-bars {
-  color: #161833;
-}
-
-.nav-links-mobile {
+.menuIcon {
   display: none;
 }
 
-.menu-icon {
-  display: none;
-}
-
-.fa-angle-down {
+.dropdownArrow {
   margin-right: 2.5vh;
   cursor: pointer;
   transition: transform 0.3s ease;
   color: #161833;
 }
 
-.fa-angle-down.rotate {
+.dropdownArrow.rotate {
   transform: rotate(-180deg);
 }
 
-/* Dropdown Content */
-.dropdown-content {
+.dropdownContent {
   display: flex;
   flex-direction: column;
   gap: 0;
@@ -167,7 +131,7 @@
   border-top-color: rgba(217, 217, 217, 0.50) !important;
 }
 
-.dropdown-content a {
+.dropdownContent a {
   font-family: "Myriad Pro";
   font-size: 2.2vh;
   font-style: normal;
@@ -180,23 +144,17 @@
   font-weight: 500;
 }
 
-.dropdown-content.show {
+.dropdownContent.show {
   max-height: 100vh;
 }
 
-.dropdown-content a:hover {
+.dropdownContent a:hover {
   background-color: #252852;
   color: #fff;
   text-decoration: none;
 }
 
-.dropdown-menu {
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-}
-
-.nav-button {
+.navButton {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -213,23 +171,17 @@
   border-radius: 1vh;
 }
 
-.nav-button:hover {
+.navButton:hover {
   background-color: #FF4E0D;
 }
 
-/* Media Queries */
 @media screen and (max-width: 960px) {
-  .NavbarItems {
-    position: relative;
-    width: 100%;
-  }
-
-  .navbar img {
+  .navbarLogo img {
     width: 20%;
     justify-content: center;
   }
 
-  .nav-menu {
+  .navMenu {
     display: flex;
     flex-direction: column;
     height: auto;
@@ -242,16 +194,16 @@
     background-color: #fff; 
   }
 
-  .nav-menu.active {
+  .navMenu.active {
     background: #ffffff;
-    left :0;
+    left: 0;
     opacity: 1;
     transition: all 0.5s ease;
     height: auto;
     z-index: 1;
   }
 
-  .nav-links {
+  .navLinks {
     display: block;
     margin: 0;
     padding: 2rem 10rem;
@@ -263,19 +215,13 @@
     color: #161833;
   }
 
-  .nav-links:hover {
+  .navLinks:hover {
     background-color: rgba(3, 57, 108, 1);
     color: #f5f5f5;
     transition: background-color 0.3s ease;
   }
 
-  .navbar-logo {
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-
-  .menu-icon {
+  .menuIcon {
     display: block;
     position: absolute;
     top: 0;
@@ -285,19 +231,14 @@
     cursor: pointer;
   }
 
-  .fa-times {
-    color: rgba(3, 57, 108, 1);
-    font-size: 2rem;
-  }
-
-  .dropdown-content {
+  .dropdownContent {
     position: relative;
     top: 0;
     width: 100%;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   }
 
-  .dropdown-content.show {
+  .dropdownContent.show {
     display: flex;
     max-height: 500px;
     position: static;

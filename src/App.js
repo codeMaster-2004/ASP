@@ -13,15 +13,14 @@ import dynamic from 'next/dynamic';
 function App({children}) {
   // useScrollToTop();
   return (
-    <React.Fragment>
+    // <React.Fragment>
       <HashRouter >
         <div className='App'>
           <AppContent />
           {children}
         </div>
       </HashRouter>
-    </React.Fragment>
-    
+    // </React.Fragment>
   );
 }
 

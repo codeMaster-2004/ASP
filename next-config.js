@@ -1,4 +1,4 @@
 module.exports = {
-    basePath: '/ASP',
-    assetPrefix: '/ASP/',
-}
+    reactStrictMode: true,
+    pageExtensions: ['js', 'jsx', 'ts', 'tsx'],
+  }

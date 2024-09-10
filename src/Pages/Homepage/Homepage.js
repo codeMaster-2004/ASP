@@ -1,6 +1,4 @@
 import React from 'react';
-// import '../../App.css';
-// import { Button } from '../../Components/Button/Button';
 import Main from './PS-intro/page';
 import Cards from './Cards/Cards';
 import styles from './HP.module.css'; 

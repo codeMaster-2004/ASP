@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import './Navbar.module.css';
+import styles from './Navbar.module.css';
 import CustomLink from '../CustomLink/CustomeAtt';
 
 
@@ -102,118 +102,102 @@ function Navbar() {
   });
 
   return(
-    <>
-      <nav className='navbar'>
-        <div className='navbar-container'>
-          <CustomLink to='ASP' className='navbar-logo'>
-            <img src={`${process.env.PUBLIC_URL}/images/Layer_1.png`}  alt='Nasa' width='35%' height='100%'/>
-          </CustomLink>
-          <div className='menu-icon' onClick={handleClick}>
-            <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
-          </div>
-          <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-            <li className='nav-item'>
-              <CustomLink
-                to='/about'
-                className='nav-links'
-                onClick={closeMobileMenu}
-              >
-                About
-              </CustomLink>
-            </li>
-            <li className='nav-item'>
-              <CustomLink
-                to='/clients'
-                className='nav-links'
-                onClick={closeMobileMenu}
-              >
-                Clients
-              </CustomLink>
-            </li>
-            <li className={`nav-item ${openDropdown === 3 ? 'active' : ''}`}>
-              <CustomLink
-                to='/products-services'
-                className='nav-links'
-                onClick={closeMobileMenu}
-              >
-                Products
-              </CustomLink>
-              <i
-                className={`fa fa-angle-down dropdown-arrow ${openDropdown === 3 ? 'rotate' : ''}`}
-                onClick={() => toggleDropdown(3)}
-              ></i>
-              {openDropdown === 3 && (
-                <div className={`dropdown-content ${openDropdown === 3 ? 'show' : ''}`}>
-                  <CustomLink to='/facilities' onClick={closeMobileMenu}>Facilities</CustomLink>
-                </div>
-              )}
-            </li>
-            <li className={`nav-item ${openDropdown === 0 ? 'active' : ''}`}>
-              <CustomLink
-                to='/aerocapture'
-                className='nav-links'
-                onClick={closeMobileMenu}
-              >
-                Aerosol Capture
-              </CustomLink>
-              <i
-                className={`fa fa-angle-down dropdown-arrow ${openDropdown === 0 ? 'rotate' : ''}`}
-                onClick={() => toggleDropdown(0)}
-              ></i>
-              {openDropdown === 0 && (
-                console.log("inside the Aerosol dropdown"),
-                <div className={`dropdown-content ${openDropdown === 0 ? 'show' : ''}`}>
-                    <CustomLink to='/battery-thermal-runaway-numerical-simulation-of-electrodynamic-field' onClick={closeMobileMenu}>Numerical Simulation of Electrodynamic Field</CustomLink>
-                    <CustomLink to='/aerosol-concentration' onClick={closeMobileMenu}>Aerosol Concentration</CustomLink>
-                    <CustomLink to='/dust-mitigation' onClick={closeMobileMenu}>Dust Mitigation</CustomLink>
-                    {console.log("done with it")}
-                </div>
-              )}
-            </li>
-            <li className={`nav-item ${openDropdown === 1 ? 'active' : ''}`}>
-              <CustomLink
-                to='/batterysafety'
-                className='nav-links'
-                onClick={closeMobileMenu}
-              >
-                Battery Safety
-              </CustomLink>
-              <i className={`fa fa-angle-down dropdown-arrow ${openDropdown === 1 ? 'rotate' : ''}`}
-                onClick={() => toggleDropdown(1)}
-                ></i>
-                {openDropdown === 1 && (
-                <div className={`dropdown-content ${openDropdown === 1 ? 'show' : ''}`}>
-                  <CustomLink to='/battery-thermal-runaway-detection-prevention' onClick={closeMobileMenu}>Battery Thermal Runaway Detection & Prevention</CustomLink>
-                  <CustomLink to='/battery-thermal-management' onClick={closeMobileMenu}>Battery Thermal Management</CustomLink>
-                </div>
-                )}
-            </li>
-            <li className={`nav-item ${openDropdown === 2 ? 'active' : ''}`}>
-              <CustomLink
-                to='/optical-instrumentation'
-                className={`nav-links ${openDropdown === 2 ? 'active' : ''}`}
-                onClick={closeMobileMenu}
-              >
-                Instrumentation
-              </CustomLink>
-              <i
-                className={`fa fa-angle-down dropdown-arrow ${openDropdown === 2 ? 'rotate' : ''}`}
-                onClick={() => toggleDropdown(2)}
-              ></i>
-              {openDropdown === 2 && (
-                <div className={`dropdown-content ${openDropdown === 2 ? 'show' : ''}`}>
-                  <CustomLink to='/optical-instrumentation' onClick={closeMobileMenu}>Optical Instrumentation</CustomLink>
-                  <CustomLink to='/morphology-characterization-optical-extinction-spectroscopy' onClick={closeMobileMenu}>Morphology Characterization with Optical Extinction Spectroscopy</CustomLink>
-                  <CustomLink to='/polarized-light-scattering' onClick={closeMobileMenu}>Polarized Light Scattering</CustomLink>
-                  <CustomLink to='/sedimentation-based-particle-sizing' onClick={closeMobileMenu}>Sedimentation based Particle Sizing</CustomLink>
-                </div>
-              )}
-            </li>
-            <CustomLink to='/contact-us' className='nav-button'>Contact Us</CustomLink>
-          </ul> 
+    <nav className={styles.navbar}>
+      <div className={styles.navbarContainer}>
+        <CustomLink to='ASP' className={styles.navbarLogo}>
+          <img src={`/images/Layer_1.png`}  alt='Nasa' width='35%' height='100%'/>
+        </CustomLink>
+        <div className={styles.menuIcon} onClick={handleClick}>
+          <i className={`fas ${click ? 'fa-times' : 'fa-bars'}`} />
         </div>
-      </nav>
-    </>
+        <ul className={`${styles.navMenu} ${click ? styles.active : ''}`}>
+          <li className={styles.navItem}>
+            <CustomLink to='/about' className={styles.navLinks} onClick={closeMobileMenu}>
+              About
+            </CustomLink>
+          </li>
+          <li className={styles.navItem}>
+            <CustomLink to='/clients' className={styles.navLinks} onClick={closeMobileMenu}>
+              Clients
+            </CustomLink>
+          </li>
+          <li className={`${styles.navItem} ${openDropdown === 3 ? styles.active : ''}`}>
+            <CustomLink to='/products-services' className={styles.navLinks} onClick={closeMobileMenu}>
+              Products
+            </CustomLink>
+            <i className={`fa fa-angle-down ${styles.dropdownArrow} ${openDropdown === 3 ? styles.rotate : ''}`}
+                 onClick={() => toggleDropdown(3)}
+            ></i>
+            {openDropdown === 3 && (
+              <div className={`${styles.dropdownContent} ${openDropdown === 3 ? styles.show : ''}`}>
+                <CustomLink to='/facilities' onClick={closeMobileMenu}>Facilities</CustomLink>
+              </div>
+            )}
+          </li>
+          <li className={`${styles.navItem} ${openDropdown === 0 ? styles.active : ''}`}>
+            <CustomLink
+              to='/aerocapture'
+              className={styles.navLinks}
+              onClick={closeMobileMenu}
+            >
+              Aerosol Capture
+            </CustomLink>
+            <i
+              className={`fa fa-angle-down ${styles.dropdownArrow} ${openDropdown === 0 ? styles.rotate : ''}`}
+              onClick={() => toggleDropdown(0)}
+            ></i>
+            {openDropdown === 0 && (
+              // console.log("inside the Aerosol dropdown"),
+              <div className={`${styles.dropdownContent} ${openDropdown === 0 ? styles.show : ''}`}>
+                  <CustomLink to='/battery-thermal-runaway-numerical-simulation-of-electrodynamic-field' onClick={closeMobileMenu}>Numerical Simulation of Electrodynamic Field</CustomLink>
+                  <CustomLink to='/aerosol-concentration' onClick={closeMobileMenu}>Aerosol Concentration</CustomLink>
+                  <CustomLink to='/dust-mitigation' onClick={closeMobileMenu}>Dust Mitigation</CustomLink>
+              </div>
+            )}
+          </li>
+          <li className={`${styles.navItem} ${openDropdown === 1 ? styles.active : ''}`}>
+            <CustomLink
+              to='/batterysafety'
+              className={styles.navLinks}
+              onClick={closeMobileMenu}
+            >
+              Battery Safety
+            </CustomLink>
+            <i className={`fa fa-angle-down ${styles.dropdownArrow} ${openDropdown === 1 ? styles.rotate : ''}`}
+              onClick={() => toggleDropdown(1)}
+              ></i>
+              {openDropdown === 1 && (
+              <div className={`${styles.dropdownContent} ${openDropdown === 1 ? styles.show : ''}`}>
+                <CustomLink to='/battery-thermal-runaway-detection-prevention' onClick={closeMobileMenu}>Battery Thermal Runaway Detection & Prevention</CustomLink>
+                <CustomLink to='/battery-thermal-management' onClick={closeMobileMenu}>Battery Thermal Management</CustomLink>
+              </div>
+              )}
+          </li>
+          <li className={`${styles.navItem} ${openDropdown === 2 ? styles.active : ''}`}>
+            <CustomLink
+              to='/optical-instrumentation'
+              className={styles.navLinks}
+              onClick={closeMobileMenu}
+            >
+              Instrumentation
+            </CustomLink>
+            <i
+              className={`fa fa-angle-down dropdown-arrow ${openDropdown === 2 ? styles.rotate : ''}`}
+              onClick={() => toggleDropdown(2)}
+            ></i>
+            {openDropdown === 2 && (
+              <div className={`${styles.dropdownContent} ${openDropdown === 2 ? styles.show : ''}`}>
+                <CustomLink to='/optical-instrumentation' onClick={closeMobileMenu}>Optical Instrumentation</CustomLink>
+                <CustomLink to='/morphology-characterization-optical-extinction-spectroscopy' onClick={closeMobileMenu}>Morphology Characterization with Optical Extinction Spectroscopy</CustomLink>
+                <CustomLink to='/polarized-light-scattering' onClick={closeMobileMenu}>Polarized Light Scattering</CustomLink>
+                <CustomLink to='/sedimentation-based-particle-sizing' onClick={closeMobileMenu}>Sedimentation based Particle Sizing</CustomLink>
+              </div>
+            )}
+          </li>
+          <CustomLink to='/contact-us' className={styles.navButton}>Contact Us</CustomLink>
+        </ul> 
+      </div>
+    </nav>
   );
 }
 

@@ -1,11 +1,10 @@
 import React from 'react';
 import styles from './Button.module.css';
-// import { useNavigate } from 'react-router-dom';
 import CustomLink from '../CustomLink/CustomeAtt';
 
-const STYLES = ['btn--primary', 'btn--outline', 'btn--test', "btn--aerosol", "btn--battery", "btn--submit", "btn--learn"];
+const STYLES = ['btnPrimary', 'btnOutline', 'btnTest', "btnAerosol", "btnBattery", "btnSubmit", "btnLearn"];
 
-const SIZES = ['btn--medium', 'btn--large', 'btn--extralarge'];
+const SIZES = ['btnMedium', 'btnLarge', 'btnExtralarge'];
 
 // Define the different button types and corresponding routes
 const TYPES = {
@@ -33,8 +32,6 @@ export const Button = ({
   buttonSize,
   buttonType
 }) => {
-  // const navigate = useNavigate();
-  
   const checkButtonStyle = STYLES.includes(buttonStyle)
     ? buttonStyle
     : STYLES[0];
@@ -48,9 +45,9 @@ export const Button = ({
   };
 
   return (
-    <CustomLink to={checkButtonType} className='btn-mobile'>
+    <CustomLink to={checkButtonType}>
       <button
-        className={`btn ${checkButtonStyle} ${checkButtonSize}`}
+        className={`${styles.btn} ${styles[checkButtonStyle]} ${styles[checkButtonSize]}`}
         type={type}
         onClick={handleClick}
       >
