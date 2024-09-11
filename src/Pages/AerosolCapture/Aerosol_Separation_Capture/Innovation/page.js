@@ -29,8 +29,8 @@ function Innovation() {
                                 <h1>Dust Mitigation</h1>
                             </div>
                             <div className='innovation-others-images-left-top-button'>
-                                <Button buttonSize='btn--large'
-                                        buttonStyle='btn--battery'
+                                <Button buttonSize='btnLarge'
+                                        buttonStyle='btnBattery'
                                         buttonType='dustMitigation'>
                                             View
                                 </Button>
@@ -43,8 +43,8 @@ function Innovation() {
                                 </h1>
                             </div>
                             <div className='innovation-others-images-left-bottom-button'>
-                                <Button buttonSize='btn--large'
-                                        buttonStyle='btn--battery'
+                                <Button buttonSize='btnLarge'
+                                        buttonStyle='btnBattery'
                                         buttonType='electro'>
                                             View
                                 </Button>
@@ -59,8 +59,8 @@ function Innovation() {
                                 </h1>
                             </div>
                             <div className='innovation-others-images-right-top-button'>
-                                <Button buttonSize='btn--large'
-                                        buttonStyle='btn--battery'
+                                <Button buttonSize='btnLarge'
+                                        buttonStyle='btnBattery'
                                         buttonType='concentration'>
                                             View
                                 </Button>

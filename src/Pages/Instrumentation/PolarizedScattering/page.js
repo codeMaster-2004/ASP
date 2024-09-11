@@ -62,8 +62,8 @@ function Polarized() {
                                     <h1>Aerosol Concentration</h1>
                                 </div>
                                 <div className='polarized-others-images-left-top-button'>
-                                    <Button buttonSize='btn--large'
-                                            buttonStyle='btn--battery'
+                                    <Button buttonSize='btnLarge'
+                                            buttonStyle='btnBattery'
                                             buttonType='concentration'>
                                                 View
                                     </Button>
@@ -74,8 +74,8 @@ function Polarized() {
                                     <h1>Morphology Characterization with Optical Extinction Spectroscopy</h1>
                                 </div>
                                 <div className='polarized-others-images-left-bottom-button'>
-                                    <Button buttonSize='btn--large'
-                                            buttonStyle='btn--battery'
+                                    <Button buttonSize='btnLarge'
+                                            buttonStyle='btnBattery'
                                             buttonType='Morphology'>
                                                 View
                                     </Button>
@@ -88,8 +88,8 @@ function Polarized() {
                                     <h1>Optical Instrumentation</h1>
                                 </div>
                                 <div className='polarized-others-images-right-top-button'>
-                                    <Button buttonSize='btn--large'
-                                            buttonStyle='btn--battery'
+                                    <Button buttonSize='btnLarge'
+                                            buttonStyle='btnBattery'
                                             buttonType='Optical'>
                                                 View
                                     </Button>
@@ -100,8 +100,8 @@ function Polarized() {
                                     <h1>Sedimentation based particle sizing</h1>
                                 </div>
                                 <div className='polarized-others-images-right-bottom-button'>
-                                    <Button buttonSize='btn--large'
-                                            buttonStyle='btn--battery'
+                                    <Button buttonSize='btnLarge'
+                                            buttonStyle='btnBattery'
                                             buttonType='SPS'>
                                                 View
                                     </Button>

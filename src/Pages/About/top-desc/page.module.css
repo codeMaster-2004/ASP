@@ -1,23 +1,19 @@
 .top {
     display: flex;
     flex-direction: column;
-    /* flex-shrink: 0; */
     background-image: url('../../../../public/images/earth-about.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     min-height: 140vh; 
-    /* max-width: 185vh; */
-    /* max-width: 100%; */
     flex-shrink: 1;
     overflow-x: hidden;
     align-items: center;
     justify-content: center;
     padding: 1vh; 
-
 }
 
-.top-left {
+.topLeft {
     padding-bottom: 20vh;
     margin: 0 10%;
 }
@@ -29,7 +25,7 @@
     font-size: 10vh;
     font-style: normal;
     font-weight: 700;
-    line-height: 12.5vh; /* 62.5% */
+    line-height: 12.5vh;
 }
 
 .highlight {
@@ -41,13 +37,12 @@
     padding: 8vh 36vh;
     flex-direction: column;
     align-items: flex-start;
-    /* gap: 10px; */
     flex-shrink: 0;
     background-color: #161833E5;
     justify-content: center;
 }
 
-.exp-container {
+.expContainer {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -83,15 +78,15 @@
     line-height: normal;
 }
 
-.exp-text {
+.expText {
     display: flex;
     flex-direction: column;
-    justify-content:center;
+    justify-content: center;
     margin-bottom: 4vh;
     gap: 3vh;
 }
 
-.exp-text h1 {
+.expText h1 {
     color: #F5F5F5;
     text-align: center;
     font-family: "Myriad Pro";
@@ -103,7 +98,7 @@
     padding: 0;
 }
 
-.exp-text p {
+.expText p {
     color: #F5F5F5;
     text-align: center;
     font-family: "Myriad Pro";

@@ -39,8 +39,8 @@ function Sedimentation() {
                                     <h1>Aerosol Concentration</h1>
                                 </div>
                                 <div className='sedimentation-others-images-left-top-button'>
-                                    <Button buttonSize='btn--large'
-                                            buttonStyle='btn--battery'
+                                    <Button buttonSize='btnLarge'
+                                            buttonStyle='btnBattery'
                                             buttonType='concentration'>
                                                 View
                                     </Button>
@@ -51,8 +51,8 @@ function Sedimentation() {
                                     <h1>Morphology Characterization with Optical Extinction Spectroscopy</h1>
                                 </div>
                                 <div className='sedimentation-others-images-left-bottom-button'>
-                                    <Button buttonSize='btn--large'
-                                            buttonStyle='btn--battery'
+                                    <Button buttonSize='btnLarge'
+                                            buttonStyle='btnBattery'
                                             buttonType='Morphology'>
                                                 View
                                     </Button>
@@ -65,8 +65,8 @@ function Sedimentation() {
                                     <h1>Optical Instrumentation</h1>
                                 </div>
                                 <div className='sedimentation-others-images-right-top-button'>
-                                    <Button buttonSize='btn--large'
-                                            buttonStyle='btn--battery'
+                                    <Button buttonSize='btnLarge'
+                                            buttonStyle='btnBattery'
                                             buttonType='Optical'>
                                                 View
                                     </Button>
@@ -77,8 +77,8 @@ function Sedimentation() {
                                     <h1>Polarized Light Scattering</h1>
                                 </div>
                                 <div className='sedimentation-others-images-right-bottom-button'>
-                                    <Button buttonSize='btn--large'
-                                            buttonStyle='btn--battery'
+                                    <Button buttonSize='btnLarge'
+                                            buttonStyle='btnBattery'
                                             buttonType='Polarized'>
                                                 View
                                     </Button>

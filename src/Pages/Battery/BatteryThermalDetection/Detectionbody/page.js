@@ -55,8 +55,8 @@ function BatteryDetectionBottom() {
                             <h1>Battery Safety</h1>
                         </div>
                         <div className='DetectionOtherImagesLeftButton'>
-                            <Button buttonStyle='btn--battery'
-                                    buttonSize='btn--large'
+                            <Button buttonStyle='btnBattery'
+                                    buttonSize='btnLarge'
                                     buttonType='batterysafety'>
                                         View
                             </Button>
@@ -67,8 +67,8 @@ function BatteryDetectionBottom() {
                             <h1>Battery Thermal Management</h1>
                         </div>
                         <div className='DetectionOtherImagesLeftButton'>
-                            <Button buttonStyle='btn--battery'
-                                    buttonSize='btn--large'
+                            <Button buttonStyle='btnBattery'
+                                    buttonSize='btnLarge'
                                     buttonType='batterythermal'>
                                         View
                             </Button>

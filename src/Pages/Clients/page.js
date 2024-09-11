@@ -37,8 +37,8 @@ function Clients() {
                     
                 </div>
                 <div className='client-button'>
-                    <Button buttonStyle='btn--submit'
-                            buttonSize='btn--extralarge'
+                    <Button buttonStyle='btnSubmit'
+                            buttonSize='btnExtralarge'
                             buttonType='contact'>
                         Contact Us
                     </Button>

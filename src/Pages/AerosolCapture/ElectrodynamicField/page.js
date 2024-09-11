@@ -56,8 +56,8 @@ function Electrodynamic() {
                                     <h1>Aerosol Separation and Capture</h1>
                                 </div>
                                 <div className='electro-others-images-left-top-button'>
-                                    <Button buttonSize='btn--large'
-                                            buttonStyle='btn--battery'
+                                    <Button buttonSize='btnLarge'
+                                            buttonStyle='btnBattery'
                                             buttonType='aerosol'>
                                                 View
                                     </Button>
@@ -68,8 +68,8 @@ function Electrodynamic() {
                                     <h1>Dust Mitigation</h1>
                                 </div>
                                 <div className='electro-others-images-left-bottom-button'>
-                                    <Button buttonSize='btn--large'
-                                            buttonStyle='btn--battery'
+                                    <Button buttonSize='btnLarge'
+                                            buttonSyle='btnBattery'
                                             buttonType='dustMitigation'>
                                                 View
                                     </Button>
@@ -82,8 +82,8 @@ function Electrodynamic() {
                                     <h1>Aerosol Concentration</h1>
                                 </div>
                                 <div className='electro-others-images-right-top-button'>
-                                    <Button buttonSize='btn--large'
-                                            buttonStyle='btn--battery'
+                                    <Button buttonSize='btnLarge'
+                                            buttonStyle='btnBattery'
                                             buttonType='concentration'>
                                                 View
                                     </Button>

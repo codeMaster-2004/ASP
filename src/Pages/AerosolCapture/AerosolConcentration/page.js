@@ -42,8 +42,8 @@ function AerosolConcentration() {
                                     <h1>Aerosol Separation and Capture</h1>
                                 </div>
                                 <div className='concentration-others-images-left-top-button'>
-                                    <Button buttonSize='btn--large'
-                                            buttonStyle='btn--battery'
+                                    <Button buttonSize='btnLarge'
+                                            buttonStyle='btnBattery'
                                             buttonType='aerosol'>
                                                 View
                                     </Button>
@@ -54,8 +54,8 @@ function AerosolConcentration() {
                                     <h1>Numerical Simulation of Electrodynamic Field</h1>
                                 </div>
                                 <div className='concentration-others-images-left-bottom-button'>
-                                    <Button buttonSize='btn--large'
-                                            buttonStyle='btn--battery'
+                                    <Button buttonSize='btnLarge'
+                                            buttonStyle='btnBattery'
                                             buttonType='electro'>
                                                 View
                                     </Button>
@@ -68,8 +68,8 @@ function AerosolConcentration() {
                                     <h1>Dust Mitigation</h1>
                                 </div>
                                 <div className='concentration-others-images-right-top-button'>
-                                    <Button buttonSize='btn--large'
-                                            buttonStyle='btn--battery'
+                                    <Button buttonSize='btnLarge'
+                                            buttonStyle='btnBattery'
                                             buttonType='dustMitigation'>
                                                 View
                                     </Button>

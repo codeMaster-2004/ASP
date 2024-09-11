@@ -39,8 +39,8 @@ function CFD() {
               <h1>Battery Safety</h1>
             </div>
             <div className='battery-button'>
-              <Button buttonSize='btn--large'
-                      buttonStyle='btn--battery'
+              <Button buttonSize='btnLarge'
+                      buttonStyle='btnBattery'
                       buttonType='batterysafety'>
                         View
               </Button>

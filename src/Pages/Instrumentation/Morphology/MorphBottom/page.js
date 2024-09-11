@@ -66,8 +66,8 @@ function MorphBottom() {
                             <h1>Aerosol Concentration</h1>
                         </div>
                         <div className='morph-others-images-left-top-button'>
-                            <Button buttonSize='btn--large'
-                                    buttonStyle='btn--battery'
+                            <Button buttonSize='btnLarge'
+                                    buttonStyle='btnStyle'
                                     buttonType='concentration'>
                                         View
                             </Button>
@@ -78,8 +78,8 @@ function MorphBottom() {
                             <h1>Polarized Light Scattering</h1>
                         </div>
                         <div className='morph-others-images-left-bottom-button'>
-                            <Button buttonSize='btn--large'
-                                    buttonStyle='btn--battery'
+                            <Button buttonSize='btnLarge'
+                                    buttonStyle='btnStyle'
                                     buttonType='Polarized'>
                                         View
                             </Button>
@@ -92,8 +92,8 @@ function MorphBottom() {
                             <h1>Optical Instrumentation</h1>
                         </div>
                         <div className='morph-others-images-right-top-button'>
-                            <Button buttonSize='btn--large'
-                                    buttonStyle='btn--battery'
+                            <Button buttonSize='btnLarge'
+                                    buttonStyle='btnStyle'
                                     buttonType='Optical'>
                                         View
                             </Button>
@@ -104,8 +104,8 @@ function MorphBottom() {
                             <h1>Sedimentation based particle sizing</h1>
                         </div>
                         <div className='morph-others-images-right-bottom-button'>
-                            <Button buttonSize='btn--large'
-                                    buttonStyle='btn--battery'
+                            <Button buttonSize='btnLarge'
+                                    buttonStyle='btnStyle'
                                     buttonType='SPS'>
                                         View
                             </Button>

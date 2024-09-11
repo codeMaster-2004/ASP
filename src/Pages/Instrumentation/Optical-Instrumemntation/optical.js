@@ -33,8 +33,8 @@ function Optical() {
                                     <h1>Aerosol Concentration</h1>
                                 </div>
                                 <div className='optical-others-images-left-top-button'>
-                                    <Button buttonSize='btn--large'
-                                            buttonStyle='btn--battery'
+                                    <Button buttonSize='btnLarge'
+                                            buttonStyle='btnBattery'
                                             buttonType='concentration'>
                                                 View
                                     </Button>
@@ -45,8 +45,8 @@ function Optical() {
                                     <h1>Morphology Characterization with Optical Extinction Spectroscopy</h1>
                                 </div>
                                 <div className='optical-others-images-left-bottom-button'>
-                                    <Button buttonSize='btn--large'
-                                            buttonStyle='btn--battery'
+                                    <Button buttonSize='btnLarge'
+                                            buttonStyle='btnBattery'
                                             buttonType='Morphology'>
                                                 View
                                     </Button>
@@ -59,8 +59,8 @@ function Optical() {
                                     <h1>Polarized Light Scattering</h1>
                                 </div>
                                 <div className='optical-others-images-right-top-button'>
-                                    <Button buttonSize='btn--large'
-                                            buttonStyle='btn--battery'
+                                    <Button buttonSize='btnLarge'
+                                            buttonStyle='btnBattery'
                                             buttonType='Polarized'>
                                                 View
                                     </Button>
@@ -71,8 +71,8 @@ function Optical() {
                                     <h1>Sedimentation based particle sizing</h1>
                                 </div>
                                 <div className='optical-others-images-right-bottom-button'>
-                                    <Button buttonSize='btn--large'
-                                            buttonStyle='btn--battery'
+                                    <Button buttonSize='btnLarge'
+                                            buttonStyle='btnBattery'
                                             buttonType='SPS'>
                                                 View
                                     </Button>

@@ -1,23 +1,23 @@
 import React from 'react';
-import './page.module.css'; 
+import styles from './page.module.css'; 
 
-function page() {
+function Page() {
   return (
     <>
-      <div className='top'>
-        <div className='top-left'>
+      <div className={styles.top}>
+        <div className={styles.topLeft}>
           <h1>
-            Our vision is to <span className='highlight'>translate</span> our deep <span className='highlight'>knowledge</span> and combined <span className='highlight'>experience</span> into commercially viable <span className='highlight'>products and technologies</span> that make the world a safer place. 
+            Our vision is to <span className={styles.highlight}>translate</span> our deep <span className={styles.highlight}>knowledge</span> and combined <span className={styles.highlight}>experience</span> into commercially viable <span className={styles.highlight}>products and technologies</span> that make the world a safer place. 
           </h1>
         </div>
       </div>
-      <div className='exp'>
-        <div className='exp-container'>
-          <div className='founded'>
+      <div className={styles.exp}>
+        <div className={styles.expContainer}>
+          <div className={styles.founded}>
             <h1>Founded</h1>
             <p>2022</p>
           </div>
-          <div className='exp-text'>
+          <div className={styles.expText}>
             <h1>20-40+</h1>
             <p>years of experience</p>
           </div>
@@ -27,4 +27,4 @@ function page() {
   )
 }
 
-export default page
+export default Page

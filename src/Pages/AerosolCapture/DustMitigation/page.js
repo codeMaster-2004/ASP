@@ -70,8 +70,8 @@ function DustMitigation() {
                                     <h1>Aerosol Separation and Capture</h1>
                                 </div>
                                 <div className='dust-others-images-left-top-button'>
-                                    <Button buttonSize='btn--large'
-                                            buttonStyle='btn--battery'
+                                    <Button buttonSize='btnLarge'
+                                            buttonSize='btnBattery'
                                             buttonType='aerosol'>
                                                 View
                                     </Button>
@@ -82,8 +82,8 @@ function DustMitigation() {
                                     <h1>Numerical Simulation of Electrodynamic Field</h1>
                                 </div>
                                 <div className='dust-others-images-left-bottom-button'>
-                                    <Button buttonSize='btn--large'
-                                            buttonStyle='btn--battery'
+                                    <Button buttonSize='btnLarge'
+                                            buttonSize='btnBattery'
                                             buttonType='electro'>
                                                 View
                                     </Button>
@@ -96,8 +96,8 @@ function DustMitigation() {
                                     <h1>Aerosol Concentration</h1>
                                 </div>
                                 <div className='dust-others-images-right-top-button'>
-                                    <Button buttonSize='btn--large'
-                                            buttonStyle='btn--battery'
+                                    <Button buttonSize='btnLarge'
+                                            buttonSize='btnBattery'
                                             buttonType='concentration'>
                                                 View
                                     </Button>
