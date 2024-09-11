@@ -19,11 +19,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
+    "export": "next export",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d out",
-    "start-server": "cross-env PORT=5001 node src/Backend/server.js"
+    "deploy": "gh-pages -d out"
   },
   "eslintConfig": {
     "extends": [
