@@ -1,4 +1,4 @@
-.CFD-container {
+.cfdContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -6,36 +6,36 @@
     margin: 5% 11.5% 0;
 }
 
-.CFD {
+.cfd {
     display: flex;
     flex-direction: column;
     margin-bottom: 7%;
 }
 
-.CFD-container h1 {
+.cfdContainer h1 {
     color: var(--Base-Black, #000);
     font-family: "Myriad Pro";
-    font-size:6.4vh;
+    font-size: 6.4vh;
     font-style: normal;
     font-weight: 700;
-    line-height: 9.5vh; /* 60% */
+    line-height: 9.5vh;
     text-align: left;
 }
 
-.CFD-container p {
+.cfdContainer p {
     color: var(--Base-Black, #000);
     font-family: "Adobe Caslon Pro";
     font-size: 3.7vh;
     font-style: normal;
     font-weight: 400;
-    line-height: 6.2vh; /* 166.667% */
+    line-height: 6.2vh;
 }
 
-.CFD-container a {
+.cfdContainer a {
     color: var(--Base-Black, #000);
 }
 
-.image-desc {
+.imageDesc {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -43,16 +43,16 @@
     margin: 7% 0 2%;
 }
 
-.image-desc p {
+.imageDesc p {
     color: var(--Base-Black, #000);
     font-family: "Myriad Pro";
     font-size: 3.7vh;
     font-style: italic;
     font-weight: 600;
-    line-height: 40px; /* 133.333% */
+    line-height: 40px;
 }
 
-.management-others {
+.managementOthers {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -60,62 +60,64 @@
     margin: 6% 0 20.7%;
 }
 
-.management-others h1 {
+.managementOthers h1 {
     color: var(--Base-Black, #000);
     font-family: "Myriad Pro";
     font-size: 6vh;
     font-style: normal;
     font-weight: 700;
-    line-height: 9vh; /* Adjusted to better fit the heading */
+    line-height: 9vh;
     margin-bottom: 6%;
 }
 
-.management-others-images {
+.safetyImages {
     display: flex;
     justify-content: space-between;
     gap: 20px; 
 }
 
-.management-others-images-left,
-.management-others-images-right {
+.managementOthersImagesLeft,
+.managementOthersImagesRight {
     width: 65.05vh;
     height: 35vh;
-    background-size: cover; /* Ensure the background images cover the entire area */
+    background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     padding: 20px; 
 }
 
-.management-others-images-left {
+.managementOthersImagesLeft {
     background-image: url('../../../../../public/images/BatterySafety.png');
 }
 
-.management-others-images-right {
+.managementOthersImagesRight {
     background-image: url('../../../../../public/images/thermaldetection.png');
 }
 
-.management-others-images-left-title {
+.managementOthersImagesLeftTitle {
     margin-bottom: 32%;
     width: 95%;
 }
 
-.management-others-images-right-title {
+.managementOthersImagesRightTitle {
     margin-bottom: 24%;
     width: 93%;
 }
 
-.management-others-images-left-title h1,
-.management-others-images-right-title h1 {
+.managementOthersImagesLeftTitle h1,
+.managementOthersImagesRightTitle h1 {
     color: #fff;
     font-family: "Myriad Pro";
-    font-size: 3.7vh; /* Adjusted to better match the image */
+    font-size: 3.7vh;
     font-style: normal;
     text-align: left;
     font-weight: 600;
-    line-height: 1.5; /* Adjust for better spacing */
+    line-height: 1.5;
     letter-spacing: -0.33px;
     margin: 0;
 }
 
-
+.batteryButton {
+    width: 95%;
+}

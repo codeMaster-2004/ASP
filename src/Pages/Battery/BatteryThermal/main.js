@@ -1,11 +1,11 @@
 import React from 'react';
-import './main.module.css'; 
+import styles from './main.module.css'; 
 import BatteryManagementTop from './Top/page';
 import CFD from './CFDSimulations/page';
 
 function BatteryThermalManagement() {
   return (
-    <div className='batteryThermal'>
+    <div className={styles.batteryThermal}>
       < BatteryManagementTop />
       <CFD />
     </div>

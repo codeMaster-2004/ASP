@@ -1,20 +1,19 @@
 import React from 'react';
-import './page.module.css';
+import styles from './page.module.css';
 import CustomLink from '../../../../Components/CustomLink/CustomeAtt';
 import "styled-components"
 
 function BatteryManagementTop() {
   return (
     <>
-        <div className='management-container'>
+        <div className={styles.managementContainer}>
             <CustomLink to='/batterysafety' style={{textDecoration:"none"}}>
-              <p className='orange-text'>Battery Safety</p>
+              <p className={styles.orangeText}>Battery Safety</p>
             </CustomLink>
-            
             <h1>Battery Thermal Management</h1>
-            <img src={`${process.env.PUBLIC_URL}/images/batterypack.png`} alt="batterysafety" width="100%" height="100%"/>
+            <img src='/images/batterypack.png' alt="batterysafety" width="100%" height="100%"/>
         </div>
-        <div className='management-pre-text'>
+        <div className={styles.managementPreText}>
           <p>
             Large battery packs for power intensive applications are often constructed by connecting smaller individual cells. These cells may heat up over time due to heat transfer from ambient hot air and due to various mechanisms such as resistive heating during battery charging and usage. The thermal management component of our solution ensures that the battery temperature remains within a target window to minimize cell degradation.
           </p>
@@ -23,8 +22,7 @@ function BatteryManagementTop() {
           </p>
         </div>
     </>
-    
   )
 }
 
-export default BatteryManagementTop
+export default BatteryManagementTop;

@@ -1,13 +1,13 @@
 import React from 'react'
 import Separator from '../../../../Components/Orange-separator/separator';
-import './page.module.css'; 
+import styles from './page.module.css'; 
 import CustomLink from '../../../../Components/CustomLink/CustomeAtt';
 import {Button} from '../../../../Components/Button/Button';
 
 function CFD() {
   return (
-    <div className='CFD-container'>
-      <div className='CFD'>
+    <div className={styles.cfdContainer}>
+      <div className={styles.cfd}>
         <h1>
           CFD Simulations for Thermal Management in a 16-Cell Battery Module
         </h1>
@@ -19,26 +19,26 @@ function CFD() {
         </p>
       </div>
       <Separator />
-      <div className='image-desc'>
-        <img src={`${process.env.PUBLIC_URL}/images/thermalbattery.png`} alt="batterysecond" height="100%"/>
+      <div className={styles.imageDesc}>
+        <img src='/images/thermalbattery.png' alt="batterysecond" height="100%"/>
         <p>
           Results from numerical simulations of the temperature distribution in the 16-cell battery module discharging at 1-C rate due to the coolant flowing through the channels above and below the cells.
         </p>
       </div>
       <p>
-        The liquid heat exchanger can similarly heat the cells in the battery during cold weather operation. Maintaining the battery pack within an optimal temperature window ensures excellent performance, minimal energy loss, and minimal degradation (which in turn leads to long cycle life). The thermal management system can be implemented alone or on combination with the <CustomLink to='/battery-thermal-runaway-detection-prevention'>thermal runaway detection and prevention technology</CustomLink>. 
+        The liquid heat exchanger can similarly heat the cells in the battery during cold weather operation. Maintaining the battery pack within an optimal temperature window ensures excellent performance, minimal energy loss, and minimal degradation (which in turn leads to long cycle life). The thermal management system can be implemented alone or on combination with the <CustomLink to='/battery-thermal-runaway-detection-prevention'>thermal runaway detection and prevention technology</CustomLink>. 
       </p>
       <p>
         Our technology can improve the battery performance in any application that relies on batteries for energy storage and reuse. Examples include the vertical takeoff and landing systems with electric propulsion (eVTOL), electric vehicles (EVs), electric trucks, electric buses, battery energy storage systems (BESS) for residential and electric grid energy systems, aircraft, drones, micromobility systems (including Ebikes and scooters), medical devices, and power tools. We can customize the thermal management system to client battery pack design. For additional information contact us at <CustomLink to="mailto:office@analyticalscientificproducts.com">office@analyticalscientificproducts.com</CustomLink>.
       </p>
-      <div className='management-others'>
+      <div className={styles.managementOthers}>
         <h1>Other Topics</h1>
-        <div className='safetyimages'>
-          <div className='management-others-images-left'>
-            <div className='management-others-images-left-title'>
+        <div className={styles.safetyImages}>
+          <div className={styles.managementOthersImagesLeft}>
+            <div className={styles.managementOthersImagesLeftTitle}>
               <h1>Battery Safety</h1>
             </div>
-            <div className='battery-button'>
+            <div className={styles.batteryButton}>
               <Button buttonSize='btnLarge'
                       buttonStyle='btnBattery'
                       buttonType='batterysafety'>
@@ -46,14 +46,14 @@ function CFD() {
               </Button>
             </div>
           </div>
-          <div className='management-others-images-right'>
-              <div className='management-others-images-right-title'>
+          <div className={styles.managementOthersImagesRight}>
+              <div className={styles.managementOthersImagesRightTitle}>
                   <h1>Battery Thermal Runaway Detection and Prevention</h1>
               </div>
-              <div className='battery-button'>
+              <div className={styles.batteryButton}>
                   <Button 
-                      buttonStyle='btn--battery'
-                      buttonSize='btn--large'
+                      buttonStyle='btnBattery'
+                      buttonSize='btnLarge'
                       buttonType='batterythermaldetection'>
                           View
                   </Button>
@@ -65,4 +65,4 @@ function CFD() {
   )
 }
 
-export default CFD
+export default CFD;

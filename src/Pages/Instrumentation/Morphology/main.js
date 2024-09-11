@@ -1,11 +1,11 @@
 import React from 'react';
 import MorphTop from './MorphTop/page';
-import './main.module.css';
+import styles from './main.module.css';
 import MorphBottom from './MorphBottom/page';
 
 function Morphology() {
   return (
-    <div className='morphology'>
+    <div className={styles.morphology}>
         <MorphTop />
         <MorphBottom />
     </div>

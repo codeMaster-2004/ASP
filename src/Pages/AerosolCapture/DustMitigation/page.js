@@ -1,22 +1,22 @@
 import React from 'react';
 import "styled-components"
-import './page.module.css'; 
+import styles from './page.module.css'; 
 import CustomLink from '../../../Components/CustomLink/CustomeAtt';
 import { Button } from '../../../Components/Button/Button';
 import Separator from '../../../Components/Orange-separator/separator';
 
 function DustMitigation() {
     return (
-        <div className='dust-mitigation'>
-            <div className='dust-top-container'>
-                <CustomLink to='/aerocapture' style= {{textDecoration: "none"}}>
-                    <p className='orange-text'>Aerosol Capture</p>
+        <div className={styles.dustMitigation}>
+            <div className={styles.dustTopContainer}>
+                <CustomLink to='/aerocapture' style={{textDecoration: "none"}}>
+                    <p className={styles.orangeText}>Aerosol Capture</p>
                 </CustomLink>
                 <h1>
                     Dust Mitigation
                 </h1>
                 <img src={`${process.env.PUBLIC_URL}/images/DustMain.png`} alt='main' width='100%' height="100%"/>
-                <div className='dust-top-text'>
+                <div className={styles.dustTopText}>
                     <p>
                         Dust presents a formidable challenge for future manned missions to Mars and the moon as their surfaces are covered in ultrafine particles with different sizes, shapes, and electrical charge densities. Effective methods to filter aerosolized dust in confined spaces such as aircraft interiors are needed along with techniques to prevent the dust particles from contaminating the surfaces of key equipment such as solar panels and radiators.
                     </p>
@@ -25,13 +25,13 @@ function DustMitigation() {
                     </p>
                 </div>
                 <Separator />
-                <div className='text-after-collection'>
+                <div className={styles.textAfterCollection}>
                     <img src={`${process.env.PUBLIC_URL}/images/Truck&Space.png`} alt='collection' width='100%' height="100%"/>
                     <p>
                         In addition to reducing the air quality for the crew, dust particles have the potential to foul mechanisms, alter thermal properties, and obscure optical systems. Through NASA funding, ASP developed an innovative device to separate and collect dust particles from spacecraft cabin air and airlock compartments. Using a combination of electrostatic and electrodynamic fields to charge and move the dust particles, this device separates the dust particles from air and directs them into a collection bag. 
                     </p>
                 </div>
-                <div className='media-free-filtration'>
+                <div className={styles.mediaFreeFiltration}>
                     <h1>
                         Advanced Media-Free Filtration System for Spacecraft Cabins
                     </h1>
@@ -45,59 +45,58 @@ function DustMitigation() {
                         We measured the dust concentrations at the filter entrance and the clean air exit using a calibrated optical extinction method that was custom-built for this device and test conditions. We operated the filter at a gas flow rate of 200 CFM. The concentration of dust aerosol in the incoming gas stream changed with time as illustrated in the figure. The filter was extremely effective in removing most of the dust particles before the clean air exited the filter. 
                     </p>
                     <p>
-                        We observed a time-averaged filtration efficiency of 96.2% in this test. We have observed similar trends in about 20 tests that were conducted varying the dust loading and other parameters. These results clearly show that the filter is extremely effective in eliminating most of the dust particles that enter the filter. Efforts are currently underway to minimize the size, mass, and power consumption while maximizing the dust filtration efficiency of this device. 
+                        We observed a time-averaged filtration efficiency of 96.2% in this test. We have observed similar trends in about 20 tests that were conducted varying the dust loading and other parameters. These results clearly show that the filter is extremely effective in eliminating most of the dust particles that enter the filter. Efforts are currently underway to minimize the size, mass, and power consumption while maximizing the dust filtration efficiency of this device. 
                     </p>
                 </div>
                 <Separator />
-                <div className='dust-effectiveness-filter'>
+                <div className={styles.dustEffectivenessFilter}>
                     <img src={`${process.env.PUBLIC_URL}/images/removeparticlesgraph.png`} alt='collection' width='100%' height="100%"/>
                     <p>
                         Results from a test demonstrating the effectiveness of our filter in removing most of the aerosolized dust particles that enter the filter.
                     </p>
                 </div>
-                <div className='dust-final-text'>
+                <div className={styles.dustFinalText}>
                     <p>
                         ASP is also developing technologies to improve the filtration efficiencies of current and future filtration systems through mechanisms such as induced agglomeration and prefiltration of incoming aerosol particles.
                     </p>
                 </div>
-                <div className='dust-others'>
+                <div className={styles.dustOthers}>
                     <h1>Other Topics</h1>
-                    {/* fic this */}
-                    <div className='dust-others-images'>
-                        <div className='dust-others-images-left'>
-                            <div className='dust-others-images-left-top'>
-                                <div className='dust-others-images-left-top-text'>
+                    <div className={styles.dustOthersImages}>
+                        <div className={styles.dustOthersImagesLeft}>
+                            <div className={styles.dustOthersImagesLeftTop}>
+                                <div className={styles.dustOthersImagesLeftTopText}>
                                     <h1>Aerosol Separation and Capture</h1>
                                 </div>
-                                <div className='dust-others-images-left-top-button'>
+                                <div className={styles.dustOthersImagesLeftTopButton}>
                                     <Button buttonSize='btnLarge'
-                                            buttonSize='btnBattery'
+                                            buttonStyle='btnBattery'
                                             buttonType='aerosol'>
                                                 View
                                     </Button>
                                 </div>
                             </div>
-                            <div className='dust-others-images-left-bottom'>
-                                <div className='dust-others-images-left-bottom-text'>
+                            <div className={styles.dustOthersImagesLeftBottom}>
+                                <div className={styles.dustOthersImagesLeftBottomText}>
                                     <h1>Numerical Simulation of Electrodynamic Field</h1>
                                 </div>
-                                <div className='dust-others-images-left-bottom-button'>
+                                <div className={styles.dustOthersImagesLeftBottomButton}>
                                     <Button buttonSize='btnLarge'
-                                            buttonSize='btnBattery'
+                                            buttonStyle='btnBattery'
                                             buttonType='electro'>
                                                 View
                                     </Button>
                                 </div>
                             </div>
                         </div>
-                        <div className='dust-others-images-right'>
-                            <div className='dust-others-images-right-top'>
-                                <div className='dust-others-images-right-top-text'>
+                        <div className={styles.dustOthersImagesRight}>
+                            <div className={styles.dustOthersImagesRightTop}>
+                                <div className={styles.dustOthersImagesRightTopText}>
                                     <h1>Aerosol Concentration</h1>
                                 </div>
-                                <div className='dust-others-images-right-top-button'>
+                                <div className={styles.dustOthersImagesRightTopButton}>
                                     <Button buttonSize='btnLarge'
-                                            buttonSize='btnBattery'
+                                            buttonStyle='btnBattery'
                                             buttonType='concentration'>
                                                 View
                                     </Button>
@@ -105,10 +104,10 @@ function DustMitigation() {
                             </div>
                         </div>
                     </div>
-                </div>`
+                </div>
             </div>
         </div>
     )
 }
 
-export default DustMitigation
+export default DustMitigation;

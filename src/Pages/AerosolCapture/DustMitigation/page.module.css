@@ -1,17 +1,16 @@
-.dust-mitigation {
+.dustMitigation {
     background: linear-gradient(to bottom, #fceae4, white);
 }
 
-.dust-top-container {
+.dustTopContainer {
     display: flex;
     flex-direction: column;
     margin: 0 11.5%;
 }
 
-.dust-top-container p {
+.dustTopContainer p {
     color: var(--Orange, #FF4E0D);
     text-align: left;
-    /* text-shadow: 0px 4px 15px rgba(0, 0, 0, 0.50); */
     font-family: "DM Mono";
     font-size: 3.6vh;
     font-style: normal;
@@ -20,7 +19,7 @@
     margin: 5% 0 3%;
 }
 
-.dust-top-container h1 {
+.dustTopContainer h1 {
     font-family: "Myriad Pro";
     font-size: 9.5vh;
     font-style: normal;
@@ -30,189 +29,191 @@
     padding-bottom: 5%;
 }
 
-.dust-top-text {
+.dustTopText {
     display: flex;
     flex-direction: column;
     margin: 7% 0;
 }
 
-.dust-top-text p {
+.dustTopText p {
     color: #000;
     font-family: "Adobe Caslon Pro";
     font-size: 3.7vh;
     font-style: normal;
     font-weight: 400;
-    line-height: 6.2vh; /* 166.667% */
+    line-height: 6.2vh;
 }
 
-.text-after-collection {
+.textAfterCollection {
     display: flex;
     flex-direction: column;
     margin-top: 10%;
 }
 
-.text-after-collection p {
+.textAfterCollection p {
     color: #000;
     font-family: "Adobe Caslon Pro";
     font-size: 3.7vh;
     font-style: normal;
     font-weight: 400;
-    line-height: 6.2vh; /* 166.667% */
+    line-height: 6.2vh;
     margin-top: 10%;
 }
 
-.media-free-filtration {
+.mediaFreeFiltration {
     display: flex;
     flex-direction: column;
     margin: 7% 0;
 }
 
-.media-free-filtration h1 {
+.mediaFreeFiltration h1 {
     color: var(--Base-Black, #000);
     font-family: "Myriad Pro";
     font-size: 6vh;
     font-style: normal;
     font-weight: 700;
-    line-height: 9vh; /* 60% */
+    line-height: 9vh;
     margin-bottom: -7vh;
 }
 
-.media-free-filtration p {
+.mediaFreeFiltration p {
     color: #000;
     font-family: "Adobe Caslon Pro";
     font-size: 3.7vh;
     font-style: normal;
     font-weight: 400;
-    line-height: 6.2vh; /* 166.667% */
-    
+    line-height: 6.2vh;
 }
 
-.dust-others {
+.dustOthers {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
     margin: 2% 0 19.25%;
-    /* background-color: #FF4E0D; */
 }
 
-.dust-others h1 {
+.dustOthers h1 {
     color: var(--Base-Black, #000);
     font-family: "Myriad Pro";
     font-size: 6vh;
     font-style: normal;
     font-weight: 700;
-    line-height: 9vh; /* Adjusted to better fit the heading */
+    line-height: 9vh;
     margin: 10% 0;
 }
 
-.dust-effectiveness-filter {
+.dustEffectivenessFilter {
     display: flex;
     flex-direction: column;
     margin-top: 10%;
 }
 
-.dust-effectiveness-filter p {
+.dustEffectivenessFilter p {
     color: var(--Base-Black, #000);
     font-family: "Myriad Pro";
     font-size: 3.7vh;
     font-style: italic;
     font-weight: 600;
-    line-height: 40px; /* 133.333% */
+    line-height: 40px;
 }
 
-.dust-final-text p{
+.dustFinalText p {
     color: var(--Base-Black, #000);
     font-family: "Adobe Caslon Pro";
     font-size: 3.7vh;
     font-style: normal;
     font-weight: 400;
-    line-height: 6.2vh; /* 166.667% */
+    line-height: 6.2vh;
 }
 
-.dust-others-images {
+.dustOthersImages {
     display: flex;
     justify-content: space-between;
     gap: 20px;
     margin-top: -5%;
 }
 
-.dust-others-images-left {
+.dustOthersImagesLeft {
     margin: 0 3% 0 0;
 }
 
-.dust-others-images-left-top,
-.dust-others-images-left-bottom,
-.dust-others-images-right-top{
+.dustOthersImagesLeftTop,
+.dustOthersImagesLeftBottom,
+.dustOthersImagesRightTop {
     width: 65.05vh;
     height: 35vh;
-    background-size: cover; /* Ensure the background images cover the entire area */
+    background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     padding: 4%;
 }
 
-.dust-others-images-left-top-text h1,
-.dust-others-images-left-bottom-text h1,
-.dust-others-images-right-top-text h1 {
+.dustOthersImagesLeftTopText h1,
+.dustOthersImagesLeftBottomText h1,
+.dustOthersImagesRightTopText h1 {
     color: #fff;
     font-family: "Myriad Pro";
-    font-size: 3.7vh; /* Adjusted to better match the image */
+    font-size: 3.7vh;
     font-style: normal;
     text-align: left;
     font-weight: 600;
-    line-height: 1.5; /* Adjust for better spacing */
+    line-height: 1.5;
     letter-spacing: -0.33px;
     margin: 0;
 }
 
-.dust-others-images-left-top {
+.dustOthersImagesLeftTop {
     background-image: url("../../../../public/images/SeparationTile.png");
     margin-bottom: 7%;
 }
 
-.dust-others-images-left-top-text {
+.dustOthersImagesLeftTopText {
     margin-top: 1%;
     margin-bottom: 27%;
     width: 95%;
 }
 
-.dust-others-images-left-top-button {
+.dustOthersImagesLeftTopButton {
     width: 95%;
 }
 
-.dust-others-images-left-bottom {
+.dustOthersImagesLeftBottom {
     margin-top: 7%;
     background-image: url("../../../../public/images/ElectrodynamicTile.png");
 }
 
-.dust-others-images-left-bottom-text {
+.dustOthersImagesLeftBottomText {
     margin-top: 1%;
     margin-bottom: 19%;
     width: 95%;
 }
 
-.dust-others-images-left-bottom-button {
+.dustOthersImagesLeftBottomButton {
     width: 95%;
 }
 
-.dust-others-images-right {
+.dustOthersImagesRight {
     display: flex;
     flex-direction: column;
 }
 
-.dust-others-images-right-top {
+.dustOthersImagesRightTop {
     background-image: url("../../../../public/images/aerosolconcentrationtile.png");
     margin-bottom: 7%;
 }
 
-.dust-others-images-right-top-text {
+.dustOthersImagesRightTopText {
     margin-top: 1%;
     margin-bottom: 27%;
     width: 95%;
 }
 
-.dust-others-images-right-top-button {
+.dustOthersImagesRightTopButton {
     width: 95%;
+}
+
+.orangeText {
+    color: var(--Orange, #FF4E0D);
 }

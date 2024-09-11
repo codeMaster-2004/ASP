@@ -1,4 +1,4 @@
-.Batterybotcontainer {
+.batteryBotContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -6,25 +6,25 @@
     margin: 0 11.5% 12%;
 }
 
-.title-text-bat{
+.titleTextBat {
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     margin: 5% 0;
 }
 
-.title-text-bat p{
+.titleTextBat p {
     font-family: "Adobe Caslon Pro";
     font-size: 3.7vh;
     font-style: normal;
     font-weight: 400;
-    line-height: 6.2vh; /* 166.667% */
+    line-height: 6.2vh;
     gap: 100px;
     margin-bottom: 10%;
 }
 
-.battery-separator {
+.batterySeparator {
     width: 1138px;
     height: 5px;
     flex-shrink: 0;
@@ -32,11 +32,11 @@
     margin-bottom: 5%;
 }
 
-.Batterybotcontainer img {
+.batteryBotContainer img {
     margin-bottom: 5%;
 }
 
-.batterybottomtext {
+.batteryBottomText {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -44,29 +44,29 @@
     gap: 20px;
 }
 
-.batterybottomtext p {
+.batteryBottomText p {
     color: #000;
     font-family: "Adobe Caslon Pro";
     font-size: 3.7vh;
     font-style: normal;
     font-weight: 400;
-    line-height: 6.2vh; /* 166.667% */
+    line-height: 6.2vh;
 }
 
-.batterybottomtext li {
+.batteryBottomText li {
     color: var(--Base-Black, #000);
     font-family: "Adobe Caslon Pro";
     font-size: 3.7vh;
     font-style: normal;
     font-weight: 400;
-    line-height: 6.2vh; /* 166.667% */
+    line-height: 6.2vh;
 }
 
-.batterybottomtext a {
+.batteryBottomText a {
     color: var(--Base-Black, #000);
 }
 
-.BatteryOthers {
+.batteryOthers {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -74,73 +74,68 @@
     margin: 12% 0 5%;
 }
 
-.BatteryOthers h1 {
+.batteryOthers h1 {
     color: var(--Base-Black, #000);
     font-family: "Myriad Pro";
     font-size: 6vh;
     font-style: normal;
     font-weight: 700;
-    line-height: 9vh; /* Adjusted to better fit the heading */
-    margin: 0 0 6%; /* Adds space below the heading */
+    line-height: 9vh;
+    margin: 0 0 6%;
 }
 
-.safetyimages {
+.safetyImages {
     display: flex;
     justify-content: space-between;
     gap: 20px; 
 }
 
-.safetyimagesleft, .safetyimagesright {
-    /* position: relative; Ensure the text and buttons are positioned relative to the card */
+.safetyImagesLeft, .safetyImagesRight {
     width: 65.05vh;
     height: 35vh;
-    background-size: cover; /* Ensure the background images cover the entire area */
+    background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    padding: 20px; /* Adjust the padding as needed */
+    padding: 20px;
 }
 
-.safetyimagesright {
+.safetyImagesRight {
     background-image: url("../../../../../public/images/thermaldetection.png");
 }
 
-.safetyimagesleft {
+.safetyImagesLeft {
     background-image: url("../../../../../public/images/thermalmanagement.png");
 }
 
-.battery-card-title-management {
+.batteryCardTitleManagement {
     margin-bottom: 34%;
     width: 95%;
-    /* background-color: #FF4E0D; */
 }
 
-.battery-card-title-detection {
+.batteryCardTitleDetection {
     margin-bottom: 25%;
     width: 95%;
-    /* background-color: #FF4E0D; */
 }
 
-.battery-card-title-management h1,
-.battery-card-title-detection h1 {
+.batteryCardTitleManagement h1,
+.batteryCardTitleDetection h1 {
     color: #fff;
     font-family: "Myriad Pro";
-    font-size: 3.7vh; /* Adjusted to better match the image */
+    font-size: 3.7vh;
     font-style: normal;
     text-align: left;
     font-weight: 600;
-    line-height: 1.5; /* Adjust for better spacing */
+    line-height: 1.5;
     letter-spacing: -0.33px;
     margin: 0;
 }
 
-.battery-button {
+.batteryButton {
     width: 95%;
-    /* background-color: #FF4E0D; */
 }
 
-.btn-mobile {
+.btnMobile {
     display: inline-block;
-    margin: 0 auto; /* Centers the button */
+    margin: 0 auto;
 }
-

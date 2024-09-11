@@ -4,34 +4,32 @@
     margin: 0 11.5%;
 }
 
-.innovation-characterization {
+.innovationCharacterization {
     display: flex;
     flex-direction: column;
     margin: 7% 0;
 }
 
-.innovation-characterization h1 {
+.innovationCharacterization h1 {
     color: var(--Base-Black, #000);
     font-family: "Myriad Pro";
     font-size: 6vh;
     font-style: normal;
     font-weight: 700;
-    /* line-height: 9vh; */
     line-height: 6.8vh; 
     text-align: left;
 }
 
-.innovation-characterization p {
+.innovationCharacterization p {
     color: var(--Base-Black, #000);
     font-family: "Adobe Caslon Pro";
     font-size: 3.7vh;
     font-style: normal;
     font-weight: 400;
-    line-height: 6.2vh; /* 166.667% */
-    /* line-height: 50px; */
+    line-height: 6.2vh;
 }
 
-.innovation-characterization a {
+.innovationCharacterization a {
     color: var(--Base-Black, #000);
 }
 
@@ -39,16 +37,15 @@
     margin-top: 7%;
 }
 
-.innovation-others {
+.innovationOthers {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
     margin: 15% 0 21%;
-    /* background-color: #FF4E0D; */
 }
 
-.innovation-others h1 {
+.innovationOthers h1 {
     color: var(--Base-Black, #000);
     font-family: "Myriad Pro";
     font-size: 6vh;
@@ -57,89 +54,89 @@
     margin: 0 0 8%;
 }
 
-.innovation-others-images {
+.innovationOthersImages {
     display: flex;
     justify-content: space-between;
     gap: 20px;
 }
 
-.innovation-others-images-left {
+.innovationOthersImagesLeft {
     margin: 0 3% 0 0;
 }
 
-.innovation-others-images-left-top,
-.innovation-others-images-left-bottom,
-.innovation-others-images-right-top,
-.innovation-others-images-right-bottom {
+.innovationOthersImagesLeftTop,
+.innovationOthersImagesLeftBottom,
+.innovationOthersImagesRightTop,
+.innovationOthersImagesRightBottom {
     width: 65.05vh;
     height: 35vh;
-    background-size: cover; /* Ensure the background images cover the entire area */
+    background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     padding: 4%;
 }
 
-.innovation-others-images-left-top-text h1,
-.innovation-others-images-left-bottom-text h1,
-.innovation-others-images-right-top-text h1,
-.innovation-others-images-right-bottom-text h1 {
+.innovationOthersImagesLeftTopText h1,
+.innovationOthersImagesLeftBottomText h1,
+.innovationOthersImagesRightTopText h1,
+.innovationOthersImagesRightBottomText h1 {
     color: #fff;
     font-family: "Myriad Pro";
-    font-size: 3.7vh; /* Adjusted to better match the image */
+    font-size: 3.7vh;
     font-style: normal;
     text-align: left;
     font-weight: 600;
-    line-height: 1.5; /* Adjust for better spacing */
+    line-height: 1.5;
     letter-spacing: -0.33px;
     margin: 0;
 }
 
-.innovation-others-images-left-top {
+.innovationOthersImagesLeftTop {
     background-image: url("../../../../../public/images/DustTile.png");
     margin-bottom: 7%;
 }
 
-.innovation-others-images-left-top-text {
+.innovationOthersImagesLeftTopText {
     margin-top: 1%;
-    margin-bottom: 32%;
+    margin-bottom: 28%;
     width: 95%;
 }
 
-.innovation-others-images-left-top-button {
+.innovationOthersImagesLeftTopButton {
     width: 95%;
 }
 
-.innovation-others-images-left-bottom {
+.innovationOthersImagesLeftBottom {
     margin-top: 7%;
     background-image: url("../../../../../public/images/ElectrodynamicTile.png");
 }
 
-.innovation-others-images-left-bottom-text {
+.innovationOthersImagesLeftBottomText {
     margin-top: 1%;
     margin-bottom: 24%;
     width: 95%;
 }
 
-.innovation-others-images-left-bottom-button {
+.innovationOthersImagesLeftBottomButton {
     width: 95%;
 }
 
-.innovation-others-images-right {
+.innovationOthersImagesRight {
     display: flex;
     flex-direction: column;
 }
 
-.innovation-others-images-right-top {
+.innovationOthersImagesRightTop {
     background-image: url("../../../../../public/images/aerosolconcentrationtile.png");
 }
 
-.innovation-others-images-right-top-text {
+.innovationOthersImagesRightTopText {
     margin-top: 1%;
     margin-bottom: 32%;
     width: 95%;
 }
 
-.innovation-others-images-right-top-button {
+.innovationOthersImagesRightTopButton {
     width: 95%;
 }

@@ -1,18 +1,17 @@
-.detection-prevention {
+.detectionPrevention {
     display: flex;
     flex-direction: column;
     margin: 0 11.5%;
 }
 
-.detection-container {
+.detectionContainer {
     display: flex;
     flex-direction: column;
 }
 
-.detection-container p {
+.detectionContainer p {
     color: var(--Orange, #FF4E0D);
     text-align: left;
-    /* text-shadow: 0px 4px 15px rgba(0, 0, 0, 0.50); */
     font-family: "DM Mono";
     font-size: 3.6vh;
     font-style: normal;
@@ -21,7 +20,7 @@
     margin: 5% 0 3%;
 }
 
-.detection-container h1 {
+.detectionContainer h1 {
     font-family: "Myriad Pro";
     font-size: 9.5vh;
     font-style: normal;
@@ -31,7 +30,7 @@
     margin-bottom: 5%;
 }
 
-.detection-pre-text {
+.detectionPreText {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -39,7 +38,7 @@
     gap: 4vh;
 }
 
-.detection-pre-text p {
+.detectionPreText p {
     font-family: "Adobe Caslon Pro";
     font-size: 3.7vh;
     font-style: normal;
@@ -47,18 +46,22 @@
     line-height: 6.2vh;
 }
 
-.detection-top-image-desc {
+.detectionTopImageDesc {
     display: flex;
     flex-direction: column;
     gap: 10px;
     margin-top: 7%;
 }
 
-.detection-top-image-desc p {
+.detectionTopImageDesc p {
     color: var(--Base-Black, #000);
     font-family: "Myriad Pro";
     font-size: 3.7vh;
     font-style: italic;
     font-weight: 600;
     text-align: left;
+}
+
+.orangeText {
+    color: var(--Orange, #FF4E0D);
 }
