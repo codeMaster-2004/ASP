@@ -9,7 +9,7 @@ function Sedimentation() {
     return (
         <div className={styles.sedimentation}>
             <div className={styles.sedimentationContainer}>
-                <CustomLink to='/optical-instrumentation' style={{textDecoration:"none"}}>
+                <CustomLink to='/ASP/optical-instrumentation' style={{textDecoration:"none"}}>
                     <p className={styles.orangeText}>Instrumentation</p>
                 </CustomLink>
                 
