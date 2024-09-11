@@ -1,17 +1,16 @@
-.Polarized {
+.polarized {
     background: linear-gradient(to bottom, #fceae4, white);
 }
 
-.polarized-container {
+.polarizedContainer {
     display: flex;
     flex-direction: column;
     margin: 0 11.5%;
 }
 
-.polarized-container p {
-    color:  #FF4E0D;
+.polarizedContainer p {
+    color: #FF4E0D;
     text-align: left;
-    /* text-shadow: 0px 4px 15px rgba(0, 0, 0, 0.50); */
     font-family: "DM Mono";
     font-size: 3.6vh;
     font-style: normal;
@@ -20,9 +19,9 @@
     margin: 5% 0 3%;
 }
 
-.polarized-container h1 {
+.polarizedContainer h1 {
     font-family: "Myriad Pro";
-    font-size: 9.5vh;;
+    font-size: 9.5vh;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -30,167 +29,170 @@
     padding-bottom: 5%;
 }
 
-.text-after-main {
+.textAfterMain {
     display: flex;
     flex-direction: column;
     margin: 5% 0 7%;
 }
 
-.text-after-machine,
-.text-after-hematite {
+.textAfterMachine,
+.textAfterHematite {
     display: flex;
     flex-direction: column;
     margin: 2% 0 7%;
 }
 
-.text-after-main p,
-.text-after-machine p,
-.text-after-hematite p {
+.textAfterMain p,
+.textAfterMachine p,
+.textAfterHematite p {
     color: #000;
     font-family: "Adobe Caslon Pro";
     font-size: 3.7vh;
     font-style: normal;
     font-weight: 400;
-    line-height: 6.2vh; /* 166.667% */
+    line-height: 6.2vh;
 }
 
-.machine-image,
-.hematite-image,
-.polarizedgraph {
+.machineImage,
+.hematiteImage,
+.polarizedGraph {
     display: flex;
     flex-direction: column;
     margin-top: 10%;
 }
 
-.machine-image p,
-.hematite-image p,
-.polarizedgraph p {
-    color:  #000;
+.machineImage p,
+.hematiteImage p,
+.polarizedGraph p {
+    color: #000;
     font-family: "Myriad Pro";
     font-size: 3.7vh;
     font-style: italic;
     font-weight: 600;
-    line-height: 40px; /* 133.333% */
+    line-height: 40px;
     margin-top: 5vh;
 }
 
-.polarized-others {
+.polarizedOthers {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
     margin: 10% 0 21%;
-    /* background-color: #FF4E0D; */
 }
 
-.polarized-others h1 {
+.polarizedOthers h1 {
     color: var(--Base-Black, #000);
     font-family: "Myriad Pro";
     font-size: 6vh;
     font-style: normal;
     font-weight: 700;
-    line-height: 9vh; /* Adjusted to better fit the heading */
+    line-height: 9vh;
     margin: 0 0 4%;
 }
 
-.polarized-others-images {
+.polarizedOthersImages {
     display: flex;
     justify-content: space-between;
     gap: 20px;
 }
 
-.polarized-others-images-left {
+.polarizedOthersImagesLeft {
     margin: 0 3% 0 0;
 }
 
-.polarized-others-images-left-top,
-.polarized-others-images-left-bottom,
-.polarized-others-images-right-top,
-.polarized-others-images-right-bottom {
+.polarizedOthersImagesLeftTop,
+.polarizedOthersImagesLeftBottom,
+.polarizedOthersImagesRightTop,
+.polarizedOthersImagesRightBottom {
     width: 65.05vh;
     height: 35vh;
-    background-size: cover; /* Ensure the background images cover the entire area */
+    background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     padding: 4%;
 }
 
-.polarized-others-images-left-top-text h1,
-.polarized-others-images-left-bottom-text h1,
-.polarized-others-images-right-top-text h1,
-.polarized-others-images-right-bottom-text h1 {
+.polarizedOthersImagesLeftTopText h1,
+.polarizedOthersImagesLeftBottomText h1,
+.polarizedOthersImagesRightTopText h1,
+.polarizedOthersImagesRightBottomText h1 {
     color: #fff;
     font-family: "Myriad Pro";
-    font-size: 3.7vh; /* Adjusted to better match the image */
+    font-size: 3.7vh;
     font-style: normal;
     text-align: left;
     font-weight: 600;
-    line-height: 1.5; /* Adjust for better spacing */
+    line-height: 1.5;
     letter-spacing: -0.33px;
     margin: 0;
 }
 
-.polarized-others-images-left-top {
+.polarizedOthersImagesLeftTop {
     background-image: url("../../../../public/images/aerosolconcentrationtile.png");
     margin-bottom: 7%;
 }
 
-.polarized-others-images-left-top-text {
+.polarizedOthersImagesLeftTopText {
     margin-top: 1%;
     margin-bottom: 27%;
     width: 95%;
 }
 
-.polarized-others-images-left-top-button {
+.polarizedOthersImagesLeftTopButton {
     width: 95%;
 }
 
-.polarized-others-images-left-bottom {
+.polarizedOthersImagesLeftBottom {
     margin-top: 7%;
     background-image: url("../../../../public/images/MorphologyTile.png");
 }
 
-.polarized-others-images-left-bottom-text {
+.polarizedOthersImagesLeftBottomText {
     margin-top: 1%;
     margin-bottom: 19%;
     width: 95%;
 }
 
-.polarized-others-images-left-bottom-button {
+.polarizedOthersImagesLeftBottomButton {
     width: 95%;
 }
 
-.polarized-others-images-right {
+.polarizedOthersImagesRight {
     display: flex;
     flex-direction: column;
 }
 
-.polarized-others-images-right-top {
+.polarizedOthersImagesRightTop {
     background-image: url("../../../../public/images/MicroscopeTile.png");
     margin-bottom: 7%;
 }
 
-.polarized-others-images-right-top-text {
+.polarizedOthersImagesRightTopText {
     margin-top: 1%;
     margin-bottom: 28%;
     width: 95%;
 }
 
-.polarized-others-images-right-top-button {
+.polarizedOthersImagesRightTopButton {
     width: 95%;
 }
 
-.polarized-others-images-right-bottom {
+.polarizedOthersImagesRightBottom {
     background-image: url("../../../../public/images/LightScatteringTile.png");
 }
 
-.polarized-others-images-right-bottom-text {
+.polarizedOthersImagesRightBottomText {
     margin-top: 1%;
     margin-bottom: 28%;
     width: 95%;
 }
 
-.polarized-others-images-right-bottom-button {
+.polarizedOthersImagesRightBottomButton {
     width: 95%;
+}
+
+.orangeText {
+    color: #FF4E0D;
 }

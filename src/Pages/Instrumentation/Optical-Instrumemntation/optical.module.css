@@ -1,17 +1,12 @@
-.optical {
-    background: linear-gradient(to bottom, #fceae4, white);
-}
-
-.Optical-Instrumentation {
+.morphTop {
     display: flex;
     flex-direction: column;
     margin: 0 11.5%;
 }
 
-.Optical-Instrumentation p {
+.morphTop p {
     color: var(--Orange, #FF4E0D);
     text-align: left;
-    /* text-shadow: 0px 4px 15px rgba(0, 0, 0, 0.50); */
     font-family: "DM Mono";
     font-size: 3.6vh;
     font-style: normal;
@@ -20,9 +15,9 @@
     margin: 5% 0 3%;
 }
 
-.Optical-Instrumentation h1 {
+.morphTop h1 {
     font-family: "Myriad Pro";
-    font-size: 9.5vh;;
+    font-size: 9.5vh;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -30,147 +25,137 @@
     padding-bottom: 5%;
 }
 
-.optical-paragraph {
+.morphTopAfterImageText {
     display: flex;
     flex-direction: column;
-    margin-top: 5%;
 }
 
-.optical-paragraph p {
-    font-family: "Adobe Caslon Pro";
-    font-size: 3.7vh;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 6.2vh; /* 166.667% */
-    color:black
-}
-
-.optical-paragraph li {
+.morphTopAfterImageText p {
     color: var(--Base-Black, #000);
     font-family: "Adobe Caslon Pro";
     font-size: 3.7vh;
     font-style: normal;
     font-weight: 400;
-    line-height: 6.2vh; /* 166.667% */
+    line-height: 6.2vh;
+    margin-top: 20%;
 }
 
-.optical-others {
+.morphTopValidation {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    margin: 10% 0 20%;
-    /* background-color: #FF4E0D; */
+    margin-bottom: 6%;
 }
 
-.optical-others h1 {
+.morphTopValidation h1 {
+    color: var(--Base-Black, #000);
+    font-family: "Myriad Pro";
+    font-size: 6.5vh;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 70px;
+}
+
+.morphTopValidation p {
+    color: var(--Base-Black, #000);
+    font-family: "Adobe Caslon Pro";
+    font-size: 3.7vh;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 6.2vh;
+    margin-top: -5vh;
+}
+
+.morphTopValidationImage,
+.morphTopBiggerGraph,
+.measuredVsTheoretical {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+}
+
+.morphTopValidationImage p,
+.morphTopBiggerGraph p,
+.measuredVsTheoretical p {
+    color: var(--Base-Black, #000);
+    font-family: "Myriad Pro";
+    font-size: 3.7vh;
+    font-style: italic;
+    font-weight: 600;
+    line-height: 40px;
+}
+
+.morphTopValidationImage p {
+    color: #000;
+    font-family: "Myriad Pro";
+    font-size: 3.7vh;
+    font-style: italic;
+    font-weight: 600;
+    line-height: 40px;
+    opacity: 10;
+}
+
+.morphTopAfterImageText,
+.morphExplain,
+.agglomerated {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 6%;
+    margin-top: 6%;
+}
+
+.measuredVsTheoreticalText {
+    display: flex;
+    flex-direction: column;
+}
+
+.morphTopAfterImageText p,
+.morphExplain p,
+.agglomerated p, 
+.measuredVsTheoreticalText p {
+    color: var(--Base-Black, #000);
+    font-family: "Adobe Caslon Pro";
+    font-size: 3.7vh;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 6.2vh;
+    margin-top: -5vh;
+}
+
+.agglomerated h1 {
     color: var(--Base-Black, #000);
     font-family: "Myriad Pro";
     font-size: 6vh;
     font-style: normal;
     font-weight: 700;
-    line-height: 9vh; /* Adjusted to better fit the heading */
-    margin: 0 0 4%;
+    line-height: 9vh;
 }
 
-.optical-others-images {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-}
-
-.optical-others-images-left {
-    margin: 0 3% 0 0;
-}
-
-.optical-others-images-left-top,
-.optical-others-images-left-bottom,
-.optical-others-images-right-top,
-.optical-others-images-right-bottom {
-    width: 65.05vh;
-    height: 35vh;
-    background-size: cover; /* Ensure the background images cover the entire area */
+.agglomeratedImage {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
-    padding: 4%;
+    margin-top: 8%;
 }
 
-.optical-others-images-left-top-text h1,
-.optical-others-images-left-bottom-text h1,
-.optical-others-images-right-top-text h1,
-.optical-others-images-right-bottom-text h1 {
-    color: #fff;
-    font-family: "Myriad Pro";
-    font-size: 3.7vh; /* Adjusted to better match the image */
+.agglomeratedImage p {
+    color: var(--Base-Black, #000);
+    font-family: "Adobe Caslon Pro";
+    font-size: 3.7vh;
     font-style: normal;
-    text-align: left;
-    font-weight: 600;
-    line-height: 1.5; /* Adjust for better spacing */
-    letter-spacing: -0.33px;
-    margin: 0;
+    font-weight: 400;
+    line-height: 6.2vh;
+    margin-top: 6%;
+    margin-bottom: 8%;
 }
 
-.optical-others-images-left-top {
-    background-image: url("../../../../public/images/aerosolconcentrationtile.png");
-    margin-bottom: 7%;
+.measuredVsTheoreticalText p {
+    color: var(--Base-Black, #000);
+    font-family: "Adobe Caslon Pro";
+    font-size: 3.7vh;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 6.2vh;
 }
 
-.optical-others-images-left-top-text {
-    margin-top: 1%;
-    margin-bottom: 27%;
-    width: 95%;
-}
-
-.optical-others-images-left-top-button {
-    width: 95%;
-}
-
-.optical-others-images-left-bottom {
-    margin-top: 7%;
-    background-image: url("../../../../public/images/MorphologyTile.png");
-}
-
-.optical-others-images-left-bottom-text {
-    margin-top: 1%;
-    margin-bottom: 19%;
-    width: 95%;
-}
-
-.optical-others-images-left-bottom-button {
-    width: 95%;
-}
-
-.optical-others-images-right {
-    display: flex;
-    flex-direction: column;
-}
-
-.optical-others-images-right-top {
-    background-image: url("../../../../public/images/LightScatteringTile.png");
-}
-
-.optical-others-images-right-top-text {
-    margin-top: 1%;
-    margin-bottom: 27%;
-    width: 95%;
-}
-
-.optical-others-images-right-top-button {
-    width: 95%;
-}
-
-.optical-others-images-right-bottom {
-    margin-top: 7%;
-    background-image: url("../../../../public/images/SedimentationTile.png");
-}
-
-.optical-others-images-right-bottom-text {
-    margin-top: 1%;
-    margin-bottom: 27%;
-    width: 95%;
-}
-
-.optical-others-images-right-bottom-button {
-    width: 95%;
+.orangeText {
+    color: var(--Orange, #FF4E0D);
 }

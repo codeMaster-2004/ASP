@@ -1,5 +1,5 @@
 import React from 'react';
-import './page.module.css';
+import styles from './page.module.css';
 import CustomLink from '../../../Components/CustomLink/CustomeAtt';
 import "styled-components";
 import Separator from '../../../Components/Orange-separator/separator';
@@ -7,15 +7,15 @@ import { Button } from '../../../Components/Button/Button';
 
 function Sedimentation() {
     return (
-        <div className="sedimentation">
-            <div className='sedimentation-container'>
+        <div className={styles.sedimentation}>
+            <div className={styles.sedimentationContainer}>
                 <CustomLink to='/optical-instrumentation' style={{textDecoration:"none"}}>
-                    <p className='orange-text'>Instrumentation</p>
+                    <p className={styles.orangeText}>Instrumentation</p>
                 </CustomLink>
                 
                 <h1>Sedimentation based Particle Sizing</h1>
-                <img src={`${process.env.PUBLIC_URL}/images/sedimentation.png`} alt='main' width='100%' height="100%"/>
-                <div className='sedimentation-text'>
+                <img src='/images/sedimentation.png' alt='main' width='100%' height="100%"/>
+                <div className={styles.sedimentationText}>
                     <p>
                         This technique combines temporal optical extinction measurements with gravitational sedimentation analysis to determine the size distribution of particles dispersed in an optically non-absorbing medium. We used a laser beam to illuminate the particle suspension and collected the transmitted light versus time data using a power meter. We increased the size of the laser beam by passing it through an arrangement of cylindrical lenses. 
                     </p>
@@ -24,21 +24,21 @@ function Sedimentation() {
                     </p>
                 </div>
                 <Separator />
-                <div className='sedimentation-images'>
-                    <img src={`${process.env.PUBLIC_URL}/images/particlediamteregraph.png`} alt='graph' width='100%' height="100%"/>
+                <div className={styles.sedimentationImages}>
+                    <img src='/images/particlediamteregraph.png' alt='graph' width='100%' height="100%"/>
                     <p>
                         Particle size measured by combining optical extinction measurements with gravitational sedimentation analysis.
                     </p>
                 </div>
-                <div className='sedimentation-others'>
+                <div className={styles.sedimentationOthers}>
                     <h1>Other Topics</h1>
-                    <div className='sedimentation-others-images'>
-                        <div className='sedimentation-others-images-left'>
-                            <div className='sedimentation-others-images-left-top'>
-                                <div className='sedimentation-others-images-left-top-text'>
+                    <div className={styles.sedimentationOthersImages}>
+                        <div className={styles.sedimentationOthersImagesLeft}>
+                            <div className={styles.sedimentationOthersImagesLeftTop}>
+                                <div className={styles.sedimentationOthersImagesLeftTopText}>
                                     <h1>Aerosol Concentration</h1>
                                 </div>
-                                <div className='sedimentation-others-images-left-top-button'>
+                                <div className={styles.sedimentationOthersImagesLeftTopButton}>
                                     <Button buttonSize='btnLarge'
                                             buttonStyle='btnBattery'
                                             buttonType='concentration'>
@@ -46,11 +46,11 @@ function Sedimentation() {
                                     </Button>
                                 </div>
                             </div>
-                            <div className='sedimentation-others-images-left-bottom'>
-                                <div className='sedimentation-others-images-left-bottom-text'>
+                            <div className={styles.sedimentationOthersImagesLeftBottom}>
+                                <div className={styles.sedimentationOthersImagesLeftBottomText}>
                                     <h1>Morphology Characterization with Optical Extinction Spectroscopy</h1>
                                 </div>
-                                <div className='sedimentation-others-images-left-bottom-button'>
+                                <div className={styles.sedimentationOthersImagesLeftBottomButton}>
                                     <Button buttonSize='btnLarge'
                                             buttonStyle='btnBattery'
                                             buttonType='Morphology'>
@@ -59,12 +59,12 @@ function Sedimentation() {
                                 </div>
                             </div>
                         </div>
-                        <div className='sedimentation-others-images-right'>
-                            <div className='sedimentation-others-images-right-top'>
-                                <div className='sedimentation-others-images-right-top-text'>
+                        <div className={styles.sedimentationOthersImagesRight}>
+                            <div className={styles.sedimentationOthersImagesRightTop}>
+                                <div className={styles.sedimentationOthersImagesRightTopText}>
                                     <h1>Optical Instrumentation</h1>
                                 </div>
-                                <div className='sedimentation-others-images-right-top-button'>
+                                <div className={styles.sedimentationOthersImagesRightTopButton}>
                                     <Button buttonSize='btnLarge'
                                             buttonStyle='btnBattery'
                                             buttonType='Optical'>
@@ -72,11 +72,11 @@ function Sedimentation() {
                                     </Button>
                                 </div>
                             </div>
-                            <div className='sedimentation-others-images-right-bottom'>
-                                <div className='sedimentation-others-images-right-bottom-text'>
+                            <div className={styles.sedimentationOthersImagesRightBottom}>
+                                <div className={styles.sedimentationOthersImagesRightBottomText}>
                                     <h1>Polarized Light Scattering</h1>
                                 </div>
-                                <div className='sedimentation-others-images-right-bottom-button'>
+                                <div className={styles.sedimentationOthersImagesRightBottomButton}>
                                     <Button buttonSize='btnLarge'
                                             buttonStyle='btnBattery'
                                             buttonType='Polarized'>
@@ -92,4 +92,4 @@ function Sedimentation() {
     )
 }
 
-export default Sedimentation
+export default Sedimentation;

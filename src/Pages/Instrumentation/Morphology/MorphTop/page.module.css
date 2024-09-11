@@ -1,13 +1,12 @@
-.morph-top {
+.morphTop {
     display: flex;
     flex-direction: column;
     margin: 0 11.5%;
 }
 
-.morph-top p {
+.morphTop p {
     color: var(--Orange, #FF4E0D);
     text-align: left;
-    /* text-shadow: 0px 4px 15px rgba(0, 0, 0, 0.50); */
     font-family: "DM Mono";
     font-size: 3.6vh;
     font-style: normal;
@@ -16,9 +15,9 @@
     margin: 5% 0 3%;
 }
 
-.morph-top h1 {
+.morphTop h1 {
     font-family: "Myriad Pro";
-    font-size: 9.5vh;;
+    font-size: 9.5vh;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -26,78 +25,77 @@
     padding-bottom: 5%;
 }
 
-.morph-top-after-image-text {
+.morphTopAfterImageText {
     display: flex;
     flex-direction: column;
 }
 
-.morph-top-after-image-text p {
+.morphTopAfterImageText p {
     color: var(--Base-Black, #000);
     font-family: "Adobe Caslon Pro";
     font-size: 3.7vh;
     font-style: normal;
     font-weight: 400;
-    line-height: 6.2vh; /* 166.667% */
+    line-height: 6.2vh;
     margin-top: 20%;
 }
 
-.morph-top-validation {
+.morphTopValidation {
     display: flex;
     flex-direction: column;
     margin-bottom: 6%;
 }
 
-.morph-top-validation h1 {
+.morphTopValidation h1 {
     color: var(--Base-Black, #000);
     font-family: "Myriad Pro";
     font-size: 6.5vh;
     font-style: normal;
     font-weight: 700;
-    line-height: 70px; /* 60% */
+    line-height: 70px;
 }
 
-.morph-top-validation p {
+.morphTopValidation p {
     color: var(--Base-Black, #000);
     font-family: "Adobe Caslon Pro";
     font-size: 3.7vh;
     font-style: normal;
     font-weight: 400;
-    line-height: 6.2vh; /* 166.667% */
+    line-height: 6.2vh;
     margin-top: -5vh;
 }
 
-.morph-top-validation-image,
-.morph-top-bigger-graph,
-.measuredvstheoretical {
+.morphTopValidationImage,
+.morphTopBiggerGraph,
+.measuredVsTheoretical {
     display: flex;
     flex-direction: column;
     margin-top: 10%;
 }
 
-.morph-top-validation-image p,
-.morph-top-bigger-graph p,
-.measuredvstheoretical p {
+.morphTopValidationImage p,
+.morphTopBiggerGraph p,
+.measuredVsTheoretical p {
     color: var(--Base-Black, #000);
     font-family: "Myriad Pro";
     font-size: 3.7vh;
     font-style: italic;
     font-weight: 600;
-    line-height: 40px; /* 133.333% */
+    line-height: 40px;
 }
 
-.morph-top-validation-image p {
+.morphTopValidationImage p {
     color: #000;
     font-family: "Myriad Pro";
     font-size: 3.7vh;
     font-style: italic;
     font-weight: 600;
-    line-height: 40px; /* 133.333% */
+    line-height: 40px;
     opacity: 10;
 }
 
-/*Containers before and after an image*/
-.morph-top-after-image-text,
-.morph-explain,
+.morphTopAfterImageText,
+.morphExplain,
 .agglomerated {
     display: flex;
     flex-direction: column;
@@ -105,56 +103,59 @@
     margin-top: 6%;
 }
 
-.measuredvstheoreticaltext {
+.measuredVsTheoreticalText {
     display: flex;
     flex-direction: column;
 }
 
-/*text styling for the containers above*/
-.morph-top-after-image-text p,
-.morph-explain p,
+.morphTopAfterImageText p,
+.morphExplain p,
 .agglomerated p, 
-.measuredvstheoreticaltext p {
+.measuredVsTheoreticalText p {
     color: var(--Base-Black, #000);
     font-family: "Adobe Caslon Pro";
     font-size: 3.7vh;
     font-style: normal;
     font-weight: 400;
-    line-height: 6.2vh; /* 166.667% */
+    line-height: 6.2vh;
     margin-top: -5vh;
 }
 
-.agglomerated h1{
+.agglomerated h1 {
     color: var(--Base-Black, #000);
     font-family: "Myriad Pro";
     font-size: 6vh;
     font-style: normal;
     font-weight: 700;
-    line-height: 9vh; /* 60% */
+    line-height: 9vh;
 }
 
-.agglomerated-image {
+.agglomeratedImage {
     display: flex;
     flex-direction: column;
     margin-top: 8%;
 }
 
-.agglomerated-image p {
+.agglomeratedImage p {
     color: var(--Base-Black, #000);
     font-family: "Adobe Caslon Pro";
     font-size: 3.7vh;
     font-style: normal;
     font-weight: 400;
-    line-height: 6.2vh; /* 166.667% */
+    line-height: 6.2vh;
     margin-top: 6%;
     margin-bottom: 8%;
 }
 
-.measuredvstheoreticaltext p {
+.measuredVsTheoreticalText p {
     color: var(--Base-Black, #000);
     font-family: "Adobe Caslon Pro";
     font-size: 3.7vh;
     font-style: normal;
     font-weight: 400;
-    line-height: 6.2vh; /* 166.667% */
+    line-height: 6.2vh;
+}
+
+.orangeText {
+    color: var(--Orange, #FF4E0D);
 }
