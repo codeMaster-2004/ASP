@@ -108,7 +108,7 @@
 .detectionOtherImagesLeft,
 .detectionOtherImagesRight {
     width: 68.5vh;
-    height: 33vh;
+    height: 21vw;
     background-size: cover;
     display: flex;
     flex-direction: column;

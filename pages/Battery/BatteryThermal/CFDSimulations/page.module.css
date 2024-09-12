@@ -79,7 +79,7 @@
 .managementOthersImagesLeft,
 .managementOthersImagesRight {
     width: 65.05vh;
-    height: 35vh;
+    height: 20vw;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -96,12 +96,12 @@
 }
 
 .managementOthersImagesLeftTitle {
-    margin-bottom: 32%;
+    margin-bottom: 30%;
     width: 95%;
 }
 
 .managementOthersImagesRightTitle {
-    margin-bottom: 24%;
+    margin-bottom: 22%;
     width: 93%;
 }
 
