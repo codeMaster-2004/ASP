@@ -55,10 +55,10 @@
 
 .navLinks {
   color: #161833;
-  display: flex;
-  align-items: center;
+  /* display: flex; */
+  align-items:flex-start;
   text-decoration: none;
-  padding: 0.5vh 2vh;
+  padding: 0.5vh 1.7vh;
   height: 100%;
   white-space: nowrap;
   position: relative;
@@ -78,6 +78,11 @@
   background-color: #FF4E0D;
   transform: scaleX(0);
   transition: transform 0.2s ease-out;
+}
+
+.navItem svg {
+  /* width: 20vw; */
+  font-size: 1.3rem;
 }
 
 .navLinks:hover::after {
@@ -103,7 +108,8 @@
 }
 
 .dropdownArrow {
-  margin-right: 2.5vh;
+  margin-right: 2.7vh;
+  padding-left: -1vw;
   cursor: pointer;
   transition: transform 0.3s ease;
   color: #161833;
