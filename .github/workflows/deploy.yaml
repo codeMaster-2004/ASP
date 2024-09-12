@@ -27,7 +27,9 @@ jobs:
         run: npm run build
 
       - name: List contents of current directory
-        run: ls -R
+        run: |
+          echo "Current directory contents:"
+          ls -R
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
