@@ -24,8 +24,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "start": "next start"
   },
   "eslintConfig": {
     "extends": [
@@ -46,8 +45,15 @@
     ]
   },
   "devDependencies": {
+    "@eslint/js": "^9.10.0",
     "babel-plugin-styled-components": "^2.1.4",
     "concurrently": "^8.2.2",
-    "gh-pages": "^6.1.1"
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-import": "^2.30.0",
+    "eslint-plugin-jsx-a11y": "^6.10.0",
+    "eslint-plugin-react": "^7.36.0",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "gh-pages": "^6.1.1",
+    "globals": "^15.9.0"
   }
 }
