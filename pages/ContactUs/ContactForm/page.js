@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import './page.module.css'; 
+import styles from './page.module.css'; 
 
 function ContactBottom() {
     const [formData, setFormData] = useState({
@@ -51,13 +51,13 @@ function ContactBottom() {
     };
 
     return (
-        <div className='contact-form'>
-            <div className='contact-form-container'>
-                <div className='contact-form-container-closeup'>
+        <div className={styles.contactForm}>
+            <div className={styles.contactFormContainer}>
+                <div className={styles.contactFormContainerCloseup}>
                     <h1>Contact Us.</h1>
-                    <form ref={formRef} className='contact-form-input' onSubmit={handleSubmit}>
+                    <form ref={formRef} className={styles.contactFormInput} onSubmit={handleSubmit}>
                         <input
-                            id="contact-input"
+                            id={styles.contactInput}
                             type="text"
                             name="name"
                             placeholder="Name"
@@ -66,7 +66,7 @@ function ContactBottom() {
                             required
                         />
                         <input
-                            id="contact-input"
+                            id={styles.contactInput}
                             type="email"
                             name="email"
                             placeholder="Email"
@@ -75,7 +75,7 @@ function ContactBottom() {
                             required
                         />
                         <input
-                            id="contact-input"
+                            id={styles.contactInput}
                             type="tel"
                             name="phone"
                             placeholder="Phone"
@@ -84,7 +84,7 @@ function ContactBottom() {
                             required
                         />
                         <textarea
-                            id="message-body"
+                            id={styles.messageBody}
                             name="message"
                             placeholder="Message"
                             rows="4"
@@ -92,11 +92,11 @@ function ContactBottom() {
                             onChange={handleChange}
                             required
                         ></textarea>
-                        <button id="submit-button-contact" type="submit" disabled={status === 'Sending...'}>
+                        <button id={styles.submitButtonContact} type="submit" disabled={status === 'Sending...'}>
                             {status === 'Sending...' ? 'Sending...' : 'Submit'}
                         </button>
                     </form>
-                    {status && <p className={`status-message ${status.includes('successfully') ? 'success' : 'error'}`}>{status}</p>}
+                    {status && <p className={`${styles.statusMessage} ${status.includes('successfully') ? styles.success : styles.error}`}>{status}</p>}
                 </div>
             </div>
         </div>

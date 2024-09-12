@@ -1,24 +1,25 @@
 import React from 'react';
-import './ContactUs.module.css'; 
+import styles from './ContactUs.module.css'; 
 import ContactTop from './ContactTop/page';
 import ContactBottom from './ContactForm/page';
 
 function ContactUs () {
   return (
-    <div className="contactUs">
-      <div className='contactUS-container'>
+    <div className={styles.contactUs}>
+      <div className={styles.contactUsContainer}>
         <ContactTop />
-        <div className="form-and-circles-container">
-          <div className='right-circles'>
-            <img src={`${process.env.PUBLIC_URL}/images/TopCirclesContact.png`} alt='main' />
+        <div className={styles.formAndCirclesContainer}>
+          <div className={styles.rightCircles}>
+            <img src='/images/TopCirclesContact.png' alt='main' />
           </div>
           <ContactBottom />
-          <div className='left-circles'>
-            <img src={`${process.env.PUBLIC_URL}/images/bottomcircles.png`} alt='main' />
+          <div className={styles.leftCircles}>
+            <img src='/images/bottomcircles.png' alt='main' />
           </div>
         </div>
       </div>
     </div>
   )
 }
-export default ContactUs
+
+export default ContactUs;

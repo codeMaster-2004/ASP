@@ -46,8 +46,8 @@ function Facilities() {
                 </div>
                 <Separator />
                 <div className='facility-image-first-collection'>
-                    <img src={`${process.env.PUBLIC_URL}/images/Machine.png`} alt='products main' width='48.3%' height="45%" />
-                    <img src={`${process.env.PUBLIC_URL}/images/dabbalobokka.png`} alt='products main' width='48.3%' height="100%" />
+                    <img src='/images/Machine.png`'alt='products main' width='48.3%' height="45%" />
+                    <img src='/images/dabbalobokka.png' alt='products main' width='48.3%' height="100%" />
                 </div>
                 <div className='Aero-Testing'>
                     <h1>
@@ -58,7 +58,7 @@ function Facilities() {
                     </p>
                 </div>
                 <Separator />
-                <img src={`${process.env.PUBLIC_URL}/images/equipmentshowcase.png`} alt='products main' width='100%' height="100%" />
+                <img src='/images/equipmentshowcase.png' alt='products main' width='100%' height="100%" />
                 <p className='text-after-equipment'>
                     We have a high efficiency air compressor and a vacuum pump that can be integrated into the aerosol test apparatus in the future.
                 </p>
@@ -72,7 +72,7 @@ function Facilities() {
                 </div>
                 <Separator />
                 <div className='images-collection'>
-                    <img src={`${process.env.PUBLIC_URL}/images/facility-collection.png`} alt='' width='100%' height='100%'/>
+                    <img src='/images/facility-collection.png' alt='' width='100%' height='100%'/>
                 </div>
                 <div className='thermal-testing-facility'>
                     <h1>
@@ -84,8 +84,8 @@ function Facilities() {
                 </div>
                 <Separator />
                 <div className='images-collection-two'>
-                    <img src={`${process.env.PUBLIC_URL}/images/tisAfridge.png`} alt='' width='49.34%' height='100%'/>
-                    <img src={`${process.env.PUBLIC_URL}/images/notafridge.png`} alt='' width='49.34%' height='100%'/>
+                    <img src='/images/tisAfridge.png' alt='' width='49.34%' height='100%'/>
+                    <img src='/images/notafridge.png' alt='' width='49.34%' height='100%'/>
                 </div>
                 <p className='facility-last-text'>
                     We have a functional wet chemistry lab equipped with sonicators, vortexer, autoclave, precision pipettes, high precision balance, hot plate, magnetic stirrer, temperature controller, pumps, flowmeters, compressed gas tanks, and power supplies. We also have several optical equipment including optical breadboards, optic rails, lasers, photometers, polarizers, analyzers, lenses, mirrors and beam splitters that can be used to build custom optical instrumentation.

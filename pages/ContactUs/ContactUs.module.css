@@ -1,20 +1,18 @@
 .contactUs {
     background: linear-gradient(to bottom, #f7edea, #fceae4);
-    /* background-color:blue; */
-    /* margin-bottom: 20%; */
 }
 
-.contactUS-container {
+.contactUsContainer {
     padding-bottom: 20%;
 }
 
-.form-and-circles-container {
+.formAndCirclesContainer {
     --circle-offset: -20vh;
     position: relative;
     width: 100%;
 }
   
-.right-circles {
+.rightCircles {
     position: absolute;
     top: var(--circle-offset);
     right: -2vh;
@@ -23,13 +21,12 @@
     z-index: 1;
 }
   
-.right-circles img {
+.rightCircles img {
     width: 100%;
     height: 100%;
 }
 
-
-.left-circles {
+.leftCircles {
     top: 100vh;
     right: 160vh;
     position: absolute;

@@ -1,10 +1,10 @@
-.contactUs-container {
+.contactUsContainer {
     display: flex;
     flex-direction: column;
     margin: 0 11.5%;
 }
 
-.contactUs-container a {
+.contactUsContainer a {
     text-decoration: none;
     color: #FF4E0D;
     text-align: left;
@@ -16,11 +16,11 @@
     margin: 5% 0 3%;
 }
 
-.contactUs-container a:hover {
+.contactUsContainer a:hover {
     text-decoration: underline;
 }
 
-.contactUs-container h1 {
+.contactUsContainer h1 {
     font-family: "Myriad Pro";
     font-size: 80px;
     font-style: normal;

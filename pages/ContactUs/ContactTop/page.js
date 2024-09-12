@@ -1,17 +1,17 @@
 import React from 'react';
-import './page.module.css'; 
+import styles from './page.module.css'; 
 
 function ContactTop() {
   return (
-    <div className='contactUs-container'>
+    <div className={styles.contactUsContainer}>
         <a href='/ASP'>
           Home
         </a>
         <h1>
           Ready to put yourself in expert hands?
         </h1>
-      </div>
+    </div>
   )
 }
 
-export default ContactTop
+export default ContactTop;

@@ -48,7 +48,7 @@
   font-family: "Myriad Pro";
   font-size: 2.5vh;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 100%;
   position: static;
 }
@@ -107,6 +107,7 @@
   cursor: pointer;
   transition: transform 0.3s ease;
   color: #161833;
+  font-weight: 100;
 }
 
 .dropdownArrow.rotate {

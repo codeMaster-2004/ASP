@@ -5,7 +5,7 @@ import "styled-components";
 
 function BatteryHeading() {
   return (
-    <div className={styles.batteryHeading}>
+    <div className={styles.BatteryHeading}>
         <CustomLink to='/batterysafety' style= {{textDecoration: "none"}}>
           <p className={styles.orangeText}>Battery Safety</p>
         </CustomLink>

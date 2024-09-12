@@ -1,2 +1,2 @@
 // pages/api/send-email.js
-export { default } from '../../Backend/send-email';
+export { default } from '../../src/Backend/send-email';

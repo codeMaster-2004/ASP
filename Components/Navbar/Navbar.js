@@ -1,6 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 import styles from './Navbar.module.css';
 import CustomLink from '../CustomLink/CustomeAtt';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAngleDown, faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 
 
 function Navbar() {
@@ -108,7 +110,7 @@ function Navbar() {
           <img src={`/images/Layer_1.png`}  alt='Nasa' width='35%' height='100%'/>
         </CustomLink>
         <div className={styles.menuIcon} onClick={handleClick}>
-          <i className={`fas ${click ? 'fa-times' : 'fa-bars'}`} />
+          <FontAwesomeIcon icon={click ? faTimes : faBars} />
         </div>
         <ul className={`${styles.navMenu} ${click ? styles.active : ''}`}>
           <li className={styles.navItem}>
@@ -125,9 +127,11 @@ function Navbar() {
             <CustomLink to='/products-services' className={styles.navLinks} onClick={closeMobileMenu}>
               Products
             </CustomLink>
-            <i className={`fa fa-angle-down ${styles.dropdownArrow} ${openDropdown === 3 ? styles.rotate : ''}`}
-                 onClick={() => toggleDropdown(3)}
-            ></i>
+            <FontAwesomeIcon 
+              icon={faAngleDown} 
+              className={`${styles.dropdownArrow} ${openDropdown === 3 ? styles.rotate : ''}`}
+              onClick={() => toggleDropdown(3)}
+            />
             {openDropdown === 3 && (
               <div className={`${styles.dropdownContent} ${openDropdown === 3 ? styles.show : ''}`}>
                 <CustomLink to='/facilities' onClick={closeMobileMenu}>Facilities</CustomLink>
@@ -142,10 +146,11 @@ function Navbar() {
             >
               Aerosol Capture
             </CustomLink>
-            <i
-              className={`fa fa-angle-down ${styles.dropdownArrow} ${openDropdown === 0 ? styles.rotate : ''}`}
+            <FontAwesomeIcon 
+              icon={faAngleDown} 
+              className={`${styles.dropdownArrow} ${openDropdown === 0 ? styles.rotate : ''}`}
               onClick={() => toggleDropdown(0)}
-            ></i>
+            />
             {openDropdown === 0 && (
               // console.log("inside the Aerosol dropdown"),
               <div className={`${styles.dropdownContent} ${openDropdown === 0 ? styles.show : ''}`}>
@@ -163,9 +168,11 @@ function Navbar() {
             >
               Battery Safety
             </CustomLink>
-            <i className={`fa fa-angle-down ${styles.dropdownArrow} ${openDropdown === 1 ? styles.rotate : ''}`}
+            <FontAwesomeIcon 
+              icon={faAngleDown} 
+              className={`${styles.dropdownArrow} ${openDropdown === 1 ? styles.rotate : ''}`}
               onClick={() => toggleDropdown(1)}
-              ></i>
+            />
               {openDropdown === 1 && (
               <div className={`${styles.dropdownContent} ${openDropdown === 1 ? styles.show : ''}`}>
                 <CustomLink to='/battery-thermal-runaway-detection-prevention' onClick={closeMobileMenu}>Battery Thermal Runaway Detection & Prevention</CustomLink>
@@ -181,10 +188,11 @@ function Navbar() {
             >
               Instrumentation
             </CustomLink>
-            <i
-              className={`fa fa-angle-down dropdown-arrow ${openDropdown === 2 ? styles.rotate : ''}`}
+            <FontAwesomeIcon 
+              icon={faAngleDown} 
+              className={`${styles.dropdownArrow} ${openDropdown === 2 ? styles.rotate : ''}`}
               onClick={() => toggleDropdown(2)}
-            ></i>
+            />
             {openDropdown === 2 && (
               <div className={`${styles.dropdownContent} ${openDropdown === 2 ? styles.show : ''}`}>
                 <CustomLink to='/optical-instrumentation' onClick={closeMobileMenu}>Optical Instrumentation</CustomLink>

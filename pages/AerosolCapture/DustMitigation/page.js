@@ -15,7 +15,7 @@ function DustMitigation() {
                 <h1>
                     Dust Mitigation
                 </h1>
-                <img src={`${process.env.PUBLIC_URL}/images/DustMain.png`} alt='main' width='100%' height="100%"/>
+                <img src='/images/DustMain.png' alt='main' width='100%' height="100%"/>
                 <div className={styles.dustTopText}>
                     <p>
                         Dust presents a formidable challenge for future manned missions to Mars and the moon as their surfaces are covered in ultrafine particles with different sizes, shapes, and electrical charge densities. Effective methods to filter aerosolized dust in confined spaces such as aircraft interiors are needed along with techniques to prevent the dust particles from contaminating the surfaces of key equipment such as solar panels and radiators.
@@ -26,7 +26,7 @@ function DustMitigation() {
                 </div>
                 <Separator />
                 <div className={styles.textAfterCollection}>
-                    <img src={`${process.env.PUBLIC_URL}/images/Truck&Space.png`} alt='collection' width='100%' height="100%"/>
+                    <img src='/images/Truck&Space.png' alt='collection' width='100%' height="100%"/>
                     <p>
                         In addition to reducing the air quality for the crew, dust particles have the potential to foul mechanisms, alter thermal properties, and obscure optical systems. Through NASA funding, ASP developed an innovative device to separate and collect dust particles from spacecraft cabin air and airlock compartments. Using a combination of electrostatic and electrodynamic fields to charge and move the dust particles, this device separates the dust particles from air and directs them into a collection bag. 
                     </p>
@@ -50,7 +50,7 @@ function DustMitigation() {
                 </div>
                 <Separator />
                 <div className={styles.dustEffectivenessFilter}>
-                    <img src={`${process.env.PUBLIC_URL}/images/removeparticlesgraph.png`} alt='collection' width='100%' height="100%"/>
+                    <img src='/images/removeparticlesgraph.png' alt='collection' width='100%' height="100%"/>
                     <p>
                         Results from a test demonstrating the effectiveness of our filter in removing most of the aerosolized dust particles that enter the filter.
                     </p>
