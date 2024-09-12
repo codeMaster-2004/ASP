@@ -31,7 +31,7 @@ export default function Main() {
       <div className={styles.homepage_picture}>
         <div className={styles.homepage_text}>
           <h1>Analytical Scientific Products</h1> {/* Typing text will be filled by JS */}
-          <h6 id='typing-text'>Pioneering Protection for Your Products.</h6>
+          <h6 id='typing-text'></h6>
         </div>
       </div>
     </div>
