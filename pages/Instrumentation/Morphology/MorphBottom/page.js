@@ -19,7 +19,7 @@ function MorphBottom() {
         </div>
         <Separator />
         <div className={styles.morphBottomAgglomeratedEffectsImage}>
-            <img src='/images/agloeffects.png' alt='effects' width='100%' height='100%' />
+            <img src='/ASP/images/agloeffects.png' alt='effects' width='100%' height='100%' />
             <p>
                 Effect of sonication on breaking up the agglomerates to improve dispersion of silica nanoparticles.
             </p>
@@ -37,7 +37,7 @@ function MorphBottom() {
         </div>
         <Separator />
         <div className={styles.cmpEffectsImages}>
-            <img src='/images/CMP.png' alt='effects' width='100%' height='100%' />
+            <img src='/ASP/images/CMP.png' alt='effects' width='100%' height='100%' />
             <p>
                 Effect of sonication on the fractal dimension of alumina CMP slurries.
             </p>
@@ -52,7 +52,7 @@ function MorphBottom() {
         </div>
         <Separator/>
         <div className={styles.nanoparticlesEffects}>
-            <img src='/images/particlesize.png' alt='primaryparticlesize' width='100%' height='100%' />
+            <img src='/ASP/images/particlesize.png' alt='primaryparticlesize' width='100%' height='100%' />
             <p>
                 Effect of sonication on reducing the particle size range of alumina nanoparticles.
             </p>

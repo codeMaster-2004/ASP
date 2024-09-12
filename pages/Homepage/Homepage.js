@@ -21,8 +21,8 @@ function Home() {
             </div>
           </div>
           <div className={styles.logos}>
-            <img src={`/images/Nasa.png`}  alt='Nasa' width='100%' height='100%'/>
-            <img src={`/images/DoD.png`} alt='DOD' width='90%' height='90%'/>
+            <img src='/ASP/images/Nasa.png'  alt='Nasa' width='100%' height='100%'/>
+            <img src='/ASP/images/DoD.png' alt='DOD' width='90%' height='90%'/>
           </div>
         </div>
           <CustomLink 

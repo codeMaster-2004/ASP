@@ -14,17 +14,17 @@ function Clients() {
                 </h1>
                 <div className={styles.clientLogos}>
                     <div className={styles.clientLogosTop}>
-                        <img src='/images/DoD.png' alt='main' width='17%' height="100%"/>
-                        <img src='/images/USAF.png' alt='main' width='17%' height="100%"/>
-                        <img src='/images/USNavy.png' alt='main' width='17%' height="100%"/>
-                        <img src='/images/USArmy.png' alt='main' width='17%' height="100%"/>
-                        <img src='/images/USDTRA.png' alt='main' width='17%' height="100%"/>
+                        <img src='/ASP/images/DoD.png' alt='main' width='17%' height="100%"/>
+                        <img src='/ASP/images/USAF.png' alt='main' width='17%' height="100%"/>
+                        <img src='/ASP/images/USNavy.png' alt='main' width='17%' height="100%"/>
+                        <img src='/ASP/images/USArmy.png' alt='main' width='17%' height="100%"/>
+                        <img src='/ASP/images/USDTRA.png' alt='main' width='17%' height="100%"/>
                     </div>
                     <div className={styles.clientLogosBottom}>
-                        <img src='/images/energyDept.png' alt='main' width='17%' height="100%"/>
-                        <img src='/images/Nasa.png' alt='main' width='17%' height="100%"/>
-                        <img src='/images/EPA.png' alt='main' width='17%' height="100%"/>
-                        <img src='/images/NSF.png' alt='main' width='17%' height="100%"/>
+                        <img src='/ASP/images/energyDept.png' alt='main' width='17%' height="100%"/>
+                        <img src='/ASP/images/Nasa.png' alt='main' width='17%' height="100%"/>
+                        <img src='/ASP/images/EPA.png' alt='main' width='17%' height="100%"/>
+                        <img src='/ASP/images/NSF.png' alt='main' width='17%' height="100%"/>
                     </div>
                 </div>
                 <div className={styles.clientsText}>

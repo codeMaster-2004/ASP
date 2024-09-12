@@ -10,11 +10,11 @@ function ContactUs () {
         <ContactTop />
         <div className={styles.formAndCirclesContainer}>
           <div className={styles.rightCircles}>
-            <img src='/images/TopCirclesContact.png' alt='main' />
+            <img src='/ASP/images/TopCirclesContact.png' alt='main' />
           </div>
           <ContactBottom />
           <div className={styles.leftCircles}>
-            <img src='/images/bottomcircles.png' alt='main' />
+            <img src='/ASP/images/bottomcircles.png' alt='main' />
           </div>
         </div>
       </div>

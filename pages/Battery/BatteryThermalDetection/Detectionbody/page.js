@@ -31,7 +31,7 @@ function BatteryDetectionBottom() {
             </div>
             <Separator />
             <div className={styles.detectionBottomContainerGraph2}>
-                <img src='/images/heatat11.png' alt="Graph 1" width="100%" height="100%" />
+                <img src='/ASP/images/heatat11.png' alt="Graph 1" width="100%" height="100%" />
                 <p>
                     Data from thermal abuse test on cylindrical 18650 cell equipped with ASP's safety technology and heated at 11.3°C/min.
                 </p>

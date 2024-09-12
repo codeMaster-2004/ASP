@@ -13,7 +13,7 @@ function BatteryDetectionTop() {
             </CustomLink>
             
             <h1>Battery Thermal Runaway Detection and Prevention</h1>
-            <img src='/images/BigBatteries.png' alt="batteryputting" width="100%" height="100%"/>
+            <img src='/ASP/images/BigBatteries.png' alt="batteryputting" width="100%" height="100%"/>
         </div>
         <div className={styles.detectionPreText}>
             <p>
@@ -22,7 +22,7 @@ function BatteryDetectionTop() {
             <Separator />
         </div>
         <div className={styles.detectionTopImageDesc}>
-            <img src='/images/heatedat3.8.png' alt="Graph 1" width="100%" height="100%" />
+            <img src='/ASP/images/heatedat3.8.png' alt="Graph 1" width="100%" height="100%" />
             <p>
                 Data from a baseline thermal abuse test on cylindrical 18650 cell heated at 3.8°C/min.
             </p>

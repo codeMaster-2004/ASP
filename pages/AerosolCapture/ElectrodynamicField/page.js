@@ -17,7 +17,7 @@ function Electrodynamic() {
                 <h1>
                     Numerical Simulation of Electrodynamic Field
                 </h1>
-                <img src='/images/electromain.png' alt='main' width='100%' height="100%"/>
+                <img src='/ASP/images/electromain.png' alt='main' width='100%' height="100%"/>
                 <div className={styles.textAfterBigField}>
                     <p>
                         The effectiveness of our electrodynamic dust mitigation and aerosol capture devices depend strongly on the strength of the imposed electrical field near the conducting surface. We examined this through a combination of numerical computations and qualitative analysis. 
@@ -36,7 +36,7 @@ function Electrodynamic() {
                 </div>
                 <Separator />
                 <div className={styles.fieldMitigationGraph}>
-                    <img src='/images/logarithmicfieldstrength.png' alt='logfields' width='100%' height="100%"/>
+                    <img src='/ASP/images/logarithmicfieldstrength.png' alt='logfields' width='100%' height="100%"/>
                     <p>
                         Computed logarithmic (base 10) electrical field strength in the vicinity of inner and outer conductive wires near the ASP dust mitigation system.
                     </p>

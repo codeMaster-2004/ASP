@@ -13,7 +13,7 @@ function Polarized() {
                     <p className={styles.orangeText}>Instrumentation</p>
                 </CustomLink>
                 <h1>Polarized Light Scattering</h1>
-                <img src='/images/LightScattering.png' alt='main' width='100%' height="100%"/>
+                <img src='/ASP/images/LightScattering.png' alt='main' width='100%' height="100%"/>
                 <div className={styles.textAfterMain}>
                     <p>
                         The Triple-S technology was invented by Dr. Sivakumar Manickavasagam to measure the size, shape and structure of nanoparticles dispersed in an optically transparent medium. This instrument uses angular light scattering at different polarization states for morphology characterization. If the particles in the suspension are spherical, Triple-S measures the size distribution and for cylinders, ellipsoids, and platelets it measures the size and aspect ratio distribution. 
@@ -21,7 +21,7 @@ function Polarized() {
                 </div>
                 <Separator />
                 <div className={styles.machineImage}>
-                    <img src='/images/Machine.png' alt='machine' width='100%' height='100%' />
+                    <img src='/ASP/images/Machine.png' alt='machine' width='100%' height='100%' />
                     <p>
                         Triple-S for Morphology Characterization of Non-spherical Nanoparticles.
                     </p>
@@ -33,7 +33,7 @@ function Polarized() {
                 </div>
                 <Separator />
                 <div className={styles.hematiteImage}>
-                    <img src='/images/HematiteNano.png' alt='hematite' width='100%' height='100%' />
+                    <img src='/ASP/images/HematiteNano.png' alt='hematite' width='100%' height='100%' />
                     <p>
                         SEM images of Hematite nanoparticles.
                     </p>
@@ -48,7 +48,7 @@ function Polarized() {
                 </div>
                 <Separator />
                 <div className={styles.polarizedGraph}>
-                    <img src='/images/3Ddistributionofnano.png' alt='3d-graph' width='100%' height='100%' />
+                    <img src='/ASP/images/3Ddistributionofnano.png' alt='3d-graph' width='100%' height='100%' />
                     <p>
                         Size and aspect ratio distribution of hematite nanoparticles obtained using Triple-S.
                     </p>

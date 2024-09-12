@@ -8,7 +8,7 @@ function Cards() {
     <div className={styles.cards}>
       <div className={styles.cards__container}>
           <div className={styles.cards__container_left}>
-            <img src={`/images/image-27.png`} alt='products main' width='576.8vw' height="400em"/>
+            <img src='/ASP/images/image-27.png' alt='products main' width='576.8vw' height="400em"/>
             <div className={styles.cards__container_left_info}>
               <div className={styles.cards__container_left_info_conatainer}>
                 <div className={styles.cards__container_left_info_heading}>
@@ -25,7 +25,7 @@ function Cards() {
             </div>
           </div>
           <div className={styles.cards__container_right}>
-            <img src={`/images/HomeCards.png`} alt='products main' width='540vw' height="400em"/>
+            <img src='/ASP/images/HomeCards.png' alt='products main' width='540vw' height="400em"/>
             <div className={styles.cards__container_right_info}>
               <div className={styles.cards__container_right_info_conatainer}>
                 <div className={styles.cards__container_right_info_heading}>

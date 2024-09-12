@@ -20,7 +20,7 @@ function CFD() {
       </div>
       <Separator />
       <div className={styles.imageDesc}>
-        <img src='/images/thermalbattery.png' alt="batterysecond" height="100%"/>
+        <img src='/ASP/images/thermalbattery.png' alt="batterysecond" height="100%"/>
         <p>
           Results from numerical simulations of the temperature distribution in the 16-cell battery module discharging at 1-C rate due to the coolant flowing through the channels above and below the cells.
         </p>
