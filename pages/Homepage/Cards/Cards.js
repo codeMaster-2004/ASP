@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Cards.module.css'; 
-import CustomLink from '../../../src/Components/CustomLink/CustomeAtt';
+import CustomLink from '../../../Components/CustomLink/CustomeAtt';
 // width='576.8vw' height="400em"
 // width='540vw' height="400em"
 function Cards() {

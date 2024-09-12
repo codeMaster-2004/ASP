@@ -93,7 +93,7 @@
 }
 
 .innovationOthersImagesLeftTop {
-    background-image: url("../../../../../public/images/DustTile.png");
+    background-image: url("../../../../public/images/DustTile.png");
     margin-bottom: 7%;
 }
 
@@ -109,7 +109,7 @@
 
 .innovationOthersImagesLeftBottom {
     margin-top: 7%;
-    background-image: url("../../../../../public/images/ElectrodynamicTile.png");
+    background-image: url("../../../../public/images/ElectrodynamicTile.png");
 }
 
 .innovationOthersImagesLeftBottomText {
@@ -128,7 +128,7 @@
 }
 
 .innovationOthersImagesRightTop {
-    background-image: url("../../../../../public/images/aerosolconcentrationtile.png");
+    background-image: url("../../../../public/images/aerosolconcentrationtile.png");
 }
 
 .innovationOthersImagesRightTopText {

@@ -1,7 +1,7 @@
 .top {
     display: flex;
     flex-direction: column;
-    background-image: url('../../../../public/images/earth-about.png');
+    background-image: url('../../../public/images/earth-about.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

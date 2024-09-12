@@ -1,8 +1,8 @@
 import React from 'react';
-import { Button } from '../../../src/Components/Button/Button';
+import { Button } from '../../../../Components/Button/Button';
 import styles from './page.module.css';
-import CustomLink from '../../../src/Components/CustomLink/CustomeAtt';
-import Separator from '../../../src/Components/Orange-separator/separator';
+import CustomLink from '../../../../Components/CustomLink/CustomeAtt';
+import Separator from '../../../../Components/Orange-separator/separator';
 
 function Innovation() {
     return (

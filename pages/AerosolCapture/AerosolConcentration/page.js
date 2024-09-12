@@ -1,9 +1,9 @@
 import React from 'react';
 import styles from './page.module.css';
-import CustomLink from '../../../src/Components/CustomLink/CustomeAtt';
+import CustomLink from '../../../Components/CustomLink/CustomeAtt';
 import "styled-components"
-import Separator from '../../../src/Components/Orange-separator/separator';
-import { Button } from '../../../src/Components/Button/Button';
+import Separator from '../../../Components/Orange-separator/separator';
+import { Button } from '../../../Components/Button/Button';
 
 function AerosolConcentration() {
     const linkStyle = { textDecoration: "none" };

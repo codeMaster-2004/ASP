@@ -1,7 +1,7 @@
 import React from 'react';
 import './page.module.css'; 
-import CustomLink from '../../../src/Components/CustomLink/CustomeAtt';
-import Separator from '../../../src/Components/Orange-separator/separator';
+import CustomLink from '../../../Components/CustomLink/CustomeAtt';
+import Separator from '../../../Components/Orange-separator/separator';
 
 
 function Facilities() {

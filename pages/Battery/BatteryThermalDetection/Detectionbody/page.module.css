@@ -118,11 +118,11 @@
 }
 
 .detectionOtherImagesLeft {
-    background-image: url("../../../../../public/images/BatterySafety.png");
+    background-image: url("../../../../public/images/BatterySafety.png");
 }
 
 .detectionOtherImagesRight {
-    background-image: url("../../../../../public/images/thermalmanagement.png");
+    background-image: url("../../../../public/images/thermalmanagement.png");
 }
 
 .detectionOtherImagesLeftText {

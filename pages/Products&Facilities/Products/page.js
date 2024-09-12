@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './page.module.css';
-import CustomLink from '../../../src/Components/CustomLink/CustomeAtt';
-import { Button } from '../../../src/Components/Button/Button';
+import CustomLink from '../../../Components/CustomLink/CustomeAtt';
+import { Button } from '../../../Components/Button/Button';
 
 function Products() {
     return (

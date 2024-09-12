@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './page.module.css';
-import CustomLink from '../../../src/Components/CustomLink/CustomeAtt';
+import CustomLink from '../../../../Components/CustomLink/CustomeAtt';
 import "styled-components";
 
 function BatteryHeading() {

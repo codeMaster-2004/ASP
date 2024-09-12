@@ -1,9 +1,9 @@
 import React from 'react';
-import Separator from '../../../src/Components/Orange-separator/separator';
+import Separator from '../../../Components/Orange-separator/separator';
 import styles from './page.module.css';
-import CustomLink from '../../../src/Components/CustomLink/CustomeAtt';
+import CustomLink from '../../../Components/CustomLink/CustomeAtt';
 import "styled-components";
-import { Button } from '../../../src/Components/Button/Button';
+import { Button } from '../../../Components/Button/Button';
 
 function Electrodynamic() {
     return (

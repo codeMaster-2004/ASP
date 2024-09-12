@@ -101,11 +101,11 @@
 }
 
 .safetyImagesRight {
-    background-image: url("../../../../../public/images/thermaldetection.png");
+    background-image: url("../../../../public/images/thermaldetection.png");
 }
 
 .safetyImagesLeft {
-    background-image: url("../../../../../public/images/thermalmanagement.png");
+    background-image: url("../../../../public/images/thermalmanagement.png");
 }
 
 .batteryCardTitleManagement {

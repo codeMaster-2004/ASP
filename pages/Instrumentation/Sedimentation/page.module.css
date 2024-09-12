@@ -116,7 +116,7 @@
 }
 
 .sedimentationOthersImagesLeftTop {
-    background-image: url("../../../../public/images/aerosolconcentrationtile.png");
+    background-image: url("../../../public/images/aerosolconcentrationtile.png");
     margin-bottom: 7%;
 }
 
@@ -132,7 +132,7 @@
 
 .sedimentationOthersImagesLeftBottom {
     margin-top: 7%;
-    background-image: url("../../../../public/images/MorphologyTile.png");
+    background-image: url("../../../public/images/MorphologyTile.png");
 }
 
 .sedimentationOthersImagesLeftBottomText {
@@ -151,7 +151,7 @@
 }
 
 .sedimentationOthersImagesRightTop {
-    background-image: url("../../../../public/images/MicroscopeTile.png");
+    background-image: url("../../../public/images/MicroscopeTile.png");
     margin-bottom: 7%;
 }
 
@@ -166,7 +166,7 @@
 }
 
 .sedimentationOthersImagesRightBottom {
-    background-image: url("../../../../public/images/LightScatteringTile.png");
+    background-image: url("../../../public/images/LightScatteringTile.png");
 }
 
 .sedimentationOthersImagesRightBottomText {

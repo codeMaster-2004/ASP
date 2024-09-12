@@ -124,7 +124,7 @@
 }
 
 .concentrationOthersImagesLeftTop {
-    background-image: url("../../../../public/images/SeparationTile.png");
+    background-image: url("../../../public/images/SeparationTile.png");
     margin-bottom: 7%;
 }
 
@@ -140,7 +140,7 @@
 
 .concentrationOthersImagesLeftBottom {
     margin-top: 7%;
-    background-image: url("../../../../public/images/ElectrodynamicTile.png");
+    background-image: url("../../../public/images/ElectrodynamicTile.png");
 }
 
 .concentrationOthersImagesLeftBottomText {
@@ -159,7 +159,7 @@
 }
 
 .concentrationOthersImagesRightTop {
-    background-image: url("../../../../public/images/DustTile.png");
+    background-image: url("../../../public/images/DustTile.png");
     margin-bottom: 7%;
 }
 

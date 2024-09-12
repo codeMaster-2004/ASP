@@ -1,8 +1,8 @@
 import React from 'react';
 import './optical.module.css';
-import CustomLink from '../../../src/Components/CustomLink/CustomeAtt';
+import CustomLink from '../../../Components/CustomLink/CustomeAtt';
 import 'styled-components';
-import { Button } from '../../../src/Components/Button/Button';
+import { Button } from '../../../Components/Button/Button';
 
 function Optical() {
     return (

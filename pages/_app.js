@@ -1,5 +1,5 @@
-import '../App.css';     // Adjust path if needed
-import '../global.css';
+import '../src/App.css';     // Adjust path if needed
+import '../src/global.css';
 import { useEffect, useState } from 'react';
 import dynamic from 'next/dynamic';
 

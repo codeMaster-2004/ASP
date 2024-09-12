@@ -1,9 +1,9 @@
 import React from 'react';
 import "styled-components"
 import styles from './page.module.css'; 
-import CustomLink from '../../../src/Components/CustomLink/CustomeAtt';
-import { Button } from '../../../src/Components/Button/Button';
-import Separator from '../../../src/Components/Orange-separator/separator';
+import CustomLink from '../../../Components/CustomLink/CustomeAtt';
+import { Button } from '../../../Components/Button/Button';
+import Separator from '../../../Components/Orange-separator/separator';
 
 function DustMitigation() {
     return (

@@ -154,7 +154,7 @@
 }
 
 .electroOthersImagesLeftTop {
-    background-image: url("../../../../public/images/SeparationTile.png");
+    background-image: url("../../../public/images/SeparationTile.png");
     margin-bottom: 7%;
 }
 
@@ -170,7 +170,7 @@
 
 .electroOthersImagesLeftBottom {
     margin-top: 7%;
-    background-image: url("../../../../public/images/DustTile.png");
+    background-image: url("../../../public/images/DustTile.png");
 }
 
 .electroOthersImagesLeftBottomText {
@@ -189,7 +189,7 @@
 }
 
 .electroOthersImagesRightTop {
-    background-image: url("../../../../public/images/aerosolconcentrationtile.png");
+    background-image: url("../../../public/images/aerosolconcentrationtile.png");
     margin-bottom: 7%;
 }
 
