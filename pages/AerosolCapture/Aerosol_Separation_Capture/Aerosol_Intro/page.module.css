@@ -5,6 +5,10 @@
     gap: 20%;
 }
 
+.orangeText:hover {
+    text-decoration: underline;
+}
+
 .aerosolContainer p {
     text-decoration: none;
     color: var(--Orange, #FF4E0D);

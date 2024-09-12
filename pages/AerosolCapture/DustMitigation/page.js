@@ -1,5 +1,5 @@
 import React from 'react';
-import "styled-components"
+import styled from 'styled-components';
 import styles from './page.module.css'; 
 import CustomLink from '../../../Components/CustomLink/CustomeAtt';
 import { Button } from '../../../Components/Button/Button';

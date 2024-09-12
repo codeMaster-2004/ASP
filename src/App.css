@@ -1,12 +1,23 @@
 .App {
-  /* flex: 1 0 auto; */
   display: flex;
   flex-direction: column;
 }
 
-/* footer {
-  flex-shrink: 0;
-} */
+/* Global styles for orange text */
+.orange-text {
+  text-decoration: none;
+  color: #FF4E0D; /* Ensure the text color is set */
+  transition: text-decoration 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.orange-text:hover {
+  text-decoration: underline;
+}
+
+/* If you want these styles to only apply to paragraphs, keep the p selector */
+p.orange-text {
+  text-decoration: none;
+}
 
 p.orange-text:hover {
   text-decoration: underline;

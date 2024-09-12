@@ -8,6 +8,14 @@
     margin: 0 11.5%;
 }
 
+.orangeText{
+    text-decoration: none;
+}
+
+.orangeText:hover {
+    text-decoration: underline;
+}
+
 .electrodynamicContainer p {
     color: var(--Orange, #FF4E0D);
     text-align: left;
@@ -17,6 +25,7 @@
     font-weight: 400;
     line-height: normal;
     margin: 5% 0 3%;
+    text-decoration: none;
 }
 
 .electrodynamicContainer h1 {

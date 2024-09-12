@@ -1,28 +1,27 @@
 import React from 'react';
-import './page.module.css'; 
+import styles from './page.module.css'; 
 import CustomLink from '../../../Components/CustomLink/CustomeAtt';
 import Separator from '../../../Components/Orange-separator/separator';
 
-
 function Facilities() {
     return (
-        <div className='facilities_'>
-            <div className='facilities-container'>
-                <a href='/ASP'>
+        <div className={styles.facilities}>
+            <div className={styles.facilitiesContainer}>
+                <a href='/ASP' className={styles.homeLink}>
                     Home
                 </a>
                 <h1>
                     Facilities and Equipment
                 </h1>
-                <div className='facilities-container-after-text'>
+                <div className={styles.facilitiesContainerAfterText}>
                     <p>
-                        Our vision is to develop simple and innovative solutions to complex problems plaguing the industry currently by leveraging on our senior staff members’ vast domain expertise. In support of this vision, our strategy has been to develop/acquire niche software resources and build/purchase one-of-a-kind test equipment in-house, and outsource routine measurements, hazardous/one-off tests involving expensive equipment to our partner organizations.
+                        Our vision is to develop simple and innovative solutions to complex problems plaguing the industry currently by leveraging on our senior staff members' vast domain expertise. In support of this vision, our strategy has been to develop/acquire niche software resources and build/purchase one-of-a-kind test equipment in-house, and outsource routine measurements, hazardous/one-off tests involving expensive equipment to our partner organizations.
                     </p>
                     <p>
                         We have strategic partnerships with universities, national labs, and government facilities where we can access such one-of-a-kind equipment and test capabilities. A partial list of the equipment and instrumentation that we have in-house is provided below.
                     </p>
                 </div>
-                <div className='particle-character'>
+                <div className={styles.particleCharacter}>
                     <h1>
                         Fine Particle Characterization
                     </h1>
@@ -34,10 +33,10 @@ function Facilities() {
                     </p>
                     <ul>
                         <li>
-                            <CustomLink to='/battery-thermal-management'>Thermal management of the battery pack</CustomLink> ensuring that each cell remains within the optimal temperature window during routine operation.
+                            <CustomLink to='/battery-thermal-management'>Thermal management of the battery pack</CustomLink> ensuring that each cell remains within the optimal temperature window during routine operation.
                         </li>
                         <li>
-                            <CustomLink to='/battery-thermal-runaway-detection-prevention'>Passive and on-demand thermal runaway detection and activation of thermal runaway prevention</CustomLink> system that addresses the problem at the root cause.
+                            <CustomLink to='/battery-thermal-runaway-detection-prevention'>Passive and on-demand thermal runaway detection and activation of thermal runaway prevention</CustomLink> system that addresses the problem at the root cause.
                         </li>
                         <li>
                             <CustomLink to='/battery-thermal-runaway-detection-prevention'>Prevention of thermal runaway and fire propagation</CustomLink> from the failed cell to the neighboring cells as well as prevention of fire propagation in the battery pack.
@@ -45,11 +44,11 @@ function Facilities() {
                     </ul>
                 </div>
                 <Separator />
-                <div className='facility-image-first-collection'>
-                    <img src='/images/Machine.png`'alt='products main' width='48.3%' height="45%" />
+                <div className={styles.facilityImageFirstCollection}>
+                    <img src='/images/Machine.png' alt='products main' width='48.3%' height="45%" />
                     <img src='/images/dabbalobokka.png' alt='products main' width='48.3%' height="100%" />
                 </div>
-                <div className='Aero-Testing'>
+                <div className={styles.aeroTesting}>
                     <h1>
                         Aerosol Testing
                     </h1>
@@ -59,10 +58,10 @@ function Facilities() {
                 </div>
                 <Separator />
                 <img src='/images/equipmentshowcase.png' alt='products main' width='100%' height="100%" />
-                <p className='text-after-equipment'>
+                <p className={styles.textAfterEquipment}>
                     We have a high efficiency air compressor and a vacuum pump that can be integrated into the aerosol test apparatus in the future.
                 </p>
-                <div className='AC-DC'>
+                <div className={styles.acDc}>
                     <h1>
                         High Voltage DC/AC Power Supplies
                     </h1>
@@ -71,10 +70,10 @@ function Facilities() {
                     </p>
                 </div>
                 <Separator />
-                <div className='images-collection'>
+                <div className={styles.imagesCollection}>
                     <img src='/images/facility-collection.png' alt='' width='100%' height='100%'/>
                 </div>
-                <div className='thermal-testing-facility'>
+                <div className={styles.thermalTestingFacility}>
                     <h1>
                         Thermal Testing
                     </h1>
@@ -83,11 +82,11 @@ function Facilities() {
                     </p>
                 </div>
                 <Separator />
-                <div className='images-collection-two'>
+                <div className={styles.imagesCollectionTwo}>
                     <img src='/images/tisAfridge.png' alt='' width='49.34%' height='100%'/>
                     <img src='/images/notafridge.png' alt='' width='49.34%' height='100%'/>
                 </div>
-                <p className='facility-last-text'>
+                <p className={styles.facilityLastText}>
                     We have a functional wet chemistry lab equipped with sonicators, vortexer, autoclave, precision pipettes, high precision balance, hot plate, magnetic stirrer, temperature controller, pumps, flowmeters, compressed gas tanks, and power supplies. We also have several optical equipment including optical breadboards, optic rails, lasers, photometers, polarizers, analyzers, lenses, mirrors and beam splitters that can be used to build custom optical instrumentation.
                 </p>
             </div>
@@ -95,4 +94,4 @@ function Facilities() {
     )
 }
 
-export default Facilities
+export default Facilities;

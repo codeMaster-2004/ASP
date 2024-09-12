@@ -1,18 +1,17 @@
-.facilities_ {
+.facilities {
     background: linear-gradient(to bottom, #fceae4, white);
 }
 
-.facilities-container {
+.facilitiesContainer {
     display: flex;
     flex-direction: column;
     margin: 0 11.5% 20%;
 }
 
-.facilities-container a {
+.homeLink {
     text-decoration: none;
-    color:  #FF4E0D;
+    color: #FF4E0D;
     text-align: left;
-    /* text-shadow: 0px 4px 15px rgba(0, 0, 0, 0.50); */
     font-family: "DM Mono";
     font-size: 3.6vh;
     font-style: normal;
@@ -21,34 +20,34 @@
     margin: 5% 0 3%;
 }
 
-.facilities-container a:hover {
+.homeLink:hover {
     text-decoration: underline;
 }
 
-.facilities-container h1 {
+.facilitiesContainer h1 {
     font-family: "Myriad Pro";
-    font-size: 9.5vh;;
+    font-size: 9.5vh;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
     text-align: left;
 }
 
-.facilities-container-after-text {
+.facilitiesContainerAfterText {
     display: flex;
     flex-direction: column;
     margin: 5% 0 3%; 
 }
 
-.facilities-container-after-text p,
-.particle-character p,
-.Aero-Testing p,
-p.text-after-equipment,
-.AC-DC p,
-.thermal-testing-facility p,
-p.facility-last-text,
-.particle-character li,
-.particle-character a {
+.facilitiesContainerAfterText p,
+.particleCharacter p,
+.aeroTesting p,
+.textAfterEquipment,
+.acDc p,
+.thermalTestingFacility p,
+.facilityLastText,
+.particleCharacter li,
+.particleCharacter a {
     color: black;
     font-family: "Adobe Caslon Pro";
     font-size: 1.9rem;
@@ -57,13 +56,13 @@ p.facility-last-text,
     line-height: 6.2vh;
 }
 
-.particle-character {
+.particleCharacter {
     display: flex;
     flex-direction: column;
     margin: 7% 0;
 }
 
-.facility-image-first-collection {
+.facilityImageFirstCollection {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -71,36 +70,36 @@ p.facility-last-text,
     margin: 8% 0;
 }
 
-.Aero-Testing {
+.aeroTesting {
     display: flex;
     flex-direction: column;
     margin: 7% 0;
 }
 
-.facilities-container img {
+.facilitiesContainer img {
     margin: 7% 0;
 }
 
-.AC-DC {
+.acDc {
     display: flex;
     flex-direction: column;
     margin: 7% 0; 
 }
 
-.images-collection {
+.imagesCollection {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     align-self: stretch;
 }
 
-.thermal-testing-facility {
+.thermalTestingFacility {
     display: flex;
     flex-direction: column;
     margin: 7% 0;
 }
 
-.images-collection-two {
+.imagesCollectionTwo {
     display: flex;
     align-items: center;
     gap: 2vh;
@@ -108,18 +107,20 @@ p.facility-last-text,
     margin: 3% 0 0;
 }
 
-.particle-character h1,
-.Aero-Testing h1,
-.AC-DC h1,
-.thermal-testing-facility h1 {
+.particleCharacter h1,
+.aeroTesting h1,
+.acDc h1,
+.thermalTestingFacility h1 {
     color: var(--Base-Black, #000);
     font-family: "Myriad Pro";
     font-size: 3.2rem;
     font-style: normal;
     font-weight: 700;
-    line-height: 5vh; /* 60% */
+    line-height: 5vh;
 }
 
-/* .particle-character ul {
+/* Uncomment if needed
+.particleCharacter ul {
     list-style-type: circle;
-} */
+}
+*/

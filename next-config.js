@@ -1,10 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',
-  basePath: '/ASP',
-  assetPrefix: '/ASP/',
-  images: {
-    unoptimized: true,
+  reactStrictMode: true,
+  compiler: {
+    styledComponents: true,
   },
 }
 

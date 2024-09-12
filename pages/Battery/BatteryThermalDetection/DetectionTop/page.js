@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './page.module.css';
 import CustomLink from '../../../../Components/CustomLink/CustomeAtt';
-import "styled-components";
+import styled from 'styled-components';;
 import Separator from '../../../../Components/Orange-separator/separator';
 
 function BatteryDetectionTop() {

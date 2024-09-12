@@ -1,15 +1,15 @@
 import React from 'react';
+import styled from 'styled-components';
 import Separator from '../../../Components/Orange-separator/separator';
 import styles from './page.module.css';
 import CustomLink from '../../../Components/CustomLink/CustomeAtt';
-import "styled-components";
 import { Button } from '../../../Components/Button/Button';
 
 function Electrodynamic() {
     return (
         <div className={styles.electrodynamic}>
             <div className={styles.electrodynamicContainer}>
-                <CustomLink to='/aerocapture' style={{textDecoration:"none"}}>
+                <CustomLink to='/aerocapture' style={{textDecoration: "none"}}>
                     <p className={styles.orangeText}>
                         Aerosol Capture
                     </p>

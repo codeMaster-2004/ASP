@@ -4,6 +4,10 @@
     margin: 0 11.5%;
 }
 
+.orangeText:hover {
+    text-decoration: underline;
+}
+
 .BatteryHeading p {
     color: var(--Orange, #FF4E0D);
     text-align: left;
