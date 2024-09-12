@@ -37,7 +37,8 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 3vh;
-    width: 40vh;
+    width: 25vw;
+    /* background-color: aqua; */
 }
 
 .contactInfoItemTitle {
@@ -61,18 +62,30 @@
     display: flex;
     align-items: center;
     flex-wrap: nowrap;
+    gap: 1rem;
+    width: 100%;
 }
 
-.contactInfoPhone i {
-    margin-right: 0.6vh;
+/* .contactInfoPhone FontAwesomeIcon {
+    padding-right: 3vh;
 }
 
-.contactInfoEmail i {
-    margin-right: 1.3vh;
+.contactInfoEmail FontAwesomeIcon {
+    padding-right: 0.5vw;
 }
 
 .contactInfoAddress i {
     margin-right: 1.3vh;
+} */
+.contactInfoPhone svg,
+.contactInfoAddress svg {
+    min-width: 1.5rem; /* Ensure icon has a minimum width */
+    margin-right: 0.5rem; /* Add some right margin to the icon */
+}
+
+.contactInfoEmail svg {
+    min-width: 1.5rem; /* Ensure icon has a minimum width */
+    margin-right: 1rem;
 }
 
 .contactInfoEmail a,
@@ -80,8 +93,9 @@
 .contactInfoAddress a {
     color: #F5F5F5;
     font-family: "Myriad Pro";
-    font-size: 2.2vh;
+    font-size: 1.2rem;
     font-style: normal;
+    /* gap: 30vw; */
     font-weight: 400;
     line-height: normal;
     text-decoration: none;
@@ -94,12 +108,12 @@
 }
 
 .socialIconLink {
-    display: flex;
-    align-items: center;
     gap: 20px;
+    font-size: 4.5vh;
+    color: #fff;
 }
 
-.socialIconLink i {
+.socialIconLink {
     font-size: 4.5vh;
     color: #fff;
 }
