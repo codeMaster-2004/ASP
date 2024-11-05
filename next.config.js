@@ -3,6 +3,7 @@ const nextConfig = {
   output: 'export',
   assetPrefix: '/ASP/',
   basePath: '/ASP',
+  trailingSlash: true,
   images: {
     unoptimized: true,
     loader: 'custom',
