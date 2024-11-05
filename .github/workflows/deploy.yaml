@@ -16,20 +16,18 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '18'  # Use Node.js version 18 or higher
+          node-version: '18'  # Ensure Node.js version 18 or higher
 
       - name: Install dependencies
         run: npm ci
 
-      - name: Build and export Next.js site
-        run: |
-          npm run build
-          npm run export
+      - name: Build Next.js site
+        run: npm run build  # Remove the 'export' step
 
       - name: Move build output to root for GitHub Pages
         run: |
-          cp -r out/* .        # Copy all files from `out` to the root of the repository
-          rm -rf out            # Remove the `out` folder after copying
+          cp -r .next/* .   # Copy the .next output to the root of the repository
+          rm -rf .next       # Remove the .next folder after copying (optional)
 
       - name: Configure Git
         run: |
