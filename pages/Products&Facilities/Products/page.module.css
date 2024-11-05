@@ -53,9 +53,9 @@
 .productsText {
     color: var(--Base-Black, #000);
     font-family: "Adobe Caslon Pro";
-    font-size: 3rem;
+    font-size: 1.9rem;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 6.2vh;
     margin: 7% 0;
 }
