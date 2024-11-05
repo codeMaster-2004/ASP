@@ -3,38 +3,41 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main
-
-permissions:
-  contents: write
+      - main  # or whatever branch you use for deployment
 
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout
+      - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Setup Node.js
+      - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '16'  # Ensure this matches your Node.js version requirements
 
       - name: Install dependencies
         run: npm ci
 
-      - name: Build
-        run: npm run build
-        env:
-          NEXT_TELEMETRY_DISABLED: 1
-
-      - name: List contents of current directory
+      - name: Build and export Next.js site
         run: |
-          echo "Current directory contents:"
-          ls -R
+          npm run build
+          npm run export
 
-      - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@v4
-        with:
-          folder: out
-          branch: gh-pages
+      - name: Move build output to root for GitHub Pages
+        run: |
+          cp -r out/* .        # Copy all files from `out` to the root of the repository
+          rm -rf out            # Remove the `out` folder after copying
+
+      - name: Configure Git
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "<your-email>@users.noreply.github.com"
+
+      - name: Commit and push changes
+        run: |
+          git add .
+          git commit -m "Deploy site to GitHub Pages"
+          git push origin main
