@@ -32,6 +32,5 @@ jobs:
         run: |
           git config user.name "GitHub Actions"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add -f out
-          git commit -m "Deploy to GitHub Pages"
-          git subtree push --prefix out origin gh-pages
+          git add out && git commit -m "Deploy site to gh-pages"
+          git push origin `git subtree split --prefix out main`:gh-pages --force
