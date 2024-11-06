@@ -16,20 +16,21 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '18'  # Use the appropriate Node version for your project
+          node-version: '18'  # Adjust Node version as needed
 
       - name: Install dependencies
         run: npm install
 
       - name: Build the project
-        run: npm run build  # This will generate the static site in the 'out' directory
+        run: npm run build  # Generates the static site in the 'out' directory
 
       - name: Deploy to GitHub Pages
         run: |
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
-          git add -f out/*
+          mv out/* .   # Move contents of 'out' to the root if pushing to 'gh-pages'
+          git add -f .
           git commit -m "Deploy to GitHub Pages"
-          git push origin +gh-pages  # Force push to the gh-pages branch
+          git push origin +gh-pages  # Force push to 'gh-pages' branch
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
