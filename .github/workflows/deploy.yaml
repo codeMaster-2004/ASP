@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main  # or whatever branch you use for deployment
+      - main  # Triggers build on changes to main
 
 jobs:
   build:
@@ -21,23 +21,17 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Build Next.js site
-        run: npm run build
-
-      - name: Move build output to root for GitHub Pages
+      - name: Build and export Next.js site
         run: |
-          cp -r .next/* .   # Copy the .next output to the root of the repository
-          rm -rf .next       # Remove the .next folder after copying (optional)
+          npm run build
+          npm run export
 
-      - name: Configure Git for GitHub Actions
-        run: |
-          git config user.name "GitHub Actions"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-
-      - name: Commit and push changes
+      - name: Deploy to gh-pages branch
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          git add -A
-          git commit -m "Deploy site to GitHub Pages"
-          git push origin main
+          git config user.name "GitHub Actions"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -f out
+          git commit -m "Deploy to GitHub Pages"
+          git subtree push --prefix out origin gh-pages
