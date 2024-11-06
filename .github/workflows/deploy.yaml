@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main  # Triggers build on changes to main
+      - main  # or your chosen branch for source code
 
 jobs:
   build:
@@ -22,8 +22,7 @@ jobs:
         run: npm ci
 
       - name: Build Next.js site
-        run: |
-          npm run build
+        run: npm run build
 
       - name: Deploy to gh-pages branch
         env:
@@ -31,5 +30,6 @@ jobs:
         run: |
           git config user.name "GitHub Actions"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add out && git commit -m "Deploy site to gh-pages"
-          git push origin `git subtree split --prefix out main`:gh-pages --force
+          git add -A
+          git commit -m "Deploy site to GitHub Pages"
+          git push origin `git subtree split --prefix .next main`:gh-pages --force
