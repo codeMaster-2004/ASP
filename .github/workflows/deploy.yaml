@@ -16,25 +16,27 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '18'  # Ensure Node.js version 18 or higher
+          node-version: '18'  # Use Node.js version 18 or higher
 
       - name: Install dependencies
         run: npm ci
 
       - name: Build Next.js site
-        run: npm run build  # Remove the 'export' step
+        run: npm run build
 
       - name: Move build output to root for GitHub Pages
         run: |
           cp -r .next/* .   # Copy the .next output to the root of the repository
           rm -rf .next       # Remove the .next folder after copying (optional)
 
-      - name: Configure Git
+      - name: Configure Git for GitHub Actions
         run: |
           git config user.name "GitHub Actions"
-          git config user.email "kundan.mergu@gmail.com@users.noreply.github.com"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
 
       - name: Commit and push changes
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git add -A
           git commit -m "Deploy site to GitHub Pages"
