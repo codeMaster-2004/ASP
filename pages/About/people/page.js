@@ -18,10 +18,10 @@ function People() {
                     </div>
                     <div className={styles.vdDesc}>
                         <div className={styles.vdDescImages}>
-                            <img src='/ASP/images/vd-new.png' alt='Vijay Devarakonda' width='520vh' height='550vw'/>
+                            <img src='/images/vd-new.png' alt='Vijay Devarakonda' width='520vh' height='550vw'/>
                             <div className={styles.vdDescLogos}>
-                                <img src='/ASP/images/vd-1.png' alt='Vijay Devarakonda'/>
-                                <img src='/ASP/images/vd-2.png' alt='Vijay Devarakonda'/>
+                                <img src='/images/vd-1.png' alt='Vijay Devarakonda'/>
+                                <img src='/images/vd-2.png' alt='Vijay Devarakonda'/>
                             </div>
                         </div>
                         <div className={styles.vdDescContainer}>
