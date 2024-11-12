@@ -1,14 +1,21 @@
 import React from 'react';
-import styles from './Cards.module.css'; 
+import Image from 'next/image';
+import styles from './Cards.module.css';
 import CustomLink from '../../../Components/CustomLink/CustomeAtt';
-// width='576.8vw' height="400em"
-// width='540vw' height="400em"
+
 function Cards() {
   return (
     <div className={styles.cards}>
       <div className={styles.cards__container}>
           <div className={styles.cards__container_left}>
-            <img src='/ASP/images/image-27.png' alt='products main' width='576.8vw' height="400em"/>
+            <Image
+              src="/ASP/images/image-27.png"  // Remove /ASP prefix as it's handled by Next.js config
+              alt="products main"
+              width={577}
+              height={400}
+              priority
+              unoptimized
+            />
             <div className={styles.cards__container_left_info}>
               <div className={styles.cards__container_left_info_conatainer}>
                 <div className={styles.cards__container_left_info_heading}>
@@ -25,7 +32,14 @@ function Cards() {
             </div>
           </div>
           <div className={styles.cards__container_right}>
-            <img src='/ASP/images/HomeCards.png' alt='products main' width='540vw' height="400em"/>
+            <Image
+              src="/ASP/images/HomeCards.png"  // Remove /ASP prefix as it's handled by Next.js config
+              alt="products main"
+              width={540}
+              height={400}
+              priority
+              unoptimized
+            />
             <div className={styles.cards__container_right_info}>
               <div className={styles.cards__container_right_info_conatainer}>
                 <div className={styles.cards__container_right_info_heading}>
