@@ -33,7 +33,7 @@ function Cards() {
           </div>
           <div className={styles.cards__container_right}>
             <Image
-              src="./images/HomeCards.png"  
+              src="/images/HomeCards.png"  
               alt="products main"
               width={540}
               height={400}
