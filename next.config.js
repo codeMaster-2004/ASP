@@ -1,6 +1,6 @@
 const nextConfig = {
   assetPrefix: '/ASP',
-  basePath: '/ASP', 
+  basePath: '', 
   images: {
     unoptimized: true,
     loader: 'custom',
