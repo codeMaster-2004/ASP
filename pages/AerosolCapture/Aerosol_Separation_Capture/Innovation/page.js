@@ -19,7 +19,7 @@ function Innovation() {
                 </p>
             </div>
             <Separator />
-            <img src='/ASP/images/CaptureSmallParticles.png' alt='Capturedown' width='100%' height="100%"/>
+            <img src='./images/CaptureSmallParticles.png' alt='Capturedown' width='100%' height="100%"/>
             <div className={styles.innovationOthers}>
                 <h1>Other Topics</h1>
                 <div className={styles.innovationOthersImages}>

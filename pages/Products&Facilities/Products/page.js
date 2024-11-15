@@ -9,7 +9,7 @@ function Products() {
             <div className={styles.productsContainer}>
                 <a href='/ASP'>Home</a>
                 <h1>Products and Services</h1>
-                <img src='/ASP/images/products&services.png' alt='products main' width='100%' height="100%"/>
+                <img src='./images/products&services.png' alt='products main' width='100%' height="100%"/>
                 <p className={styles.productsText}>
                     ASP offers a range of products and services aimed at improving the safety and performance of products including those that run on batteries or conventional fuels as well as those that are built from or employ nanomaterials.  
                 </p>
@@ -17,7 +17,7 @@ function Products() {
                     <div className={styles.differentProductsTop}>
                         <div className={styles.differentProductsTopLeft}>
                             <div className={styles.differentProductsTopLeftPic}>
-                                <img src='/ASP/images/elevatesafety.png' alt='safety' width='50%' height='100%' />
+                                <img src='./images/elevatesafety.png' alt='safety' width='50%' height='100%' />
                             </div>
                             <div className={styles.differentProductsTopLeftText}>
                                 <h1>
@@ -30,7 +30,7 @@ function Products() {
                         </div>
                         <div className={styles.differentProductsTopRight}>
                             <div className={styles.differentProductsTopRightPic}>
-                                <img src='/ASP/images/NanoAgglo.png' alt='safety' width='25%' height='100%' />
+                                <img src='./images/NanoAgglo.png' alt='safety' width='25%' height='100%' />
                             </div>
                             <div className={styles.differentProductsTopRightText}>
                                 <h1>
@@ -45,7 +45,7 @@ function Products() {
                     <div className={styles.differentProductsBottom}>
                         <div className={styles.differentProductsBottomLeft}>
                             <div className={styles.differentProductsBottomLeftPic}>
-                                <img src='/ASP/images/FireSensing.png' alt='safety' width='25%' height='100%' />
+                                <img src='./images/FireSensing.png' alt='safety' width='25%' height='100%' />
                             </div>
                             <div className={styles.differentProductsBottomLeftText}>
                                 <h1>
@@ -58,7 +58,7 @@ function Products() {
                         </div>
                         <div className={styles.differentProductsBottomRight}>
                             <div className={styles.differentProductsBottomRightPic}>
-                                <img src='/ASP/images/ImprovedAir.png' alt='safety' width='30%' height='100%' />
+                                <img src='./images/ImprovedAir.png' alt='safety' width='30%' height='100%' />
                             </div>
                             <div className={styles.differentProductsBottomRightText}>
                                 <h1>

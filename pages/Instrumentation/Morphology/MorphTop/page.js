@@ -11,7 +11,7 @@ function MorphTop() {
             <p className={styles.orangeText}>Instrumentation</p>
         </CustomLink>
         <h1>Morphology Characterization with Optical Spectroscopy</h1>
-        <img src='/ASP/images/NanoParticles.png' alt='morphology' width='100%' height="100%"/>
+        <img src='./images/NanoParticles.png' alt='morphology' width='100%' height="100%"/>
         <div className={styles.morphTopAfterImageText}>
             <p>
                 The nanotechnology revolution hinged on performance enhancement due to the smaller size of nanoparticles which imparts unique properties due to the much larger specific surface area than the bulk material. A key roadblock to harnessing the true potential of nanoparticles is their tendency to agglomerate and a lack of diagnostic tools to detect, characterize and control agglomeration. 
@@ -30,7 +30,7 @@ function MorphTop() {
         </div>
         <Separator />
         <div className={styles.morphTopValidationImage}>
-            <img src='/ASP/images/240nmbeads.png' alt='1stgraph' width='100%' height='100%'/>
+            <img src='./images/240nmbeads.png' alt='1stgraph' width='100%' height='100%'/>
             <p>
                 Size distribution of polystyrene latex particles obtained using multi-wavelength optical extinction spectroscopy. We performed measurements on five separate samples prepared using NIST certified 240 nm polystyrene beads suspended in water. 
             </p>
@@ -48,7 +48,7 @@ function MorphTop() {
         </div>
         <Separator />
         <div className={styles.morphTopBiggerGraph}>
-            <img src='/ASP/images/870nmbeads.png' alt='870nm' width='100%' height='100%' />
+            <img src='./images/870nmbeads.png' alt='870nm' width='100%' height='100%' />
             <p>
                 Size distribution of polystyrene particles obtained using multi-wavelength optical extinction spectroscopy. We performed measurements on five separate samples prepared using NIST certified 100±30 and 870±200 nm polystyrene beads suspended in water. 
             </p>
@@ -66,14 +66,14 @@ function MorphTop() {
         </div>
         <Separator />
         <div className={styles.agglomeratedImage}>
-            <img src='/ASP/images/MorphologyCollection.png' alt='collection' width='100%' height='100%' />
+            <img src='./images/MorphologyCollection.png' alt='collection' width='100%' height='100%' />
             <p>
                 We suspended each of these powders separately in water and sonicated the suspension to disperse the particles. The extinction spectra of these suspensions obtained using an off-the-shelf spectrometer are shown in the figure below.
             </p>
         </div>
         <Separator />
         <div className={styles.measuredVsTheoretical}>
-            <img src='/ASP/images/MeasuredvsTheoretical.png' alt='collection' width='100%' height='100%' />
+            <img src='./images/MeasuredvsTheoretical.png' alt='collection' width='100%' height='100%' />
             <p>
                 Measured vs. theoretical optical absorbance at different wavelengths obtained after data inversion.
             </p>

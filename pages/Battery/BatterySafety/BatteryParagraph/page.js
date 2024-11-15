@@ -11,7 +11,7 @@ function BatteryPara() {
             <p>Lithium-ion batteries are increasingly being used in several applications like electric vehicles (EVs), aircraft, stationary battery energy storage systems (BESS), micro mobility devices, medical devices, power tools and electronics. When maintained within an optimal temperature window, these batteries provide exceptional energy storage capacity and performance. Abnormal deviations from this range cause the battery to deteriorate and may even cause it to fail irreversibly and catch fire.</p>
             <Separator />
         </div>
-        <img src='/ASP/images/batterysafetybottom.png' alt="batterysafety" width="100%" height="100%"/>
+        <img src='./images/batterysafetybottom.png' alt="batterysafety" width="100%" height="100%"/>
         <div className={styles.batteryBottomText}>
             <p>
                 Large battery packs for power intensive applications are constructed by connecting a large number of smaller individual cells. Thermal runaway in one cell can generate and discharge enough energy to propagate the failure throughout the battery pack exposing the entire system to fire. ASP developed a patent-pending cell-agnostic technology that provides several key functions including:

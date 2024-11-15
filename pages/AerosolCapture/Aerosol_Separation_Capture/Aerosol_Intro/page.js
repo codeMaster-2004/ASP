@@ -15,7 +15,7 @@ function AerosolIntro() {
             <h1>
                 Aerosol Separation and Capture
             </h1>
-            <img src='/ASP/images/CaptureMain.png' alt='microscope' width='100%' height="100%"/>
+            <img src='./images/CaptureMain.png' alt='microscope' width='100%' height="100%"/>
             <div className={styles.textAfterCaptureRobot}>
                 <p>
                     Understanding and addressing the issues related to aerosol particles are challenging in terrestrial applications as well as on various planetary bodies. ASP is developing technologies focused on dust mitigation, aerosol capture and aerosol characterization.
@@ -27,11 +27,11 @@ function AerosolIntro() {
             <Separator />
             <div className={styles.captureCollectionImages}>
                 <div className={styles.captureCollectionImages2}>
-                    <img src='/ASP/images/marsCloseUpRocks.png' alt='rocks' width='48.94%' height="50%"/>
-                    <img src='/ASP/images/marsCloseUp2.png' alt='mars2' width='48.94%' height="50%"/>
+                    <img src='./images/marsCloseUpRocks.png' alt='rocks' width='48.94%' height="50%"/>
+                    <img src='./images/marsCloseUp2.png' alt='mars2' width='48.94%' height="50%"/>
                 </div>
                 <div className={styles.captureCollectionImages1}>
-                    <img src='/ASP/images/FUGG.png' alt='FUGGING FUGG' width='100%' height="100%"/>
+                    <img src='./images/FUGG.png' alt='FUGGING FUGG' width='100%' height="100%"/>
                 </div>
             </div>
         </div>

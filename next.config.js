@@ -1,5 +1,5 @@
 const nextConfig = {
-  assetPrefix: '/ASP/',
+  assetPrefix: './',
   basePath: '/ASP', 
   images: {
     unoptimized: true,

@@ -1,7 +1,7 @@
 {
     "rewrites": [
-      { "source": "/ASP/**", "destination": "/ASP/index.html" },
-      { "source": "/**", "destination": "/ASP/index.html" }
+      { "source": "./**", "destination": "./index.html" },
+      { "source": "/**", "destination": "./index.html" }
     ],
     "headers": [
       {

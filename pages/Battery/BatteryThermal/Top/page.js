@@ -11,7 +11,7 @@ function BatteryManagementTop() {
               <p className={styles.orangeText}>Battery Safety</p>
             </CustomLink>
             <h1>Battery Thermal Management</h1>
-            <img src='/ASP/images/batterypack.png' alt="batterysafety" width="100%" height="100%"/>
+            <img src='./images/batterypack.png' alt="batterysafety" width="100%" height="100%"/>
         </div>
         <div className={styles.managementPreText}>
           <p>

@@ -10,7 +10,7 @@ function Footer() {
             <div className={styles.footerContainer}>
                 <div className={styles.footerMain}>
                     <div className={styles.contact}>
-                        <img src='/ASP/images/footer_Layer_1.png'  alt='Nasa' width='70%' height='70%'/>
+                        <img src='./images/footer_Layer_1.png'  alt='Nasa' width='70%' height='70%'/>
                         <div className={styles.contactInfo}>
                             <div className={styles.contactInfoItemTitle}>
                                 <h3>Contact Us</h3>

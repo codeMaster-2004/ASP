@@ -10,7 +10,7 @@ function BatteryHeading() {
           <p className={styles.orangeText}>Battery Safety</p>
         </CustomLink>
         <h1>Battery Safety</h1>
-        <img src='/ASP/images/batterytop.png' alt="batterysafety" width="100%" height="100%"/>
+        <img src='./images/batterytop.png' alt="batterysafety" width="100%" height="100%"/>
     </div>
   )
 }

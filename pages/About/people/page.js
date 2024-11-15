@@ -48,15 +48,15 @@ function People() {
                     </div>
                     <div className={styles.michDesc}>
                         <div className={styles.michDescImages}>
-                            <img src='/ASP/images/Thella-ankul.png' alt='michael' width='520vw' height='600vw'/>
+                            <img src='./images/Thella-ankul.png' alt='michael' width='520vw' height='600vw'/>
                             <div className={styles.michDescLogosParts}>
                                 <div className={styles.michDescLogos}>
-                                    <img src='/ASP/images/MSU.png' alt='Michael Ankul' width="120vh" height="120vh"/>
-                                    <img src='/ASP/images/UoCF.png' alt='Michael Ankul' width="120vh" height="120vh"/>
-                                    <img src='/ASP/images/FIU.png' alt='Michael Ankul' width="120vh" height="120vh"/>
+                                    <img src='./images/MSU.png' alt='Michael Ankul' width="120vh" height="120vh"/>
+                                    <img src='./images/UoCF.png' alt='Michael Ankul' width="120vh" height="120vh"/>
+                                    <img src='./images/FIU.png' alt='Michael Ankul' width="120vh" height="120vh"/>
                                 </div>
                                 <div className={styles.michDescLogos1}>
-                                    <img src='/ASP/images/Nasa.png' alt='Michael Ankul' width="120vh" height="120vh"/>
+                                    <img src='./images/Nasa.png' alt='Michael Ankul' width="120vh" height="120vh"/>
                                 </div>
                             </div>
                         </div>
@@ -76,11 +76,11 @@ function People() {
                     </div>
                     <div className={styles.sivaDesc}>
                         <div className={styles.sivaDescImages}>
-                            <img src='/ASP/images/Siva-Ankul.png' alt='sivakumar' width='500vw' height='350vw' />
+                            <img src='./images/Siva-Ankul.png' alt='sivakumar' width='500vw' height='350vw' />
                             <div className={styles.sivaDescLogos}>
-                                <img src='/ASP/images/siva-1.png' alt='Siva Ankul' width="150vh" height="120vh"/>
-                                <img src='/ASP/images/siva-2.png' alt='Siva Ankul' width="115vh" height="115vh"/>
-                                <img src='/ASP/images/siva-3.png' alt='Siva Ankul' width="120vh" height="120vh"/>
+                                <img src='./images/siva-1.png' alt='Siva Ankul' width="150vh" height="120vh"/>
+                                <img src='./images/siva-2.png' alt='Siva Ankul' width="115vh" height="115vh"/>
+                                <img src='./images/siva-3.png' alt='Siva Ankul' width="120vh" height="120vh"/>
                             </div>
                         </div>
                         <div className={styles.sivaDescContainer}>
@@ -108,16 +108,16 @@ function People() {
                     </div>
                     <div className={styles.mitchellDesc}>
                         <div className={styles.mitchellDescImages}>
-                            <img src='/ASP/images/mitchell.png' alt="mitchell" width="500vh" height="518.5vh"/>
+                            <img src='./images/mitchell.png' alt="mitchell" width="500vh" height="518.5vh"/>
                             <div className={styles.mitchellLogosParts}>
                                 <div className={styles.mitchellLogos}>
-                                    <img src='/ASP/images/mitchell-1.png' alt='Mitchell Ankul' width="120vh" height="120vh"/>
-                                    <img src='/ASP/images/mitchell-2.png' alt='Mitchell Ankul' width="120vh" height="120vh"/>
-                                    <img src='/ASP/images/mitchell-3.png' alt='Mitchell Ankul' width="120vh" height="120vh"/>
+                                    <img src='./images/mitchell-1.png' alt='Mitchell Ankul' width="120vh" height="120vh"/>
+                                    <img src='./images/mitchell-2.png' alt='Mitchell Ankul' width="120vh" height="120vh"/>
+                                    <img src='./images/mitchell-3.png' alt='Mitchell Ankul' width="120vh" height="120vh"/>
                                 </div>
                                 <div className={styles.mitchellLogosRest}>
-                                    <img src='/ASP/images/mitchell-4.png' alt='Mitchell Ankul' width="120vh" height="120vh"/>
-                                    <img src='/ASP/images/mitchell-5.png' alt='Mitchell Ankul' width="120vh" height="80vh"/>
+                                    <img src='./images/mitchell-4.png' alt='Mitchell Ankul' width="120vh" height="120vh"/>
+                                    <img src='./images/mitchell-5.png' alt='Mitchell Ankul' width="120vh" height="80vh"/>
                                 </div>
                             </div>
                         </div>

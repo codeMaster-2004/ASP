@@ -107,7 +107,7 @@ function Navbar() {
     <nav className={styles.navbar}>
       <div className={styles.navbarContainer}>
         <CustomLink to='ASP' className={styles.navbarLogo}>
-          <img src='/ASP/images/Layer_1.png'  alt='Nasa' width='35%' height='100%'/>
+          <img src='./images/Layer_1.png'  alt='Nasa' width='35%' height='100%'/>
         </CustomLink>
         <div className={styles.menuIcon} onClick={handleClick}>
           <FontAwesomeIcon icon={click ? faTimes : faBars} />
