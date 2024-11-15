@@ -18,6 +18,11 @@
   justify-content: center;
 }
 
+.responsiveImage {
+  width: 500%;
+  height: 400%;
+}
+
 .homepage_text h1 {
   color: white;
   text-align: center;

@@ -13,6 +13,7 @@ function Cards() {
               alt="products main"
               width={577}
               height={400}
+              className={styles.responsiveImage}
               priority
               unoptimized
             />
@@ -35,8 +36,9 @@ function Cards() {
             <Image
               src="/images/HomeCards.png"  // Remove /ASP prefix
               alt="products main"
-              width={540}
-              height={400}
+              width= {500}
+              height= {400}
+              className={styles.responsiveImage}
               priority
               unoptimized
             />
