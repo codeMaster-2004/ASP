@@ -35,8 +35,8 @@ function Cards() {
             <Image
               src="/public/images/HomeCards.png"  // Remove /ASP prefix
               alt="products main"
-              width= {1000}
-              height= {1000}
+              width= {500}
+              height= {500}
               className={styles.responsiveImage}
               priority
               unoptimized
