@@ -1,5 +1,5 @@
 .main_container {
-  background-image: url("../../../public/images/Home-Intro.png");
+  background-image: url("/ASP/images/Home-Intro.png");
   background-size: cover;
   /* Center the image */
   background-position: center;

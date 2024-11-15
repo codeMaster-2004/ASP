@@ -9,7 +9,7 @@ function Cards() {
       <div className={styles.cards__container}>
           <div className={styles.cards__container_left}>
             <Image
-              src="./images/image-27.png"  
+              src="/ASP/images/image-27.png"  
               alt="products main"
               width={577}
               height={400}
@@ -33,7 +33,7 @@ function Cards() {
           </div>
           <div className={styles.cards__container_right}>
             <Image
-              src="/images/HomeCards.png"  
+              src="/ASP/images/HomeCards.png"  
               alt="products main"
               width={540}
               height={400}
