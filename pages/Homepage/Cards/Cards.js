@@ -11,8 +11,8 @@ function Cards() {
           <Image
             src={process.env.NODE_ENV === 'production' ? '/ASP/images/image-27.png' : '/images/image-27.png'}
             alt="products main"
-            width={100}
-            height={100}
+            width={300}
+            height={300}
             priority
             unoptimized
           />
