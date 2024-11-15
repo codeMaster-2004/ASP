@@ -5,8 +5,8 @@
   "devFiles": [],
   "ampDevFiles": [],
   "lowPriorityFiles": [
-    "static/Pb4zDqPjtBxwCfP3bf5bH/_buildManifest.js",
-    "static/Pb4zDqPjtBxwCfP3bf5bH/_ssgManifest.js"
+    "static/_CJgioqiJCrkJqIACRMo0/_buildManifest.js",
+    "static/_CJgioqiJCrkJqIACRMo0/_ssgManifest.js"
   ],
   "rootMainFiles": [],
   "pages": {
@@ -20,7 +20,7 @@
       "static/chunks/62-06fb437bc69cfcc9.js",
       "static/chunks/879-65e05f85ae0cd405.js",
       "static/css/310061da78ec6f3a.css",
-      "static/chunks/pages/index-fe1a4b86e81b2f17.js"
+      "static/chunks/pages/index-171d6b0d985594b4.js"
     ],
     "/About/About": [
       "static/chunks/webpack-15fbc9d37b0edf87.js",
@@ -218,7 +218,7 @@
       "static/chunks/655-e62a76d62ef273c5.js",
       "static/chunks/675-a86a65d0a324d5fd.js",
       "static/css/4ace0cf28a11e6e0.css",
-      "static/chunks/pages/Homepage/Cards/Cards-2d9beb388a1995be.js"
+      "static/chunks/pages/Homepage/Cards/Cards-0df0ecd4197070d6.js"
     ],
     "/Homepage/Homepage": [
       "static/chunks/webpack-15fbc9d37b0edf87.js",
@@ -228,7 +228,7 @@
       "static/chunks/655-e62a76d62ef273c5.js",
       "static/chunks/675-a86a65d0a324d5fd.js",
       "static/css/b9701482b77d0e17.css",
-      "static/chunks/pages/Homepage/Homepage-425eda5a9c7eb79f.js"
+      "static/chunks/pages/Homepage/Homepage-461e558ce3185438.js"
     ],
     "/Homepage/PS-intro/page": [
       "static/chunks/webpack-15fbc9d37b0edf87.js",

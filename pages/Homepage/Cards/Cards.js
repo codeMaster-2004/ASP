@@ -9,7 +9,7 @@ function Cards() {
       <div className={styles.cards__container}>
           <div className={styles.cards__container_left}>
             <Image
-              src="public/images/image-27.png"  // Remove /ASP prefix
+              src="images/image-27.png"  // Remove /ASP prefix
               alt="products main"
               width={577}
               height={400}
