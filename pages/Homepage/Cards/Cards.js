@@ -2,6 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import styles from './Cards.module.css';
 import CustomLink from '../../../Components/CustomLink/CustomeAtt';
+import { getBasePath } from '@/utils/path'
 
 function Cards() {
   return (
@@ -9,7 +10,7 @@ function Cards() {
       <div className={styles.cards__container}>
           <div className={styles.cards__container_left}>
             <Image
-              src="/ASP/images/image-27.png"  
+              src={`${getBasePath()}/images/image-27.png`} 
               alt="products main"
               width={577}
               height={400}
@@ -33,7 +34,7 @@ function Cards() {
           </div>
           <div className={styles.cards__container_right}>
             <Image
-              src="/ASP/images/HomeCards.png"  
+              src={`${getBasePath()}/images/HomeCards.png`} 
               alt="products main"
               width={540}
               height={400}
