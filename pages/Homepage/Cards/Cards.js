@@ -8,15 +8,14 @@ function Cards() {
     <div className={styles.cards}>
       <div className={styles.cards__container}>
           <div className={styles.cards__container_left}>
-            <Image
-              src="images/image-27.png"  // Remove /ASP prefix
-              alt="products main"
-              width={577}
-              height={400}
-              className={styles.responsiveImage}
-              priority
-              unoptimized
-            />
+          <Image
+            src={process.env.NODE_ENV === 'production' ? '/ASP/images/image-27.png' : '/images/image-27.png'}
+            alt="products main"
+            width={100}
+            height={100}
+            priority
+            unoptimized
+          />
             <div className={styles.cards__container_left_info}>
               <div className={styles.cards__container_left_info_conatainer}>
                 <div className={styles.cards__container_left_info_heading}>
