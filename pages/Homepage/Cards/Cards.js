@@ -3,6 +3,7 @@ import Image from 'next/image';
 import styles from './Cards.module.css';
 import CustomLink from '../../../Components/CustomLink/CustomeAtt';
 
+///public/images/HomeCards.png
 function Cards() {
   return (
     <div className={styles.cards}>
@@ -11,8 +12,8 @@ function Cards() {
           <Image
             src={process.env.NODE_ENV === 'production' ? '/ASP/images/image-27.png' : '/images/image-27.png'}
             alt="products main"
-            width={550}
-            height={450}
+            width={600}
+            height={475}
             priority
             unoptimized
           />
@@ -33,11 +34,10 @@ function Cards() {
           </div>
           <div className={styles.cards__container_right}>
             <Image
-              src="/public/images/HomeCards.png"  // Remove /ASP prefix
+              src={process.env.NODE_ENV === 'production' ? '/ASP/images/HomeCards.png' : '/images/HomeCards.png'}
               alt="products main"
-              width= {500}
-              height= {500}
-              className={styles.responsiveImage}
+              width={600}
+              height={475}
               priority
               unoptimized
             />
