@@ -20,8 +20,8 @@ function People() {
                         <div className={styles.vdDescImages}>
                             <img src='/images/vd-new.png' alt='Vijay Devarakonda' width='520vh' height='550vw'/>
                             <div className={styles.vdDescLogos}>
-                                <img src='/images/vd-1.png' alt='Vijay Devarakonda'/>
-                                <img src='/images/vd-2.png' alt='Vijay Devarakonda'/>
+                                <img src='/images/vd-1.png' alt='THE Vijay Devarakonda'/>
+                                <img src='/images/vd-2.png' alt='THE Vijay Devarakonda'/>
                             </div>
                         </div>
                         <div className={styles.vdDescContainer}>
@@ -108,7 +108,7 @@ function People() {
                     </div>
                     <div className={styles.mitchellDesc}>
                         <div className={styles.mitchellDescImages}>
-                            <img src='./images/mitchell.png' alt="mitchell" width="500vh" height="518.5vh"/>
+                            <img src='./images/mitchell.png' alt="mitchell" width="500vh" height="506.5vh"/>
                             <div className={styles.mitchellLogosParts}>
                                 <div className={styles.mitchellLogos}>
                                     <img src='./images/mitchell-1.png' alt='Mitchell Ankul' width="120vh" height="120vh"/>
