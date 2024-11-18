@@ -7,7 +7,7 @@ function Products() {
     return (
         <div className={styles.products}>
             <div className={styles.productsContainer}>
-                <a href='/ASP'>Home</a>
+                <CustomLink to='ASP' className={styles.productsHome}>Home</CustomLink>
                 <h1>Products and Services</h1>
                 <img src='./images/products&services.png' alt='products main' width='100%' height="100%"/>
                 <p className={styles.productsText}>
