@@ -10,7 +10,7 @@ function Cards() {
       <div className={styles.cards__container}>
           <div className={styles.cards__container_left}>
           <Image
-            src={process.env.NODE_ENV === 'production' ? '/ASP/images/image-27.png' : '/images/image-27.png'}
+            src="/images/image-27.png"
             alt="products main"
             width={600}
             height={475}
@@ -34,7 +34,7 @@ function Cards() {
           </div>
           <div className={styles.cards__container_right}>
             <Image
-              src={process.env.NODE_ENV === 'production' ? '/ASP/images/HomeCards.png' : '/images/HomeCards.png'}
+              src="/images/HomeCards.png"
               alt="products main"
               width={600}
               height={475}

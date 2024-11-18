@@ -27,6 +27,8 @@ jobs:
         run: |
           touch out/.nojekyll
           cp CNAME out/
+          mkdir -p out/images  # Create images directory if it doesn't exist
+          cp -r public/images/* out/images/  # Copy all images from public/images to out/images
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
