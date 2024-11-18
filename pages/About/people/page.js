@@ -76,7 +76,7 @@ function People() {
                     </div>
                     <div className={styles.sivaDesc}>
                         <div className={styles.sivaDescImages}>
-                            <img src='./images/Siva-Ankul.png' alt='sivakumar' width='500vw' height='350vw' />
+                            <img src='./images/siva-ankul.png' alt='sivakumar' width='500vw' height='350vw' />
                             <div className={styles.sivaDescLogos}>
                                 <img src='./images/siva-1.png' alt='Siva Ankul' width="150vh" height="120vh"/>
                                 <img src='./images/siva-2.png' alt='Siva Ankul' width="115vh" height="115vh"/>
