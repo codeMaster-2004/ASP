@@ -12,8 +12,8 @@
 // module.exports = nextConfig
 const nextConfig = {
   output: 'export',
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/ASP' : '',
-  basePath: process.env.NODE_ENV === 'production' ? '/ASP' : '',
+  // assetPrefix: process.env.NODE_ENV === 'production' ? '/ASP' : '',
+  // basePath: process.env.NODE_ENV === 'production' ? '/ASP' : '',
   images: {
     unoptimized: true,
   },

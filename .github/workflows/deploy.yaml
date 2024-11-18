@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main  # Set this to your default branch
+      - main
 
 jobs:
   deploy:
@@ -23,8 +23,10 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Add .nojekyll file
-        run: touch out/.nojekyll
+      - name: Prepare for deployment
+        run: |
+          touch out/.nojekyll
+          cp CNAME out/
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4

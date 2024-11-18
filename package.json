@@ -28,7 +28,8 @@
     "predeploy": "npm run build",
     "deploy": "touch out/.nojekyll && gh-pages -d out --dotfiles",
     "serve": "npx serve out -l 3000",
-    "preview": "npm run build && npm run serve"
+    "preview": "npm run build && npm run serve",
+    "start": "next start"
   },
   "eslintConfig": {
     "extends": [
