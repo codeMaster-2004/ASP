@@ -7,9 +7,7 @@ function Facilities() {
     return (
         <div className={styles.facilities}>
             <div className={styles.facilitiesContainer}>
-                <a href='/ASP' className={styles.homeLink}>
-                    Home
-                </a>
+                <CustomLink to='ASP' className={styles.homeLink}>Home</CustomLink>
                 <h1>
                     Facilities and Equipment
                 </h1>
