@@ -1,14 +1,13 @@
 import React from 'react';
 import styles from './page.module.css'; 
 import { Button } from '../../Components/Button/Button';
+import CustomLink from '../../Components/CustomLink/CustomeAtt';
 
 function Clients() {
     return (
         <div className={styles.clients}>
             <div className={styles.clientsContainer}>
-                <a href='/ASP'>
-                    Home
-                </a>
+                <CustomLink to='ASP' className={styles.homeLink}>Home</CustomLink>
                 <h1>
                     Our Clients
                 </h1>
