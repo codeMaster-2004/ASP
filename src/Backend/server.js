@@ -1,110 +1,82 @@
+// pages/api/send-email-export.js
 import nodemailer from 'nodemailer';
 
 export default async function handler(req, res) {
-  // Add CORS headers if needed
-  res.setHeader('Access-Control-Allow-Credentials', true);
-  res.setHeader('Access-Control-Allow-Origin', '*');
-  res.setHeader('Access-Control-Allow-Methods', 'POST');
-  res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+  console.log('API Route hit!'); // Debug log
+  
+  if (req.method !== 'POST') {
+    return res.status(405).json({ message: 'Method not allowed' });
+  }
 
-  if (req.method === 'POST') {
+  try {
+    // Log environment variables (excluding sensitive data)
+    console.log('Environment check:', {
+      hasEmailUser: !!process.env.EMAIL_USER,
+      hasAppPassword: !!process.env.GMAIL_APP_PASSWORD,
+      hasRecipient: !!process.env.EMAIL_RECIPIENT
+    });
+
     const { name, email, phone, message } = req.body;
+    console.log('Received form data:', { name, email, phone, messageLength: message?.length });
 
-    // Input validation
-    if (!name || !email || !phone || !message) {
-      return res.status(400).json({ 
-        message: 'Missing required fields',
-        error: 'All fields are required' 
-      });
-    }
+    // Create transporter
+    const transporter = nodemailer.createTransport({
+      service: 'gmail',
+      auth: {
+        user: process.env.EMAIL_USER,
+        pass: process.env.GMAIL_APP_PASSWORD
+      },
+      debug: true, // Enable debug logs
+      logger: true // Enable logger
+    });
 
-    // Email validation
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(email)) {
-      return res.status(400).json({ 
-        message: 'Invalid email format',
-        error: 'Please provide a valid email address' 
-      });
-    }
+    // Verify transporter
+    console.log('Verifying transporter...');
+    await transporter.verify();
+    console.log('Transporter verified successfully');
 
-    try {
-      // Create transporter once
-      const transporter = nodemailer.createTransport({
-        service: 'gmail',
-        auth: {
-          user: process.env.EMAIL_USER,
-          pass: process.env.GMAIL_APP_PASSWORD
-        },
-        // Add error handling for transport
-        tls: {
-          rejectUnauthorized: false // For development only - remove in production
-        },
-        pool: true, // Use pooled connections
-        maxConnections: 1, // Limit concurrent connections
-        rateDelta: 20000, // Time between emails
-        rateLimit: 5 // Max emails per rateDelta
-      });
+    const mailOptions = {
+      from: `"Contact Form" <${process.env.EMAIL_USER}>`,
+      to: process.env.EMAIL_RECIPIENT,
+      replyTo: email,
+      subject: 'New Contact Form Submission',
+      text: `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nMessage: ${message}`,
+      html: `
+        <h2>New Contact Form Submission</h2>
+        <p><strong>Name:</strong> ${name}</p>
+        <p><strong>Email:</strong> ${email}</p>
+        <p><strong>Phone:</strong> ${phone}</p>
+        <p><strong>Message:</strong></p>
+        <p>${message}</p>
+      `
+    };
 
-      // Verify transporter
-      await transporter.verify();
+    console.log('Attempting to send email...');
+    const info = await transporter.sendMail(mailOptions);
+    console.log('Email sent successfully:', info.messageId);
 
-      const mailOptions = {
-        from: '"Contact Form" <contactus.ascientificproducts@gmail.com>',
-        to: 'office@analyticalscientificproducts.com',
-        replyTo: email,
-        subject: 'New Contact Form Submission',
-        text: `
-          Name: ${name}
-          Email: ${email}
-          Phone: ${phone}
-          Message: ${message}
-        `,
-        html: `
-          <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
-            <h2 style="color: #333; border-bottom: 2px solid #eee; padding-bottom: 10px;">New Contact Form Submission</h2>
-            <div style="margin: 20px 0;">
-              <p><strong>Name:</strong> ${name}</p>
-              <p><strong>Email:</strong> ${email}</p>
-              <p><strong>Phone:</strong> ${phone}</p>
-              <p><strong>Message:</strong></p>
-              <div style="background-color: #f9f9f9; padding: 15px; border-radius: 5px;">
-                ${message.replace(/\n/g, '<br>')}
-              </div>
-            </div>
-            <div style="color: #666; font-size: 12px; margin-top: 20px; padding-top: 10px; border-top: 1px solid #eee;">
-              <p>This email was sent from the ASP contact form.</p>
-            </div>
-          </div>
-        `
-      };
+    res.status(200).json({ 
+      message: 'Email sent successfully',
+      messageId: info.messageId
+    });
 
-      await transporter.sendMail(mailOptions);
-      
-      // Success response
-      return res.status(200).json({
-        message: 'Email sent successfully',
-        timestamp: new Date().toISOString()
-      });
+  } catch (error) {
+    // Detailed error logging
+    console.error('Email error:', {
+      message: error.message,
+      stack: error.stack,
+      code: error.code,
+      command: error.command,
+      responseCode: error.responseCode
+    });
 
-    } catch (error) {
-      console.error('Email error:', {
-        message: error.message,
-        stack: error.stack,
-        timestamp: new Date().toISOString()
-      });
-
-      // Error response
-      return res.status(500).json({
-        message: 'Failed to send email',
-        error: process.env.NODE_ENV === 'development' ? error.message : 'Internal server error',
-        timestamp: new Date().toISOString()
-      });
-    }
-  } else {
-    // Method not allowed response
-    return res.status(405).json({ 
-      message: `Method ${req.method} Not Allowed`,
-      allowedMethods: ['POST']
+    // Send a more detailed error response
+    res.status(500).json({
+      message: 'Failed to send email',
+      error: process.env.NODE_ENV === 'development' 
+        ? error.message 
+        : 'Internal server error',
+      code: error.code || 'UNKNOWN_ERROR'
     });
   }
 }

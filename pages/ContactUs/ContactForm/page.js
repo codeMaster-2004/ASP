@@ -22,8 +22,8 @@ function ContactBottom() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         setStatus('Sending...');
+
         try {
-            console.log('Submitting form data:', formData);
             const response = await fetch('/api/send-email-export', {
                 method: 'POST',
                 headers: {
@@ -31,22 +31,27 @@ function ContactBottom() {
                 },
                 body: JSON.stringify(formData),
             });
-    
-            if (!response.ok) {
-                throw new Error(`HTTP error! status: ${response.status}`);
-            }
-    
+
             const data = await response.json();
-            console.log('Server response:', data);
-    
-            setStatus(data.message || 'Email sent successfully!');
-            setFormData({ name: '', email: '', phone: '', message: '' });
+            
+            if (!response.ok) {
+                console.error('Server error:', data);
+                throw new Error(data.error || 'Failed to send email');
+            }
+
+            setStatus('Message sent successfully!');
+            setFormData({
+                name: '',
+                email: '',
+                phone: '',
+                message: ''
+            });
             if (formRef.current) {
                 formRef.current.reset();
             }
         } catch (error) {
-            console.error('Fetch error:', error);
-            setStatus('An error occurred. Please try again later.');
+            console.error('Error details:', error);
+            setStatus(`Failed to send message: ${error.message}`);
         }
     };
 
