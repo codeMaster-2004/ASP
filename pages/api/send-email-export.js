@@ -1,2 +1,8 @@
 // pages/api/server.js
-export { default } from '../../src/Backend/server';
+import handler from '../../src/Backend/server';
+
+// Add console log to verify the file is being loaded
+console.log('API route file loaded');
+
+// Export the handler directly
+export default handler;
